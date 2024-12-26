@@ -18,11 +18,9 @@ for (animalName, legCount) in numberOfLegs {
 }
 
 
-
 for index in 1...5 {
     print("\(index) times 5 is \(index * 5)")
 }
-
 
 
 let base = 3
@@ -35,19 +33,8 @@ for _ in 1...power {
 print("\(base) to the power of \(power) is \(answer)")
 
 
-
-
-
-
-
-
-
-
-
 let hours = 12
 let hourInterval = 3
-
-
 
 
 // While loop
@@ -86,9 +73,6 @@ repeat {
 
 print("Game over!")
 
-
-
-
 // Conditional Statements
 // If statement
 
@@ -112,7 +96,6 @@ let weatherAdvice = if temperatureInFahrenheit <= 32 {
 }
 
 
-
 // Switch statement
 
 let someCharacter: Character = "z"
@@ -124,7 +107,6 @@ case "z":
 default:
     print("Some other character")
 }
-
 
 
 // No implicit fallthrough
@@ -222,7 +204,6 @@ default:
 }
 
 
-
 // Control Transfer Statements
 
 
@@ -279,8 +260,6 @@ default:
 }
 
 print(description) // prints "The number 5 is a prime number, and also an integer."
-
-
 
 
 // Labeled Statements
@@ -343,7 +322,6 @@ if score < 10 {
     score += 5
 }
 print(score) // 6 is printed first, then 6 is printed again.
-
 
 
 // Checking API Availability
