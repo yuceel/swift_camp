@@ -60,3 +60,25 @@ func applyFunction(number: Int, operation: (Int) -> Int) -> Int {
 
 let result = applyFunction(number: 5, operation: { $0 * $0 })
 print("Result: \(result)") // Result: 25
+
+// Function to divide two numbers, returns an optional Int
+func divide(number1: Int, number2: Int) -> Int? {
+    if number2 != 0 {
+        return number1 / number2
+    } else {
+        return nil
+    }
+}
+
+if let result = divide(number1: 10, number2: 2) {
+    print("Result: \(result)")  // Result: 5
+} else {
+    print("Invalid operation!") // Division by zero is not allowed
+}
+
+// A function that takes a parameter 'name' with a default value of "Stranger"
+func introduce(name: String = "Stranger") {
+     print("Hi, \(name)!")
+}
+introduce() // Output: Hi, Stranger!
+introduce(name: "Beyza") // Output: Hi, Beyza!
