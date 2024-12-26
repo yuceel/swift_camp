@@ -1,9 +1,11 @@
+// Define an enum to represent password validation errors.
 enum PasswordError: Error {
     case empty
     case short
     case long
 }
 
+// Function to validate the password.
 func validatePassword(_ password: String) throws -> String {
     if password.isEmpty {
         throw PasswordError.empty
@@ -16,8 +18,11 @@ func validatePassword(_ password: String) throws -> String {
 }
 
 do {
+    // Define a sample password to validate.
     let password = "123"
+    // Try to validate the password and get the validation message.
     let validationMessage = try validatePassword(password)
+    // If the password is valid, print the validation message.
     print(validationMessage)
 } catch PasswordError.empty {
     print("Password cannot be empty.")
@@ -26,5 +31,6 @@ do {
 } catch PasswordError.long {
     print("Password is too long.")
 } catch {
+    // For any other errors, print this message.
     print("An error occurred.")
 }
