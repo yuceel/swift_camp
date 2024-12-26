@@ -19,7 +19,6 @@ let osman:Bird = Bird()
 
 print(osman.canFly)
 
-
 class CannotFlyableAnimals: Animal {
     var legCount: Int
     var diet: String
@@ -30,7 +29,6 @@ class CannotFlyableAnimals: Animal {
         self.diet = diet
     }
 }
-
 var haydut: CannotFlyableAnimals = CannotFlyableAnimals(legCount: 4, diet: "herbivor")
 print(haydut.canFly)
 var haydutsWife: CannotFlyableAnimals = CannotFlyableAnimals(legCount: 4, diet: "herbivor")
