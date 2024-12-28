@@ -7,6 +7,9 @@ struct HomeView: View {
     @State private var closedPRCount = 0
     @State private var branchCount = 0
     @State private var contributors: [Contributor] = []
+    @State private var selectedContributor: Contributor?
+    @State private var showDialog = false
+    
 
     struct Contributor: Identifiable, Decodable {
         let id: Int
@@ -158,9 +161,8 @@ struct HomeView: View {
                                                 .font(.caption)
 
                                             Button(action: {
-                                                if let url = URL(string: contributor.profileURL) {
-                                                    UIApplication.shared.open(url)
-                                                }
+                                                selectedContributor = contributor
+                                                showDialog = true
                                             }) {
                                                 Text("View Profile")
                                                     .font(.caption2)
@@ -213,6 +215,21 @@ struct HomeView: View {
             .background(Color(UIColor.systemBackground))  // Adapts to light/dark mode
             .onAppear {
                 fetchRepoInfo()
+            }
+        }.alert(isPresented: $showDialog) {
+            if let contributor = selectedContributor {
+                return Alert(
+                    title: Text(contributor.username),
+                    message: Text("View GitHub profile or close this dialog."),
+                    primaryButton: .default(Text("Go to Profile")) {
+                        if let url = URL(string: contributor.profileURL) {
+                            UIApplication.shared.open(url)
+                        }
+                    },
+                    secondaryButton: .cancel()
+                )
+            } else {
+                return Alert(title: Text("Error"), message: Text("No contributor selected."), dismissButton: .cancel())
             }
         }
     }
