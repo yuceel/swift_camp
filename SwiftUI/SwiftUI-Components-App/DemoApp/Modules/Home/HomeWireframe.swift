@@ -102,4 +102,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let secureFieldWireframe = SecureFieldWireframe()
         navigationController?.pushWireframe(secureFieldWireframe)
     }
+    
+    
+    func showContextMenu() {
+     let contextMenuWireframe = ContextMenuWireframe()
+     navigationController?.pushWireframe(contextMenuWireframe)
+    }
 }
