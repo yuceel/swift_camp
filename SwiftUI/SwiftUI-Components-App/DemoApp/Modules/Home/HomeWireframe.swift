@@ -96,5 +96,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let imageWireframe = ImageWireframe()
         navigationController?.pushWireframe(imageWireframe)
     }
-
+    
+    
+    func showSecureField() {
+        let secureFieldWireframe = SecureFieldWireframe()
+        navigationController?.pushWireframe(secureFieldWireframe)
+    }
 }
