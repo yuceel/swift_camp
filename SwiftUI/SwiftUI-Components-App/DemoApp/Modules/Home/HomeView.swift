@@ -198,6 +198,11 @@ struct HomeView: View {
                             ButtonModel(
                                 title: "Go to NavigationView",
                                 action: { presenter.showNavigationView() }),
+                            ButtonModel(
+                                title: "Go to Transaction",
+                                action: {
+                                    presenter.showTransaction()
+                                }),
                         ]
 
                         ForEach(buttons) { button in
