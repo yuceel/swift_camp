@@ -41,7 +41,7 @@
   - [ ] Stepper
   - [ ] ProgressView
   - [ ] SegmentedControl
-  - [ ] ColorPicker
+  - [x] ColorPicker
 
 - [ ] **Shapes**
   - [ ] Rectangle

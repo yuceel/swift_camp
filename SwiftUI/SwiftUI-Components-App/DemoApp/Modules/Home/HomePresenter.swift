@@ -22,4 +22,9 @@ final class HomePresenter: ObservableObject {
     func showContentView() {
         wireframe.showContentView()
     }
+    
+    /// Navigates to ColorPicker
+    func showColorPicker() {
+        wireframe.showColorPicker()
+    }
 }
