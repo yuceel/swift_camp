@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    
+    // MARK: - HomeView State & ObservedObject
     @ObservedObject var presenter: HomePresenter
     @State private var commitCount = 0
     @State private var closedPRCount = 0
@@ -70,8 +70,8 @@ struct HomeView: View {
                                 .padding(.bottom, 5)
                             
                             HStack {
-                                Image(systemName: "checkmark.circle.fill")
-                                    .foregroundColor(.green)
+                                Image(systemName: "heart.fill")
+                                    .foregroundColor(.pink)
                                 Text("Understand core SwiftUI concepts.")
                             }
                             HStack {
