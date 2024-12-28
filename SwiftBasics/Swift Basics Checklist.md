@@ -17,8 +17,8 @@
   - [X] Set
   - [X] Tuple
   - [X] Optionals
-  - [ ] Any and AnyObject
-  - [ ] Typealias
+  - [x] Any and AnyObject
+  - [x] Typealias
   
 - [ ] **Operators**
   - [X] Assignment Operator (=)
@@ -26,8 +26,8 @@
   - [X] Comparison Operators (==, !=, >, <, >=, <=)
   - [X] Logical Operators (&&, ||, !)
   - [X] String Concatenation (+)
-  - [] Ternary Operator (?:)
-  - [ ] Nil-Coalescing Operator (??)
+  - [x] Ternary Operator (?:)
+  - [x] Nil-Coalescing Operator (??)
 
 - [ ] **Control Flow**
   - [X] if
@@ -59,10 +59,10 @@
   - [X] Properties
   - [X] Methods
   - [X] Initializers
-  - [ ] Self
+  - [x] Self
   - [X] Mutating Methods (for Structs)
   - [X] Inheritance (for Classes)
-  - [ ] Deinitializers
+  - [x] Deinitializers
   - [X] Static and Class Properties/Methods
 
 - [ ] **Enum**
