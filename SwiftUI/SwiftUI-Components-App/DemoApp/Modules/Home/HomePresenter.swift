@@ -2,47 +2,47 @@ import Combine
 import Foundation
 
 final class HomePresenter: ObservableObject {
-
+    
     // MARK: - Private properties -
-
+    
     private let wireframe: HomeWireframeInterface
-
+    
     // MARK: - Lifecycle -
-
+    
     init(wireframe: HomeWireframeInterface) {
         self.wireframe = wireframe
     }
-
+    
     /// Navigates to VStackView
     func showVStack() {
         wireframe.showVStack()
     }
-
+    
     /// Navigates to ZStackView
     func showZStack() {
         wireframe.showZStack()
     }
-
+    
     /// Navigates to ContentView
     func showContentView() {
         wireframe.showContentView()
     }
-
+    
     /// Navigates to ColorPickerView
     func showColorPicker() {
         wireframe.showColorPicker()
     }
-
+    
     /// Navigates to RectangleView
     func showRectangle() {
         wireframe.showRectangle()
     }
-
+    
     /// Navigates to SectionView
     func showSection() {
         wireframe.showSection()
     }
-        
+    
     /// Navigates to HStackView
     func showHStack() {
         wireframe.showHStack()
@@ -51,7 +51,7 @@ final class HomePresenter: ObservableObject {
     func showNavigationStack() {
         wireframe.showNavigationStack()
     }
-
+    
     /// Navigates to FrameView
     func showFrame() {
         wireframe.showFrame()
@@ -72,13 +72,20 @@ final class HomePresenter: ObservableObject {
         wireframe.showTransaction()
     }
     
-    /// Navigates to LazyVStack
-    func showLazyVStackView() {
-        wireframe.showLazyVStackView()
-    }
-    
-    /// Navigates to MatchedGeometryEffectView
-    func showMatchedGeometryEffect(){
-        wireframe.showMatchedGeometryEffect()
+    /// Navigates to LazyHGridView
+    func showLazyHGrid(){
+        wireframe.showLazyHGrid()
+        
+        
+        /// Navigates to LazyVStack
+        func showLazyVStackView() {
+            wireframe.showLazyVStackView()
+        }
+        
+        /// Navigates to MatchedGeometryEffectView
+        func showMatchedGeometryEffect(){
+            wireframe.showMatchedGeometryEffect()
+            
+        }
     }
 }

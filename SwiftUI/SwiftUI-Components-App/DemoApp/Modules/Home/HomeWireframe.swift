@@ -74,6 +74,14 @@ extension HomeWireframe: HomeWireframeInterface {
         let transactionWireframe = TransactionWireframe()
         navigationController?.pushWireframe(transactionWireframe)
     }
+
+    func showLazyHGrid() {
+        let lazyHGridWireframe = LazyHGridWireframe()
+        navigationController?.pushWireframe(lazyHGridWireframe)
+    }
+
+    
+
     
     func showLazyVStackView() {
         let lazyVStackViewWireframe = LazyVStackWireframe()
@@ -84,4 +92,5 @@ extension HomeWireframe: HomeWireframeInterface {
         let matchedGeometryEffectWireframe = MatchedGeometryEffectWireframe()
         navigationController?.pushWireframe(matchedGeometryEffectWireframe)
     }
+
 }

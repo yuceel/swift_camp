@@ -13,6 +13,10 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showScrollView()
     func showNavigationView()
     func showTransaction()
+
+    func showLazyHGrid()
+
     func showLazyVStackView()
     func showMatchedGeometryEffect()
+
 }

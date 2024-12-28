@@ -206,12 +206,17 @@ struct HomeView: View {
                                     presenter.showTransaction()
                                 }),
                             ButtonModel(
+
+                                title: "Go to LazyHGrid",
+                                action: { presenter.showLazyHGrid()
+
                                 title: "Go to LazyVStack",
                                 action: { presenter.showLazyVStackView() }),
                             ButtonModel(
                                 title: "Go to MatchedGeometryEffect",
                                 action: {
                                     presenter.showMatchedGeometryEffect()
+
                                 }),
                         ]
 
@@ -361,4 +366,5 @@ struct HomeView: View {
     struct Commit: Decodable {}
     struct PullRequest: Decodable {}
     struct Branch: Decodable {}
+}
 }
