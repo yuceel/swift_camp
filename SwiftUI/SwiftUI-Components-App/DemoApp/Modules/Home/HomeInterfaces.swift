@@ -19,6 +19,11 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showLazyVStackView()
     func showMatchedGeometryEffect()
     func showImage()
+
     func showMenuButton()
+
+
+    func showSecureField()
+    func showContextMenu()
 
 }
