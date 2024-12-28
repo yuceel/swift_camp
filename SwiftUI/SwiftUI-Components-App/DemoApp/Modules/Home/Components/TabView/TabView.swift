@@ -3,6 +3,13 @@ import SwiftUI
 struct tabView: View {
     @ObservedObject var presenter: TabPresenter
     var body: some View {
+        Button(action: presenter.goBack) {
+            Image(systemName: "chevron.left")
+                .font(.title2)
+                .padding()
+
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
         TabView {
             // First tab - Home
             NavigationView {

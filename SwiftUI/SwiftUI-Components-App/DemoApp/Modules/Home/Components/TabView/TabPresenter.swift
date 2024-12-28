@@ -9,5 +9,8 @@ final class TabPresenter : ObservableObject {
         self.wireframe = wireframe
     }
     
+    func goBack() {
+        wireframe.goBack()
+    }
 }
 

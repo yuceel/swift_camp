@@ -21,5 +21,7 @@ final class TabWireframe: BaseWireframe<LazyHostingViewController<tabView>>, Tab
 // MARK: - Extensions -
 
 extension TabWireframe {
-    
+    func goBack() {
+        navigationController?.popViewController(animated: true)
+    }
 }
