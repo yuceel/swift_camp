@@ -17,7 +17,7 @@
   - [ ] NavigationStack
   - [ ] TabView
   - [ ] Form
-  - [ ] ContentView
+  - [x] ContentView
 
 - [ ] **Text and Images**
   - [ ] Text
@@ -41,7 +41,7 @@
   - [ ] Stepper
   - [ ] ProgressView
   - [ ] SegmentedControl
-  - [ ] ColorPicker
+  - [x] ColorPicker
 
 - [ ] **Shapes**
   - [ ] Rectangle
