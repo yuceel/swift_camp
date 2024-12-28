@@ -9,7 +9,6 @@ struct HomeView: View {
     @State private var contributors: [Contributor] = []
     @State private var selectedContributor: Contributor?
     @State private var showDialog = false
-    
 
     struct Contributor: Identifiable, Decodable {
         let id: Int
@@ -194,11 +193,16 @@ struct HomeView: View {
                             ButtonModel(
                                 title: "Go to NavigationStack",
                                 action: { presenter.showNavigationStack() }),
-                            ButtonModel(title: "Go to ScrollView", action: { presenter.showScrollView()}),
-                            ButtonModel(title: "Go to NavigationView", action: {presenter.showNavigationView()}),
-                            ButtonModel(title: "Go to Transaction", action: {
-                                presenter.showTransaction()
-                            })
+                            ButtonModel(
+                                title: "Go to ScrollView", action: { presenter.showScrollView() }),
+                            ButtonModel(
+                                title: "Go to NavigationView",
+                                action: { presenter.showNavigationView() }),
+                            ButtonModel(
+                                title: "Go to Transaction",
+                                action: {
+                                    presenter.showTransaction()
+                                }),
                         ]
 
                         ForEach(buttons) { button in
@@ -233,7 +237,9 @@ struct HomeView: View {
                     secondaryButton: .cancel()
                 )
             } else {
-                return Alert(title: Text("Error"), message: Text("No contributor selected."), dismissButton: .cancel())
+                return Alert(
+                    title: Text("Error"), message: Text("No contributor selected."),
+                    dismissButton: .cancel())
             }
         }
     }
@@ -261,13 +267,29 @@ struct HomeView: View {
     // MARK: - GitHub API Integration
     func fetchRepoInfo() {
         let baseURL = "https://api.github.com/repos/masterfabric-mobile/swift_camp"
+        var allCommits: [Commit] = []
+        var page = 1
 
-        // Fetch commits
-        fetchGenericData(from: "\(baseURL)/commits") { (commits: [Commit]) in
-            DispatchQueue.main.async {
-                self.commitCount = commits.count
+        // Recursive commit fetch function
+        func fetchCommits() {
+            let commitURL = "\(baseURL)/commits?per_page=100&page=\(page)"
+            fetchGenericData(from: commitURL) { (commits: [Commit]) in
+                allCommits.append(contentsOf: commits)
+
+                if commits.count == 100 {
+                    page += 1
+                    fetchCommits()
+                } else {
+                    DispatchQueue.main.async {
+                        self.commitCount = allCommits.count
+                        print("Total commits: \(allCommits.count)")
+                    }
+                }
             }
         }
+
+        // Start commit fetch
+        fetchCommits()
 
         // Fetch closed PRs
         fetchGenericData(from: "\(baseURL)/pulls?state=closed") { (pulls: [PullRequest]) in
