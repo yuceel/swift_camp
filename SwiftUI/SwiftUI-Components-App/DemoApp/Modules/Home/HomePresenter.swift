@@ -76,4 +76,9 @@ final class HomePresenter: ObservableObject {
     func showLazyVStackView() {
         wireframe.showLazyVStackView()
     }
+    
+    /// Navigates to MatchedGeometryEffectView
+    func showMatchedGeometryEffect(){
+        wireframe.showMatchedGeometryEffect()
+    }
 }
