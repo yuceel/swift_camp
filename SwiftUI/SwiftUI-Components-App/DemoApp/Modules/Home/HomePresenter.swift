@@ -37,6 +37,7 @@ final class HomePresenter: ObservableObject {
     func showRectangle() {
         wireframe.showRectangle()
     }
+
     /// Navigates to VStackView
     func showHStack() {
         wireframe.showHStack()
@@ -44,5 +45,10 @@ final class HomePresenter: ObservableObject {
     /// Navigates to NavigationStackView
     func showNavigationStack() {
         wireframe.showNavigationStack()
+    }
+
+    /// Navigates to FrameView
+    func showFrame() {
+        wireframe.showFrame()
     }
 }
