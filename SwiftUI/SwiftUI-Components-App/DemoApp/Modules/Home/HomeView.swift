@@ -189,7 +189,8 @@ struct HomeView: View {
                                 title: "Go to ColorPicker", action: { presenter.showColorPicker() }),
                             ButtonModel(
                                 title: "Go to Rectangle", action: { presenter.showRectangle() }),
-                            ButtonModel(title: "Go to Section", action: { presenter.showSection() }),
+                            ButtonModel(
+                                title: "Go to Section", action: { presenter.showSection() }),
                             ButtonModel(title: "Go to Frame", action: { presenter.showFrame() }),
                             ButtonModel(
                                 title: "Go to NavigationStack",
@@ -205,8 +206,17 @@ struct HomeView: View {
                                     presenter.showTransaction()
                                 }),
                             ButtonModel(
+
                                 title: "Go to LazyHGrid",
                                 action: { presenter.showLazyHGrid()
+
+                                title: "Go to LazyVStack",
+                                action: { presenter.showLazyVStackView() }),
+                            ButtonModel(
+                                title: "Go to MatchedGeometryEffect",
+                                action: {
+                                    presenter.showMatchedGeometryEffect()
+
                                 }),
                         ]
 
@@ -272,34 +282,54 @@ struct HomeView: View {
     // MARK: - GitHub API Integration
     func fetchRepoInfo() {
         let baseURL = "https://api.github.com/repos/masterfabric-mobile/swift_camp"
-        var allCommits: [Commit] = []
-        var page = 1
 
-        // Recursive commit fetch function
-        func fetchCommits() {
-            let commitURL = "\(baseURL)/commits?per_page=100&page=\(page)"
-            fetchGenericData(from: commitURL) { (commits: [Commit]) in
-                allCommits.append(contentsOf: commits)
-
-                if commits.count == 100 {
-                    page += 1
-                    fetchCommits()
+        // Generic pagination fetch function
+        func fetchPaginatedData<T: Decodable>(
+            endpoint: String,
+            perPage: Int = 100,
+            collection: [T] = [],
+            page: Int = 1,
+            completion: @escaping ([T]) -> Void
+        ) {
+            // For pull requests, we need to include the state parameter if we want to fetch closed PRs
+            let url =
+                if endpoint == "pulls" {
+                    "\(baseURL)/\(endpoint)?state=closed&per_page=\(perPage)&page=\(page)"
                 } else {
-                    DispatchQueue.main.async {
-                        self.commitCount = allCommits.count
-                        print("Total commits: \(allCommits.count)")
-                    }
+                    "\(baseURL)/\(endpoint)?per_page=\(perPage)&page=\(page)"
+                }
+
+            fetchGenericData(from: url) { (items: [T]) in
+                var updatedCollection = collection
+                updatedCollection.append(contentsOf: items)
+
+                if items.count == perPage {
+                    fetchPaginatedData(
+                        endpoint: endpoint,
+                        perPage: perPage,
+                        collection: updatedCollection,
+                        page: page + 1,
+                        completion: completion
+                    )
+                } else {
+                    completion(updatedCollection)
                 }
             }
         }
 
-        // Start commit fetch
-        fetchCommits()
+        // Fetch commits
+        fetchPaginatedData(endpoint: "commits", collection: [Commit]()) { commits in
+            DispatchQueue.main.async {
+                self.commitCount = commits.count
+                print("Total commits: \(commits.count)")
+            }
+        }
 
         // Fetch closed PRs
-        fetchGenericData(from: "\(baseURL)/pulls?state=closed") { (pulls: [PullRequest]) in
+        fetchPaginatedData(endpoint: "pulls", collection: [PullRequest]()) { pulls in
             DispatchQueue.main.async {
                 self.closedPRCount = pulls.count
+                print("Total closed PRs: \(pulls.count)")
             }
         }
 

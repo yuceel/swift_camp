@@ -71,8 +71,20 @@ final class HomePresenter: ObservableObject {
     func showTransaction(){
         wireframe.showTransaction()
     }
+
     /// Navigates to LazyHGridView
     func showLazyHGrid(){
         wireframe.showLazyHGrid()
+
+    
+    /// Navigates to LazyVStack
+    func showLazyVStackView() {
+        wireframe.showLazyVStackView()
+    }
+    
+    /// Navigates to MatchedGeometryEffectView
+    func showMatchedGeometryEffect(){
+        wireframe.showMatchedGeometryEffect()
+
     }
 }
