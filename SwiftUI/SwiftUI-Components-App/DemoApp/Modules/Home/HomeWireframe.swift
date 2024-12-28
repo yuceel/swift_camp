@@ -59,4 +59,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let scrollViewWireframe = ScrollViewWireframe()
         navigationController?.pushWireframe(scrollViewWireframe)
     }
+    
+    func showNavigationView() {
+        let navigationWireframe = NavigationWireframe()
+        navigationController?.pushWireframe(navigationWireframe)
+    }
 }
