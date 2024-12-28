@@ -367,3 +367,4 @@ struct HomeView: View {
     struct PullRequest: Decodable {}
     struct Branch: Decodable {}
 }
+}
