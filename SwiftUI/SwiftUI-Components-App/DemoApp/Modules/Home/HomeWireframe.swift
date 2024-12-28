@@ -92,5 +92,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let matchedGeometryEffectWireframe = MatchedGeometryEffectWireframe()
         navigationController?.pushWireframe(matchedGeometryEffectWireframe)
     }
+    func showImage() {
+        let imageWireframe = ImageWireframe()
+        navigationController?.pushWireframe(imageWireframe)
+    }
 
 }
