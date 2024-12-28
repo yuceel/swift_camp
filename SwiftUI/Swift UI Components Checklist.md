@@ -17,7 +17,7 @@
   - [ ] NavigationStack
   - [ ] TabView
   - [ ] Form
-  - [ ] ContentView
+  - [x] ContentView
 
 - [ ] **Text and Images**
   - [ ] Text
