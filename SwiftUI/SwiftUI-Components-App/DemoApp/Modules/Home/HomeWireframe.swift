@@ -96,5 +96,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let imageWireframe = ImageWireframe()
         navigationController?.pushWireframe(imageWireframe)
     }
+    func showMenuButton() {
+        let menuButtonWireframe = MenuButtonWireframe()
+        navigationController?.pushWireframe(menuButtonWireframe)
+    }
 
 }

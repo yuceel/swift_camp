@@ -224,6 +224,9 @@ struct HomeView: View {
                             ButtonModel(
                                 title: "Go to Image",
                                 action: { presenter.showImage() }),
+                            ButtonModel(
+                                title: "Go to Menu Button",
+                                action: { presenter.showMenuButton() }),
 
 
 
