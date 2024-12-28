@@ -204,6 +204,10 @@ struct HomeView: View {
                                 action: {
                                     presenter.showTransaction()
                                 }),
+                            ButtonModel(
+                                title: "Go to LazyHGrid",
+                                action: { presenter.showLazyHGrid()
+                                }),
                         ]
 
                         ForEach(buttons) { button in

@@ -74,4 +74,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let transactionWireframe = TransactionWireframe()
         navigationController?.pushWireframe(transactionWireframe)
     }
+    func showLazyHGrid() {
+        let lazyHGridWireframe = LazyHGridWireframe()
+        navigationController?.pushWireframe(lazyHGridWireframe)
+    }
+
+    
 }
