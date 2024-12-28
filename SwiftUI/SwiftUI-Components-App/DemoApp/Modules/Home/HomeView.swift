@@ -19,11 +19,12 @@ struct HomeView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                     
+                    // Button to navigate to VStackView
                     Button("Go to VStackView") {
                         presenter.showVStack()
                     }
                     
-                    // New Button to navigate to ContentView
+                    // Button to navigate to ContentView
                     Button("Go to ContentView") {
                         presenter.showContentView()
                     }
@@ -32,12 +33,21 @@ struct HomeView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     
-                    // New Button to navigate to ColorPicker
+                    // Button to navigate to ColorPicker
                     Button("Go to ColorPicker") {
                         presenter.showColorPicker()
                     }
                     .padding()
                     .background(Color.purple)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+
+                    // New Button to navigate to RectangleView
+                    Button("Go to Rectangle") {
+                        presenter.showRectangle()
+                    }
+                    .padding()
+                    .background(Color.orange)
                     .foregroundColor(.white)
                     .cornerRadius(10)
                 }
