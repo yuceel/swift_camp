@@ -24,6 +24,11 @@ struct HomeView: View {
                         presenter.showVStack()
                     }
                     
+                    // Button to navigate to ZStackView
+                    Button("Go to ZStackView") {
+                        presenter.showZStack()
+                    }
+                    
                     // Button to navigate to ContentView
                     Button("Go to ContentView") {
                         presenter.showContentView()
