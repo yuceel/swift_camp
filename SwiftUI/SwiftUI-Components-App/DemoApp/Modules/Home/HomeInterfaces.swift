@@ -11,4 +11,5 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showFrame()
     func showScrollView()
     func showNavigationView()
+    func showTransaction()
 }
