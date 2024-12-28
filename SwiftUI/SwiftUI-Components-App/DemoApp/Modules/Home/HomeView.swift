@@ -189,6 +189,7 @@ struct HomeView: View {
                                 title: "Go to ColorPicker", action: { presenter.showColorPicker() }),
                             ButtonModel(
                                 title: "Go to Rectangle", action: { presenter.showRectangle() }),
+                            ButtonModel(title: "Go to Section", action: { presenter.showSection() }),
                             ButtonModel(title: "Go to Frame", action: { presenter.showFrame() }),
                             ButtonModel(
                                 title: "Go to NavigationStack",
