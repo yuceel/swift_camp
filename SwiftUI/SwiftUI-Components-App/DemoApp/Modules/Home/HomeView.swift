@@ -177,7 +177,9 @@ struct HomeView: View {
                             ButtonModel(title: "Go to ZStackView", action: { presenter.showZStack() }),
                             ButtonModel(title: "Go to ContentView", action: { presenter.showContentView() }),
                             ButtonModel(title: "Go to ColorPicker", action: { presenter.showColorPicker() }),
-                            ButtonModel(title: "Go to Rectangle", action: { presenter.showRectangle() })
+                            ButtonModel(title: "Go to Rectangle", action: { presenter.showRectangle() }),
+                            ButtonModel(title: "Go to Frame", action: { presenter.showFrame() }) 
+
                         ]
                         
                         ForEach(buttons) { button in
