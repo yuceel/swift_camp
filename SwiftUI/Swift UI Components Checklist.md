@@ -44,7 +44,7 @@
   - [x] ColorPicker
 
 - [ ] **Shapes**
-  - [ ] Rectangle
+  - [x] Rectangle
   - [ ] RoundedRectangle
   - [ ] Circle
   - [ ] Ellipse
