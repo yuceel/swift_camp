@@ -8,6 +8,5 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showRectangle()
     func showHStack()
     func showNavigationStack()
-
     func showFrame()
 }
