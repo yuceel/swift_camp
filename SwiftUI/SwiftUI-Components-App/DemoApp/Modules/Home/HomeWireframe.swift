@@ -64,4 +64,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let navigationWireframe = NavigationWireframe()
         navigationController?.pushWireframe(navigationWireframe)
     }
+    
+    func showTransaction() {
+        let transactionWireframe = TransactionWireframe()
+        navigationController?.pushWireframe(transactionWireframe)
+    }
 }

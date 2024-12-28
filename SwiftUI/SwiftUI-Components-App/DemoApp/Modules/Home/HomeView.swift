@@ -195,7 +195,10 @@ struct HomeView: View {
                                 title: "Go to NavigationStack",
                                 action: { presenter.showNavigationStack() }),
                             ButtonModel(title: "Go to ScrollView", action: { presenter.showScrollView()}),
-                            ButtonModel(title: "Go to NavigationView", action: {presenter.showNavigationView()})
+                            ButtonModel(title: "Go to NavigationView", action: {presenter.showNavigationView()}),
+                            ButtonModel(title: "Go to Transaction", action: {
+                                presenter.showTransaction()
+                            })
                         ]
 
                         ForEach(buttons) { button in

@@ -61,4 +61,9 @@ final class HomePresenter: ObservableObject {
     func showNavigationView() {
         wireframe.showNavigationView()
     }
+    
+    /// Navigates to TransactionView
+    func showTransaction(){
+        wireframe.showTransaction()
+    }
 }
