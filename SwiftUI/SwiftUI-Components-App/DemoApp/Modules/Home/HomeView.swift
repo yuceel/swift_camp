@@ -205,6 +205,11 @@ struct HomeView: View {
                                     presenter.showTransaction()
                                 }),
                             ButtonModel(title: "Go to LazyVStack", action: { presenter.showLazyVStackView()}),
+                            ButtonModel(
+                                title: "Go to MatchedGeometryEffect",
+                                action: {
+                                    presenter.showMatchedGeometryEffect()
+                                })
                         ]
 
                         ForEach(buttons) { button in

@@ -14,4 +14,5 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showNavigationView()
     func showTransaction()
     func showLazyVStackView()
+    func showMatchedGeometryEffect()
 }

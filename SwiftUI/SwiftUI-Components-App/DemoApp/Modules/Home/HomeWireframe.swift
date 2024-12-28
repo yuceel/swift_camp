@@ -79,4 +79,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let lazyVStackViewWireframe = LazyVStackWireframe()
         navigationController?.pushWireframe(lazyVStackViewWireframe)
     }
+    
+    func showMatchedGeometryEffect() {
+        let matchedGeometryEffectWireframe = MatchedGeometryEffectWireframe()
+        navigationController?.pushWireframe(matchedGeometryEffectWireframe)
+    }
 }

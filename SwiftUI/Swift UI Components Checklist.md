@@ -75,7 +75,7 @@
   - [ ] Animation @beyzanuravsar
   - [ ] withAnimation @busragedikoglu
   - [x] Transaction @turhanGoksu
-  - [ ] MatchedGeometryEffect @turhanGoksu
+  - [x] MatchedGeometryEffect @turhanGoksu
   - [ ] Transition @alakkaya
 
 - [ ] **Gestures**
