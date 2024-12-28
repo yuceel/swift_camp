@@ -31,6 +31,7 @@ extension HomeWireframe: HomeWireframeInterface {
         let contentWireframe = ContentWireframe()
         navigationController?.pushWireframe(contentWireframe)
     }
+    
     func showColorPicker() {
         let colorPickerWireframe = ColorPickerWireframe()
         navigationController?.pushWireframe(colorPickerWireframe)
@@ -43,5 +44,10 @@ extension HomeWireframe: HomeWireframeInterface {
     func showHStack() {
         let hStackWireframe = HStackWireframe()
         navigationController?.pushWireframe(hStackWireframe)
+    }
+    
+    func showFrame() {
+        let frameWireframe = FrameWireframe()
+        navigationController?.pushWireframe(frameWireframe)
     }
 }
