@@ -11,26 +11,47 @@ struct HomeView: View {
         let action: () -> Void
     }
     
-    // Retrieve firmware information dynamically
+    // Retrieve device information dynamically
     var deviceInfo: String {
         let systemName = UIDevice.current.systemName // e.g., "iOS"
         let systemVersion = UIDevice.current.systemVersion // e.g., "16.2"
         return "\(systemName) \(systemVersion)"
     }
     
+    // Retrieve screen resolution dynamically
+    var screenResolution: String {
+        let screen = UIScreen.main.bounds
+        return "\(Int(screen.width)) x \(Int(screen.height))"
+    }
+    
+    // Check if running on a real device or simulator
+    var isSimulator: String {
+        #if targetEnvironment(simulator)
+        return "Simulator"
+        #else
+        return "Real Device"
+        #endif
+    }
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
                 
-                // AppBar with dynamic firmware info
+                // AppBar with dynamic information
                 HStack {
-                    Text("Version: 1.0.0 | Firmware: \(deviceInfo)")
-                        .font(.footnote)
-                        .foregroundColor(.black)
+                    VStack(alignment: .leading) {
+                        Text("Version: 1.0.0 | Firmware: \(deviceInfo)")
+                            .font(.footnote)
+                        Text("Screen: \(screenResolution)")
+                            .font(.footnote)
+                        Text("Environment: \(isSimulator)")
+                            .font(.footnote)
+                    }
+                    .foregroundColor(.black)
                     Spacer()
                 }
                 .padding()
-       
+        
                 
                 ScrollView {
                     VStack(alignment: .center, spacing: 20) {
@@ -102,6 +123,8 @@ struct HomeView: View {
                     .padding(.top, 20)
                 }
             }
+            .background(Color(UIColor.systemBackground)) // Adapts to light/dark mode
+            .preferredColorScheme(nil) // Uses the system's color scheme
         }
     }
 }
