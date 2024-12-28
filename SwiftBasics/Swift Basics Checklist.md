@@ -19,7 +19,7 @@
   - [X] Optionals
   - [ ] Any and AnyObject
   - [ ] Typealias
-
+  
 - [ ] **Operators**
   - [X] Assignment Operator (=)
   - [X] Arithmetic Operators (+, -, *, /, %)
