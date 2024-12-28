@@ -56,4 +56,9 @@ final class HomePresenter: ObservableObject {
     func showScrollView() {
         wireframe.showScrollView()
     }
+    
+    /// Navigates to NavigationView
+    func showNavigationView() {
+        wireframe.showNavigationView()
+    }
 }
