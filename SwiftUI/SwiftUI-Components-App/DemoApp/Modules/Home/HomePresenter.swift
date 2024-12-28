@@ -1,5 +1,5 @@
-import Foundation
 import Combine
+import Foundation
 
 final class HomePresenter: ObservableObject {
 
@@ -17,7 +17,7 @@ final class HomePresenter: ObservableObject {
     func showVStack() {
         wireframe.showVStack()
     }
-    
+
     /// Navigates to ZStackView
     func showZStack() {
         wireframe.showZStack()
@@ -27,12 +27,12 @@ final class HomePresenter: ObservableObject {
     func showContentView() {
         wireframe.showContentView()
     }
-    
+
     /// Navigates to ColorPickerView
     func showColorPicker() {
         wireframe.showColorPicker()
     }
-    
+
     /// Navigates to RectangleView
     func showRectangle() {
         wireframe.showRectangle()
@@ -40,5 +40,9 @@ final class HomePresenter: ObservableObject {
     /// Navigates to VStackView
     func showHStack() {
         wireframe.showHStack()
+    }
+    /// Navigates to NavigationStackView
+    func showNavigationStack() {
+        wireframe.showNavigationStack()
     }
 }
