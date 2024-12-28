@@ -31,6 +31,15 @@ struct HomeView: View {
                     .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(10)
+                    
+                    // New Button to navigate to ColorPicker
+                    Button("Go to ColorPicker") {
+                        presenter.showColorPicker()
+                    }
+                    .padding()
+                    .background(Color.purple)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
                 }
                 .padding()
             }
