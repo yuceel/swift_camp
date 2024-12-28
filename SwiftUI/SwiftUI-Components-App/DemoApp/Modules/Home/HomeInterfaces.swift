@@ -18,5 +18,6 @@ protocol HomeWireframeInterface: WireframeInterface {
 
     func showLazyVStackView()
     func showMatchedGeometryEffect()
+    func showImage()
 
 }

@@ -75,6 +75,7 @@ final class HomePresenter: ObservableObject {
     /// Navigates to LazyHGridView
     func showLazyHGrid(){
         wireframe.showLazyHGrid()
+        }
         
         
         /// Navigates to LazyVStack
@@ -87,5 +88,9 @@ final class HomePresenter: ObservableObject {
             wireframe.showMatchedGeometryEffect()
             
         }
-    }
+        /// Navigates to Image
+        func showImage() {
+            wireframe.showImage()
+        }
+    
 }

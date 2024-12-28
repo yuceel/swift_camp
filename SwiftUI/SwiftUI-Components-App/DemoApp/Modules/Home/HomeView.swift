@@ -209,15 +209,24 @@ struct HomeView: View {
 
                                 title: "Go to LazyHGrid",
                                 action: { presenter.showLazyHGrid()
+                                }),
 
+                            ButtonModel(
                                 title: "Go to LazyVStack",
-                                action: { presenter.showLazyVStackView() }),
+                                action: { presenter.showLazyVStackView()
+                                }),
+                            
                             ButtonModel(
                                 title: "Go to MatchedGeometryEffect",
-                                action: {
-                                    presenter.showMatchedGeometryEffect()
-
+                                action: {presenter.showMatchedGeometryEffect()
                                 }),
+                                
+                            ButtonModel(
+                                title: "Go to Image",
+                                action: { presenter.showImage() }),
+
+
+
                         ]
 
                         ForEach(buttons) { button in
@@ -367,4 +376,4 @@ struct HomeView: View {
     struct PullRequest: Decodable {}
     struct Branch: Decodable {}
 }
-}
+
