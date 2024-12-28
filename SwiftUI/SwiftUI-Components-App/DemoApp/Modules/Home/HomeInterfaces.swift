@@ -5,4 +5,5 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showContentView()
     func showColorPicker()
     func showRectangle()
+    func showHStack()
 }

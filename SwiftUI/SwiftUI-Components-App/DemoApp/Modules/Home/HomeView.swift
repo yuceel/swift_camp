@@ -23,6 +23,11 @@ struct HomeView: View {
                     Button("Go to VStackView") {
                         presenter.showVStack()
                     }
+                    // Button to navigate to HStackView
+                    Button("Go to HStackView") {
+                        presenter.showHStack()
+                    }
+
                     
                     // Button to navigate to ContentView
                     Button("Go to ContentView") {
