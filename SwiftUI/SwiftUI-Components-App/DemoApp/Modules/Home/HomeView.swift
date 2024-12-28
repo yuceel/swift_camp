@@ -203,6 +203,11 @@ struct HomeView: View {
                                 action: {
                                     presenter.showTransaction()
                                 }),
+                            ButtonModel(
+                                title: "Go to TabView",
+                                action: {
+                                    presenter.showTabView()
+                            })
                         ]
 
                         ForEach(buttons) { button in

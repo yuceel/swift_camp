@@ -69,4 +69,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let transactionWireframe = TransactionWireframe()
         navigationController?.pushWireframe(transactionWireframe)
     }
+    
+    func showTabView()
+    {
+        let tabViewWireframe = TabWireframe()
+        navigationController?.pushWireframe(tabViewWireframe)
+    }
 }

@@ -66,4 +66,9 @@ final class HomePresenter: ObservableObject {
     func showTransaction(){
         wireframe.showTransaction()
     }
+    
+    /// Navigates to TabView
+    func showTabView(){
+        wireframe.showTabView()
+    }
 }
