@@ -41,6 +41,11 @@ extension HomeWireframe: HomeWireframeInterface {
         let rectangleWireframe = RectangleWireframe()
         navigationController?.pushWireframe(rectangleWireframe)
     }
+    func showSection() {
+        let sectionWireframe = SectionWireframe()
+        navigationController?.pushWireframe(sectionWireframe)
+    }
+    
     func showHStack() {
         let hStackWireframe = HStackWireframe()
         navigationController?.pushWireframe(hStackWireframe)
