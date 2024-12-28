@@ -93,4 +93,8 @@ final class HomePresenter: ObservableObject {
             wireframe.showImage()
         }
     
+    /// Navigates to Secure Field
+    func showSecureField() {
+        wireframe.showSecureField()
+    }
 }

@@ -225,7 +225,8 @@ struct HomeView: View {
                                 title: "Go to Image",
                                 action: { presenter.showImage() }),
 
-
+                            ButtonModel(title: "Go to Secure Field", action: { presenter.showSecureField() }),
+                            
 
                         ]
 
