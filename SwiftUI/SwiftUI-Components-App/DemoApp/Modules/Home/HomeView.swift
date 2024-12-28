@@ -204,6 +204,7 @@ struct HomeView: View {
                                 action: {
                                     presenter.showTransaction()
                                 }),
+                            ButtonModel(title: "Go to LazyVStack", action: { presenter.showLazyVStackView()}),
                         ]
 
                         ForEach(buttons) { button in

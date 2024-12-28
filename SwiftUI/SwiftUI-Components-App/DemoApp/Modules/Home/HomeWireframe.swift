@@ -74,4 +74,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let transactionWireframe = TransactionWireframe()
         navigationController?.pushWireframe(transactionWireframe)
     }
+    
+    func showLazyVStackView() {
+        let lazyVStackViewWireframe = LazyVStackWireframe()
+        navigationController?.pushWireframe(lazyVStackViewWireframe)
+    }
 }

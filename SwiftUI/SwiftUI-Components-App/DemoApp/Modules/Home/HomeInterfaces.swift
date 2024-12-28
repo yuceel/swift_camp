@@ -13,4 +13,5 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showScrollView()
     func showNavigationView()
     func showTransaction()
+    func showLazyVStackView()
 }
