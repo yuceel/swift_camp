@@ -21,6 +21,11 @@ extension HomeWireframe: HomeWireframeInterface {
         let vStackWireframe = VStackWireframe()
         navigationController?.pushWireframe(vStackWireframe)
     }
+    
+    func showZStack() {
+        let zStackWireframe = ZStackWireframe()
+        navigationController?.pushWireframe(zStackWireframe)
+    }
 
     func showContentView() {
         let contentWireframe = ContentWireframe()

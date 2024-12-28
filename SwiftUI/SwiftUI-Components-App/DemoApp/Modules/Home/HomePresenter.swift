@@ -17,6 +17,11 @@ final class HomePresenter: ObservableObject {
     func showVStack() {
         wireframe.showVStack()
     }
+    
+    /// Navigates to ZStackView
+    func showZStack() {
+        wireframe.showZStack()
+    }
 
     /// Navigates to ContentView
     func showContentView() {
