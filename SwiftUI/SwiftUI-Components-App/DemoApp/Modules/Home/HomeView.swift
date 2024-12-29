@@ -234,7 +234,8 @@ struct HomeView: View {
                                 title: "Go to Opacity",
                                 action: { presenter.showOpacity() }),
 
-
+                            ButtonModel(title: "Go to Secure Field", action: { presenter.showSecureField() }),
+                            ButtonModel(title: "Go to ContextMenu", action: { presenter.showContextMenu()})
 
                         ]
 

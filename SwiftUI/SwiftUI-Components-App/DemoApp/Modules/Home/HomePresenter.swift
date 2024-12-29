@@ -105,4 +105,13 @@ final class HomePresenter: ObservableObject {
         wireframe.showOpacity()
     }
     
+    /// Navigates to Secure Field
+    func showSecureField() {
+        wireframe.showSecureField()
+    }
+    
+     /// Navigates to ContextMenu View
+     func showContextMenu() {
+         wireframe.showContextMenu()
+     }
 }
