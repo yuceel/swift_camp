@@ -9,7 +9,7 @@ struct TextFieldView: View {
     let backButtonIcon: String = "chevron.left"
     
     var body: some View {
-        VStack(spacing: 30) {
+        VStack() {
             Button(action: presenter.goBack) {
                 
                 Image(systemName: backButtonIcon)
@@ -21,8 +21,8 @@ struct TextFieldView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             
             VStack{
-                Text("Number Textfields")
-                    .padding()
+                Text("Only numbers can be entered in this text field")
+                    .padding(.all, 10)
                     .frame(maxWidth:.infinity, alignment: .leading)
           
                 //Only integer numbers can be entered in this textfield
@@ -32,23 +32,30 @@ struct TextFieldView: View {
                 customTextField(title: "Enter decimal numbers", text: $decimalIntNumber)
                     .keyboardType(.decimalPad)
                 
-                Text("Anything can be entered")
-                    .padding()
+                Text("Anything can be entered in this text field")
+                    .padding(.all, 10)
                     .frame(maxWidth:.infinity, alignment: .leading)
                 
                 customTextField(title:"Enter anything", text:$stringAnything)
                 
-                
-                Text("Textfield with Icon")
-                    .padding()
+                Text("Textfields with Icon")
+                    .padding(.all, 10)
                     .frame(maxWidth:.infinity, alignment: .leading)
               
                 HStack{
                     Image(systemName: "lock")
-                    TextField("TextField with Icon", text: $textfieldWithIcon)
+                    TextField("TextField with Lock Icon", text: $textfieldWithIcon)
                        
+                }.padding()
+                    .padding(.horizontal, 10)
+                .background(Color.gray.opacity(0.5))
+                    .clipShape(Capsule(style: .continuous))
+                
+                HStack{
+                   TextField("TextField with Search Icon", text: $textfieldWithIcon)
+                    Image(systemName: "magnifyingglass")
                 } .padding(.vertical)
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 10)
                 .background(Color.gray.opacity(0.5))
                     .clipShape(Capsule(style: .continuous))
        
