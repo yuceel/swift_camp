@@ -39,4 +39,5 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showPadding()
     func showLazyHStack()
     func showRotationEffect()
+    func showWithAnimation()
 }

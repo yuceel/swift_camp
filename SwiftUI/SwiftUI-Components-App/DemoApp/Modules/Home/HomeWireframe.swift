@@ -206,4 +206,10 @@ extension HomeWireframe: HomeWireframeInterface {
             let rotationEffectWireframe = RotationEffectWireframe()
             navigationController?.pushWireframe(rotationEffectWireframe)
         }
+    
+    func showWithAnimation() {
+          let withAnimationWireframe = WithAnimationWireframe()
+          navigationController?.pushWireframe(withAnimationWireframe)
+      }
+    
     }
