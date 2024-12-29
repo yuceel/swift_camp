@@ -106,4 +106,9 @@ final class HomePresenter: ObservableObject {
      func showContextMenu() {
          wireframe.showContextMenu()
      }
+    
+    /// Navigates to Stepper
+    func showStepper(){
+        wireframe.showStepper()
+    }
 }
