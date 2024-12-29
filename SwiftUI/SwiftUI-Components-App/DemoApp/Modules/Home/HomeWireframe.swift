@@ -115,5 +115,10 @@ extension HomeWireframe: HomeWireframeInterface {
      let contextMenuWireframe = ContextMenuWireframe()
      navigationController?.pushWireframe(contextMenuWireframe)
     }
+    
+    func showStepper() {
+        let stepperWireframe = StepperWireframe()
+        navigationController?.pushWireframe(stepperWireframe)
+    }
 
 }
