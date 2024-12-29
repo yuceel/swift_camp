@@ -75,23 +75,23 @@ final class HomePresenter: ObservableObject {
     /// Navigates to LazyHGridView
     func showLazyHGrid(){
         wireframe.showLazyHGrid()
-        }
+    }
+    
+    
+    /// Navigates to LazyVStack
+    func showLazyVStackView() {
+        wireframe.showLazyVStackView()
+    }
+    
+    /// Navigates to MatchedGeometryEffectView
+    func showMatchedGeometryEffect(){
+        wireframe.showMatchedGeometryEffect()
         
-        
-        /// Navigates to LazyVStack
-        func showLazyVStackView() {
-            wireframe.showLazyVStackView()
-        }
-        
-        /// Navigates to MatchedGeometryEffectView
-        func showMatchedGeometryEffect(){
-            wireframe.showMatchedGeometryEffect()
-            
-        }
-        /// Navigates to Image
-        func showImage() {
-            wireframe.showImage()
-        }
+    }
+    /// Navigates to Image
+    func showImage() {
+        wireframe.showImage()
+    }
     /// Navigates to Image
     func showMenuButton() {
         wireframe.showMenuButton()
@@ -110,33 +110,39 @@ final class HomePresenter: ObservableObject {
         wireframe.showSecureField()
     }
     
-     /// Navigates to ContextMenu View
-     func showContextMenu() {
-         wireframe.showContextMenu()
-     }
-
+    /// Navigates to ContextMenu View
+    func showContextMenu() {
+        wireframe.showContextMenu()
+    }
+    
     /// Navigates to ContextMenu View
     func showBinding() {
         wireframe.showBinding()
-
-    
-    /// Navigates to Stepper
+    }
+        
+        /// Navigates to Stepper
     func showStepper(){
         wireframe.showStepper()
     }
-    
+        
     func showLazyVGridView() {
         wireframe.showLazyVGridView()
-
+            
     }
-    
+        
     /// Navigates to Ellipse
     func showEllipse(){
         wireframe.showEllipse()
     }
-    
+        
     /// Navigates to Padding
     func showPadding() {
         wireframe.showPadding()
     }
+        
+    func showCanvas() {
+        wireframe.showCanvas()
+    }
+        
 }
+
