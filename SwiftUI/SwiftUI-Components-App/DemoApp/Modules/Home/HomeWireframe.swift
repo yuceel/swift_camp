@@ -37,6 +37,11 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(colorPickerWireframe)
     }
     
+    func showText() {
+        let textWireframe = TextWireframe()
+        navigationController?.pushWireframe(textWireframe)
+    }
+    
     func showRectangle() {
         let rectangleWireframe = RectangleWireframe()
         navigationController?.pushWireframe(rectangleWireframe)
@@ -201,6 +206,14 @@ extension HomeWireframe: HomeWireframeInterface {
         let lazyHStackWireframe = LazyHStackWireframe()
         navigationController?.pushWireframe(lazyHStackWireframe)
     }
+
+    
+        func showAlert() {
+        let alertWireframe = AlertWireframe()
+        navigationController?.pushWireframe(alertWireframe)
+    }
+                
+
         
         func showRotationEffect() {
             let rotationEffectWireframe = RotationEffectWireframe()
@@ -217,9 +230,15 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(textFieldWireframe)
     }
     
+
     func showProgressView() {
         let progressWireframe = ProgressWireframe()
         navigationController?.pushWireframe(progressWireframe)
+
+    func showGrid() {
+        let gridWireframe = GridWireframe()
+        navigationController?.pushWireframe(gridWireframe)
+
     }
 
 }

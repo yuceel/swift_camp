@@ -28,6 +28,11 @@ final class HomePresenter: ObservableObject {
         wireframe.showContentView()
     }
     
+    /// Navigates to Text
+    func showText() {
+        wireframe.showText()
+    }
+    
     /// Navigates to ColorPickerView
     func showColorPicker() {
         wireframe.showColorPicker()
@@ -72,7 +77,6 @@ final class HomePresenter: ObservableObject {
         wireframe.showTransaction()
     }
     
-
     /// Navigates to TabView
     func showTabView(){
         wireframe.showTabView()
@@ -203,6 +207,23 @@ final class HomePresenter: ObservableObject {
     func showRaundedRectagle() {
         wireframe.showRoundedRectangle()
     }
+
+  
+  /// Navigates to Alert
+func showAlert() {
+    wireframe.showAlert()
+}
+
+func showRotationEffect() {
+    wireframe.showRotationEffect()
+}
+
+/// Navigates to WithAnimation
+func showWithAnimation() {
+    wireframe.showWithAnimation()
+}
+
+
     
     func showRotationEffect() {
         wireframe.showRotationEffect()
@@ -218,9 +239,17 @@ final class HomePresenter: ObservableObject {
           wireframe.showTextField()
       }
     
+
     // Navigate to Progress View
     func showProgressView() {
         wireframe.showProgressView()
     }
+
+    func showGrid() {
+        wireframe.showGrid()
+    }
+
+
+
 
 }
