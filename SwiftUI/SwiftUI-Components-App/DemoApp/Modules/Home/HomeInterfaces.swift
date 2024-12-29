@@ -29,5 +29,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     
     func showLazyVGridView()
     func showEllipse()
+    func showPadding()
 
 }

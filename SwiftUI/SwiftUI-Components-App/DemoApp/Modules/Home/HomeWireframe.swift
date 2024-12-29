@@ -130,5 +130,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let ellipseWireframe = EllipseWireframe()
         navigationController?.pushWireframe(ellipseWireframe)
     }
+    
+    func showPadding() {
+        let paddingWireframe = PaddingWireframe()
+        navigationController?.pushWireframe(paddingWireframe)
+    }
 
 }

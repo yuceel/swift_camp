@@ -120,4 +120,9 @@ final class HomePresenter: ObservableObject {
     func showEllipse(){
         wireframe.showEllipse()
     }
+    
+    /// Navigates to Padding
+    func showPadding() {
+        wireframe.showPadding()
+    }
 }
