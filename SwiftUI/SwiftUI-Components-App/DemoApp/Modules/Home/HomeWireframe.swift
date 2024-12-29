@@ -125,5 +125,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let lazyVGridViewWireframe = LazyVGridWireframe()
         navigationController?.pushWireframe(lazyVGridViewWireframe)
     }
+    
+    func showTextField() {
+        let textFieldWireframe = TextFieldWireframe()
+        navigationController?.pushWireframe(textFieldWireframe)
+    }
 
 }
