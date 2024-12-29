@@ -191,10 +191,12 @@ final class HomePresenter: ObservableObject {
     }
     
     /// Navigate to LazyHStack
-    
     func showLazyHStack() {
         wireframe.showLazyHStack()
     }
-        
+    
+    /// Navigates to RaundedRectagle
+    func showRaundedRectagle() {
+        wireframe.showRoundedRectangle()
+    }
 }
-
