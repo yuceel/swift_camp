@@ -123,9 +123,21 @@ extension HomeWireframe: HomeWireframeInterface {
      let contextMenuWireframe = ContextMenuWireframe()
      navigationController?.pushWireframe(contextMenuWireframe)
     }
+
     func showBinding() {
      let bindingWireframe = BindingWireframe()
      navigationController?.pushWireframe(bindingWireframe)
+
+    
+    func showStepper() {
+        let stepperWireframe = StepperWireframe()
+        navigationController?.pushWireframe(stepperWireframe)
+    }
+    
+    func showLazyVGridView() {
+        let lazyVGridViewWireframe = LazyVGridWireframe()
+        navigationController?.pushWireframe(lazyVGridViewWireframe)
+
     }
 
 }

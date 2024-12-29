@@ -27,6 +27,12 @@ protocol HomeWireframeInterface: WireframeInterface {
 
     func showSecureField()
     func showContextMenu()
+
     func showBinding()
+
+    func showStepper()
+    
+    func showLazyVGridView()
+
 
 }
