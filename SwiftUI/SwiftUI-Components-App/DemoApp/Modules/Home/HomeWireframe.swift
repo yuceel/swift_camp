@@ -121,7 +121,6 @@ extension HomeWireframe: HomeWireframeInterface {
         let animationWireframe = AnimationWireframe()
         navigationController?.pushWireframe(animationWireframe)
     }
-}
 
     func showLazyHGrid() {
         let lazyHGridWireframe = LazyHGridWireframe()
@@ -197,5 +196,26 @@ extension HomeWireframe: HomeWireframeInterface {
             let canvasWireframe = CanvasWireframe()
             navigationController?.pushWireframe(canvasWireframe)
         }
-                
+    
+        func showLazyHStack() {
+        let lazyHStackWireframe = LazyHStackWireframe()
+        navigationController?.pushWireframe(lazyHStackWireframe)
     }
+        
+        func showRotationEffect() {
+            let rotationEffectWireframe = RotationEffectWireframe()
+            navigationController?.pushWireframe(rotationEffectWireframe)
+        }
+    
+    func showWithAnimation() {
+          let withAnimationWireframe = WithAnimationWireframe()
+          navigationController?.pushWireframe(withAnimationWireframe)
+      }
+    
+    func showTextField() {
+        let textFieldWireframe = TextFieldWireframe()
+        navigationController?.pushWireframe(textFieldWireframe)
+    }
+
+}
+

@@ -34,7 +34,16 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showBinding()
     func showStepper()
     func showLazyVGridView()
+
+    
+
+
     func showCanvas()
     func showEllipse()
     func showPadding()
+    func showLazyHStack()
+    func showRotationEffect()
+    func showWithAnimation()
+    func showTextField()
+
 }

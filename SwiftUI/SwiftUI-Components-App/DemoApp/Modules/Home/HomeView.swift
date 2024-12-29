@@ -222,34 +222,13 @@ struct HomeView: View {
                             ButtonModel(title: "Go to SegmentedControl", action: {
                                 presenter.showSegmentedControl()
                             }),
-                            ButtonModel(title: "Go to RoundedRectagle", action: {
-                                presenter.showRaundedRectagle()
-                            }),
-                            ButtonModel(title:"Go to Shadow", action: {
-                                presenter.showShadow()
-                            }),
-                            ButtonModel(title: "Go to ScaleView", action: {
-                                presenter.showScaleEffect()
-                            }),
-                            ButtonModel(title: "Go to Animation", action: {
-                                presenter.showAnimation()
-                            })
-
-
-                                title: "Go to LazyHGrid",
-                                action: { presenter.showLazyHGrid()
-                                }),
-
-                            ButtonModel(
-                                title: "Go to LazyVStack",
-                                action: { presenter.showLazyVStackView()
-                                }),
-                            
-                            ButtonModel(
-                                title: "Go to MatchedGeometryEffect",
-                                action: {presenter.showMatchedGeometryEffect()
-                                }),
-                                
+                            ButtonModel(title: "Go to RoundedRectagle", action: { presenter.showRaundedRectagle()}),
+                            ButtonModel(title:"Go to Shadow", action: { presenter.showShadow()}),
+                            ButtonModel(title: "Go to ScaleView", action: { presenter.showScaleEffect()}),
+                            ButtonModel(title: "Go to Animation", action: { presenter.showAnimation()} ),
+                            ButtonModel(title: "Go to LazyHGrid", action: { presenter.showLazyHGrid()} ),
+                            ButtonModel(title: "Go to LazyVStack", action: { presenter.showLazyVStackView()} ),
+                            ButtonModel(title: "Go to MatchedGeometryEffect", action: {presenter.showMatchedGeometryEffect()}),
                             ButtonModel(
                                 title: "Go to Image",
                                 action: { presenter.showImage() }),
@@ -267,11 +246,18 @@ struct HomeView: View {
                             ButtonModel(title: "Go to ContextMenu", action: { presenter.showContextMenu()}),
                             ButtonModel(title: "Go to Binding", action: { presenter.showBinding()}),
                             ButtonModel(title: "Go to Stepper", action: { presenter.showStepper() }),
+
+                            ButtonModel(title: "Go to LazyVGrid", action: { presenter.showLazyVGridView()}),
+                            
+
                             ButtonModel(title: "Go to LazyVGrid", action: { presenter.showLazyVGridView() }),
                             ButtonModel(title: "Go to Canvas", action: { presenter.showCanvas()}),
                             ButtonModel(title: "Go to Ellipse", action: { presenter.showEllipse() }),
                             ButtonModel(title: "Go to Padding", action: { presenter.showPadding() }),
-
+                            ButtonModel(title: "Go to LazyHStack", action: { presenter.showLazyHStack()}),
+                            ButtonModel(title: "Go to RotationEffect", action: { presenter.showRotationEffect()}),
+                            ButtonModel(title: "Go to WithAnimation", action: { presenter.showWithAnimation() }),
+                            ButtonModel(title: "Go to TextField", action: { presenter.showTextField()})
 
                         ]
 
