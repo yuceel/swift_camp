@@ -175,6 +175,10 @@ final class HomePresenter: ObservableObject {
         wireframe.showLazyVGridView()
             
     }
+
+    
+    
+
         
     /// Navigates to Ellipse
     func showEllipse(){
@@ -208,4 +212,10 @@ final class HomePresenter: ObservableObject {
        func showWithAnimation() {
            wireframe.showWithAnimation()
        }
+  
+    // Navigate to TextFieldView
+    func showTextField() {
+          wireframe.showTextField()
+      }
+
 }
