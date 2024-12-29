@@ -22,18 +22,103 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(vStackWireframe)
     }
 
+    func showZStack() {
+        let zStackWireframe = ZStackWireframe()
+        navigationController?.pushWireframe(zStackWireframe)
+    }
+
     func showContentView() {
         let contentWireframe = ContentWireframe()
         navigationController?.pushWireframe(contentWireframe)
     }
+
     func showColorPicker() {
         let colorPickerWireframe = ColorPickerWireframe()
         navigationController?.pushWireframe(colorPickerWireframe)
     }
-    
+
     func showRectangle() {
         let rectangleWireframe = RectangleWireframe()
         navigationController?.pushWireframe(rectangleWireframe)
+    }
+    func showSection() {
+        let sectionWireframe = SectionWireframe()
+        navigationController?.pushWireframe(sectionWireframe)
+    }
+    
+    func showHStack() {
+        let hStackWireframe = HStackWireframe()
+        navigationController?.pushWireframe(hStackWireframe)
+    }
+    func showNavigationStack() {
+        let navigationStackWireframe = NavigationStackWireframe()
+        navigationController?.pushWireframe(navigationStackWireframe)
+    }
+
+    func showFrame() {
+        let frameWireframe = FrameWireframe()
+        navigationController?.pushWireframe(frameWireframe)
+    }
+    
+    func showScrollView() {
+        let scrollViewWireframe = ScrollViewWireframe()
+        navigationController?.pushWireframe(scrollViewWireframe)
+    }
+    
+    func showNavigationView() {
+        let navigationWireframe = NavigationWireframe()
+        navigationController?.pushWireframe(navigationWireframe)
+    }
+    
+    func showTransaction() {
+        let transactionWireframe = TransactionWireframe()
+        navigationController?.pushWireframe(transactionWireframe)
+    }
+
+    func showLazyHGrid() {
+        let lazyHGridWireframe = LazyHGridWireframe()
+        navigationController?.pushWireframe(lazyHGridWireframe)
+    }
+
+    
+
+    
+    func showLazyVStackView() {
+        let lazyVStackViewWireframe = LazyVStackWireframe()
+        navigationController?.pushWireframe(lazyVStackViewWireframe)
+    }
+    
+    func showMatchedGeometryEffect() {
+        let matchedGeometryEffectWireframe = MatchedGeometryEffectWireframe()
+        navigationController?.pushWireframe(matchedGeometryEffectWireframe)
+    }
+    func showImage() {
+        let imageWireframe = ImageWireframe()
+        navigationController?.pushWireframe(imageWireframe)
+    }
+
+    func showMenuButton() {
+        let menuButtonWireframe = MenuButtonWireframe()
+        navigationController?.pushWireframe(menuButtonWireframe)
+    }
+
+
+    
+    
+    func showSecureField() {
+        let secureFieldWireframe = SecureFieldWireframe()
+        navigationController?.pushWireframe(secureFieldWireframe)
+    }
+    
+    
+    func showContextMenu() {
+     let contextMenuWireframe = ContextMenuWireframe()
+     navigationController?.pushWireframe(contextMenuWireframe)
+    }
+    
+    func showStepper() {
+        let stepperWireframe = StepperWireframe()
+        navigationController?.pushWireframe(stepperWireframe)
     }
 
 }
