@@ -14,6 +14,7 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showNavigationView()
     func showTransaction()
     func showTabView()
+    func showText()
     func showAttributedText()
     func showButton()
     func showDatePicker()

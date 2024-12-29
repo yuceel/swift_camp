@@ -37,6 +37,11 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(colorPickerWireframe)
     }
     
+    func showText() {
+        let textWireframe = TextWireframe()
+        navigationController?.pushWireframe(textWireframe)
+    }
+    
     func showRectangle() {
         let rectangleWireframe = RectangleWireframe()
         navigationController?.pushWireframe(rectangleWireframe)
