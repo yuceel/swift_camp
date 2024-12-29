@@ -216,6 +216,11 @@ extension HomeWireframe: HomeWireframeInterface {
         let textFieldWireframe = TextFieldWireframe()
         navigationController?.pushWireframe(textFieldWireframe)
     }
+    
+    func showLongPressGesture() {
+        let longPressGestureWireframe = LongPressGestureWireframe()
+        navigationController?.pushWireframe(longPressGestureWireframe)
+    }
 
 }
 

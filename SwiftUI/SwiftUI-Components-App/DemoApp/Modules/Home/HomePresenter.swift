@@ -218,4 +218,8 @@ final class HomePresenter: ObservableObject {
           wireframe.showTextField()
       }
 
+    // Navigate to LongPressGesture
+    func showLongPressGesture() {
+        wireframe.showLongPressGesture()
+      }
 }

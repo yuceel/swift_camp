@@ -45,5 +45,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showRotationEffect()
     func showWithAnimation()
     func showTextField()
+    func showLongPressGesture()
 
 }
