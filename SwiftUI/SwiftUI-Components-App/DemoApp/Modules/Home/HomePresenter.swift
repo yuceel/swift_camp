@@ -199,4 +199,9 @@ final class HomePresenter: ObservableObject {
     func showRaundedRectagle() {
         wireframe.showRoundedRectangle()
     }
+    
+    /// Navigates to Alert
+    func showAlert() {
+        wireframe.showAlert()
+    }
 }

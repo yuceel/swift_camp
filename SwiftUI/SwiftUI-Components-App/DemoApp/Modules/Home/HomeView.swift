@@ -251,6 +251,7 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Ellipse", action: { presenter.showEllipse() }),
                             ButtonModel(title: "Go to Padding", action: { presenter.showPadding() }),
                             ButtonModel(title: "Go to LazyHStack", action: { presenter.showLazyHStack()}),
+                            ButtonModel(title: "Go to Alert", action: { presenter.showAlert() })
 
 
                         ]
