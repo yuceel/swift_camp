@@ -96,6 +96,7 @@ extension HomeWireframe: HomeWireframeInterface {
         let imageWireframe = ImageWireframe()
         navigationController?.pushWireframe(imageWireframe)
     }
+
     func showMenuButton() {
         let menuButtonWireframe = MenuButtonWireframe()
         navigationController?.pushWireframe(menuButtonWireframe)
@@ -107,6 +108,20 @@ extension HomeWireframe: HomeWireframeInterface {
     func showOpacity() {
         let opacityWireframe = OpacityWireframe()
         navigationController?.pushWireframe(opacityWireframe)
+    }
+
+
+    
+    
+    func showSecureField() {
+        let secureFieldWireframe = SecureFieldWireframe()
+        navigationController?.pushWireframe(secureFieldWireframe)
+    }
+    
+    
+    func showContextMenu() {
+     let contextMenuWireframe = ContextMenuWireframe()
+     navigationController?.pushWireframe(contextMenuWireframe)
     }
 
 }
