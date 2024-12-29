@@ -125,5 +125,11 @@ extension HomeWireframe: HomeWireframeInterface {
         let lazyVGridViewWireframe = LazyVGridWireframe()
         navigationController?.pushWireframe(lazyVGridViewWireframe)
     }
+    
+    func showCanvas() {
+        let canvasWireframe = CanvasWireframe()
+        navigationController?.pushWireframe(canvasWireframe)
+    }
+
 
 }

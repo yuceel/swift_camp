@@ -231,7 +231,8 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Secure Field", action: { presenter.showSecureField() }),
                             ButtonModel(title: "Go to ContextMenu", action: { presenter.showContextMenu()}),
                             ButtonModel(title: "Go to Stepper", action: { presenter.showStepper() }),
-                            ButtonModel(title: "Go to LazyVGrid", action: { presenter.showLazyVGridView() })
+                            ButtonModel(title: "Go to LazyVGrid", action: { presenter.showLazyVGridView() }),
+                            ButtonModel(title: "Go to Canvas", action: { presenter.showCanvas()})
 
                         ]
 
