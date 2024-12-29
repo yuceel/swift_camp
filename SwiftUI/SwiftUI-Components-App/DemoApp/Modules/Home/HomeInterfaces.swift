@@ -20,5 +20,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showMatchedGeometryEffect()
     func showImage()
     func showMenuButton()
+    func showCircle()
 
 }

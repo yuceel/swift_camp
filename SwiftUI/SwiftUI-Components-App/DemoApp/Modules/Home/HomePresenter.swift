@@ -96,5 +96,9 @@ final class HomePresenter: ObservableObject {
     func showMenuButton() {
         wireframe.showMenuButton()
     }
+    /// Navigates to Circle
+    func showCircle() {
+        wireframe.showCircle()
+    }
     
 }

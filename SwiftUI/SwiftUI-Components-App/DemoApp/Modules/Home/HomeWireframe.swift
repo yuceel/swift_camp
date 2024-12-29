@@ -100,5 +100,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let menuButtonWireframe = MenuButtonWireframe()
         navigationController?.pushWireframe(menuButtonWireframe)
     }
+    func showCircle() {
+        let circleWireframe = CircleWireframe()
+        navigationController?.pushWireframe(circleWireframe)
+    }
 
 }
