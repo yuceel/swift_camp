@@ -77,7 +77,6 @@ final class HomePresenter: ObservableObject {
         wireframe.showTransaction()
     }
     
-
     /// Navigates to TabView
     func showTabView(){
         wireframe.showTabView()
@@ -239,6 +238,11 @@ func showWithAnimation() {
     func showTextField() {
           wireframe.showTextField()
       }
+    
+    func showGrid() {
+        wireframe.showGrid()
+    }
+
 
 
 }

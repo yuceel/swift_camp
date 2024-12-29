@@ -96,7 +96,7 @@
 
 - [ ] **Grid**
 
-  - [ ] Grid @busragedikoglu
+  - [ ] Grid @turhanGoksu
   - [ ] GridRow @OnurArslan0
 
 - [ ] **Other Components**

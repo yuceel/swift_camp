@@ -229,6 +229,11 @@ extension HomeWireframe: HomeWireframeInterface {
         let textFieldWireframe = TextFieldWireframe()
         navigationController?.pushWireframe(textFieldWireframe)
     }
+    
+    func showGrid() {
+        let gridWireframe = GridWireframe()
+        navigationController?.pushWireframe(gridWireframe)
+    }
 
 }
 
