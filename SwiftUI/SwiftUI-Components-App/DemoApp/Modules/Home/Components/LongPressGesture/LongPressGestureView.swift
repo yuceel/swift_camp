@@ -13,6 +13,14 @@ struct LongPressGestureView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 30) {
+                // Back button
+                Button(action: presenter.goBack) {
+                    Image(systemName: "chevron.left")
+                        .font(.title2)
+                        .padding()
+                        .clipShape(Circle())
+                }
+                .frame(maxWidth: .infinity,maxHeight: .infinity, alignment: .topLeading)
                 // Example 1: Simple Long Press
                 VStack {
                     Text("Simple Long Press")
