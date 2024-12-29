@@ -75,4 +75,44 @@ extension HomeWireframe: HomeWireframeInterface {
         let tabViewWireframe = TabWireframe()
         navigationController?.pushWireframe(tabViewWireframe)
     }
+    
+    func showAttributedText() {
+        let attributedTextWireframe = AttributedTextWireframe()
+        navigationController?.pushWireframe(attributedTextWireframe)
+    }
+    
+    func showButton() {
+        let buttonWireframe = ButtonWireframe()
+        navigationController?.pushWireframe(buttonWireframe)
+    }
+    
+    func showDatePicker() {
+        let datePickerWireframe = DatePickerWireframe()
+        navigationController?.pushWireframe(datePickerWireframe)
+    }
+    
+    func showSegmentedControl() {
+        let segmentedControlWireframe = SegmentedControlWireframe()
+        navigationController?.pushWireframe(segmentedControlWireframe)
+    }
+    
+    func showRoundedRectangle() {
+        let roundedRectangleWireframe = RoundedRectangleWireframe()
+        navigationController?.pushWireframe(roundedRectangleWireframe)
+    }
+    
+    func showShadow() {
+        let shadowWireframe = ShadowWireframe()
+        navigationController?.pushWireframe(shadowWireframe)
+    }
+    
+    func showScaleEffect() {
+        let scaleEffectWireframe = ScaleEffectWireframe()
+        navigationController?.pushWireframe(scaleEffectWireframe)
+    }
+    
+    func showAnimation() {
+        let animationWireframe = AnimationWireframe()
+        navigationController?.pushWireframe(animationWireframe)
+    }
 }

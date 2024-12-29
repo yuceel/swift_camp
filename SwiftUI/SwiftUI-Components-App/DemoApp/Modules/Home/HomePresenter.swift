@@ -71,4 +71,45 @@ final class HomePresenter: ObservableObject {
     func showTabView(){
         wireframe.showTabView()
     }
+    
+    /// Navigates to AttributedText
+    func showAttributedText(){
+        wireframe.showAttributedText()
+    }
+    
+    /// Navigates to Button
+    func showButton(){
+        wireframe.showButton()
+    }
+    
+    /// Navigates to DatePicker
+    func showDatePicker(){
+        wireframe.showDatePicker()
+    }
+    
+    /// Navigates to SegmentedControl
+    func showSegmentedControl(){
+        wireframe.showSegmentedControl()
+    }
+    
+    /// Navigates to RoundedRectagle
+    func showRaundedRectagle(){
+        wireframe.showRoundedRectangle()
+    }
+    
+    /// Navigates to Shadow
+    func showShadow(){
+        wireframe.showShadow()
+    }
+
+    /// Navigates to ScaleEffect
+    func showScaleEffect(){
+        wireframe.showScaleEffect()
+    }
+    
+    /// Navigates to Animation
+    func showAnimation(){
+        wireframe.showAnimation()
+    }
+    
 }
