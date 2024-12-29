@@ -263,11 +263,16 @@ struct HomeView: View {
 
                             ButtonModel(title: "Go to RotationEffect", action: { presenter.showRotationEffect()}),
                             ButtonModel(title: "Go to WithAnimation", action: { presenter.showWithAnimation() }),
+
+                            ButtonModel(title: "Go to TextField", action: { presenter.showTextField()}),
+                            ButtonModel(title: "Go to Progress View", action: presenter.showProgressView)]
+
                             ButtonModel(title: "Go to TextField", action: { presenter.showTextField() }),
                             ButtonModel(title: "Go to Grid", action: { presenter.showGrid()})
 
 
                         ]
+
 
                         ForEach(buttons) { button in
                             Button(button.title) {

@@ -45,7 +45,11 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showTextField()
+
+    func showProgressView()
+
     func showGrid()
+
 
 
 }

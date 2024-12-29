@@ -230,9 +230,15 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(textFieldWireframe)
     }
     
+
+    func showProgressView() {
+        let progressWireframe = ProgressWireframe()
+        navigationController?.pushWireframe(progressWireframe)
+
     func showGrid() {
         let gridWireframe = GridWireframe()
         navigationController?.pushWireframe(gridWireframe)
+
     }
 
 }

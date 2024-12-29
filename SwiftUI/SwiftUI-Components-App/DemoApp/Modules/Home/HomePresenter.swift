@@ -239,9 +239,16 @@ func showWithAnimation() {
           wireframe.showTextField()
       }
     
+
+    // Navigate to Progress View
+    func showProgressView() {
+        wireframe.showProgressView()
+    }
+
     func showGrid() {
         wireframe.showGrid()
     }
+
 
 
 
