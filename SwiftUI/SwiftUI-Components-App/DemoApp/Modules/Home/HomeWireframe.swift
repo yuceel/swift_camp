@@ -101,6 +101,14 @@ extension HomeWireframe: HomeWireframeInterface {
         let menuButtonWireframe = MenuButtonWireframe()
         navigationController?.pushWireframe(menuButtonWireframe)
     }
+    func showCircle() {
+        let circleWireframe = CircleWireframe()
+        navigationController?.pushWireframe(circleWireframe)
+    }
+    func showOpacity() {
+        let opacityWireframe = OpacityWireframe()
+        navigationController?.pushWireframe(opacityWireframe)
+    }
 
 
     
@@ -115,6 +123,11 @@ extension HomeWireframe: HomeWireframeInterface {
      let contextMenuWireframe = ContextMenuWireframe()
      navigationController?.pushWireframe(contextMenuWireframe)
     }
+
+    func showBinding() {
+     let bindingWireframe = BindingWireframe()
+     navigationController?.pushWireframe(bindingWireframe)
+
     
     func showStepper() {
         let stepperWireframe = StepperWireframe()
@@ -124,6 +137,7 @@ extension HomeWireframe: HomeWireframeInterface {
     func showLazyVGridView() {
         let lazyVGridViewWireframe = LazyVGridWireframe()
         navigationController?.pushWireframe(lazyVGridViewWireframe)
+
     }
     
     func showEllipse() {

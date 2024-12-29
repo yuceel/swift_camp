@@ -21,13 +21,19 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showImage()
 
     func showMenuButton()
+    func showCircle()
+    func showOpacity()
 
 
     func showSecureField()
     func showContextMenu()
+
+    func showBinding()
+
     func showStepper()
     
     func showLazyVGridView()
     func showEllipse()
+
 
 }
