@@ -49,6 +49,9 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showProgressView()
 
     func showGrid()
+    
+    
+    func showSlider()
 
 
 

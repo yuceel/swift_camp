@@ -239,13 +239,14 @@ extension HomeWireframe: HomeWireframeInterface {
     func showProgressView() {
         let progressWireframe = ProgressWireframe()
         navigationController?.pushWireframe(progressWireframe)
-        
-        func showGrid() {
-            let gridWireframe = GridWireframe()
-            navigationController?.pushWireframe(gridWireframe)
-            
-        }
-        
     }
+        
+    
+    func showSlider() {
+        let sliderWireframe = SliderWireframe()
+        navigationController?.pushWireframe(sliderWireframe)
+    }
+        
+    
     
 }
