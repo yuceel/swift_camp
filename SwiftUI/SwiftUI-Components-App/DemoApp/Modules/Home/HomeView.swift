@@ -268,7 +268,8 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Progress View", action: presenter.showProgressView),
 
                             ButtonModel(title: "Go to TextField", action: { presenter.showTextField() }),
-                            ButtonModel(title: "Go to Grid", action: { presenter.showGrid()})
+                            ButtonModel(title: "Go to Grid", action: { presenter.showGrid()}),
+                            ButtonModel(title: "Go to Slider", action: { presenter.showSlider()}),
 
 
                         ]

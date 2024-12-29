@@ -239,6 +239,16 @@ func showWithAnimation() {
     func showGrid() {
         wireframe.showGrid()
     }
+    
+    
+    
+    
+    
+    // Navigate to Slider View
+    
+    func showSlider() {
+        wireframe.showSlider()
+    }
 
 
 
