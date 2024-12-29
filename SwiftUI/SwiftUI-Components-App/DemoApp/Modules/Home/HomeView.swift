@@ -206,6 +206,35 @@ struct HomeView: View {
                                     presenter.showTransaction()
                                 }),
                             ButtonModel(
+                                title: "Go to TabView",
+                                action: {
+                                    presenter.showTabView()
+                            }),
+                            ButtonModel(title: "Go to AttributedText", action: {
+                                presenter.showAttributedText()
+                            }),
+                            ButtonModel(title: "Go to Button", action: {
+                                presenter.showButton()
+                            }),
+                            ButtonModel(title: "Go to DatePicker", action: {
+                                presenter.showDatePicker()
+                            }),
+                            ButtonModel(title: "Go to SegmentedControl", action: {
+                                presenter.showSegmentedControl()
+                            }),
+                            ButtonModel(title: "Go to RoundedRectagle", action: {
+                                presenter.showRaundedRectagle()
+                            }),
+                            ButtonModel(title:"Go to Shadow", action: {
+                                presenter.showShadow()
+                            }),
+                            ButtonModel(title: "Go to ScaleView", action: {
+                                presenter.showScaleEffect()
+                            }),
+                            ButtonModel(title: "Go to Animation", action: {
+                                presenter.showAnimation()
+                            })
+
 
                                 title: "Go to LazyHGrid",
                                 action: { presenter.showLazyHGrid()
