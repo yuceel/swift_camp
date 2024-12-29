@@ -203,4 +203,9 @@ final class HomePresenter: ObservableObject {
     func showRotationEffect() {
         wireframe.showRotationEffect()
     }
+    
+    /// Navigates to WithAnimation
+       func showWithAnimation() {
+           wireframe.showWithAnimation()
+       }
 }

@@ -252,6 +252,7 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Padding", action: { presenter.showPadding() }),
                             ButtonModel(title: "Go to LazyHStack", action: { presenter.showLazyHStack()}),
                             ButtonModel(title: "Go to RotationEffect", action: { presenter.showRotationEffect()}),
+                            ButtonModel(title: "Go to WithAnimation", action: { presenter.showWithAnimation() })
 
                         ]
 
