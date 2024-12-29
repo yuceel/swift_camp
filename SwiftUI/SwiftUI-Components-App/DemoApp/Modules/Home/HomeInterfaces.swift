@@ -28,4 +28,5 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showCanvas()
     func showEllipse()
     func showPadding()
+    func showLazyHStack()
 }

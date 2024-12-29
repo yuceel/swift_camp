@@ -143,6 +143,12 @@ final class HomePresenter: ObservableObject {
     func showCanvas() {
         wireframe.showCanvas()
     }
+    
+    /// Navigate to LazyHStack
+    
+    func showLazyHStack() {
+        wireframe.showLazyHStack()
+    }
         
 }
 
