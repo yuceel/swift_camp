@@ -75,7 +75,7 @@
   - [ ] Animation @beyzanuravsar
   - [ ] withAnimation @busragedikoglu
   - [x] Transaction @turhanGoksu
-  - [ ] MatchedGeometryEffect @turhanGoksu
+  - [x] MatchedGeometryEffect @turhanGoksu
   - [ ] Transition @alakkaya
 
 - [ ] **Gestures**
@@ -103,7 +103,7 @@
   - [ ] Spacer @alakkaya
   - [ ] Divider @busragedikoglu
   - [ ] GeometryReader @yuceel
-  - [ ] Canvas @turhanGoksu
+  - [x] Canvas @turhanGoksu
   - [ ] TimelineView @beyzanuravsar
   - [ ] Map @beyzanuravsar
   - [ ] VideoPlayer @ayberkgorgun
