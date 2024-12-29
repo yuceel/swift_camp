@@ -34,10 +34,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showBinding()
     func showStepper()
     func showLazyVGridView()
-
-    
-
-
     func showCanvas()
     func showEllipse()
     func showPadding()
@@ -45,5 +41,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showRotationEffect()
     func showWithAnimation()
     func showTextField()
+    func showGrid()
 
 }
