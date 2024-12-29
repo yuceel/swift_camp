@@ -42,8 +42,12 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showEllipse()
     func showPadding()
     func showLazyHStack()
+    func showAlert()
     func showRotationEffect()
     func showWithAnimation()
+
+
     func showTextField()
+
 
 }

@@ -203,6 +203,23 @@ final class HomePresenter: ObservableObject {
     func showRaundedRectagle() {
         wireframe.showRoundedRectangle()
     }
+
+  
+  /// Navigates to Alert
+func showAlert() {
+    wireframe.showAlert()
+}
+
+func showRotationEffect() {
+    wireframe.showRotationEffect()
+}
+
+/// Navigates to WithAnimation
+func showWithAnimation() {
+    wireframe.showWithAnimation()
+}
+
+
     
     func showRotationEffect() {
         wireframe.showRotationEffect()
@@ -217,5 +234,6 @@ final class HomePresenter: ObservableObject {
     func showTextField() {
           wireframe.showTextField()
       }
+
 
 }
