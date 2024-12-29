@@ -227,12 +227,22 @@ struct HomeView: View {
                             ButtonModel(
                                 title: "Go to Menu Button",
                                 action: { presenter.showMenuButton() }),
+                            ButtonModel(
+                                title: "Go to Circle",
+                                action: { presenter.showCircle() }),
+                            ButtonModel(
+                                title: "Go to Opacity",
+                                action: { presenter.showOpacity() }),
 
                             ButtonModel(title: "Go to Secure Field", action: { presenter.showSecureField() }),
                             ButtonModel(title: "Go to ContextMenu", action: { presenter.showContextMenu()}),
+                            ButtonModel(title: "Go to Binding", action: { presenter.showBinding()}),
                             ButtonModel(title: "Go to Stepper", action: { presenter.showStepper() }),
                             ButtonModel(title: "Go to LazyVGrid", action: { presenter.showLazyVGridView() }),
-                            ButtonModel(title: "Go to Canvas", action: { presenter.showCanvas()})
+                            ButtonModel(title: "Go to Canvas", action: { presenter.showCanvas()}),
+                            ButtonModel(title: "Go to Ellipse", action: { presenter.showEllipse() }),
+                            ButtonModel(title: "Go to Padding", action: { presenter.showPadding() }),
+
 
                         ]
 

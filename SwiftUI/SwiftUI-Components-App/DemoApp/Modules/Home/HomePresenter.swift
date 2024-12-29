@@ -96,6 +96,14 @@ final class HomePresenter: ObservableObject {
     func showMenuButton() {
         wireframe.showMenuButton()
     }
+    /// Navigates to Circle//
+    func showCircle() {
+        wireframe.showCircle()
+    }
+    // Navigates to Opacity//
+    func showOpacity() {
+        wireframe.showOpacity()
+    }
     
     /// Navigates to Secure Field
     func showSecureField() {
@@ -106,6 +114,11 @@ final class HomePresenter: ObservableObject {
      func showContextMenu() {
          wireframe.showContextMenu()
      }
+
+    /// Navigates to ContextMenu View
+    func showBinding() {
+        wireframe.showBinding()
+
     
     /// Navigates to Stepper
     func showStepper(){
@@ -114,6 +127,17 @@ final class HomePresenter: ObservableObject {
     
     func showLazyVGridView() {
         wireframe.showLazyVGridView()
+
+    }
+    
+    /// Navigates to Ellipse
+    func showEllipse(){
+        wireframe.showEllipse()
+    }
+    
+    /// Navigates to Padding
+    func showPadding() {
+        wireframe.showPadding()
     }
     
     func showCanvas() {
