@@ -125,5 +125,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let lazyVGridViewWireframe = LazyVGridWireframe()
         navigationController?.pushWireframe(lazyVGridViewWireframe)
     }
+    
+    func showEllipse() {
+        let ellipseWireframe = EllipseWireframe()
+        navigationController?.pushWireframe(ellipseWireframe)
+    }
 
 }

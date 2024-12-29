@@ -115,4 +115,9 @@ final class HomePresenter: ObservableObject {
     func showLazyVGridView() {
         wireframe.showLazyVGridView()
     }
+    
+    /// Navigates to Ellipse
+    func showEllipse(){
+        wireframe.showEllipse()
+    }
 }
