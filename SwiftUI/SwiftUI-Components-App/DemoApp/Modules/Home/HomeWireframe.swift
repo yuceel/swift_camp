@@ -121,7 +121,6 @@ extension HomeWireframe: HomeWireframeInterface {
         let animationWireframe = AnimationWireframe()
         navigationController?.pushWireframe(animationWireframe)
     }
-}
 
     func showLazyHGrid() {
         let lazyHGridWireframe = LazyHGridWireframe()
