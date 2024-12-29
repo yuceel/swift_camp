@@ -217,5 +217,10 @@ final class HomePresenter: ObservableObject {
     func showTextField() {
           wireframe.showTextField()
       }
+    
+    // Navigate to Progress View
+    func showProgressView() {
+        wireframe.showProgressView()
+    }
 
 }

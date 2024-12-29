@@ -216,6 +216,11 @@ extension HomeWireframe: HomeWireframeInterface {
         let textFieldWireframe = TextFieldWireframe()
         navigationController?.pushWireframe(textFieldWireframe)
     }
+    
+    func showProgressView() {
+        let progressWireframe = ProgressWireframe()
+        navigationController?.pushWireframe(progressWireframe)
+    }
 
 }
 

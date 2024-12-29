@@ -257,9 +257,8 @@ struct HomeView: View {
                             ButtonModel(title: "Go to LazyHStack", action: { presenter.showLazyHStack()}),
                             ButtonModel(title: "Go to RotationEffect", action: { presenter.showRotationEffect()}),
                             ButtonModel(title: "Go to WithAnimation", action: { presenter.showWithAnimation() }),
-                            ButtonModel(title: "Go to TextField", action: { presenter.showTextField()})
-
-                        ]
+                            ButtonModel(title: "Go to TextField", action: { presenter.showTextField()}),
+                            ButtonModel(title: "Go to Progress View", action: presenter.showProgressView)]
 
                         ForEach(buttons) { button in
                             Button(button.title) {
