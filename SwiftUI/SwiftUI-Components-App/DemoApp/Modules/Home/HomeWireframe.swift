@@ -120,5 +120,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let stepperWireframe = StepperWireframe()
         navigationController?.pushWireframe(stepperWireframe)
     }
+    
+    func showLazyVGridView() {
+        let lazyVGridViewWireframe = LazyVGridWireframe()
+        navigationController?.pushWireframe(lazyVGridViewWireframe)
+    }
 
 }

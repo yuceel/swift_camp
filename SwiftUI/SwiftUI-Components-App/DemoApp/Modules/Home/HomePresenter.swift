@@ -111,4 +111,8 @@ final class HomePresenter: ObservableObject {
     func showStepper(){
         wireframe.showStepper()
     }
+    
+    func showLazyVGridView() {
+        wireframe.showLazyVGridView()
+    }
 }
