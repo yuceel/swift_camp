@@ -175,6 +175,10 @@ final class HomePresenter: ObservableObject {
         wireframe.showLazyVGridView()
             
     }
+
+    
+    
+
         
     /// Navigates to Ellipse
     func showEllipse(){
@@ -199,6 +203,7 @@ final class HomePresenter: ObservableObject {
     func showRaundedRectagle() {
         wireframe.showRoundedRectangle()
     }
+
   
   /// Navigates to Alert
 func showAlert() {
@@ -213,6 +218,22 @@ func showRotationEffect() {
 func showWithAnimation() {
     wireframe.showWithAnimation()
 }
+
+
+    
+    func showRotationEffect() {
+        wireframe.showRotationEffect()
+    }
+    
+    /// Navigates to WithAnimation
+       func showWithAnimation() {
+           wireframe.showWithAnimation()
+       }
+  
+    // Navigate to TextFieldView
+    func showTextField() {
+          wireframe.showTextField()
+      }
 
 
 }

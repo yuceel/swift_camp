@@ -220,4 +220,10 @@ extension HomeWireframe: HomeWireframeInterface {
           navigationController?.pushWireframe(withAnimationWireframe)
       }
     
+    func showTextField() {
+        let textFieldWireframe = TextFieldWireframe()
+        navigationController?.pushWireframe(textFieldWireframe)
     }
+
+}
+
