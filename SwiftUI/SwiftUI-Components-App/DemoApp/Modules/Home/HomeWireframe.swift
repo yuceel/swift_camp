@@ -201,5 +201,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let lazyHStackWireframe = LazyHStackWireframe()
         navigationController?.pushWireframe(lazyHStackWireframe)
     }
-                
+        
+        func showRotationEffect() {
+            let rotationEffectWireframe = RotationEffectWireframe()
+            navigationController?.pushWireframe(rotationEffectWireframe)
+        }
     }

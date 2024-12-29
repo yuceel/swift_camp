@@ -199,4 +199,8 @@ final class HomePresenter: ObservableObject {
     func showRaundedRectagle() {
         wireframe.showRoundedRectangle()
     }
+    
+    func showRotationEffect() {
+        wireframe.showRotationEffect()
+    }
 }
