@@ -72,29 +72,83 @@ final class HomePresenter: ObservableObject {
         wireframe.showTransaction()
     }
     
+
+    /// Navigates to TabView
+    func showTabView(){
+        wireframe.showTabView()
+    }
+    
+    /// Navigates to AttributedText
+    func showAttributedText(){
+        wireframe.showAttributedText()
+    }
+    
+    /// Navigates to Button
+    func showButton(){
+        wireframe.showButton()
+    }
+    
+    /// Navigates to DatePicker
+    func showDatePicker(){
+        wireframe.showDatePicker()
+    }
+    
+    /// Navigates to SegmentedControl
+    func showSegmentedControl(){
+        wireframe.showSegmentedControl()
+    }
+    
+    /// Navigates to RoundedRectangle
+    func showRaundedRectangle(){
+        wireframe.showRoundedRectangle()
+    }
+    
+    /// Navigates to Shadow
+    func showShadow(){
+        wireframe.showShadow()
+    }
+
+    /// Navigates to ScaleEffect
+    func showScaleEffect(){
+        wireframe.showScaleEffect()
+    }
+    
+    /// Navigates to Animation
+    func showAnimation(){
+        wireframe.showAnimation()
+    }
+
     /// Navigates to LazyHGridView
     func showLazyHGrid(){
         wireframe.showLazyHGrid()
-        }
+    }
+    
+    
+    /// Navigates to LazyVStack
+    func showLazyVStackView() {
+        wireframe.showLazyVStackView()
+    }
+    
+    /// Navigates to MatchedGeometryEffectView
+    func showMatchedGeometryEffect(){
+        wireframe.showMatchedGeometryEffect()
         
-        
-        /// Navigates to LazyVStack
-        func showLazyVStackView() {
-            wireframe.showLazyVStackView()
-        }
-        
-        /// Navigates to MatchedGeometryEffectView
-        func showMatchedGeometryEffect(){
-            wireframe.showMatchedGeometryEffect()
-            
-        }
-        /// Navigates to Image
-        func showImage() {
-            wireframe.showImage()
-        }
+    }
+    /// Navigates to Image
+    func showImage() {
+        wireframe.showImage()
+    }
     /// Navigates to Image
     func showMenuButton() {
         wireframe.showMenuButton()
+    }
+    /// Navigates to Circle//
+    func showCircle() {
+        wireframe.showCircle()
+    }
+    // Navigates to Opacity//
+    func showOpacity() {
+        wireframe.showOpacity()
     }
     
     /// Navigates to Secure Field
@@ -102,21 +156,66 @@ final class HomePresenter: ObservableObject {
         wireframe.showSecureField()
     }
     
-     /// Navigates to ContextMenu View
-     func showContextMenu() {
-         wireframe.showContextMenu()
-     }
+    /// Navigates to ContextMenu View
+    func showContextMenu() {
+        wireframe.showContextMenu()
+    }
     
-    /// Navigates to Stepper
+    /// Navigates to ContextMenu View
+    func showBinding() {
+        wireframe.showBinding()
+    }
+        
+        /// Navigates to Stepper
     func showStepper(){
         wireframe.showStepper()
     }
-    
+        
     func showLazyVGridView() {
         wireframe.showLazyVGridView()
+            
+    }
+
+    
+    
+
+        
+    /// Navigates to Ellipse
+    func showEllipse(){
+        wireframe.showEllipse()
+    }
+        
+    /// Navigates to Padding
+    func showPadding() {
+        wireframe.showPadding()
+    }
+        
+    func showCanvas() {
+        wireframe.showCanvas()
     }
     
-    func showTextField() {
-        wireframe.showTextField()
+    /// Navigate to LazyHStack
+    func showLazyHStack() {
+        wireframe.showLazyHStack()
     }
+    
+    /// Navigates to RaundedRectagle
+    func showRaundedRectagle() {
+        wireframe.showRoundedRectangle()
+    }
+    
+    func showRotationEffect() {
+        wireframe.showRotationEffect()
+    }
+    
+    /// Navigates to WithAnimation
+       func showWithAnimation() {
+           wireframe.showWithAnimation()
+       }
+  
+    // Navigate to TextFieldView
+    func showTextField() {
+          wireframe.showTextField()
+      }
+
 }

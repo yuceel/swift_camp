@@ -67,7 +67,7 @@
   - [ ] Frame @turhanGoksu
   - [ ] Offset @mehmetalbyrak
   - [ ] ScaleEffect @beyzanuravsar
-  - [ ] RotationEffect @alakkaya
+  - [x] RotationEffect @alakkaya
   - [ ] Opacity @melihalkbk
 
 - [ ] **Animations**
@@ -103,7 +103,7 @@
   - [ ] Spacer @alakkaya
   - [ ] Divider @busragedikoglu
   - [ ] GeometryReader @yuceel
-  - [ ] Canvas @turhanGoksu
+  - [x] Canvas @turhanGoksu
   - [ ] TimelineView @beyzanuravsar
   - [ ] Map @beyzanuravsar
   - [ ] VideoPlayer @ayberkgorgun
