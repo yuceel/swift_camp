@@ -21,5 +21,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showImage()
     func showMenuButton()
     func showCircle()
+    func showOpacity()
 
 }

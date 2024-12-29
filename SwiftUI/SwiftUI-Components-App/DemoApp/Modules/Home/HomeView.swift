@@ -230,6 +230,9 @@ struct HomeView: View {
                             ButtonModel(
                                 title: "Go to Circle",
                                 action: { presenter.showCircle() }),
+                            ButtonModel(
+                                title: "Go to Opacity",
+                                action: { presenter.showOpacity() }),
 
 
 

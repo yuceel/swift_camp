@@ -100,5 +100,9 @@ final class HomePresenter: ObservableObject {
     func showCircle() {
         wireframe.showCircle()
     }
+    // Navigates to Opacity
+    func showOpacity() {
+        wireframe.showOpacity()
+    }
     
 }

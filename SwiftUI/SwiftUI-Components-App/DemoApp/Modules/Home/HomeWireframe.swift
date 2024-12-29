@@ -104,5 +104,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let circleWireframe = CircleWireframe()
         navigationController?.pushWireframe(circleWireframe)
     }
+    func showOpacity() {
+        let opacityWireframe = OpacityWireframe()
+        navigationController?.pushWireframe(opacityWireframe)
+    }
 
 }
