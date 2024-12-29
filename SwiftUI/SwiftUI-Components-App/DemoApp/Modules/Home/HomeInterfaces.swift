@@ -27,5 +27,6 @@ protocol HomeWireframeInterface: WireframeInterface {
 
     func showSecureField()
     func showContextMenu()
+    func showBinding()
 
 }

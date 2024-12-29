@@ -123,5 +123,9 @@ extension HomeWireframe: HomeWireframeInterface {
      let contextMenuWireframe = ContextMenuWireframe()
      navigationController?.pushWireframe(contextMenuWireframe)
     }
+    func showBinding() {
+     let bindingWireframe = BindingWireframe()
+     navigationController?.pushWireframe(bindingWireframe)
+    }
 
 }

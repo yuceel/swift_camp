@@ -114,4 +114,8 @@ final class HomePresenter: ObservableObject {
      func showContextMenu() {
          wireframe.showContextMenu()
      }
+    /// Navigates to ContextMenu View
+    func showBinding() {
+        wireframe.showBinding()
+    }
 }
