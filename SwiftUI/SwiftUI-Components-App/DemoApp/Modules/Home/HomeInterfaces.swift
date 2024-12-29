@@ -38,5 +38,4 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showEllipse()
     func showPadding()
     func showLazyHStack()
-    func showAlert()
 }

@@ -200,15 +200,6 @@ extension HomeWireframe: HomeWireframeInterface {
         func showLazyHStack() {
         let lazyHStackWireframe = LazyHStackWireframe()
         navigationController?.pushWireframe(lazyHStackWireframe)
-        }
-    
-    func showAlert() {
-        let alertWireframe = AlertWireframe()
-        navigationController?.pushWireframe(alertWireframe)
     }
-    }
-    
-    
-        
                 
-
+    }
