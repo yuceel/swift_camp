@@ -28,6 +28,11 @@ final class HomePresenter: ObservableObject {
         wireframe.showContentView()
     }
     
+    /// Navigates to Text
+    func showText() {
+        wireframe.showText()
+    }
+    
     /// Navigates to ColorPickerView
     func showColorPicker() {
         wireframe.showColorPicker()

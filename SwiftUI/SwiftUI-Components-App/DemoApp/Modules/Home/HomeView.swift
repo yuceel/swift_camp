@@ -190,6 +190,8 @@ struct HomeView: View {
                             ButtonModel(
                                 title: "Go to Rectangle", action: { presenter.showRectangle() }),
                             ButtonModel(
+                                title: "Go to Text", action: { presenter.showText() }),
+                            ButtonModel(
                                 title: "Go to Section", action: { presenter.showSection() }),
                             ButtonModel(title: "Go to Frame", action: { presenter.showFrame() }),
                             ButtonModel(
