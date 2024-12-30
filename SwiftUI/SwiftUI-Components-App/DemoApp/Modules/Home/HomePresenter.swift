@@ -249,6 +249,11 @@ func showWithAnimation() {
     func showSlider() {
         wireframe.showSlider()
     }
+    
+    
+    func showLabel() {
+        wireframe.showLabel()
+    }
 
 
 
