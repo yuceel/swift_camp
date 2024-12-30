@@ -270,6 +270,13 @@ func showWithAnimation() {
       func showDivider() {
           wireframe.showDivider()
       }
+    
+    
+    
+    /// Navigates to DragGesture
+     func showDragGesture() {
+        wireframe.showDragGesture()
+    }
 
 
 

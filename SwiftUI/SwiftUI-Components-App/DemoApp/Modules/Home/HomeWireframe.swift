@@ -265,6 +265,13 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(dividerWireframe)
 
     }
+    
+    
+    
+    func showDragGesture() {
+        let dragGestureWireframe = DragGestureWireframe()
+        navigationController?.pushWireframe(dragGestureWireframe)
+    }
         
     
     
