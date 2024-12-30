@@ -52,6 +52,7 @@ protocol HomeWireframeInterface: WireframeInterface {
     
     
     func showSlider()
+    func showDivider()
 
 
 
