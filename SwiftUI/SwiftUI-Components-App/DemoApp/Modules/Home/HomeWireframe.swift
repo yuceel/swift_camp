@@ -247,9 +247,15 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(sliderWireframe)
     }
     
+
+    func showCapsuleView() {
+        let capsuleViewWireframe = CapsuleWireframe()
+        navigationController?.pushWireframe(capsuleViewWireframe)
+
     func showDivider() {
         let dividerWireframe = DividerWireframe()
         navigationController?.pushWireframe(dividerWireframe)
+
     }
         
     

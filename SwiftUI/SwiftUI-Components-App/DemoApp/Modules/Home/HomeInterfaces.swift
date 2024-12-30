@@ -52,7 +52,12 @@ protocol HomeWireframeInterface: WireframeInterface {
     
     
     func showSlider()
+
+    func showCapsuleView()
+    
+
     func showDivider()
+
 
 
 

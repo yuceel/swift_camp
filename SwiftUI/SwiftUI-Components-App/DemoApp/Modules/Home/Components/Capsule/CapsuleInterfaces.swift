@@ -1,0 +1,3 @@
+protocol CapsuleWireframeInterface{
+    func goBack()
+}
