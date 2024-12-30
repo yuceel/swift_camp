@@ -271,6 +271,10 @@ func showWithAnimation() {
           wireframe.showDivider()
       }
 
+    /// Navigates to Picker
+    func showPicker() {
+        wireframe.showPicker()
+    }
 
 
 

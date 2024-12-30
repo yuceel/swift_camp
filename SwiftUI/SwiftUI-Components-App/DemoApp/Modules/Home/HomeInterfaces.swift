@@ -62,7 +62,7 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showDivider()
-
+    func showPicker()
 
 
 
