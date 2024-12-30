@@ -250,12 +250,19 @@ func showWithAnimation() {
         wireframe.showSlider()
     }
     
+
     func showCapsuleView() {
         wireframe.showCapsuleView()
         
     }
 
     
+
+    /// Navigates to Divider
+      func showDivider() {
+          wireframe.showDivider()
+      }
+
 
 
 
