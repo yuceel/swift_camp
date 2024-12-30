@@ -247,9 +247,16 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(sliderWireframe)
     }
     
+
     func showLabel() {
         let labelWireframe = LabelWireframe()
         navigationController?.pushWireframe(labelWireframe)
+    }
+  
+
+    func showDivider() {
+        let dividerWireframe = DividerWireframe()
+        navigationController?.pushWireframe(dividerWireframe)
     }
         
     

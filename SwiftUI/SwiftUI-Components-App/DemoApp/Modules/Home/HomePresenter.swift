@@ -250,10 +250,17 @@ func showWithAnimation() {
         wireframe.showSlider()
     }
     
+
     
     func showLabel() {
         wireframe.showLabel()
     }
+
+
+    /// Navigates to Divider
+      func showDivider() {
+          wireframe.showDivider()
+      }
 
 
 
