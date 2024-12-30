@@ -224,15 +224,6 @@ func showWithAnimation() {
 }
 
 
-    
-    func showRotationEffect() {
-        wireframe.showRotationEffect()
-    }
-    
-    /// Navigates to WithAnimation
-       func showWithAnimation() {
-           wireframe.showWithAnimation()
-       }
   
     // Navigate to TextFieldView
     func showTextField() {
@@ -247,6 +238,16 @@ func showWithAnimation() {
 
     func showGrid() {
         wireframe.showGrid()
+    }
+    
+    
+    
+    
+    
+    // Navigate to Slider View
+    
+    func showSlider() {
+        wireframe.showSlider()
     }
 
 

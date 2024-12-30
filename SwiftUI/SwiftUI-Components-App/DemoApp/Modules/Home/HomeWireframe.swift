@@ -16,7 +16,12 @@ final class HomeWireframe: BaseWireframe<LazyHostingViewController<HomeView>> {
 // MARK: - Extensions -
 
 extension HomeWireframe: HomeWireframeInterface {
-
+    func showGrid() {
+        let gridWireframe = GridWireframe()
+        navigationController?.pushWireframe(gridWireframe)
+    }
+    
+    
     func showVStack() {
         let vStackWireframe = VStackWireframe()
         navigationController?.pushWireframe(vStackWireframe)
@@ -126,7 +131,7 @@ extension HomeWireframe: HomeWireframeInterface {
         let animationWireframe = AnimationWireframe()
         navigationController?.pushWireframe(animationWireframe)
     }
-
+    
     func showLazyHGrid() {
         let lazyHGridWireframe = LazyHGridWireframe()
         navigationController?.pushWireframe(lazyHGridWireframe)
@@ -175,71 +180,73 @@ extension HomeWireframe: HomeWireframeInterface {
         let bindingWireframe = BindingWireframe()
         navigationController?.pushWireframe(bindingWireframe)
     }
-        
-        func showStepper() {
-            let stepperWireframe = StepperWireframe()
-            navigationController?.pushWireframe(stepperWireframe)
-        }
-        
-        func showLazyVGridView() {
-            let lazyVGridViewWireframe = LazyVGridWireframe()
-            navigationController?.pushWireframe(lazyVGridViewWireframe)
-            
-        }
-        
-        func showEllipse() {
-            let ellipseWireframe = EllipseWireframe()
-            navigationController?.pushWireframe(ellipseWireframe)
-        }
-        
-        func showPadding() {
-            let paddingWireframe = PaddingWireframe()
-            navigationController?.pushWireframe(paddingWireframe)
-        }
-        
-        func showCanvas() {
-            let canvasWireframe = CanvasWireframe()
-            navigationController?.pushWireframe(canvasWireframe)
-        }
     
-        func showLazyHStack() {
+    func showStepper() {
+        let stepperWireframe = StepperWireframe()
+        navigationController?.pushWireframe(stepperWireframe)
+    }
+    
+    func showLazyVGridView() {
+        let lazyVGridViewWireframe = LazyVGridWireframe()
+        navigationController?.pushWireframe(lazyVGridViewWireframe)
+        
+    }
+    
+    func showEllipse() {
+        let ellipseWireframe = EllipseWireframe()
+        navigationController?.pushWireframe(ellipseWireframe)
+    }
+    
+    func showPadding() {
+        let paddingWireframe = PaddingWireframe()
+        navigationController?.pushWireframe(paddingWireframe)
+    }
+    
+    func showCanvas() {
+        let canvasWireframe = CanvasWireframe()
+        navigationController?.pushWireframe(canvasWireframe)
+    }
+    
+    func showLazyHStack() {
         let lazyHStackWireframe = LazyHStackWireframe()
         navigationController?.pushWireframe(lazyHStackWireframe)
     }
-
     
-        func showAlert() {
+    
+    func showAlert() {
         let alertWireframe = AlertWireframe()
         navigationController?.pushWireframe(alertWireframe)
     }
-                
-
-        
-        func showRotationEffect() {
-            let rotationEffectWireframe = RotationEffectWireframe()
-            navigationController?.pushWireframe(rotationEffectWireframe)
-        }
+    
+    
+    
+    func showRotationEffect() {
+        let rotationEffectWireframe = RotationEffectWireframe()
+        navigationController?.pushWireframe(rotationEffectWireframe)
+    }
     
     func showWithAnimation() {
-          let withAnimationWireframe = WithAnimationWireframe()
-          navigationController?.pushWireframe(withAnimationWireframe)
-      }
+        let withAnimationWireframe = WithAnimationWireframe()
+        navigationController?.pushWireframe(withAnimationWireframe)
+    }
     
     func showTextField() {
         let textFieldWireframe = TextFieldWireframe()
         navigationController?.pushWireframe(textFieldWireframe)
     }
     
-
+    
     func showProgressView() {
         let progressWireframe = ProgressWireframe()
         navigationController?.pushWireframe(progressWireframe)
-
-    func showGrid() {
-        let gridWireframe = GridWireframe()
-        navigationController?.pushWireframe(gridWireframe)
-
     }
-
+        
+    
+    func showSlider() {
+        let sliderWireframe = SliderWireframe()
+        navigationController?.pushWireframe(sliderWireframe)
+    }
+        
+    
+    
 }
-
