@@ -270,7 +270,10 @@ func showWithAnimation() {
       func showDivider() {
           wireframe.showDivider()
       }
-
+    
+    func showBackground() {
+        wireframe.showBackground()
+    }
 
 
 
