@@ -249,7 +249,11 @@ func showWithAnimation() {
     func showSlider() {
         wireframe.showSlider()
     }
-
+    
+    /// Navigates to Divider
+      func showDivider() {
+          wireframe.showDivider()
+      }
 
 
 
