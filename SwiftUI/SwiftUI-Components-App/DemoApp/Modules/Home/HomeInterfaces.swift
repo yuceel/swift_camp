@@ -53,8 +53,13 @@ protocol HomeWireframeInterface: WireframeInterface {
     
     func showSlider()
 
+
     
     func showLabel()
+
+    func showCapsuleView()
+    
+
 
     func showDivider()
 

@@ -251,10 +251,19 @@ func showWithAnimation() {
     }
     
 
+
     
     func showLabel() {
         wireframe.showLabel()
     }
+
+
+    func showCapsuleView() {
+        wireframe.showCapsuleView()
+        
+    }
+
+    
 
 
     /// Navigates to Divider
