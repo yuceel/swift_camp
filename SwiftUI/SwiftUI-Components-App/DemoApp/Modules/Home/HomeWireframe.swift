@@ -246,6 +246,11 @@ extension HomeWireframe: HomeWireframeInterface {
         let sliderWireframe = SliderWireframe()
         navigationController?.pushWireframe(sliderWireframe)
     }
+    
+    func showCapsuleView() {
+        let capsuleViewWireframe = CapsuleWireframe()
+        navigationController?.pushWireframe(capsuleViewWireframe)
+    }
         
     
     

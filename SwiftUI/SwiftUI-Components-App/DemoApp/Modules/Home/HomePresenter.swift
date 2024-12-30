@@ -249,7 +249,13 @@ func showWithAnimation() {
     func showSlider() {
         wireframe.showSlider()
     }
+    
+    func showCapsuleView() {
+        wireframe.showCapsuleView()
+        
+    }
 
+    
 
 
 
