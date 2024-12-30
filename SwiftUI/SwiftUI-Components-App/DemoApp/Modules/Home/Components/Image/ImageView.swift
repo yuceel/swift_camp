@@ -6,13 +6,13 @@ struct ImageView: View {
     
     var body: some View {
         VStack {
-            // Başlık
+            
             Text("A Small Atatürk Exhibition")
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.bottom, 10)
             
-            // Görselleri bir Grid ile düzenlemek için LazyVGrid
+            
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 20), count: 2), spacing: 20) {
                 ForEach(imageNames, id: \.self) { imageName in
                     Image(imageName)
