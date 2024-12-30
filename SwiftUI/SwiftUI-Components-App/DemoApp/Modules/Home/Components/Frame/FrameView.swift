@@ -69,7 +69,7 @@ struct FrameView: View {
 
             Spacer()
         }
-        .background(Color(UIColor.systemBackground)) // Minimalist arka plan
+        .background(Color(UIColor.systemBackground))
         .edgesIgnoringSafeArea(.bottom)
         .padding()
     }
