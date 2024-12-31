@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4101806F2D24449D003F8160 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101806E2D24449A003F8160 /* HomeEntity.swift */; };
+		410180712D2444A4003F8160 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410180702D2444A0003F8160 /* HomeInteractor.swift */; };
 		6E00E5ED2D22245400944B6C /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 6E00E5EC2D22245400944B6C /* OneSignalExtension */; };
 		6E00E5EF2D22245400944B6C /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 6E00E5EE2D22245400944B6C /* OneSignalFramework */; };
 		6E00E5F12D22245400944B6C /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 6E00E5F02D22245400944B6C /* OneSignalInAppMessages */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4101806E2D24449A003F8160 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		410180702D2444A0003F8160 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		6E00E5D82D22229800944B6C /* DemoAppRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoAppRelease.entitlements; sourceTree = "<group>"; };
 		6E00E5DD2D2222D400944B6C /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0A98622D23029600B6EB14 /* DemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoApp.entitlements; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				5536DDE02D1FEC1B0003C161 /* Components */,
+				4101806E2D24449A003F8160 /* HomeEntity.swift */,
+				410180702D2444A0003F8160 /* HomeInteractor.swift */,
 				7F313A48292BCD860048C74C /* HomeInterfaces.swift */,
 				7F313A49292BCD860048C74C /* HomePresenter.swift */,
 				7F313A4A292BCD860048C74C /* HomeView.swift */,
@@ -329,6 +335,8 @@
 				7F313A4D292BCD860048C74C /* HomePresenter.swift in Sources */,
 				7F313A2A292BC88F0048C74C /* LazyHostingViewController.swift in Sources */,
 				7F313A38292BC92C0048C74C /* InitialWireframeInitializer.swift in Sources */,
+				4101806F2D24449D003F8160 /* HomeEntity.swift in Sources */,
+				410180712D2444A4003F8160 /* HomeInteractor.swift in Sources */,
 				7F313A25292BC8670048C74C /* ViewInterface.swift in Sources */,
 				7F313A23292BC8670048C74C /* PresenterInterface.swift in Sources */,
 				7F313A07292BC7E90048C74C /* AppDelegate.swift in Sources */,
