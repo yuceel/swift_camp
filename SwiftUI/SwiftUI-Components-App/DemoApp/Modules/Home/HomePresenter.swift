@@ -296,4 +296,8 @@ func showWithAnimation() {
     func showOffset() {
         wireframe.showOffset()
     }
+
+    func showTransition() {
+        wireframe.showTransition()
+    }
 }
