@@ -14,7 +14,7 @@ We thank them for empowering us to create this non-profit project.
 </ul>
 
 
-[![Swift Camp](https://github.com/NurhayatYurtaslan/readme_template/blob/main/Assets/SwiftCamp.png?raw=true)](https://testflight.apple.com/join/vZBFC8hs)
+[![Swift Camp](https://github.com/NurhayatYurtaslan/swift_camp/blob/dev/Assets/SwiftCamp.png?raw=true)](https://testflight.apple.com/join/vZBFC8hs)
 
 <p>
 
