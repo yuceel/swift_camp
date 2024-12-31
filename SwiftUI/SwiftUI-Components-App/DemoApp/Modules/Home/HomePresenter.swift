@@ -284,6 +284,10 @@ func showWithAnimation() {
         wireframe.showBackground()
     }
 
+    /// Navigates to Picker
+    func showPicker() {
+        wireframe.showPicker()
+    }
 
 
 
