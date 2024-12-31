@@ -77,4 +77,7 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showOffset()
+    
+    
+    func showActionSheet()
 }

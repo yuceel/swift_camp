@@ -296,4 +296,11 @@ func showWithAnimation() {
     func showOffset() {
         wireframe.showOffset()
     }
+    
+    
+    
+    /// Navigates to ActionSheet
+    func showActionSheet() {
+        wireframe.showActionSheet()
+    }
 }
