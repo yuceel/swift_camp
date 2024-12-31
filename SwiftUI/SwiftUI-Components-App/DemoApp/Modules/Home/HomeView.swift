@@ -297,7 +297,12 @@ struct HomeView: View {
                         
                             
 
+
                             
+
+                            ButtonModel(title: "Go to Offset", action: { presenter.showOffset()}),
+                            ButtonModel(title: "Go to Transition", action: { presenter.showTransition() }),
+
                             
                         ]
                         

@@ -79,4 +79,5 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showOffset()
+    func showTransition()
 }
