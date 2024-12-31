@@ -304,5 +304,12 @@ extension HomeWireframe: HomeWireframeInterface {
         let transitionWireframe = TransitionWireframe()
         navigationController?.pushWireframe(transitionWireframe)
     }
+    
+    
+    
+    func showTimeLineView() {
+        let timelineViewWireframe = TimeLineViewWireframe()
+        navigationController?.pushWireframe(timelineViewWireframe)
+    }
 
 }
