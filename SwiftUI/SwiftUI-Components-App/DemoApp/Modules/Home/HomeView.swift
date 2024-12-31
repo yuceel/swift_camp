@@ -286,7 +286,10 @@ struct HomeView: View {
                             
                             ButtonModel(title: "Go to Background", action: {presenter.showBackground()}),
                             
-                            ButtonModel(title: "Go to Picker", action: { presenter.showPicker() })
+                            ButtonModel(title: "Go to Picker", action: { presenter.showPicker() }),
+                            
+                            
+                            ButtonModel(title: "Go to Offset", action: { presenter.showOffset()})
                             
                             
                         ]
