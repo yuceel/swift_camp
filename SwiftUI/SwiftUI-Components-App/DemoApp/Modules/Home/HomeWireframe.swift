@@ -7,8 +7,9 @@ final class HomeWireframe: BaseWireframe<LazyHostingViewController<HomeView>> {
     init() {
         let moduleViewController = LazyHostingViewController<HomeView>(isNavigationBarHidden: true)
         super.init(viewController: moduleViewController)
-
-        let presenter = HomePresenter(wireframe: self)
+        
+        let interactor = HomeInteractor()
+        let presenter = HomePresenter(interactor: interactor, wireframe: self)
         moduleViewController.rootView = HomeView(presenter: presenter)
     }
 }
@@ -282,7 +283,7 @@ extension HomeWireframe: HomeWireframeInterface {
     func showPicker() {
         let pickerWireframe = PickerWireframe()
         navigationController?.pushWireframe(pickerWireframe)
-    }    
+    }
     
     func showCornerRadius() {
         let cornerRadiusWireframe = CornerRadiusWireframe()
@@ -295,8 +296,17 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(offsetWireframe)
     }
     
+
+    
+    func showActionSheet() {
+        let actionSheetWireframe = ActionSheetWireframe()
+        navigationController?.pushWireframe(actionSheetWireframe)
+    }
+    
+
     func showTransition() {
         let transitionWireframe = TransitionWireframe()
         navigationController?.pushWireframe(transitionWireframe)
     }
+
 }
