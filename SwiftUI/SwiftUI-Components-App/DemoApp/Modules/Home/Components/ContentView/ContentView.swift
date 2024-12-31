@@ -20,9 +20,18 @@ struct ContentView: View {
             Spacer()
 
             VStack(spacing: 20) {
-                Image(systemName: "app.fill")
-                    .font(.system(size: 60))
-                    .foregroundColor(.blue)
+                // Question mark design element
+                ZStack {
+                    Circle()
+                        .fill(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .top, endPoint: .bottom))
+                        .frame(width: 150, height: 150)
+                    
+                    VStack {
+                        Image(systemName: "questionmark.circle.fill")
+                            .font(.system(size: 60))
+                            .foregroundColor(.white)
+                    }
+                }
 
                 Text("About This App")
                     .font(.title)

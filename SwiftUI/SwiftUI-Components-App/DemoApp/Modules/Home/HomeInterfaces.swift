@@ -14,6 +14,7 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showNavigationView()
     func showTransaction()
     func showTabView()
+    func showText()
     func showAttributedText()
     func showButton()
     func showDatePicker()
@@ -34,16 +35,46 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showBinding()
     func showStepper()
     func showLazyVGridView()
-
-    
-
-
     func showCanvas()
     func showEllipse()
     func showPadding()
     func showLazyHStack()
+    func showAlert()
     func showRotationEffect()
     func showWithAnimation()
+
+
     func showTextField()
 
+    func showProgressView()
+
+    func showGrid()
+    
+    
+    func showSlider()
+
+
+    
+    func showLabel()
+
+    func showCapsuleView()
+    
+
+
+    func showDivider()
+
+    
+    
+    func showDragGesture()
+
+    func showBackground()
+
+
+
+
+    func showPicker()
+
+
+
+    func showOffset()
 }

@@ -39,7 +39,7 @@
 
 - [ ] **Pickers and Controls**
 
-  - [ ] Picker @alakkaya
+  - [x] Picker @alakkaya
   - [ ] DatePicker @beyzanuravsar
   - [ ] Slider @mehmetalbyrak
   - [ ] Stepper @busragedikoglu
@@ -96,7 +96,7 @@
 
 - [ ] **Grid**
 
-  - [ ] Grid @busragedikoglu
+  - [ ] Grid @turhanGoksu
   - [ ] GridRow @OnurArslan0
 
 - [ ] **Other Components**

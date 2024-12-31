@@ -28,6 +28,11 @@ final class HomePresenter: ObservableObject {
         wireframe.showContentView()
     }
     
+    /// Navigates to Text
+    func showText() {
+        wireframe.showText()
+    }
+    
     /// Navigates to ColorPickerView
     func showColorPicker() {
         wireframe.showColorPicker()
@@ -72,7 +77,6 @@ final class HomePresenter: ObservableObject {
         wireframe.showTransaction()
     }
     
-
     /// Navigates to TabView
     func showTabView(){
         wireframe.showTabView()
@@ -203,19 +207,93 @@ final class HomePresenter: ObservableObject {
     func showRaundedRectagle() {
         wireframe.showRoundedRectangle()
     }
-    
-    func showRotationEffect() {
-        wireframe.showRotationEffect()
-    }
-    
-    /// Navigates to WithAnimation
-       func showWithAnimation() {
-           wireframe.showWithAnimation()
-       }
+
+  
+  /// Navigates to Alert
+func showAlert() {
+    wireframe.showAlert()
+}
+
+func showRotationEffect() {
+    wireframe.showRotationEffect()
+}
+
+/// Navigates to WithAnimation
+func showWithAnimation() {
+    wireframe.showWithAnimation()
+}
+
+
   
     // Navigate to TextFieldView
     func showTextField() {
           wireframe.showTextField()
       }
+    
 
+    // Navigate to Progress View
+    func showProgressView() {
+        wireframe.showProgressView()
+    }
+
+    func showGrid() {
+        wireframe.showGrid()
+    }
+    
+    
+    
+    
+    
+    // Navigate to Slider View
+    
+    func showSlider() {
+        wireframe.showSlider()
+    }
+    
+
+
+    
+    func showLabel() {
+        wireframe.showLabel()
+    }
+
+
+    func showCapsuleView() {
+        wireframe.showCapsuleView()
+        
+    }
+
+    
+
+
+    /// Navigates to Divider
+      func showDivider() {
+          wireframe.showDivider()
+      }
+    
+
+    
+    
+    /// Navigates to DragGesture
+     func showDragGesture() {
+        wireframe.showDragGesture()
+    }
+
+
+    func showBackground() {
+        wireframe.showBackground()
+    }
+
+    /// Navigates to Picker
+    func showPicker() {
+        wireframe.showPicker()
+    }
+
+
+
+    
+    /// Navigates to Offset
+    func showOffset() {
+        wireframe.showOffset()
+    }
 }
