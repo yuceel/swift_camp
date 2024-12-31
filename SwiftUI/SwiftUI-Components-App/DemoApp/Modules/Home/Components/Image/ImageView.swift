@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ImageView: View {
     @ObservedObject var presenter: ImagePresenter
-    let imageNames = ["atatürk", "ata2", "ata3", "ata4", "ata5", "ata6"]
+    let imageNames = ["ata1", "ata2", "ata3", "ata4", "ata5", "ata6"]
     
     var body: some View {
         VStack {
