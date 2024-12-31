@@ -87,5 +87,7 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showActionSheet()
 
     func showTransition()
+    
+    func showTimeLineView()
 
 }
