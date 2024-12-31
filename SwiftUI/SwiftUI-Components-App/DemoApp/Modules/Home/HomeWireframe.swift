@@ -291,4 +291,9 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(offsetWireframe)
     }
     
+    func showGroupBox() {
+        let groupBoxWireframe = GroupBoxWireframe()
+        navigationController?.pushWireframe(groupBoxWireframe)
+    }
+    
 }

@@ -77,4 +77,5 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showOffset()
+    func showGroupBox()
 }

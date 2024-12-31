@@ -296,4 +296,9 @@ func showWithAnimation() {
     func showOffset() {
         wireframe.showOffset()
     }
+    
+    /// Navigates to Offset
+    func showGroupBox() {
+        wireframe.showGroupBox()
+    }
 }
