@@ -9,29 +9,29 @@ struct HomeView: View {
     @State private var contributors: [Contributor] = []
     @State private var selectedContributor: Contributor?
     @State private var showDialog = false
-
+    
     struct Contributor: Identifiable, Decodable {
         let id: Int
         let login: String
         let avatar_url: String
         let html_url: String
-
+        
         var username: String { login }
         var avatarURL: String { avatar_url }
         var profileURL: String { html_url }
     }
-
+    
     // Button model
     struct ButtonModel: Identifiable {
         let id = UUID()
         let title: String
         let action: () -> Void
     }
-
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-
+                
                 // AppBar with dynamic information
                 HStack {
                     VStack(alignment: .leading) {
@@ -46,17 +46,17 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding()
-
+                
                 ScrollView {
                     VStack(alignment: .center, spacing: 20) {
-
+                        
                         // Centered Header
                         Text("Welcome to SwiftUI Components App")
                             .font(.title)
                             .bold()
                             .multilineTextAlignment(.center)
                             .padding(.bottom, 5)
-
+                        
                         // Description
                         Text(
                             "This app provides an interactive guide to learning SwiftUI components. Explore, experiment, and enhance your skills through dynamic examples."
@@ -66,13 +66,13 @@ struct HomeView: View {
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
                         .padding(.bottom, 20)
-
+                        
                         // Benefits list
                         VStack(alignment: .leading, spacing: 10) {
                             Text("What you'll gain:")
                                 .font(.headline)
                                 .padding(.bottom, 5)
-
+                            
                             HStack {
                                 Image(systemName: "heart.fill")
                                     .foregroundColor(.pink)
@@ -91,16 +91,16 @@ struct HomeView: View {
                         }
                         .padding(.horizontal)
                         .padding(.bottom, 20)
-
+                        
                         // Footer - Repo Info
                         VStack(alignment: .leading, spacing: 20) {
                             HStack {
                                 Text("Repo Info")
                                     .font(.headline)
                                     .padding(.top, 20)
-
+                                
                                 Spacer()
-
+                                
                                 Button(action: {
                                     if let url = URL(
                                         string: "https://github.com/masterfabric-mobile/swift_camp")
@@ -113,7 +113,7 @@ struct HomeView: View {
                                         .foregroundColor(.blue)
                                 }
                             }
-
+                            
                             HStack {
                                 VStack(alignment: .leading) {
                                     Text("Commits: \(commitCount)")
@@ -125,14 +125,14 @@ struct HomeView: View {
                             .padding()
                             .background(Color(UIColor.secondarySystemBackground))
                             .cornerRadius(10)
-
+                            
                             // Contributors
                             HStack {
                                 Text("Contributors")
                                     .font(.headline)
-
+                                
                                 Spacer()
-
+                                
                                 // Chip with contributors count
                                 Text("\(contributors.count) Contributors")
                                     .font(.caption)
@@ -140,7 +140,7 @@ struct HomeView: View {
                                     .background(Color.blue.opacity(0.2))
                                     .clipShape(Capsule())
                             }
-
+                            
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack(spacing: 10) {
                                     ForEach(contributors) { contributor in
@@ -155,10 +155,10 @@ struct HomeView: View {
                                             }
                                             .frame(width: 50, height: 50)
                                             .clipShape(Circle())
-
+                                            
                                             Text(contributor.username)
                                                 .font(.caption)
-
+                                            
                                             Button(action: {
                                                 selectedContributor = contributor
                                                 showDialog = true
@@ -174,7 +174,7 @@ struct HomeView: View {
                             }
                         }
                         .padding(.horizontal)
-
+                        
                         // Dynamic Buttons
                         let buttons = [
                             ButtonModel(
@@ -211,7 +211,7 @@ struct HomeView: View {
                                 title: "Go to TabView",
                                 action: {
                                     presenter.showTabView()
-                            }),
+                                }),
                             ButtonModel(title: "Go to AttributedText", action: {
                                 presenter.showAttributedText()
                             }),
@@ -243,55 +243,55 @@ struct HomeView: View {
                             ButtonModel(
                                 title: "Go to Opacity",
                                 action: { presenter.showOpacity() }),
-
+                            
                             ButtonModel(title: "Go to Secure Field", action: { presenter.showSecureField() }),
                             ButtonModel(title: "Go to ContextMenu", action: { presenter.showContextMenu()}),
                             ButtonModel(title: "Go to Binding", action: { presenter.showBinding()}),
                             ButtonModel(title: "Go to Stepper", action: { presenter.showStepper() }),
-
+                            
                             ButtonModel(title: "Go to LazyVGrid", action: { presenter.showLazyVGridView()}),
                             
-
+                            
                             ButtonModel(title: "Go to LazyVGrid", action: { presenter.showLazyVGridView() }),
                             ButtonModel(title: "Go to Canvas", action: { presenter.showCanvas()}),
                             ButtonModel(title: "Go to Ellipse", action: { presenter.showEllipse() }),
                             ButtonModel(title: "Go to Padding", action: { presenter.showPadding() }),
                             ButtonModel(title: "Go to LazyHStack", action: { presenter.showLazyHStack()}),
-
+                            
                             ButtonModel(title: "Go to Alert", action: { presenter.showAlert() }),
-
-
+                            
+                            
                             ButtonModel(title: "Go to RotationEffect", action: { presenter.showRotationEffect()}),
                             ButtonModel(title: "Go to WithAnimation", action: { presenter.showWithAnimation() }),
-
+                            
                             ButtonModel(title: "Go to TextField", action: { presenter.showTextField()}),
                             ButtonModel(title: "Go to Progress View", action: presenter.showProgressView),
-
+                            
                             ButtonModel(title: "Go to TextField", action: { presenter.showTextField() }),
                             ButtonModel(title: "Go to Grid", action: { presenter.showGrid()}),
                             ButtonModel(title: "Go to Slider", action: { presenter.showSlider()}),
-
-
+                            
+                            
                             
                             ButtonModel(title: "Go to Label", action: { presenter.showLabel()}),
-
+                            
                             ButtonModel(title: "Go To Capsule", action: {presenter.showCapsuleView()}),
-
-
+                            
+                            
                             ButtonModel(title: "Go to Divider", action: { presenter.showDivider() }),
                             
-
                             
-                            ButtonModel(title: "Go to DragGesture", action: presenter.showDragGesture()})
-
+                            
+                            ButtonModel(title: "Go to DragGesture", action: { presenter.showDragGesture()}),
+                            
                             ButtonModel(title: "Go to Background", action: {presenter.showBackground()}),
-
+                            
                             ButtonModel(title: "Go to Picker", action: { presenter.showPicker() })
-
-
+                            
+                            
                         ]
-
-
+                        
+                        
                         ForEach(buttons) { button in
                             Button(button.title) {
                                 button.action()
@@ -330,31 +330,31 @@ struct HomeView: View {
             }
         }
     }
-
+    
     // MARK: - Device Info Helpers
     var deviceInfo: String {
         let systemName = UIDevice.current.systemName
         let systemVersion = UIDevice.current.systemVersion
         return "\(systemName) \(systemVersion)"
     }
-
+    
     var screenResolution: String {
         let screen = UIScreen.main.bounds
         return "\(Int(screen.width)) x \(Int(screen.height))"
     }
-
+    
     var isSimulator: String {
-        #if targetEnvironment(simulator)
-            return "Simulator"
-        #else
-            return "Real Device"
-        #endif
+#if targetEnvironment(simulator)
+        return "Simulator"
+#else
+        return "Real Device"
+#endif
     }
-
+    
     // MARK: - GitHub API Integration
     func fetchRepoInfo() {
         let baseURL = "https://api.github.com/repos/masterfabric-mobile/swift_camp"
-
+        
         // Generic pagination fetch function
         func fetchPaginatedData<T: Decodable>(
             endpoint: String,
@@ -365,16 +365,16 @@ struct HomeView: View {
         ) {
             // For pull requests, we need to include the state parameter if we want to fetch closed PRs
             let url =
-                if endpoint == "pulls" {
-                    "\(baseURL)/\(endpoint)?state=closed&per_page=\(perPage)&page=\(page)"
-                } else {
-                    "\(baseURL)/\(endpoint)?per_page=\(perPage)&page=\(page)"
-                }
-
+            if endpoint == "pulls" {
+                "\(baseURL)/\(endpoint)?state=closed&per_page=\(perPage)&page=\(page)"
+            } else {
+                "\(baseURL)/\(endpoint)?per_page=\(perPage)&page=\(page)"
+            }
+            
             fetchGenericData(from: url) { (items: [T]) in
                 var updatedCollection = collection
                 updatedCollection.append(contentsOf: items)
-
+                
                 if items.count == perPage {
                     fetchPaginatedData(
                         endpoint: endpoint,
@@ -388,7 +388,7 @@ struct HomeView: View {
                 }
             }
         }
-
+        
         // Fetch commits
         fetchPaginatedData(endpoint: "commits", collection: [Commit]()) { commits in
             DispatchQueue.main.async {
@@ -396,7 +396,7 @@ struct HomeView: View {
                 print("Total commits: \(commits.count)")
             }
         }
-
+        
         // Fetch closed PRs
         fetchPaginatedData(endpoint: "pulls", collection: [PullRequest]()) { pulls in
             DispatchQueue.main.async {
@@ -404,14 +404,14 @@ struct HomeView: View {
                 print("Total closed PRs: \(pulls.count)")
             }
         }
-
+        
         // Fetch branches
         fetchGenericData(from: "\(baseURL)/branches") { (branches: [Branch]) in
             DispatchQueue.main.async {
                 self.branchCount = branches.count
             }
         }
-
+        
         // Fetch contributors
         fetchGenericData(from: "\(baseURL)/contributors") { (contributors: [Contributor]) in
             DispatchQueue.main.async {
@@ -419,7 +419,7 @@ struct HomeView: View {
             }
         }
     }
-
+    
     private func fetchGenericData<T: Decodable>(
         from urlString: String, completion: @escaping (T) -> Void
     ) {
@@ -434,9 +434,10 @@ struct HomeView: View {
             }
         }.resume()
     }
-
+    
     struct Commit: Decodable {}
     struct PullRequest: Decodable {}
     struct Branch: Decodable {}
     
-
+    
+}
