@@ -76,4 +76,5 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
 
+    func showOffset()
 }
