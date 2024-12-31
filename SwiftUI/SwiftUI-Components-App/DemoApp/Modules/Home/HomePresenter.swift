@@ -290,10 +290,12 @@ func showWithAnimation() {
     }
 
 
-
-    
     /// Navigates to Offset
     func showOffset() {
         wireframe.showOffset()
+    }
+    /// Navigates to List
+    func showList() {
+        wireframe.showList()
     }
 }

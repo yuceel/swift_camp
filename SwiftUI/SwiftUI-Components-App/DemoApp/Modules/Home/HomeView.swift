@@ -289,7 +289,8 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Picker", action: { presenter.showPicker() }),
                             
                             
-                            ButtonModel(title: "Go to Offset", action: { presenter.showOffset()})
+                            ButtonModel(title: "Go to Offset", action: { presenter.showOffset()}),
+                            ButtonModel(title: "Go to List", action: { presenter.showList()})
                             
                             
                         ]

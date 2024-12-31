@@ -291,4 +291,9 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(offsetWireframe)
     }
     
+    func showList() {
+        let listWireframe = ListWireframe()
+        navigationController?.pushWireframe(listWireframe)
+    }
+
 }
