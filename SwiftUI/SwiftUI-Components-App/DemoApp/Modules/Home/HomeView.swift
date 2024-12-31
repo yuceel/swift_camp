@@ -3,32 +3,15 @@ import SwiftUI
 struct HomeView: View {
     // MARK: - HomeView State & ObservedObject
     @ObservedObject var presenter: HomePresenter
-    @State private var commitCount = 0
-    @State private var closedPRCount = 0
-    @State private var branchCount = 0
-    @State private var contributors: [Contributor] = []
-    @State private var selectedContributor: Contributor?
-    @State private var showDialog = false
-    
-    struct Contributor: Identifiable, Decodable {
-        let id: Int
-        let login: String
-        let avatar_url: String
-        let html_url: String
-        
-        var username: String { login }
-        var avatarURL: String { avatar_url }
-        var profileURL: String { html_url }
-    }
-    
-    // Button model
-    struct ButtonModel: Identifiable {
-        let id = UUID()
-        let title: String
-        let action: () -> Void
-    }
-    
+
     var body: some View {
+        let repoInfo = presenter.repoInfo ?? GithubRepoInfo(
+            commitCount: 0,
+            closedPRCount: 0,
+            branchCount: 0,
+            contributors: []
+        )
+
         NavigationView {
             VStack(spacing: 0) {
                 
@@ -116,9 +99,9 @@ struct HomeView: View {
                             
                             HStack {
                                 VStack(alignment: .leading) {
-                                    Text("Commits: \(commitCount)")
-                                    Text("Closed PRs: \(closedPRCount)")
-                                    Text("Branches: \(branchCount)")
+                                    Text("Commits: \(repoInfo.commitCount)")
+                                    Text("Closed PRs: \(repoInfo.closedPRCount)")
+                                    Text("Branches: \(repoInfo.branchCount)")
                                 }
                                 Spacer()
                             }
@@ -134,7 +117,7 @@ struct HomeView: View {
                                 Spacer()
                                 
                                 // Chip with contributors count
-                                Text("\(contributors.count) Contributors")
+                                Text("\(repoInfo.contributors.count) Contributors")
                                     .font(.caption)
                                     .padding(8)
                                     .background(Color.blue.opacity(0.2))
@@ -143,7 +126,7 @@ struct HomeView: View {
                             
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack(spacing: 10) {
-                                    ForEach(contributors) { contributor in
+                                    ForEach(repoInfo.contributors) { contributor in
                                         VStack {
                                             AsyncImage(url: URL(string: contributor.avatarURL)) {
                                                 image in
@@ -160,8 +143,8 @@ struct HomeView: View {
                                                 .font(.caption)
                                             
                                             Button(action: {
-                                                selectedContributor = contributor
-                                                showDialog = true
+                                                presenter.selectedContributor = contributor
+                                                presenter.showDialog = true
                                             }) {
                                                 Text("View Profile")
                                                     .font(.caption2)
@@ -176,7 +159,7 @@ struct HomeView: View {
                         .padding(.horizontal)
                         
                         // Dynamic Buttons
-                        let buttons = [
+                        let buttons : [ButtonModel] = [
                             ButtonModel(
                                 title: "Go to VStackView", action: { presenter.showVStack() }),
                             ButtonModel(
@@ -290,8 +273,12 @@ struct HomeView: View {
                             
                             
                             ButtonModel(title: "Go to Offset", action: { presenter.showOffset()}),
-                            ButtonModel(title: "Go to ActionSheet", action: { presenter.showActionSheet()})
+
+                            ButtonModel(title: "Go to ActionSheet", action: { presenter.showActionSheet()}),
                             
+
+                            ButtonModel(title: "Go to Transition", action: { presenter.showTransition() })
+
                             
                         ]
                         
@@ -313,10 +300,10 @@ struct HomeView: View {
             }
             .background(Color(UIColor.systemBackground))  // Adapts to light/dark mode
             .onAppear {
-                fetchRepoInfo()
+                presenter.fetchRepoInfo()
             }
-        }.alert(isPresented: $showDialog) {
-            if let contributor = selectedContributor {
+        }.alert(isPresented: $presenter.showDialog) {
+            if let contributor = presenter.selectedContributor {
                 return Alert(
                     title: Text(contributor.username),
                     message: Text("View GitHub profile or close this dialog."),
@@ -354,94 +341,5 @@ struct HomeView: View {
         return "Real Device"
 #endif
     }
-    
-    // MARK: - GitHub API Integration
-    func fetchRepoInfo() {
-        let baseURL = "https://api.github.com/repos/masterfabric-mobile/swift_camp"
-        
-        // Generic pagination fetch function
-        func fetchPaginatedData<T: Decodable>(
-            endpoint: String,
-            perPage: Int = 100,
-            collection: [T] = [],
-            page: Int = 1,
-            completion: @escaping ([T]) -> Void
-        ) {
-            // For pull requests, we need to include the state parameter if we want to fetch closed PRs
-            let url =
-            if endpoint == "pulls" {
-                "\(baseURL)/\(endpoint)?state=closed&per_page=\(perPage)&page=\(page)"
-            } else {
-                "\(baseURL)/\(endpoint)?per_page=\(perPage)&page=\(page)"
-            }
-            
-            fetchGenericData(from: url) { (items: [T]) in
-                var updatedCollection = collection
-                updatedCollection.append(contentsOf: items)
-                
-                if items.count == perPage {
-                    fetchPaginatedData(
-                        endpoint: endpoint,
-                        perPage: perPage,
-                        collection: updatedCollection,
-                        page: page + 1,
-                        completion: completion
-                    )
-                } else {
-                    completion(updatedCollection)
-                }
-            }
-        }
-        
-        // Fetch commits
-        fetchPaginatedData(endpoint: "commits", collection: [Commit]()) { commits in
-            DispatchQueue.main.async {
-                self.commitCount = commits.count
-                print("Total commits: \(commits.count)")
-            }
-        }
-        
-        // Fetch closed PRs
-        fetchPaginatedData(endpoint: "pulls", collection: [PullRequest]()) { pulls in
-            DispatchQueue.main.async {
-                self.closedPRCount = pulls.count
-                print("Total closed PRs: \(pulls.count)")
-            }
-        }
-        
-        // Fetch branches
-        fetchGenericData(from: "\(baseURL)/branches") { (branches: [Branch]) in
-            DispatchQueue.main.async {
-                self.branchCount = branches.count
-            }
-        }
-        
-        // Fetch contributors
-        fetchGenericData(from: "\(baseURL)/contributors") { (contributors: [Contributor]) in
-            DispatchQueue.main.async {
-                self.contributors = contributors
-            }
-        }
-    }
-    
-    private func fetchGenericData<T: Decodable>(
-        from urlString: String, completion: @escaping (T) -> Void
-    ) {
-        guard let url = URL(string: urlString) else { return }
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data, error == nil else { return }
-            do {
-                let decodedData = try JSONDecoder().decode(T.self, from: data)
-                completion(decodedData)
-            } catch {
-                print("Failed to decode data from \(urlString): \(error)")
-            }
-        }.resume()
-    }
-    
-    struct Commit: Decodable {}
-    struct PullRequest: Decodable {}
-    struct Branch: Decodable {}
-    
     
 }
