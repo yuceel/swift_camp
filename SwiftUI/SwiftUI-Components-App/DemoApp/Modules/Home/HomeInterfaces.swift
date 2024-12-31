@@ -62,8 +62,17 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showDivider()
+
+    
+    
+    func showDragGesture()
+
     func showBackground()
 
+
+
+
+    func showPicker()
 
 
 
