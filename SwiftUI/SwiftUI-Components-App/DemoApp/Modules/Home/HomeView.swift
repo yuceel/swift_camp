@@ -280,7 +280,12 @@ struct HomeView: View {
 
                             ButtonModel(title: "Go to Divider", action: { presenter.showDivider() }),
                             
+
+                            
+                            ButtonModel(title: "Go to DragGesture", action: presenter.showDragGesture()})
+
                             ButtonModel(title: "Go to Background", action: {presenter.showBackground()}),
+
 
 
 
@@ -433,5 +438,5 @@ struct HomeView: View {
     struct Commit: Decodable {}
     struct PullRequest: Decodable {}
     struct Branch: Decodable {}
-}
+    
 

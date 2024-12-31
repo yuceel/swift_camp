@@ -271,9 +271,19 @@ func showWithAnimation() {
           wireframe.showDivider()
       }
     
+
+    
+    
+    /// Navigates to DragGesture
+     func showDragGesture() {
+        wireframe.showDragGesture()
+    }
+
+
     func showBackground() {
         wireframe.showBackground()
     }
+
 
 
 
