@@ -269,7 +269,14 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Progress View", action:{ presenter.showProgressView()}),
                             ButtonModel(title: "Go to Grid", action: { presenter.showGrid()}),
                             ButtonModel(title: "Go to Slider", action: { presenter.showSlider()}),
-                            
+                            ButtonModel(title: "Go to TextField", action: { presenter.showTextField()}),                      
+                            ButtonModel(title: "Go to Label", action: { presenter.showLabel()}),
+                            ButtonModel(title: "Go To Capsule", action: {presenter.showCapsuleView()}),
+                            ButtonModel(title: "Go to Divider", action: { presenter.showDivider() }),
+                            ButtonModel(title: "Go to DragGesture", action: { presenter.showDragGesture()}),
+                            ButtonModel(title: "Go to Background", action: {presenter.showBackground()}),
+                            ButtonModel(title: "Go to Picker", action: { presenter.showPicker() }),
+                            ButtonModel(title: "Go to Offset", action: { presenter.showOffset()})
                         ]
                         
                         
@@ -419,4 +426,6 @@ struct HomeView: View {
     struct Commit: Decodable {}
     struct PullRequest: Decodable {}
     struct Branch: Decodable {}
+    
+    
 }

@@ -240,21 +240,47 @@ func showWithAnimation() {
         wireframe.showGrid()
     }
     
-    
-    
-    
-    
     // Navigate to Slider View
     
     func showSlider() {
         wireframe.showSlider()
     }
-
-
-
+    
+    func showLabel() {
+        wireframe.showLabel()
+    }
 
     // Navigate to LongPressGesture
     func showLongPressGesture() {
         wireframe.showLongPressGesture()
       }
+
+    func showCapsuleView() {
+        wireframe.showCapsuleView()
+        
+    }
+
+    /// Navigates to Divider
+      func showDivider() {
+          wireframe.showDivider()
+      }
+    
+    /// Navigates to DragGesture
+     func showDragGesture() {
+        wireframe.showDragGesture()
+    }
+
+    func showBackground() {
+        wireframe.showBackground()
+    }
+
+    /// Navigates to Picker
+    func showPicker() {
+        wireframe.showPicker()
+    }
+
+    /// Navigates to Offset
+    func showOffset() {
+        wireframe.showOffset()
+    }
 }

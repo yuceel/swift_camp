@@ -252,5 +252,46 @@ extension HomeWireframe: HomeWireframeInterface {
         let sliderWireframe = SliderWireframe()
         navigationController?.pushWireframe(sliderWireframe)
     }
+    
+
+
+    func showLabel() {
+        let labelWireframe = LabelWireframe()
+        navigationController?.pushWireframe(labelWireframe)
+    }
+  
+
+    func showCapsuleView() {
+        let capsuleViewWireframe = CapsuleWireframe()
+        navigationController?.pushWireframe(capsuleViewWireframe)
+    }
+
+    func showDivider() {
+        let dividerWireframe = DividerWireframe()
+        navigationController?.pushWireframe(dividerWireframe)
+
+    }
         
+    func showDragGesture() {
+        let dragGestureWireframe = DragGestureWireframe()
+        navigationController?.pushWireframe(dragGestureWireframe)
+    }
+
+    func showBackground() {
+        let showBackgroundWireframe = BackgroundWireframe()
+        navigationController?.pushWireframe(showBackgroundWireframe)
+    }
+
+    func showPicker() {
+        let pickerWireframe = PickerWireframe()
+        navigationController?.pushWireframe(pickerWireframe)
+    }    
+    
+    
+    
+    func showOffset() {
+        let offsetWireframe = OffsetWireframe()
+        navigationController?.pushWireframe(offsetWireframe)
+    }
+    
 }
