@@ -284,7 +284,16 @@ final class HomePresenter: ObservableObject {
         wireframe.showOffset()
     }
 
+    
+    
+    
+    /// Navigates to ActionSheet
+    func showActionSheet() {
+        wireframe.showActionSheet()
+
+
     func showTransition() {
         wireframe.showTransition()
+
     }
 }

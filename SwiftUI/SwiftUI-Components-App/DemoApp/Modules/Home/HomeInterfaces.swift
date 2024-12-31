@@ -81,5 +81,11 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showOffset()
+
+    
+    
+    func showActionSheet()
+
     func showTransition()
+
 }

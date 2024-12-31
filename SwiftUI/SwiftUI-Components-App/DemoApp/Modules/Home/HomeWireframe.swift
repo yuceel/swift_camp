@@ -292,8 +292,17 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(offsetWireframe)
     }
     
+
+    
+    func showActionSheet() {
+        let actionSheetWireframe = ActionSheetWireframe()
+        navigationController?.pushWireframe(actionSheetWireframe)
+    }
+    
+
     func showTransition() {
         let transitionWireframe = TransitionWireframe()
         navigationController?.pushWireframe(transitionWireframe)
     }
+
 }
