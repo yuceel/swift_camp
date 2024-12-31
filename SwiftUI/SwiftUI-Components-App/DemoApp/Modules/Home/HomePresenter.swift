@@ -270,6 +270,19 @@ func showWithAnimation() {
       func showDivider() {
           wireframe.showDivider()
       }
+    
+
+    
+    
+    /// Navigates to DragGesture
+     func showDragGesture() {
+        wireframe.showDragGesture()
+    }
+
+
+    func showBackground() {
+        wireframe.showBackground()
+    }
 
     /// Navigates to Picker
     func showPicker() {
