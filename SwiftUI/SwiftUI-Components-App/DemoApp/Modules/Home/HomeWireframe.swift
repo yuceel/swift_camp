@@ -284,5 +284,9 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(pickerWireframe)
     }    
     
+    func showCornerRadius() {
+        let cornerRadiusWireframe = CornerRadiusWireframe()
+        navigationController?.pushWireframe(cornerRadiusWireframe)
+    }
     
 }

@@ -73,6 +73,8 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showPicker()
+    
+    func showCornerRadius()
 
 
 

@@ -288,6 +288,10 @@ func showWithAnimation() {
     func showPicker() {
         wireframe.showPicker()
     }
+    
+    func showCornerRadius() {
+        wireframe.showCornerRadius()
+    }
 
 
 
