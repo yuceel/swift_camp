@@ -265,6 +265,12 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(dividerWireframe)
 
     }
+    
+    func showBackground() {
+        let showBackgroundWireframe = BackgroundWireframe()
+        navigationController?.pushWireframe(showBackgroundWireframe)
+        
+    }
         
     
     

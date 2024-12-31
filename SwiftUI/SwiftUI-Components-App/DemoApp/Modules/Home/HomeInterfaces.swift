@@ -62,6 +62,7 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showDivider()
+    func showBackground()
 
 
 
