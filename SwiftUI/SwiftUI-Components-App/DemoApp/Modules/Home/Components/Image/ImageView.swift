@@ -10,7 +10,7 @@ struct ImageView: View {
             Text("A Small Atatürk Exhibition")
                 .font(.title)
                 .fontWeight(.bold)
-                .padding(.bottom, 10)
+                .padding(.bottom, 20)
             
             
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 20), count: 2), spacing: 20) {
