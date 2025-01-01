@@ -100,9 +100,26 @@ struct HomeView: View {
                             
                             HStack {
                                 VStack(alignment: .leading) {
-                                    Text("Commits: \(repoInfo.commitCount)")
-                                    Text("Closed PRs: \(repoInfo.closedPRCount)")
-                                    Text("Branches: \(repoInfo.branchCount)")
+                                    Text("Commits:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text("\(repoInfo.commitCount)")
+                                        .font(.body)
+                                        .foregroundColor(.gray)
+                                    
+                                    Text("Closed PRs:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text("\(repoInfo.closedPRCount)")
+                                        .font(.body)
+                                        .foregroundColor(.gray)
+                                    
+                                    Text("Branches:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text("\(repoInfo.branchCount)")
+                                        .font(.body)
+                                        .foregroundColor(.gray)
                                 }
                                 Spacer()
                             }
@@ -168,18 +185,42 @@ struct HomeView: View {
                                 Spacer()
                             }
                             
-                            // Device & Simulator Info
                             HStack {
                                 VStack(alignment: .leading) {
-                                    Text("Environment: \(EnvironmentHelper.shared.environment.rawValue)")
-                                    Text("API Base URL: \(EnvironmentHelper.shared.apiBaseUrl)")
-                                    Text("API Key: \(EnvironmentHelper.shared.apiKey)")
+                                    Text("Environment:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text(EnvironmentHelper.shared.environment.rawValue)
+                                        .font(.body)
+                                        .foregroundColor(.gray)
+
+                                    Text("API Base URL:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text(EnvironmentHelper.shared.apiBaseUrl)
+                                        .font(.body)
+                                        .foregroundColor(.gray)
+
+                                    Text("API Key:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text(EnvironmentHelper.shared.apiKey)
+                                        .font(.body)
+                                        .foregroundColor(.gray)
+
+                                    if EnvironmentHelper.shared.environment == .dev {
+                                        Text("OneSignal App ID:")
+                                            .font(.headline)
+                                            .bold()
+                                        Text(EnvironmentHelper.shared.oneSignalAppID)
+                                            .font(.body)
+                                            .foregroundColor(.gray)
+                                    }
                                 }
-                                Spacer()
+                                .padding()
+                                .background(Color(UIColor.secondarySystemBackground))
+                                .cornerRadius(10)
                             }
-                            .padding()
-                            .background(Color(UIColor.secondarySystemBackground))
-                            .cornerRadius(10)
                             
                             // App Version Info
                             HStack {
