@@ -90,5 +90,7 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showTransition()
     
     func showTimeLineView()
+    
+    func showMap()
 
 }

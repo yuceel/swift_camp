@@ -308,4 +308,10 @@ final class HomePresenter: ObservableObject {
     func timeLineView() {
         wireframe.showTimeLineView()
     }
+    
+    /// Navigates to Map
+    func showMap() {
+        wireframe.showMap()
+        
+    }
 }

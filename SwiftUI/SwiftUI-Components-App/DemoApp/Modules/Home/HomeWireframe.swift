@@ -314,5 +314,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let timelineViewWireframe = TimeLineViewWireframe()
         navigationController?.pushWireframe(timelineViewWireframe)
     }
+    
+    func showMap() {
+        let mapWireframe = MapWireframe()
+        navigationController?.pushWireframe(mapWireframe)
+    }
 
 }

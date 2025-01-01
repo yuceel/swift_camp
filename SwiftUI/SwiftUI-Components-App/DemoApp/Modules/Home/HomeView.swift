@@ -262,7 +262,8 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Offset", action: { presenter.showOffset()}),
                             ButtonModel(title: "Go to ActionSheet", action: { presenter.showActionSheet()}),
                             ButtonModel(title: "Go to Transition", action: { presenter.showTransition() }),
-                            ButtonModel(title: "Go to TimeLineView", action: { presenter.timeLineView() })
+                            ButtonModel(title: "Go to TimeLineView", action: { presenter.timeLineView() }),
+                            ButtonModel(title: "Go to Map", action: { presenter.showMap()})
                         ]
                         
                         
