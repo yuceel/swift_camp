@@ -32,13 +32,14 @@ struct HomeView: View {
                 
                 ScrollView {
                     VStack(alignment: .center, spacing: 20) {
-                        
                         // Centered Header
                         Text("Welcome to SwiftUI Components App")
                             .font(.title)
                             .bold()
                             .multilineTextAlignment(.center)
                             .padding(.bottom, 5)
+
+
                         
                         // Description
                         Text(
@@ -155,6 +156,39 @@ struct HomeView: View {
                                     }
                                 }
                             }
+                        }
+                        .padding(.horizontal)
+                        // Footer - Environment Info
+                        VStack(alignment: .leading, spacing: 20) {
+                            HStack {
+                                Text("Environment Info")
+                                    .font(.headline)
+                                    .padding(.top, 20)
+                                
+                                Spacer()
+                            }
+                            
+                            // Device & Simulator Info
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text("Environment: \(EnvironmentHelper.shared.environment.rawValue)")
+                                    Text("API Base URL: \(EnvironmentHelper.shared.apiBaseUrl)")
+                                    Text("API Key: \(EnvironmentHelper.shared.apiKey)")
+                                }
+                                Spacer()
+                            }
+                            .padding()
+                            .background(Color(UIColor.secondarySystemBackground))
+                            .cornerRadius(10)
+                            
+                            // App Version Info
+                            HStack {
+                                Text("App Info")
+                                    .font(.headline)
+                                
+                                Spacer()
+                            }
+                            .padding(.top, 10)
                         }
                         .padding(.horizontal)
                         

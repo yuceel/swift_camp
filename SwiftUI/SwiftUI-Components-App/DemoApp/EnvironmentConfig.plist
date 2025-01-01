@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Environment</key>
+	<string>DEV</string>
+	<key>API_BASE_URL</key>
+	<string>https://dev.masterfabric.co/api</string>
+	<key>API_KEY</key>
+	<string>&lt;MF-API-KEY&gt;</string>
+	<key>GITHUB_REPO_API</key>
+	<string>https://api.github.com/repos/masterfabric-mobile/swift_camp</string>
+	<key>ONESIGNAL_APP_ID</key>
+	<string>9663e4ef-0e81-4ff2-8ae0-d37dc5225b9a</string>
+</dict>
+</plist>

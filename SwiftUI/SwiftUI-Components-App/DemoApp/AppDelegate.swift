@@ -3,6 +3,8 @@ import OneSignalFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
+    
+    private let oneSignalAppID = EnvironmentHelper.shared.oneSignalAppID
 
     // MARK: - Public properties -
 
@@ -20,17 +22,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
     ) -> Bool {
         
         // OneSignal initialization
-        OneSignal.initialize("9663e4ef-0e81-4ff2-8ae0-d37dc5225b9a", withLaunchOptions: launchOptions)
+        LoggerHelper.shared.info("Initializing OneSignal with App ID.")
+        OneSignal.initialize(oneSignalAppID, withLaunchOptions: launchOptions)
         
         OneSignal.Notifications.requestPermission({ accepted in
-            print("User accepted notifications: \(accepted)")
+            LoggerHelper.shared.info("User accepted notifications: \(accepted)")
         }, fallbackToSettings: true)
         
         // Configure initializers
+        LoggerHelper.shared.debug("Setting up app initializers.")
         initializers = StartupInitializationBuilder()
             .setAppDelegate(self)
             .build(with: launchOptions)
         
+        LoggerHelper.shared.info("Application did finish launching.")
         return true
     }
 }
