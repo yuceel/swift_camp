@@ -1,5 +1,5 @@
 {
-  "originHash" : "a061cd802978fa0e712973b37fb6870dd5af3c0f262f49c1fca4ecc677f29059",
+  "originHash" : "0da112ac12f99be11e091e86b9e416fefa81377bf4cb973f80252da9368b21c2",
   "pins" : [
     {
       "identity" : "onesignal-xcframework",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
         "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "swiftybeaver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
+      "state" : {
+        "revision" : "8cba041db09596183331d123f337d0eb2e6e8e91",
+        "version" : "2.1.1"
       }
     }
   ],
