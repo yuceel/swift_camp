@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ata1.jpeg",
+      "filename" : "ata1.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ata1 1.jpeg",
+      "filename" : "ata1 1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ata1 2.jpeg",
+      "filename" : "ata1 2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
