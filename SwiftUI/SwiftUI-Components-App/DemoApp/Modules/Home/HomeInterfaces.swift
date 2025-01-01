@@ -1,5 +1,9 @@
 import UIKit
 
+protocol HomeInteractorInterface: AnyObject {
+    func fetchRepoInfo(completion: @escaping (GithubRepoInfo) -> Void)
+}
+
 protocol HomeWireframeInterface: WireframeInterface {
     func showVStack()
     func showZStack()
@@ -78,4 +82,13 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showOffset()
+
+    
+    
+    func showActionSheet()
+
+    func showTransition()
+    
+    func showTimeLineView()
+
 }
