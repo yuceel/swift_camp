@@ -1,0 +1,74 @@
+name: Update Contributors in README
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * 1' # Runs weekly on Monday at midnight
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the repository to the runner  
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Fetch contributors data using GitHub API
+      - name: Fetch Contributors
+        run: |
+          # Fetch the contributors list from the GitHub API and save it as a JSON file
+          curl -s https://api.github.com/repos/masterfabric-mobile/swift_camp/contributors > contributors.json
+
+      # Step 3: Generate the contributors table
+      - name: Generate Contributors Table
+        run: |
+          # Start creating the contributors section
+          echo '## ✨ Contributors' > contributors.md
+          echo '<table style="width: 100%; text-align: center; border-spacing: 10px;">' >> contributors.md
+          
+          # Process contributors in groups of 5
+          jq -r 'to_entries | .[] | 
+                 if (.key % 5 == 0) then "<tr>" else "" end +
+                 "<td style=\"width: 150px; height: 150px; text-align: center; vertical-align: top;\">" +
+                 "<a href=\"" + .value.html_url + "\" style=\"text-decoration: none; color: inherit;\">" +
+                 "<div style=\"width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto;\">" +
+                 "<img src=\"" + .value.avatar_url + "\" style=\"width: 100%; height: 100%; object-fit: cover;\" alt=\"" + .value.login + "\" />" +
+                 "</div>" +
+                 "<br /><sub style=\"word-wrap: break-word; font-size: 14px; max-width: 120px; display: block;\"><b>" + .value.login + "</b></sub></a></td>" +
+                 if (.key % 5 == 4) then "</tr>" else "" end' contributors.json >> contributors.md
+          
+          # Close the table
+          echo '</table>' >> contributors.md
+
+      # Step 4: Update the README.md file with the new contributors section
+      - name: Update README.md
+        run: |
+          # Extract content before the "## ✨ Contributors" section
+          sed -n '1,/## ✨ Contributors/ p' README.md | sed '$d' > temp_readme_top.md
+          
+          # Extract content after the "## ✨ Contributors" section
+          sed -n '/## ✨ Contributors/,$ p' README.md | tail -n +2 > temp_readme_bottom.md
+          
+          # Combine the top, updated contributors, and bottom sections
+          cat temp_readme_top.md contributors.md temp_readme_bottom.md > new_readme.md
+          
+          # Replace the original README.md with the updated one
+          mv new_readme.md README.md
+
+      # Step 5: Commit and Push Changes
+      - name: Commit and Push Changes
+        run: |
+          # Configure Git user for the action
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          
+          # Add all files, including untracked ones
+          git add -A
+          
+          # Commit the changes if there are any
+          git commit -m "Update contributors section in README" || echo "No changes to commit"
+          
+          # Push the changes to the main branch
+          git push
