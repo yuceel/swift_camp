@@ -224,7 +224,7 @@ struct HomeView: View {
                             
                             // App Version Info
                             HStack {
-                                Text("App Info")
+                                Text("Components")
                                     .font(.headline)
                                 
                                 Spacer()
