@@ -340,6 +340,11 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(pathWireframe)
     }
     
+    func showTapGesture() {
+        let tapGestureWireframe = TapGestureWireframe()
+        navigationController?.pushWireframe(tapGestureWireframe)
+    }
+    
     
 
 }

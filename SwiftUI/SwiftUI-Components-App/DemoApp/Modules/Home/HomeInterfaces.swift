@@ -102,6 +102,7 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showLink()
     
     func showPath()
+    func showTapGesture()
 
 
 }
