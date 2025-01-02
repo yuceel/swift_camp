@@ -283,6 +283,10 @@ final class HomePresenter: ObservableObject {
     func showPicker() {
         wireframe.showPicker()
     }
+    
+    func showCornerRadius() {
+        wireframe.showCornerRadius()
+    }
 
     /// Navigates to Offset
     func showOffset() {
