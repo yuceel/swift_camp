@@ -382,10 +382,16 @@ final class HomePresenter: ObservableObject {
         wireframe.showMagnificationGesture()
     }
     
+
     func showCustomShape() {
         wireframe.showCustomShape()
         
     }
     
     
+    
+    /// Navigates to ForegroundColor
+    func showForegroundColor() {
+        wireframe.showForegroundColor()
+    }
 }

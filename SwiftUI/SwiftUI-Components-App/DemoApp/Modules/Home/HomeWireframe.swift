@@ -350,9 +350,18 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(magnificationGestureWireframe)
     }
     
+
     func showCustomShape() {
         let customShapeWireframe = CustomShapeWireframe()
         navigationController?.pushWireframe(customShapeWireframe)
     }
+
+    
+    func showForegroundColor() {
+        let foregroundColorWireframe = ForegroundColorWireframe()
+        navigationController?.pushWireframe(foregroundColorWireframe)
+    }
+    
+
 
 }
