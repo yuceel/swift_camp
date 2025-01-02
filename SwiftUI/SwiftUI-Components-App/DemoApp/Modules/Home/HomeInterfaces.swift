@@ -49,6 +49,7 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showTextField()
+    func showLongPressGesture()
 
     func showProgressView()
 
@@ -91,5 +92,7 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showTransition()
     
     func showTimeLineView()
+    
+    func showMap()
 
 }
