@@ -8,8 +8,7 @@ final class RectanglePresenter: ObservableObject {
     private let wireframe: RectangleWireframeInterface
 
     // Rectangle properties
-    @Published var width: CGFloat = 100
-    @Published var height: CGFloat = 100
+    @Published var size: CGFloat = 100 // Unified size property
     @Published var color: Color = .red
 
     // MARK: - Lifecycle
@@ -26,9 +25,8 @@ final class RectanglePresenter: ObservableObject {
 
     // MARK: - Actions
 
-    func updateRectangle(width: CGFloat, height: CGFloat, color: Color) {
-        self.width = width
-        self.height = height
+    func updateRectangle(size: CGFloat, color: Color) {
+        self.size = size
         self.color = color
     }
 }
