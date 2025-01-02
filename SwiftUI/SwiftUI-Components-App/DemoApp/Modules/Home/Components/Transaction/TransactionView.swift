@@ -27,6 +27,7 @@ struct TransactionView: View {
                 }
                 .padding(.horizontal)
 
+                Spacer()
                 // Animated Circle Section
                 VStack(spacing: 20) {
                     Text("Dynamic Shape Animation")

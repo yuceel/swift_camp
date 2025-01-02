@@ -28,6 +28,7 @@ struct MatchedGeometryEffectView: View {
                 }
                 .padding(.horizontal)
 
+                Spacer()
                 // Animation Section
                 VStack(spacing: 30) {
                     Text("Tap to Animate")
