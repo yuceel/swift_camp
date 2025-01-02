@@ -381,4 +381,11 @@ final class HomePresenter: ObservableObject {
     func showMagnificationGesture() {
         wireframe.showMagnificationGesture()
     }
+    
+    func showCustomShape() {
+        wireframe.showCustomShape()
+        
+    }
+    
+    
 }

@@ -105,4 +105,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showTapGesture()
     func showMagnificationGesture()
 
+    
+    func showCustomShape()
 }
