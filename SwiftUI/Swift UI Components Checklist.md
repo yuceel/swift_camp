@@ -64,7 +64,7 @@
   - [ ] ForegroundColor @elifdodanli
   - [ ] Shadow @beyzanuravsar
   - [ ] CornerRadius @yuceel
-  - [ ] Frame @turhanGoksu
+  - [x] Frame @turhanGoksu
   - [ ] Offset @mehmetalbyrak
   - [ ] ScaleEffect @beyzanuravsar
   - [x] RotationEffect @alakkaya
@@ -96,7 +96,7 @@
 
 - [ ] **Grid**
 
-  - [ ] Grid @turhanGoksu
+  - [x] Grid @turhanGoksu
   - [ ] GridRow @OnurArslan0
 
 - [ ] **Other Components**
