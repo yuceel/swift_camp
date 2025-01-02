@@ -359,6 +359,7 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Map", action: { presenter.showMap()}),
                             ButtonModel(title: "Go to Link", action: { presenter.showLink()}),
                             ButtonModel(title: "Go to Path", action: { presenter.showPath()}),
+                            ButtonModel(title: "Go to TapGesture", action: {presenter.showTapGesture()})
                         ]
                         
                         
