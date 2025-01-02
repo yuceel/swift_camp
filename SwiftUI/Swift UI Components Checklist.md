@@ -4,14 +4,14 @@
 
   - [x] VStack @mehmetalbyrak
   - [x] HStack @elifdodanli
-  - [ ] ZStack @AylinManav
+  - [x] ZStack @AylinManav
   - [ ] LazyVStack @busragedikoglu
   - [ ] LazyHStack @mehmetalbyrak
   - [ ] LazyVGrid @yuceel
   - [ ] LazyHGrid @melihalkbk
   - [ ] ScrollView @busragedikoglu
   - [ ] List @elifdodanli
-  - [ ] Section @AylinManav
+  - [x] Section @AylinManav
   - [ ] Group @elifdodanli
   - [ ] GroupBox @OnurArslan0
   - [ ] NavigationView @beyzanuravsar
@@ -22,7 +22,7 @@
 
 - [ ] **Text and Images**
 
-  - [ ] Text @AylinManav
+  - [x] Text @AylinManav
   - [ ] TextField @yuceel
   - [ ] SecureField @busragedikoglu
   - [ ] Image @melihalkbk
@@ -32,7 +32,7 @@
 - [ ] **Buttons**
 
   - [ ] Button @beyzanuravsar
-  - [ ] Link @AylinManav
+  - [x] Link @AylinManav
   - [ ] Toggle @OnurArslan0
   - [ ] Menu @melihalkbk
   - [ ] ContextMenu @busragedikoglu
@@ -55,7 +55,7 @@
   - [ ] Ellipse @busragedikoglu
   - [ ] Capsule @yuceel
   - [ ] Path @mehmetalbyrak
-  - [ ] CustomShape @AylinManav
+  - [x] CustomShape @AylinManav
 
 - [ ] **Modifiers**
 

@@ -107,4 +107,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     
     func showForegroundColor()
 
+    
+    func showCustomShape()
 }
