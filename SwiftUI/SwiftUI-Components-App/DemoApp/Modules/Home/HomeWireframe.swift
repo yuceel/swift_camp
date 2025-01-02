@@ -344,7 +344,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let tapGestureWireframe = TapGestureWireframe()
         navigationController?.pushWireframe(tapGestureWireframe)
     }
-    
+    func showGroup() {
+        let groupWireframe = GroupWireframe()
+        navigationController?.pushWireframe(groupWireframe)
+    }
     
 
 }
