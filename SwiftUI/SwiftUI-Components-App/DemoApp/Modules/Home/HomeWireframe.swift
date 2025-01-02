@@ -350,5 +350,11 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(magnificationGestureWireframe)
     }
     
+    
+    func showForegroundColor() {
+        let foregroundColorWireframe = ForegroundColorWireframe()
+        navigationController?.pushWireframe(foregroundColorWireframe)
+    }
+    
 
 }
