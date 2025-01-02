@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ImageView: View {
     @ObservedObject var presenter: ImagePresenter
-    let imageNames = ["atatürk", "ata2", "ata3", "ata4", "ata5", "ata6"]
+    let imageNames = ["ata1", "ata2", "ata3", "ata4", "ata5", "ata6"]
     
     var body: some View {
         VStack {
@@ -10,7 +10,7 @@ struct ImageView: View {
             Text("A Small Atatürk Exhibition")
                 .font(.title)
                 .fontWeight(.bold)
-                .padding(.bottom, 10)
+                .padding(.bottom, 20)
             
             
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 20), count: 2), spacing: 20) {
