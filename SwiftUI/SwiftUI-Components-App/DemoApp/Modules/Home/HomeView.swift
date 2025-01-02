@@ -323,24 +323,17 @@ struct HomeView: View {
                             ButtonModel(
                                 title: "Go to Opacity",
                                 action: { presenter.showOpacity() }),
-                            
                             ButtonModel(title: "Go to Secure Field", action: { presenter.showSecureField() }),
                             ButtonModel(title: "Go to ContextMenu", action: { presenter.showContextMenu()}),
                             ButtonModel(title: "Go to Binding", action: { presenter.showBinding()}),
                             ButtonModel(title: "Go to Stepper", action: { presenter.showStepper() }),
-                            
                             ButtonModel(title: "Go to LazyVGrid", action: { presenter.showLazyVGridView()}),
-                            
-                            
                             ButtonModel(title: "Go to LazyVGrid", action: { presenter.showLazyVGridView() }),
                             ButtonModel(title: "Go to Canvas", action: { presenter.showCanvas()}),
                             ButtonModel(title: "Go to Ellipse", action: { presenter.showEllipse() }),
                             ButtonModel(title: "Go to Padding", action: { presenter.showPadding() }),
                             ButtonModel(title: "Go to LazyHStack", action: { presenter.showLazyHStack()}),
-                            
                             ButtonModel(title: "Go to Alert", action: { presenter.showAlert() }),
-                            
-                            
                             ButtonModel(title: "Go to RotationEffect", action: { presenter.showRotationEffect()}),
                             ButtonModel(title: "Go to WithAnimation", action: { presenter.showWithAnimation() }),
                             ButtonModel(title: "Go to TextField", action: { presenter.showTextField()}),
@@ -349,7 +342,7 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Progress View", action:{ presenter.showProgressView()}),
                             ButtonModel(title: "Go to Grid", action: { presenter.showGrid()}),
                             ButtonModel(title: "Go to Slider", action: { presenter.showSlider()}),
-                            ButtonModel(title: "Go to TextField", action: { presenter.showTextField()}),                      
+                            ButtonModel(title: "Go to TextField", action: { presenter.showTextField()}),
                             ButtonModel(title: "Go to Label", action: { presenter.showLabel()}),
                             ButtonModel(title: "Go To Capsule", action: {presenter.showCapsuleView()}),
                             ButtonModel(title: "Go to Divider", action: { presenter.showDivider() }),
@@ -358,25 +351,13 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Picker", action: { presenter.showPicker() }),
                             ButtonModel(title: "Go to Corner Radius", action: {presenter.showCornerRadius()}),
                             ButtonModel(title: "Go to Offset", action: { presenter.showOffset()}),
-
-
                             ButtonModel(title: "Go to List", action: { presenter.showList()}),
-
-
-
 
                             ButtonModel(title: "Go to ActionSheet", action: { presenter.showActionSheet()}),
                             ButtonModel(title: "Go to Transition", action: { presenter.showTransition() }),
-
-
-                            
-                            ButtonModel(title: "Go to TimeLineView", action: { presenter.timeLineView() }),
-
                             ButtonModel(title: "Go to TimeLineView", action: { presenter.timeLineView() }),
                             ButtonModel(title: "Go to Map", action: { presenter.showMap()}),
                             ButtonModel(title: "Go to Link", action: { presenter.showLink()})
-
-
                         ]
                         
                         
