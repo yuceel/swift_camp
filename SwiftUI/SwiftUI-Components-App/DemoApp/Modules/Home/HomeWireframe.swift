@@ -334,5 +334,12 @@ extension HomeWireframe: HomeWireframeInterface {
         let linkWireframe = LinkWireframe()
         navigationController?.pushWireframe(linkWireframe)
     }
+    
+    func showPath() {
+        let pathWireframe = PathWireframe()
+        navigationController?.pushWireframe(pathWireframe)
+    }
+    
+    
 
 }
