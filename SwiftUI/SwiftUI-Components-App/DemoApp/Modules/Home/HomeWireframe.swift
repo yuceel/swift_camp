@@ -345,6 +345,10 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(tapGestureWireframe)
     }
     
+    func showRotationGesture() {
+        let rotationGestureWireframe = RotationGestureWireframe()
+        navigationController?.pushWireframe(rotationGestureWireframe)
+    }
     
 
 }
