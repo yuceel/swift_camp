@@ -372,4 +372,9 @@ final class HomePresenter: ObservableObject {
     func showPath() {
         wireframe.showPath()
     }
+    
+    /// Navigates to TapGesture
+    func showTapGesture() {
+        wireframe.showTapGesture()
+    }
 }
