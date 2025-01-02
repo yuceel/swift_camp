@@ -377,4 +377,8 @@ final class HomePresenter: ObservableObject {
     func showTapGesture() {
         wireframe.showTapGesture()
     }
+
+    func showMagnificationGesture() {
+        wireframe.showMagnificationGesture()
+    }
 }

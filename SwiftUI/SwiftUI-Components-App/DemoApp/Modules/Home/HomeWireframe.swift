@@ -345,6 +345,10 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(tapGestureWireframe)
     }
     
+    func showMagnificationGesture() {
+        let magnificationGestureWireframe = MagnificationGestureWireframe()
+        navigationController?.pushWireframe(magnificationGestureWireframe)
+    }
     
 
 }
