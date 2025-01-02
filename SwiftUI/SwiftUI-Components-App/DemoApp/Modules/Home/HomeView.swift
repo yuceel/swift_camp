@@ -32,13 +32,14 @@ struct HomeView: View {
                 
                 ScrollView {
                     VStack(alignment: .center, spacing: 20) {
-                        
                         // Centered Header
                         Text("Welcome to SwiftUI Components App")
                             .font(.title)
                             .bold()
                             .multilineTextAlignment(.center)
                             .padding(.bottom, 5)
+
+
                         
                         // Description
                         Text(
@@ -99,9 +100,26 @@ struct HomeView: View {
                             
                             HStack {
                                 VStack(alignment: .leading) {
-                                    Text("Commits: \(repoInfo.commitCount)")
-                                    Text("Closed PRs: \(repoInfo.closedPRCount)")
-                                    Text("Branches: \(repoInfo.branchCount)")
+                                    Text("Commits:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text("\(repoInfo.commitCount)")
+                                        .font(.body)
+                                        .foregroundColor(.gray)
+                                    
+                                    Text("Closed PRs:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text("\(repoInfo.closedPRCount)")
+                                        .font(.body)
+                                        .foregroundColor(.gray)
+                                    
+                                    Text("Branches:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text("\(repoInfo.branchCount)")
+                                        .font(.body)
+                                        .foregroundColor(.gray)
                                 }
                                 Spacer()
                             }
@@ -155,6 +173,63 @@ struct HomeView: View {
                                     }
                                 }
                             }
+                        }
+                        .padding(.horizontal)
+                        // Footer - Environment Info
+                        VStack(alignment: .leading, spacing: 20) {
+                            HStack {
+                                Text("Environment Info")
+                                    .font(.headline)
+                                    .padding(.top, 20)
+                                
+                                Spacer()
+                            }
+                            
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text("Environment:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text(EnvironmentHelper.shared.environment.rawValue)
+                                        .font(.body)
+                                        .foregroundColor(.gray)
+
+                                    Text("API Base URL:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text(EnvironmentHelper.shared.apiBaseUrl)
+                                        .font(.body)
+                                        .foregroundColor(.gray)
+
+                                    Text("API Key:")
+                                        .font(.headline)
+                                        .bold()
+                                    Text(EnvironmentHelper.shared.apiKey)
+                                        .font(.body)
+                                        .foregroundColor(.gray)
+
+                                    if EnvironmentHelper.shared.environment == .dev {
+                                        Text("OneSignal App ID:")
+                                            .font(.headline)
+                                            .bold()
+                                        Text(EnvironmentHelper.shared.oneSignalAppID)
+                                            .font(.body)
+                                            .foregroundColor(.gray)
+                                    }
+                                }
+                                .padding()
+                                .background(Color(UIColor.secondarySystemBackground))
+                                .cornerRadius(10)
+                            }
+                            
+                            // App Version Info
+                            HStack {
+                                Text("Components")
+                                    .font(.headline)
+                                
+                                Spacer()
+                            }
+                            .padding(.top, 10)
                         }
                         .padding(.horizontal)
                         
@@ -246,46 +321,39 @@ struct HomeView: View {
                             
                             ButtonModel(title: "Go to RotationEffect", action: { presenter.showRotationEffect()}),
                             ButtonModel(title: "Go to WithAnimation", action: { presenter.showWithAnimation() }),
-                            
                             ButtonModel(title: "Go to TextField", action: { presenter.showTextField()}),
-                            ButtonModel(title: "Go to Progress View", action: presenter.showProgressView),
-                            
-                            ButtonModel(title: "Go to TextField", action: { presenter.showTextField() }),
+                            ButtonModel(title: "Go to LongPressGesture", action:{presenter.showLongPressGesture()
+                            }),
+                            ButtonModel(title: "Go to Progress View", action:{ presenter.showProgressView()}),
                             ButtonModel(title: "Go to Grid", action: { presenter.showGrid()}),
                             ButtonModel(title: "Go to Slider", action: { presenter.showSlider()}),
-                            
-                            
-                            
+                            ButtonModel(title: "Go to TextField", action: { presenter.showTextField()}),                      
                             ButtonModel(title: "Go to Label", action: { presenter.showLabel()}),
-                            
                             ButtonModel(title: "Go To Capsule", action: {presenter.showCapsuleView()}),
-                            
-                            
                             ButtonModel(title: "Go to Divider", action: { presenter.showDivider() }),
-                            
-                            
-                            
                             ButtonModel(title: "Go to DragGesture", action: { presenter.showDragGesture()}),
-                            
                             ButtonModel(title: "Go to Background", action: {presenter.showBackground()}),
-                            
                             ButtonModel(title: "Go to Picker", action: { presenter.showPicker() }),
-                            
-                            
+                            ButtonModel(title: "Go to Corner Radius", action: {presenter.showCornerRadius()}),
                             ButtonModel(title: "Go to Offset", action: { presenter.showOffset()}),
+
 
                             ButtonModel(title: "Go to List", action: { presenter.showList()}),
 
 
-                            ButtonModel(title: "Go to ActionSheet", action: { presenter.showActionSheet()}),
-                            
 
+
+                            ButtonModel(title: "Go to ActionSheet", action: { presenter.showActionSheet()}),
                             ButtonModel(title: "Go to Transition", action: { presenter.showTransition() }),
+
 
                             
                             ButtonModel(title: "Go to TimeLineView", action: { presenter.timeLineView() })
 
-                            
+                            ButtonModel(title: "Go to TimeLineView", action: { presenter.timeLineView() }),
+                            ButtonModel(title: "Go to Map", action: { presenter.showMap()})
+
+
                         ]
                         
                         

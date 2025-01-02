@@ -255,15 +255,20 @@ final class HomePresenter: ObservableObject {
         wireframe.showLabel()
     }
 
+    // Navigate to LongPressGesture
+    func showLongPressGesture() {
+        wireframe.showLongPressGesture()
+      }
+
     func showCapsuleView() {
         wireframe.showCapsuleView()
-
+        
     }
 
     /// Navigates to Divider
-    func showDivider() {
-        wireframe.showDivider()
-    }
+      func showDivider() {
+          wireframe.showDivider()
+      }
 
     /// Navigates to DragGesture
     func showDragGesture() {
@@ -277,6 +282,10 @@ final class HomePresenter: ObservableObject {
     /// Navigates to Picker
     func showPicker() {
         wireframe.showPicker()
+    }
+    
+    func showCornerRadius() {
+        wireframe.showCornerRadius()
     }
 
 
@@ -312,5 +321,11 @@ final class HomePresenter: ObservableObject {
     func timeLineView() {
         wireframe.showTimeLineView()
 
+    }
+    
+    /// Navigates to Map
+    func showMap() {
+        wireframe.showMap()
+        
     }
 }

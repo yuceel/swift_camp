@@ -8,8 +8,8 @@ final class FramePresenter: ObservableObject {
     private let wireframe: FrameWireframeInterface
 
     // Frame properties
-    @Published var width: CGFloat = 150
-    @Published var height: CGFloat = 150
+    @Published var size: CGFloat = 150 // Unified property for width and height
+    @Published var color: Color = .blue // Color property
 
     // MARK: - Lifecycle
 
