@@ -104,5 +104,10 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showPath()
     func showTapGesture()
 
+
     func showGroup()
+
+    func showMagnificationGesture()
+
+
 }

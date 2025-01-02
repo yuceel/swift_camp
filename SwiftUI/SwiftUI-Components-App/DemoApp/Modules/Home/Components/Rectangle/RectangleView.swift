@@ -31,34 +31,29 @@ struct RectangleView: View {
                 VStack(spacing: 20) {
                     Rectangle()
                         .fill(presenter.color)
-                        .frame(width: presenter.width, height: presenter.height)
+                        .frame(width: presenter.size, height: presenter.size / 2) // Aspect ratio applied
                         .cornerRadius(10)
                         .shadow(color: presenter.color.opacity(0.4), radius: 10, x: 0, y: 5)
 
-                    Text("Width: \(Int(presenter.width)) • Height: \(Int(presenter.height))")
+                    Text("Size: \(Int(presenter.size)) x \(Int(presenter.size / 2))")
                         .font(.headline)
                         .foregroundColor(.secondary)
                 }
                 .padding(.horizontal)
 
-                // Controls Section
+                // Single Slider Section
                 VStack(spacing: 20) {
                     VStack(alignment: .leading) {
-                        Text("Adjust Width")
+                        Text("Adjust Size")
                             .font(.subheadline)
                             .foregroundColor(.primary)
 
-                        Slider(value: $presenter.width, in: max(presenter.height + 10, 50)...300, step: 1)
-                            .accentColor(.blue)
-                    }
-
-                    VStack(alignment: .leading) {
-                        Text("Adjust Height")
-                            .font(.subheadline)
-                            .foregroundColor(.primary)
-
-                        Slider(value: $presenter.height, in: 50...(presenter.width - 10), step: 1)
-                            .accentColor(.blue)
+                        Slider(
+                            value: $presenter.size,
+                            in: 50...300,
+                            step: 1
+                        )
+                        .accentColor(.blue)
                     }
 
                     VStack(alignment: .leading) {
