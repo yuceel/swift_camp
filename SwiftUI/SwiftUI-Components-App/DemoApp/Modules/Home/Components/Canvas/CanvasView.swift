@@ -52,9 +52,9 @@ struct CanvasView: View {
                 // Canvas section to draw shapes
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
-                        .fill(Color(UIColor.systemBackground))
+                        .fill(Color.secondary.opacity(0.1)) // Adjusted fill for better visibility in dark mode
                         .frame(height: 300)
-                        .shadow(radius: 5)
+                        .shadow(color: Color.primary.opacity(0.2), radius: 5) // Subtle shadow for better contrast
                         .overlay(
                             Canvas { context, size in
                                 let shapePath: Path
