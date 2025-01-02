@@ -236,6 +236,12 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(textFieldWireframe)
     }
     
+
+    func showLongPressGesture() {
+        let longPressGestureWireframe = LongPressGestureWireframe()
+        navigationController?.pushWireframe(longPressGestureWireframe)
+    }
+
     
     func showProgressView() {
         let progressWireframe = ProgressWireframe()
@@ -267,9 +273,6 @@ extension HomeWireframe: HomeWireframeInterface {
 
     }
         
-    
-    
-    
     func showDragGesture() {
         let dragGestureWireframe = DragGestureWireframe()
         navigationController?.pushWireframe(dragGestureWireframe)
@@ -285,6 +288,10 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(pickerWireframe)
     }
     
+    func showCornerRadius() {
+        let cornerRadiusWireframe = CornerRadiusWireframe()
+        navigationController?.pushWireframe(cornerRadiusWireframe)
+    }
     
     
     func showOffset() {
@@ -310,6 +317,11 @@ extension HomeWireframe: HomeWireframeInterface {
     func showTimeLineView() {
         let timelineViewWireframe = TimeLineViewWireframe()
         navigationController?.pushWireframe(timelineViewWireframe)
+    }
+    
+    func showMap() {
+        let mapWireframe = MapWireframe()
+        navigationController?.pushWireframe(mapWireframe)
     }
 
 }
