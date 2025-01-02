@@ -365,4 +365,11 @@ final class HomePresenter: ObservableObject {
         wireframe.showLink()
         
     }
+    
+    
+    
+    /// Navigates to Path
+    func showPath() {
+        wireframe.showPath()
+    }
 }
