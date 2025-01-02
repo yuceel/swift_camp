@@ -300,6 +300,11 @@ extension HomeWireframe: HomeWireframeInterface {
     }
     
 
+    func showList() {
+        let listWireframe = ListWireframe()
+        navigationController?.pushWireframe(listWireframe)
+    }
+
     
     func showActionSheet() {
         let actionSheetWireframe = ActionSheetWireframe()
@@ -317,6 +322,7 @@ extension HomeWireframe: HomeWireframeInterface {
     func showTimeLineView() {
         let timelineViewWireframe = TimeLineViewWireframe()
         navigationController?.pushWireframe(timelineViewWireframe)
+
     }
     
     func showMap() {

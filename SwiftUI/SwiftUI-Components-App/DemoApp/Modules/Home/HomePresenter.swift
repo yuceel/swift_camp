@@ -288,9 +288,18 @@ final class HomePresenter: ObservableObject {
         wireframe.showCornerRadius()
     }
 
+
+
+
+
     /// Navigates to Offset
     func showOffset() {
         wireframe.showOffset()
+    }
+
+    /// Navigates to List
+    func showList() {
+        wireframe.showList()
     }
 
     
@@ -311,6 +320,7 @@ final class HomePresenter: ObservableObject {
     
     func timeLineView() {
         wireframe.showTimeLineView()
+
     }
     
     /// Navigates to Map

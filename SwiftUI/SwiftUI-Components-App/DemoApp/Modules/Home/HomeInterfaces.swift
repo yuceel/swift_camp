@@ -85,6 +85,9 @@ protocol HomeWireframeInterface: WireframeInterface {
 
     func showOffset()
 
+    func showList()
+
+
     
     
     func showActionSheet()
@@ -94,5 +97,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showTimeLineView()
     
     func showMap()
+
 
 }
