@@ -29,30 +29,26 @@ struct RectangleView: View {
 
                 // Rectangle Display Section
                 VStack(spacing: 20) {
-                    Text("Dynamic Rectangle")
-                        .font(.headline)
-                        .foregroundColor(.primary)
-
                     Rectangle()
                         .fill(presenter.color)
                         .frame(width: presenter.width, height: presenter.height)
-                        .cornerRadius(15)
-                        .shadow(color: presenter.color.opacity(0.5), radius: 10, x: 0, y: 5)
+                        .cornerRadius(10)
+                        .shadow(color: presenter.color.opacity(0.4), radius: 10, x: 0, y: 5)
 
                     Text("Width: \(Int(presenter.width)) • Height: \(Int(presenter.height))")
-                        .font(.subheadline)
+                        .font(.headline)
                         .foregroundColor(.secondary)
                 }
                 .padding(.horizontal)
 
                 // Controls Section
-                VStack(spacing: 30) {
+                VStack(spacing: 20) {
                     VStack(alignment: .leading) {
                         Text("Adjust Width")
                             .font(.subheadline)
                             .foregroundColor(.primary)
 
-                        Slider(value: $presenter.width, in: 50...300, step: 1)
+                        Slider(value: $presenter.width, in: max(presenter.height + 10, 50)...300, step: 1)
                             .accentColor(.blue)
                     }
 
@@ -61,7 +57,7 @@ struct RectangleView: View {
                             .font(.subheadline)
                             .foregroundColor(.primary)
 
-                        Slider(value: $presenter.height, in: 50...300, step: 1)
+                        Slider(value: $presenter.height, in: 50...(presenter.width - 10), step: 1)
                             .accentColor(.blue)
                     }
 
