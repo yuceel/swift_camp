@@ -1,21 +1,23 @@
 import Foundation
-import SwiftUI
+import Combine
 
 final class MagnificationGesturePresenter: ObservableObject {
-    
-    // MARK: - Properties
-    
     private let wireframe: MagnificationGestureWireframeInterface
-
-    // MARK: - Lifecycle
-
+    @Published var scale: CGFloat = 1.0
+    
     init(wireframe: MagnificationGestureWireframeInterface) {
         self.wireframe = wireframe
     }
-
-    // MARK: - Navigation
-
+    
     func goBack() {
         wireframe.goBack()
+    }
+    
+    func onMagnificationChanged(_ value: CGFloat) {
+        scale = value
+    }
+    
+    func onMagnificationEnded() {
+        scale = 1.0
     }
 }

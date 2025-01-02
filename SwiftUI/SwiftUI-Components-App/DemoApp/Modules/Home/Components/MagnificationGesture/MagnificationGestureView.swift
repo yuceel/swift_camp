@@ -2,9 +2,9 @@ import SwiftUI
 
 struct MagnificationGestureView: View {
     @ObservedObject var presenter: MagnificationGesturePresenter
-    @State private var scale: CGFloat = 1.0
     @State private var lastScale: CGFloat = 1.0
-    
+    @State private var sliderValue: CGFloat = 1.0
+
     var body: some View {
         VStack(spacing: 20) {
             // Back button with consistent style
@@ -17,42 +17,49 @@ struct MagnificationGestureView: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 10)
-            
-            Text("Pinch to Zoom")
-                .font(.title)
+
+            // Image with magnification gesture
+            ZStack {
+                Rectangle()
+                    .fill(Color.gray.opacity(0.3))
+                    .frame(width: 200, height: 200)
+                    .overlay(
+                        Text("Demo Image")
+                            .font(.headline)
+                            .foregroundColor(.gray)
+                    )
+                    .scaleEffect(presenter.scale * sliderValue)
+                    .gesture(
+                        MagnificationGesture()
+                            .onChanged { value in
+                                presenter.onMagnificationChanged(value * lastScale)
+                            }
+                            .onEnded { _ in
+                                lastScale = presenter.scale
+                            }
+                    )
+                    .animation(.spring(), value: presenter.scale)
+            }
+
+            // Show current scale value
+            Text("Zoom: \(String(format: "%.1f", presenter.scale * sliderValue))x")
+                .font(.title3)
+                .bold()
+
+            // Slider control
+            Slider(value: $sliderValue, in: 0.5...3.0, step: 0.1)
                 .padding()
-            
-            // Demo Image with Magnification
-            Image(systemName: "photo")
-                .font(.system(size: 100))
-                .scaleEffect(scale)
-                .gesture(
-                    MagnificationGesture()
-                        .onChanged { value in
-                            scale = lastScale * value
-                        }
-                        .onEnded { _ in
-                            lastScale = scale
-                        }
-                )
-            
-            // Reset Button
-            Button("Reset Zoom") {
-                withAnimation {
-                    scale = 1.0
-                    lastScale = 1.0
-                }
+
+            // Reset button
+            Button("Reset") {
+                presenter.onMagnificationEnded()
+                sliderValue = 1.0
+                lastScale = 1.0
             }
             .padding()
             .background(Color.blue)
             .foregroundColor(.white)
-            .cornerRadius(10)
-            
-            Text("Current Scale: \(scale, specifier: "%.2f")x")
-                .font(.caption)
-                .padding()
-            
-            Spacer()
+            .cornerRadius(8)
         }
         .padding()
     }
