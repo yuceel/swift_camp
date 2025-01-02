@@ -29,40 +29,44 @@ struct FrameView: View {
 
                 // Rectangle Section
                 VStack(spacing: 20) {
-                    Text("Dynamic Rectangle")
+                    Text("Dynamic Square")
                         .font(.headline)
                         .foregroundColor(.primary)
 
                     Rectangle()
-                        .fill(Color.blue)
-                        .frame(width: presenter.width, height: presenter.height)
+                        .fill(presenter.color) // Dynamic color based on ColorPicker
+                        .frame(width: presenter.size, height: presenter.size) // Use single size property
                         .cornerRadius(15)
-                        .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                        .shadow(color: presenter.color.opacity(0.4), radius: 10, x: 0, y: 5)
 
-                    Text("Width: \(Int(presenter.width)) • Height: \(Int(presenter.height))")
+                    Text("Size: \(Int(presenter.size)) x \(Int(presenter.size))")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                 }
                 .padding(.horizontal)
 
-                // Sliders Section
-                VStack(spacing: 30) {
+                // Controls Section
+                VStack(spacing: 20) {
                     VStack(alignment: .leading) {
-                        Text("Adjust Width")
+                        Text("Adjust Size")
                             .font(.subheadline)
                             .foregroundColor(.primary)
 
-                        Slider(value: $presenter.width, in: 50...300, step: 1)
+                        Slider(value: $presenter.size, in: 50...300, step: 1) // Single slider for size
                             .accentColor(.blue)
                     }
 
                     VStack(alignment: .leading) {
-                        Text("Adjust Height")
+                        Text("Select Color")
                             .font(.subheadline)
                             .foregroundColor(.primary)
 
-                        Slider(value: $presenter.height, in: 50...300, step: 1)
-                            .accentColor(.blue)
+                        ColorPicker("", selection: $presenter.color) // Dynamic ColorPicker
+                            .labelsHidden()
+                            .padding()
+                            .background(Color(UIColor.systemGray6))
+                            .cornerRadius(10)
+                            .shadow(radius: 5)
                     }
                 }
                 .padding(.horizontal)
