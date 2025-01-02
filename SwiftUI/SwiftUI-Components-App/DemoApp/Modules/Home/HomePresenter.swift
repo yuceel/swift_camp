@@ -381,4 +381,10 @@ final class HomePresenter: ObservableObject {
     func showMagnificationGesture() {
         wireframe.showMagnificationGesture()
     }
+    
+    
+    /// Navigates to ForegroundColor
+    func showForegroundColor() {
+        wireframe.showForegroundColor()
+    }
 }
