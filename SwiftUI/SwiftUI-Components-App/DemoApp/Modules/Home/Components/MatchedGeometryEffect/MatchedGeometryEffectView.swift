@@ -35,6 +35,8 @@ struct MatchedGeometryEffectView: View {
                     Text("Tap to Animate")
                         .font(.headline)
                         .foregroundColor(.primary)
+                    
+                    Spacer(minLength: 50)
 
                     ZStack {
                         RoundedRectangle(cornerRadius: presenter.isExpanded ? 0 : 50) // Dynamic corner radius
