@@ -386,4 +386,8 @@ extension HomeWireframe: HomeWireframeInterface {
         let popoverWireframe = PopoverWireframe()
         navigationController?.pushWireframe(popoverWireframe)
     }
+    func showGridRow() {
+        let gridrowWireframe = GridRowWireframe()
+        navigationController?.pushWireframe(gridrowWireframe)
+    }
 }
