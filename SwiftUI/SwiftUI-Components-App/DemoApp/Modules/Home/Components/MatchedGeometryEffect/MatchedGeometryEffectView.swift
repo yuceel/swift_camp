@@ -29,6 +29,7 @@ struct MatchedGeometryEffectView: View {
                 .padding(.horizontal)
 
                 Spacer()
+
                 // Animation Section
                 VStack(spacing: 30) {
                     Text("Tap to Animate")
@@ -36,46 +37,24 @@ struct MatchedGeometryEffectView: View {
                         .foregroundColor(.primary)
 
                     ZStack {
-                        if presenter.isExpanded {
-                            RoundedRectangle(cornerRadius: 25)
-                                .fill(LinearGradient(
-                                    gradient: Gradient(colors: [Color.blue, Color.cyan]),
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                ))
-                                .matchedGeometryEffect(id: "rectangle", in: animationNamespace)
-                                .frame(width: 300, height: 200)
-                                .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
-                                .onTapGesture {
+                        RoundedRectangle(cornerRadius: presenter.isExpanded ? 0 : 50) // Dynamic corner radius
+                            .fill(LinearGradient(
+                                gradient: Gradient(colors: [Color.blue, Color.cyan]),
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ))
+                            .matchedGeometryEffect(id: "shape", in: animationNamespace)
+                            .frame(
+                                width: presenter.isExpanded ? 300 : 100,
+                                height: presenter.isExpanded ? 200 : 100
+                            )
+                            .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
+                            .onTapGesture {
+                                withAnimation(.easeInOut(duration: 1.0)) { // Smooth transition
                                     presenter.toggleView()
                                 }
-                        } else {
-                            Circle()
-                                .fill(LinearGradient(
-                                    gradient: Gradient(colors: [Color.blue, Color.purple]),
-                                    startPoint: .top,
-                                    endPoint: .bottom
-                                ))
-                                .matchedGeometryEffect(id: "rectangle", in: animationNamespace)
-                                .frame(width: 100, height: 100)
-                                .shadow(color: Color.purple.opacity(0.4), radius: 10, x: 0, y: 5)
-                                .onTapGesture {
-                                    presenter.toggleView()
-                                }
-                        }
+                            }
                     }
-                    .animation(.spring(response: 0.5, dampingFraction: 0.6), value: presenter.isExpanded)
-                }
-
-                // Instruction Section
-                VStack(spacing: 10) {
-                    Text(presenter.isExpanded ? "State: Expanded" : "State: Collapsed")
-                        .font(.headline)
-                        .foregroundColor(presenter.isExpanded ? .blue : .purple)
-
-                    Text("Tap the shape to toggle its state.")
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
                 }
                 .padding(.horizontal)
             }
