@@ -9,7 +9,7 @@ struct CanvasView: View {
         case circle = "Circle"
         case rectangle = "Rectangle"
         case ellipse = "Ellipse"
-        case capsule = "Capsule"
+        case capsule = "Capsule" // Capsule shape
 
         var id: String { rawValue }
     }
@@ -52,9 +52,9 @@ struct CanvasView: View {
                 // Canvas section to draw shapes
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.secondary.opacity(0.1)) // Adjusted fill for better visibility in dark mode
+                        .fill(Color.secondary.opacity(0.1)) // Improved contrast for dark mode
                         .frame(height: 300)
-                        .shadow(color: Color.primary.opacity(0.2), radius: 5) // Subtle shadow for better contrast
+                        .shadow(color: Color.primary.opacity(0.2), radius: 5) // Subtle shadow for contrast
                         .overlay(
                             Canvas { context, size in
                                 let shapePath: Path
@@ -67,7 +67,7 @@ struct CanvasView: View {
                                 case .ellipse:
                                     shapePath = Path(ellipseIn: CGRect(x: size.width / 4, y: size.height / 4, width: size.width / 2, height: size.height / 3))
                                 case .capsule:
-                                    shapePath = Path(CGRect(x: size.width / 4, y: size.height / 3, width: size.width / 2, height: size.height / 4))
+                                    shapePath = Path(roundedRect: CGRect(x: size.width / 5, y: size.height / 3, width: size.width * 0.6, height: size.height * 0.2), cornerRadius: size.height * 0.1) // More proportionate capsule
                                 }
 
                                 // Fill the selected shape with the chosen color
