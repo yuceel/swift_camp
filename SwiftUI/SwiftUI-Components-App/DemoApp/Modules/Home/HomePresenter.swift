@@ -377,27 +377,32 @@ final class HomePresenter: ObservableObject {
     func showTapGesture() {
         wireframe.showTapGesture()
     }
-
+    
     
     func showRotationGesture() {
         wireframe.showRotationGesture()
-
-
-    func showMagnificationGesture() {
-        wireframe.showMagnificationGesture()
-
     }
-    
-
-    func showCustomShape() {
-        wireframe.showCustomShape()
         
-    }
-    
-    
-    
-    /// Navigates to ForegroundColor
-    func showForegroundColor() {
-        wireframe.showForegroundColor()
-    }
+        
+        func showMagnificationGesture() {
+            wireframe.showMagnificationGesture()
+            
+        }
+        
+        
+        func showCustomShape() {
+            wireframe.showCustomShape()
+            
+        }
+        
+        
+        
+        /// Navigates to ForegroundColor
+        func showForegroundColor() {
+            wireframe.showForegroundColor()
+        }
+        
+        func showGeometryReader() {
+            wireframe.showGeometryReader()
+        }
 }
