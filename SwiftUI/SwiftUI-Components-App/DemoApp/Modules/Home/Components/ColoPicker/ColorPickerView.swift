@@ -27,6 +27,7 @@ struct ColorPickerView: View {
                 }
                 .padding(.horizontal)
 
+                Spacer()
                 // Instruction Section
                 VStack(spacing: 15) {
                     Text("Pick a Color")

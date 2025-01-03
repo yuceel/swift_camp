@@ -7,7 +7,7 @@ struct RectangleView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 30) {
-                // Header Section
+                // Header Section (Unchanged)
                 HStack {
                     Button(action: presenter.goBack) {
                         Image(systemName: "chevron.left")
@@ -26,20 +26,37 @@ struct RectangleView: View {
                         .foregroundColor(.primary)
                 }
                 .padding(.horizontal)
+                
+                Spacer()
 
-                // Rectangle Display Section
+                // Rectangle Display Section with Boundary
                 VStack(spacing: 20) {
-                    Rectangle()
-                        .fill(presenter.color)
-                        .frame(width: presenter.size, height: presenter.size / 2) // Aspect ratio applied
-                        .cornerRadius(10)
-                        .shadow(color: presenter.color.opacity(0.4), radius: 10, x: 0, y: 5)
+                    ZStack {
+                        // Fixed rectangular boundary with corner radius
+                        RoundedRectangle(cornerRadius: 10) // Added corner radius
+                            .strokeBorder(Color.gray, lineWidth: 2) // Border for the boundary
+                            .frame(width: 300, height: 150) // Fixed rectangle frame
+                            .overlay(
+                                Text("Boundary")
+                                    .font(.caption)
+                                    .foregroundColor(.gray),
+                                alignment: .bottom
+                            )
 
-                    Text("Size: \(Int(presenter.size)) x \(Int(presenter.size / 2))")
-                        .font(.headline)
-                        .foregroundColor(.secondary)
+                        // Resizable rectangle centered in the boundary
+                        Rectangle()
+                            .fill(presenter.color)
+                            .frame(
+                                width: min(presenter.size, 300), // Ensure width fits within boundary
+                                height: min(presenter.size / 2, 150) // Ensure height fits within boundary
+                            )
+                            .cornerRadius(10)
+                            .shadow(color: presenter.color.opacity(0.4), radius: 10, x: 0, y: 5)
+                    }
+                    .frame(width: 300, height: 150) // Centered fixed rectangle boundary
                 }
-                .padding(.horizontal)
+                .frame(maxWidth: .infinity) // Center the boundary frame horizontally
+                .padding()
 
                 // Single Slider Section
                 VStack(spacing: 20) {
