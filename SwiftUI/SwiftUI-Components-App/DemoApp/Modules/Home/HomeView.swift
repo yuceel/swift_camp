@@ -365,6 +365,12 @@ struct HomeView: View {
 
                             ButtonModel(title: "Go to MagnificationGesture", action: {presenter.showMagnificationGesture()}),
 
+
+
+                            
+                            ButtonModel(title: "Go to CustomShape", action: { presenter.showCustomShape()}),
+                            ButtonModel(title: "Go to ForegroundColor", action: {presenter.showForegroundColor()})
+
                         ]
                         
                         
