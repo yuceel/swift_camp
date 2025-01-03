@@ -382,6 +382,7 @@ struct HomeView: View {
                             
                             ButtonModel(title: "Go to Geometry Reader", action: {presenter.showGeometryReader()}),
                             ButtonModel(title:"Go to Popover", action: {presenter.showPopover()}),
+                            ButtonModel(title: "Go to EnvironmentObject", action: { presenter.showEnvironmentObject()})
 
 
                         ]

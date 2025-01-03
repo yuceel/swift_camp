@@ -401,6 +401,10 @@ final class HomePresenter: ObservableObject {
         func showGeometryReader() {
             wireframe.showGeometryReader()
         }
+    
+    func showEnvironmentObject() {
+        wireframe.showEnvironmentObject()
+    }
 
     func showPopover() {
         wireframe.showPopover()

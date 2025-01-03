@@ -386,4 +386,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let popoverWireframe = PopoverWireframe()
         navigationController?.pushWireframe(popoverWireframe)
     }
+    func showEnvironmentObject() {
+        let sharedData = EnvironmentObjectEntity()
+        let environmentObjectWireframe = EnvironmentObjectWireframe(sharedData: sharedData)
+        navigationController?.pushWireframe(environmentObjectWireframe)
+    }
+    
 }
