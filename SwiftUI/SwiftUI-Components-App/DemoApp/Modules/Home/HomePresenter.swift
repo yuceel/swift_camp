@@ -350,7 +350,6 @@ final class HomePresenter: ObservableObject {
     /// Navigates to Map
     func showMap() {
         wireframe.showMap()
-        
     }
     
     /// Clean up the timer to avoid memory leaks
@@ -358,15 +357,11 @@ final class HomePresenter: ObservableObject {
         stopUpdatingTime()
     }
     
-    
-    
     /// Navigates to Link
     func showLink() {
         wireframe.showLink()
         
     }
-    
-    
     
     /// Navigates to Path
     func showPath() {
@@ -377,32 +372,34 @@ final class HomePresenter: ObservableObject {
     func showTapGesture() {
         wireframe.showTapGesture()
     }
-    
+
+    /// Navigates to Group
+    func showGroup() {
+        wireframe.showGroup()
+    }
+
     
     func showRotationGesture() {
         wireframe.showRotationGesture()
     }
-        
-        
-        func showMagnificationGesture() {
-            wireframe.showMagnificationGesture()
-            
-        }
-        
-        
+
+
+    func showMagnificationGesture() {
+        wireframe.showMagnificationGesture()
+    }
+ 
+    /// Navigates to ForegroundColor
+    func showForegroundColor() {
+        wireframe.showForegroundColor()
+
+    }
+    
         func showCustomShape() {
             wireframe.showCustomShape()
-            
-        }
-        
-        
-        
-        /// Navigates to ForegroundColor
-        func showForegroundColor() {
-            wireframe.showForegroundColor()
         }
         
         func showGeometryReader() {
             wireframe.showGeometryReader()
         }
+
 }
