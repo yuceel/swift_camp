@@ -382,4 +382,8 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(geometryReaderWireframe)
     }
     
+    func showPopover() {
+        let popoverWireframe = PopoverWireframe()
+        navigationController?.pushWireframe(popoverWireframe)
+    }
 }
