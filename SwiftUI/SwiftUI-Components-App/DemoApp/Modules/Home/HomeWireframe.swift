@@ -386,4 +386,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let popoverWireframe = PopoverWireframe()
         navigationController?.pushWireframe(popoverWireframe)
     }
+    func showForm() {
+        let formWireframe = FormWireframe()
+        navigationController?.pushWireframe(formWireframe)
+    }
+
 }
