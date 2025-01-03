@@ -17,6 +17,8 @@ final class HomeWireframe: BaseWireframe<LazyHostingViewController<HomeView>> {
 // MARK: - Extensions -
 
 extension HomeWireframe: HomeWireframeInterface {
+    
+    
     func showGrid() {
         let gridWireframe = GridWireframe()
         navigationController?.pushWireframe(gridWireframe)
@@ -236,53 +238,53 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(textFieldWireframe)
     }
     
-
+    
     func showLongPressGesture() {
         let longPressGestureWireframe = LongPressGestureWireframe()
         navigationController?.pushWireframe(longPressGestureWireframe)
     }
-
+    
     
     func showProgressView() {
         let progressWireframe = ProgressWireframe()
         navigationController?.pushWireframe(progressWireframe)
     }
-        
+    
     
     func showSlider() {
         let sliderWireframe = SliderWireframe()
         navigationController?.pushWireframe(sliderWireframe)
     }
     
-
-
+    
+    
     func showLabel() {
         let labelWireframe = LabelWireframe()
         navigationController?.pushWireframe(labelWireframe)
     }
-  
-
+    
+    
     func showCapsuleView() {
         let capsuleViewWireframe = CapsuleWireframe()
         navigationController?.pushWireframe(capsuleViewWireframe)
     }
-
+    
     func showDivider() {
         let dividerWireframe = DividerWireframe()
         navigationController?.pushWireframe(dividerWireframe)
-
-    }
         
+    }
+    
     func showDragGesture() {
         let dragGestureWireframe = DragGestureWireframe()
         navigationController?.pushWireframe(dragGestureWireframe)
     }
-
+    
     func showBackground() {
         let showBackgroundWireframe = BackgroundWireframe()
         navigationController?.pushWireframe(showBackgroundWireframe)
     }
-
+    
     func showPicker() {
         let pickerWireframe = PickerWireframe()
         navigationController?.pushWireframe(pickerWireframe)
@@ -299,19 +301,19 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(offsetWireframe)
     }
     
-
+    
     func showList() {
         let listWireframe = ListWireframe()
         navigationController?.pushWireframe(listWireframe)
     }
-
+    
     
     func showActionSheet() {
         let actionSheetWireframe = ActionSheetWireframe()
         navigationController?.pushWireframe(actionSheetWireframe)
     }
     
-
+    
     func showTransition() {
         let transitionWireframe = TransitionWireframe()
         navigationController?.pushWireframe(transitionWireframe)
@@ -322,7 +324,7 @@ extension HomeWireframe: HomeWireframeInterface {
     func showTimeLineView() {
         let timelineViewWireframe = TimeLineViewWireframe()
         navigationController?.pushWireframe(timelineViewWireframe)
-
+        
     }
     
     func showMap() {
@@ -345,29 +347,34 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(tapGestureWireframe)
     }
     
-
+    
     func showRotationGesture() {
         let rotationGestureWireframe = RotationGestureWireframe()
         navigationController?.pushWireframe(rotationGestureWireframe)
-
+        
+    }
+    
     func showMagnificationGesture() {
         let magnificationGestureWireframe = MagnificationGestureWireframe()
         navigationController?.pushWireframe(magnificationGestureWireframe)
-
+        
     }
     
-
+    
     func showCustomShape() {
         let customShapeWireframe = CustomShapeWireframe()
         navigationController?.pushWireframe(customShapeWireframe)
     }
-
+    
     
     func showForegroundColor() {
         let foregroundColorWireframe = ForegroundColorWireframe()
         navigationController?.pushWireframe(foregroundColorWireframe)
     }
     
-
-
+    func showGeometryReader() {
+        let geometryReaderWireframe = GeometryReaderWireframe()
+        navigationController?.pushWireframe(geometryReaderWireframe)
+    }
+    
 }
