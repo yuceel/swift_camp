@@ -386,4 +386,10 @@ extension HomeWireframe: HomeWireframeInterface {
         let popoverWireframe = PopoverWireframe()
         navigationController?.pushWireframe(popoverWireframe)
     }
+    
+    
+    func showProgressIndicator() {
+        let progressIndicatorWireframe = ProgressIndicatorWireframe()
+        navigationController?.pushWireframe(progressIndicatorWireframe)
+    }
 }

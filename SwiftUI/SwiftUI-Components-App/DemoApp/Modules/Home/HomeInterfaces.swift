@@ -125,5 +125,7 @@ protocol HomeWireframeInterface: WireframeInterface {
     
     func showGeometryReader()
     func showPopover()
+    
+    func showProgressIndicator()
 
 }
