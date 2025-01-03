@@ -105,9 +105,23 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showTapGesture()
 
 
+
     func showGroup()
 
+    
+    func showRotationGesture()
+
+
+
     func showMagnificationGesture()
+    
+    func showForegroundColor()
+
+
+
+
+    
+    func showCustomShape()
 
 
 }

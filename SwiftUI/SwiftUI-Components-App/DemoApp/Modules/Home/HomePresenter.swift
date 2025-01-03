@@ -378,13 +378,36 @@ final class HomePresenter: ObservableObject {
         wireframe.showTapGesture()
     }
 
+
     /// Navigates to Group
     func showGroup() {
         wireframe.showGroup()
     }
 
+    
+    func showRotationGesture() {
+        wireframe.showRotationGesture()
+    }
+
+
     func showMagnificationGesture() {
         wireframe.showMagnificationGesture()
+
+
+      
+    }
+    
+
+    func showCustomShape() {
+        wireframe.showCustomShape()
+        
+    }
+    
+    
+    
+    /// Navigates to ForegroundColor
+    func showForegroundColor() {
+        wireframe.showForegroundColor()
 
     }
 }
