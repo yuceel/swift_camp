@@ -1,0 +1,3 @@
+protocol RotationGestureWireframeInterface {
+    func goBack()
+}
