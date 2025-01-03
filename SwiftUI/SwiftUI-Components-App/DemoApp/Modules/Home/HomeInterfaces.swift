@@ -124,6 +124,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showCustomShape()
     
     func showGeometryReader()
-
+    func showPopover()
 
 }

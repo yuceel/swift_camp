@@ -380,7 +380,8 @@ struct HomeView: View {
                             ButtonModel(title: "Go to CustomShape", action: { presenter.showCustomShape()}),
                             ButtonModel(title: "Go to ForegroundColor", action: {presenter.showForegroundColor()}),
                             
-                            ButtonModel(title: "Go to Geometry Reader", action: {presenter.showGeometryReader()})
+                            ButtonModel(title: "Go to Geometry Reader", action: {presenter.showGeometryReader()}),
+                            ButtonModel(title:"Go to Popover", action: {presenter.showPopover()}),
 
 
                         ]
