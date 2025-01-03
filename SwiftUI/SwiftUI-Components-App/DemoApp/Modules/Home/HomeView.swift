@@ -360,11 +360,17 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Link", action: { presenter.showLink()}),
                             ButtonModel(title: "Go to Path", action: { presenter.showPath()}),
                             ButtonModel(title: "Go to TapGesture", action: {presenter.showTapGesture()}),
+
+                            ButtonModel(title: "Go to RotationGesture", action: {presenter.showRotationGesture()})
+
                             ButtonModel(title: "Go to MagnificationGesture", action: {presenter.showMagnificationGesture()}),
+
+
 
                             
                             ButtonModel(title: "Go to CustomShape", action: { presenter.showCustomShape()}),
                             ButtonModel(title: "Go to ForegroundColor", action: {presenter.showForegroundColor()})
+
                         ]
                         
                         
