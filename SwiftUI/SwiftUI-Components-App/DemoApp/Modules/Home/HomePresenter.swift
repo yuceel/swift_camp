@@ -379,6 +379,7 @@ final class HomePresenter: ObservableObject {
     }
 
 
+
     /// Navigates to Group
     func showGroup() {
         wireframe.showGroup()
@@ -392,16 +393,19 @@ final class HomePresenter: ObservableObject {
 
     func showMagnificationGesture() {
         wireframe.showMagnificationGesture()
-
+    }
 
       
-    }
-    
 
-    func showCustomShape() {
-        wireframe.showCustomShape()
-        
+    
+    
+    func showRotationGesture() {
+        wireframe.showRotationGesture()
+
     }
+        
+
+    
     
     
     
@@ -410,4 +414,28 @@ final class HomePresenter: ObservableObject {
         wireframe.showForegroundColor()
 
     }
+
+        
+        func showMagnificationGesture() {
+            wireframe.showMagnificationGesture()
+            
+        }
+        
+        
+        func showCustomShape() {
+            wireframe.showCustomShape()
+            
+        }
+        
+        
+        
+        /// Navigates to ForegroundColor
+        func showForegroundColor() {
+            wireframe.showForegroundColor()
+        }
+        
+        func showGeometryReader() {
+            wireframe.showGeometryReader()
+        }
+
 }
