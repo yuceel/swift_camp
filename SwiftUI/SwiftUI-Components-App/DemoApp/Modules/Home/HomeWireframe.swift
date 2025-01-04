@@ -392,4 +392,10 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(environmentObjectWireframe)
     }
     
+    func showStateView() {
+        let sharedData = EnvironmentObjectEntity() // Get shared EnvironmentObject
+        let stateWireframe = StateWireframe(sharedData: sharedData)
+        navigationController?.pushWireframe(stateWireframe)
+    }
+    
 }

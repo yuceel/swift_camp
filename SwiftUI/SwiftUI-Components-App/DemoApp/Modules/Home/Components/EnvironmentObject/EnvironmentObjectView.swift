@@ -22,9 +22,6 @@ struct EnvironmentObjectView: View {
 
                 Spacer()
 
-                Text("Environment Object")
-                    .font(.headline)
-                    .bold()
             }
             .padding(.horizontal)
 

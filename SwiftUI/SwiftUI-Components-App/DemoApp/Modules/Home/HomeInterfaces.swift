@@ -127,6 +127,8 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showPopover()
     
     func showEnvironmentObject()
+    
+    func showStateView()
 
 
 }
