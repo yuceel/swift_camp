@@ -398,4 +398,16 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(stateWireframe)
     }
     
+    
+
+    
+    func showProgressIndicator() {
+        let progressIndicatorWireframe = ProgressIndicatorWireframe()
+        navigationController?.pushWireframe(progressIndicatorWireframe)
+    }
+      
+    func showObservedObject() {
+        let observedObjectWireframe = ObservedObjectWireframe()
+        navigationController?.pushWireframe(observedObjectWireframe)
+    }
 }

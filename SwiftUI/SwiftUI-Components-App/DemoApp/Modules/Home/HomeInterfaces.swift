@@ -131,4 +131,10 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showStateView()
 
 
+    
+    func showProgressIndicator()
+
+    func showObservedObject()
+
+
 }

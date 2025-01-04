@@ -412,5 +412,15 @@ final class HomePresenter: ObservableObject {
     
     func showStateView() {
         wireframe.showStateView()
+
+    
+    func showProgressIndicator() {
+        wireframe.showProgressIndicator()
+    }
+  
+  
+    func showObservedObject() {
+        wireframe.showObservedObject()
+
     }
 }
