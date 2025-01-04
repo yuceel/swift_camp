@@ -104,8 +104,13 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showPath()
     func showTapGesture()
 
+
+
+    func showGroup()
+
     
     func showRotationGesture()
+
 
 
     func showMagnificationGesture()
@@ -119,5 +124,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showCustomShape()
     
     func showGeometryReader()
+    func showPopover()
 
 }

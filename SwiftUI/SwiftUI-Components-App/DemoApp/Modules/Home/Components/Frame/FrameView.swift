@@ -7,7 +7,7 @@ struct FrameView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 30) {
-                // Header Section
+                // Header Section (Unchanged)
                 HStack {
                     Button(action: presenter.goBack) {
                         Image(systemName: "chevron.left")
@@ -27,23 +27,38 @@ struct FrameView: View {
                 }
                 .padding(.horizontal)
 
-                // Rectangle Section
+                // Centered Square Frame with Rectangle
                 VStack(spacing: 20) {
                     Text("Dynamic Square")
                         .font(.headline)
                         .foregroundColor(.primary)
 
-                    Rectangle()
-                        .fill(presenter.color) // Dynamic color based on ColorPicker
-                        .frame(width: presenter.size, height: presenter.size) // Use single size property
-                        .cornerRadius(15)
-                        .shadow(color: presenter.color.opacity(0.4), radius: 10, x: 0, y: 5)
+                    ZStack {
+                        // Fixed square boundary with corner radius
+                        RoundedRectangle(cornerRadius: 20) // Added corner radius
+                            .strokeBorder(Color.gray, lineWidth: 2)
+                            .frame(width: 300, height: 300) // Fixed square frame
+                            .overlay(
+                                Text("Boundary")
+                                    .font(.caption)
+                                    .foregroundColor(.gray),
+                                alignment: .bottom
+                            )
 
-                    Text("Size: \(Int(presenter.size)) x \(Int(presenter.size))")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
+                        // Resizable rectangle centered in the frame
+                        Rectangle()
+                            .fill(presenter.color)
+                            .frame(
+                                width: min(presenter.size, 300), // Ensure size fits within boundary
+                                height: min(presenter.size, 300)
+                            )
+                            .cornerRadius(15)
+                            .shadow(color: presenter.color.opacity(0.4), radius: 10, x: 0, y: 5)
+                    }
+                    .frame(width: 300, height: 300) // Centered fixed square frame
                 }
-                .padding(.horizontal)
+                .frame(maxWidth: .infinity) // Center the boundary frame horizontally
+                .padding()
 
                 // Controls Section
                 VStack(spacing: 20) {

@@ -361,6 +361,15 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Path", action: { presenter.showPath()}),
                             ButtonModel(title: "Go to TapGesture", action: {presenter.showTapGesture()}),
 
+
+
+                            ButtonModel(title: "Go to Group", action: {presenter.showGroup()}),
+
+                            ButtonModel(title: "Go to MagnificationGesture", action: {presenter.showMagnificationGesture()}),
+
+
+
+
                             ButtonModel(title: "Go to RotationGesture", action: {presenter.showRotationGesture()}),
 
                             ButtonModel(title: "Go to MagnificationGesture", action: {presenter.showMagnificationGesture()}),
@@ -372,6 +381,8 @@ struct HomeView: View {
                             ButtonModel(title: "Go to ForegroundColor", action: {presenter.showForegroundColor()}),
                             
                             ButtonModel(title: "Go to Geometry Reader", action: {presenter.showGeometryReader()}),
+                            ButtonModel(title:"Go to Popover", action: {presenter.showPopover()}),
+
 
                         ]
                         

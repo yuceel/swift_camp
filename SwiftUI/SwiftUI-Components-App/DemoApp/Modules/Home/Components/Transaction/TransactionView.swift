@@ -3,10 +3,11 @@ import SwiftUI
 struct TransactionView: View {
 
     @ObservedObject var presenter: TransactionPresenter
+    @Namespace private var animationNamespace
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 30) {
+            VStack(spacing: 40) { // Increased spacing for better alignment
                 // Header Section
                 HStack {
                     Button(action: presenter.goBack) {
@@ -20,65 +21,51 @@ struct TransactionView: View {
 
                     Spacer()
 
-                    Text("Transaction Playground")
+                    Text("Transaction Animation")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
                 }
                 .padding(.horizontal)
 
-                // Animated Circle Section
-                VStack(spacing: 20) {
-                    Text("Dynamic Shape Animation")
+                Spacer()
+
+                // Animation Section (Now placed lower in the screen)
+                VStack(spacing: 30) {
+                    Text("Tap to Animate")
                         .font(.headline)
                         .foregroundColor(.primary)
 
+                    Spacer(minLength: 50) // Push animation further down
+
                     ZStack {
-                        Circle()
+                        RoundedRectangle(cornerRadius: presenter.isExpanded ? 15 : 50) // Dynamic corner radius transition
                             .fill(LinearGradient(
-                                gradient: Gradient(colors: [Color.blue, Color.cyan]),
+                                gradient: Gradient(colors: presenter.isExpanded ? [Color.red, Color.orange] : [Color.blue, Color.cyan]),
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             ))
-                            .frame(width: presenter.isExpanded ? 220 : 120,
-                                   height: presenter.isExpanded ? 220 : 120)
-                            .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
-
-                        Text(presenter.isExpanded ? "Expanded" : "Collapsed")
-                            .font(.subheadline)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
+                            .matchedGeometryEffect(id: "shape", in: animationNamespace)
+                            .frame(
+                                width: presenter.isExpanded ? 300 : 50,  // Starts narrow, expands horizontally
+                                height: presenter.isExpanded ? 150 : 250 // Starts tall, shrinks vertically
+                            )
+                            .rotationEffect(.degrees(presenter.isExpanded ? 0 : 90)) // Rotates during transition
+                            .shadow(color: Color.red.opacity(0.4), radius: presenter.isExpanded ? 10 : 5, x: 0, y: 5)
+                            .onTapGesture {
+                                withAnimation(.spring(response: 0.7, dampingFraction: 0.6, blendDuration: 0.2)) { // Creates a bouncy effect
+                                    presenter.toggleExpansion()
+                                }
+                            }
                     }
-                    .animation(.spring(response: 0.5, dampingFraction: 0.6), value: presenter.isExpanded)
-                }
 
-                // Toggle Button Section
-                Button(action: presenter.toggleExpansion) {
-                    HStack {
-                        Image(systemName: presenter.isExpanded ? "arrow.down" : "arrow.up")
-                            .font(.headline)
-                        Text(presenter.isExpanded ? "Collapse" : "Expand")
-                            .font(.headline)
-                            .fontWeight(.bold)
-                    }
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(LinearGradient(
-                        gradient: Gradient(colors: [Color.blue, Color.cyan]),
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    ))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .shadow(color: Color.blue.opacity(0.5), radius: 10, x: 0, y: 5)
+                    Spacer(minLength: 100) // Additional spacing for better layout
                 }
                 .padding(.horizontal)
-
-                Spacer()
             }
             .padding()
         }
-        .background(Color(UIColor.systemBackground)) // Dynamic background for light/dark mode
+        .background(Color(UIColor.systemBackground)) // Adapts to light/dark mode
         .edgesIgnoringSafeArea(.bottom)
     }
 }

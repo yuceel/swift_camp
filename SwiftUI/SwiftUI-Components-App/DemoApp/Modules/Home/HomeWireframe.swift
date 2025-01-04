@@ -346,6 +346,11 @@ extension HomeWireframe: HomeWireframeInterface {
         let tapGestureWireframe = TapGestureWireframe()
         navigationController?.pushWireframe(tapGestureWireframe)
     }
+
+    func showGroup() {
+        let groupWireframe = GroupWireframe()
+        navigationController?.pushWireframe(groupWireframe)
+    }
     
     
     func showRotationGesture() {
@@ -377,4 +382,8 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(geometryReaderWireframe)
     }
     
+    func showPopover() {
+        let popoverWireframe = PopoverWireframe()
+        navigationController?.pushWireframe(popoverWireframe)
+    }
 }
