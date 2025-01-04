@@ -1,6 +1,5 @@
 import SwiftUI
 
-/// A SwiftUI View demonstrating the use of EnvironmentObject.
 struct EnvironmentObjectView: View {
 
     @ObservedObject var presenter: EnvironmentObjectPresenter
@@ -21,7 +20,6 @@ struct EnvironmentObjectView: View {
                 }
 
                 Spacer()
-
             }
             .padding(.horizontal)
 
@@ -92,6 +90,13 @@ struct EnvironmentObjectView: View {
             }
             .padding(.horizontal, 40)
 
+            // Navigation Hint
+            Text("To see the counter update globally, navigate to the **StateView**.")
+                .font(.footnote)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.gray)
+                .padding(.top, 10)
+            
             Spacer()
         }
         .padding()
