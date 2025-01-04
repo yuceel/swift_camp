@@ -398,4 +398,11 @@ extension HomeWireframe: HomeWireframeInterface {
         let observedObjectWireframe = ObservedObjectWireframe()
         navigationController?.pushWireframe(observedObjectWireframe)
     }
+    
+    
+    func showVideoPlayer() {
+            let videoPlayerWireframe = VideoPlayerWireframe()
+            navigationController?.pushWireframe(videoPlayerWireframe)
+    }
+
 }
