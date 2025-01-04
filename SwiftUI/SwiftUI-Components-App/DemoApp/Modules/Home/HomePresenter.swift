@@ -406,7 +406,15 @@ final class HomePresenter: ObservableObject {
         wireframe.showPopover()
     }
     
+
+    
+    func showProgressIndicator() {
+        wireframe.showProgressIndicator()
+    }
+  
+  
     func showObservedObject() {
         wireframe.showObservedObject()
+
     }
 }
