@@ -386,4 +386,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let popoverWireframe = PopoverWireframe()
         navigationController?.pushWireframe(popoverWireframe)
     }
+    
+    func showObservedObject() {
+        let observedObjectWireframe = ObservedObjectWireframe()
+        navigationController?.pushWireframe(observedObjectWireframe)
+    }
 }
