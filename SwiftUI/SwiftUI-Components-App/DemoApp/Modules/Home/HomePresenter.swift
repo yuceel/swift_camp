@@ -434,4 +434,8 @@ final class HomePresenter: ObservableObject {
     func showVideoPlayer() {
             wireframe.showVideoPlayer()
     }
+    
+    func showToggle() {
+        wireframe.showToggle()
+    }
 }
