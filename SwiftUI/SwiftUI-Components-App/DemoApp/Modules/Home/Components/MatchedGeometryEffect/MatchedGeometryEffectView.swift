@@ -6,76 +6,63 @@ struct MatchedGeometryEffectView: View {
     @Namespace private var animationNamespace
 
     var body: some View {
-        VStack(spacing: 30) {
-            // Header Section
-            HStack {
-                Button(action: presenter.goBack) {
-                    Image(systemName: "chevron.left")
-                        .font(.title2)
-                        .padding()
-                        .background(Color.gray.opacity(0.2))
-                        .clipShape(Circle())
-                        .shadow(radius: 5)
+        ScrollView {
+            VStack(spacing: 30) {
+                // Header Section
+                HStack {
+                    Button(action: presenter.goBack) {
+                        Image(systemName: "chevron.left")
+                            .font(.title2)
+                            .padding()
+                            .background(Color.gray.opacity(0.2))
+                            .clipShape(Circle())
+                            .shadow(radius: 5)
+                    }
+
+                    Spacer()
+
+                    Text("Matched Geometry Effect")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.primary)
                 }
+                .padding(.horizontal)
 
                 Spacer()
 
-                Text("Matched Geometry Effect")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.primary)
-            }
-            .padding(.horizontal)
+                // Animation Section
+                VStack(spacing: 30) {
+                    Text("Tap to Animate")
+                        .font(.headline)
+                        .foregroundColor(.primary)
+                    
+                    Spacer(minLength: 50)
 
-            Spacer()
-
-            // Animation Section
-            VStack(spacing: 30) {
-                Text("Tap to Animate")
-                    .font(.headline)
-                    .foregroundColor(.primary)
-
-                ZStack {
-                    if presenter.isExpanded {
-                        RoundedRectangle(cornerRadius: 25)
-                            .fill(Color.blue)
-                            .matchedGeometryEffect(id: "rectangle", in: animationNamespace)
-                            .frame(width: 300, height: 200)
+                    ZStack {
+                        RoundedRectangle(cornerRadius: presenter.isExpanded ? 0 : 50) // Dynamic corner radius
+                            .fill(LinearGradient(
+                                gradient: Gradient(colors: [Color.blue, Color.cyan]),
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            ))
+                            .matchedGeometryEffect(id: "shape", in: animationNamespace)
+                            .frame(
+                                width: presenter.isExpanded ? 300 : 100,
+                                height: presenter.isExpanded ? 200 : 100
+                            )
                             .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
                             .onTapGesture {
-                                presenter.toggleView()
-                            }
-                    } else {
-                        Circle()
-                            .fill(Color.blue)
-                            .matchedGeometryEffect(id: "rectangle", in: animationNamespace)
-                            .frame(width: 100, height: 100)
-                            .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
-                            .onTapGesture {
-                                presenter.toggleView()
+                                withAnimation(.easeInOut(duration: 1.0)) { // Smooth transition
+                                    presenter.toggleView()
+                                }
                             }
                     }
                 }
-                .animation(.spring(response: 0.5, dampingFraction: 0.6), value: presenter.isExpanded)
+                .padding(.horizontal)
             }
-
-            Spacer()
-
-            // Instruction Section
-            VStack(spacing: 10) {
-                Text(presenter.isExpanded ? "State: Expanded" : "State: Collapsed")
-                    .font(.headline)
-                    .foregroundColor(.primary)
-
-                Text("Tap the shape to toggle its state.")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-            }
-
-            Spacer()
+            .padding()
         }
-        .background(Color(UIColor.systemBackground)) 
+        .background(Color(UIColor.systemBackground)) // Dynamic background for light and dark mode
         .edgesIgnoringSafeArea(.bottom)
-        .padding()
     }
 }

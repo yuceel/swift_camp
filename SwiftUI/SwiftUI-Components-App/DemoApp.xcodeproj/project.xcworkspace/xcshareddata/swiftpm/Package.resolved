@@ -1,5 +1,6 @@
 {
-  "originHash" : "7b248458d6fe9aedb243bcedc436428416f8b1e995c434352e35d8471c0dbac6",
+  "originHash" : "7f935b5fd59b388509fab179303c2d588e113dcb68514cb987e60e594e791ff7",
+
   "pins" : [
     {
       "identity" : "onesignal-xcframework",
@@ -17,6 +18,24 @@
       "state" : {
         "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
         "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "sqlite.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stephencelis/SQLite.swift.git",
+      "state" : {
+        "revision" : "a95fc6df17d108bd99210db5e8a9bac90fe984b8",
+        "version" : "0.15.3"
+      }
+    },
+    {
+      "identity" : "swiftybeaver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
+      "state" : {
+        "revision" : "8cba041db09596183331d123f337d0eb2e6e8e91",
+        "version" : "2.1.1"
       }
     }
   ],

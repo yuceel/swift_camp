@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4101806F2D24449D003F8160 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101806E2D24449A003F8160 /* HomeEntity.swift */; };
+		410180712D2444A4003F8160 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410180702D2444A0003F8160 /* HomeInteractor.swift */; };
 		6E00E5ED2D22245400944B6C /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 6E00E5EC2D22245400944B6C /* OneSignalExtension */; };
 		6E00E5EF2D22245400944B6C /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 6E00E5EE2D22245400944B6C /* OneSignalFramework */; };
 		6E00E5F12D22245400944B6C /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 6E00E5F02D22245400944B6C /* OneSignalInAppMessages */; };
 		6E0A98612D2301DD00B6EB14 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 6E0A98602D2301DD00B6EB14 /* OneSignalLocation */; };
+		6E64678E2D25AE460098A371 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6E64678D2D25AE460098A371 /* SQLite */; };
+		6EB987182D2573A8000394DF /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 6EB987172D2573A8000394DF /* SwiftyBeaver */; };
+		6EB9871D2D2574CE000394DF /* EnvironmentConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EB9871C2D2574C6000394DF /* EnvironmentConfig.plist */; };
 		7F313A07292BC7E90048C74C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F313A06292BC7E90048C74C /* AppDelegate.swift */; };
 		7F313A10292BC7EA0048C74C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F313A0F292BC7EA0048C74C /* Assets.xcassets */; };
 		7F313A13292BC7EA0048C74C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F313A11292BC7EA0048C74C /* LaunchScreen.storyboard */; };
@@ -35,9 +40,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4101806E2D24449A003F8160 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		410180702D2444A0003F8160 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		6E00E5D82D22229800944B6C /* DemoAppRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoAppRelease.entitlements; sourceTree = "<group>"; };
 		6E00E5DD2D2222D400944B6C /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0A98622D23029600B6EB14 /* DemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoApp.entitlements; sourceTree = "<group>"; };
+		6EB9871C2D2574C6000394DF /* EnvironmentConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = EnvironmentConfig.plist; sourceTree = "<group>"; };
 		7F313A03292BC7E90048C74C /* Swift Camp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Camp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F313A06292BC7E90048C74C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F313A0F292BC7EA0048C74C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5536DDE02D1FEC1B0003C161 /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
 		6E00E5DE2D2222D400944B6C /* OneSignalNotificationServiceExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (6E00E5E52D2222D400944B6C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = OneSignalNotificationServiceExtension; sourceTree = "<group>"; };
+		6EB987152D2572EB000394DF /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
 		6EFA4C602D1FE2BB00C140BB /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -89,8 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E64678E2D25AE460098A371 /* SQLite in Frameworks */,
 				6E00E5F12D22245400944B6C /* OneSignalInAppMessages in Frameworks */,
 				6E00E5EF2D22245400944B6C /* OneSignalFramework in Frameworks */,
+				6EB987182D2573A8000394DF /* SwiftyBeaver in Frameworks */,
 				7F313A33292BC8C70048C74C /* RxSwift in Frameworks */,
 				7F313A31292BC8C70048C74C /* RxRelay in Frameworks */,
 				6E0A98612D2301DD00B6EB14 /* OneSignalLocation in Frameworks */,
@@ -130,6 +141,7 @@
 		7F313A05292BC7E90048C74C /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				6EB987152D2572EB000394DF /* Helpers */,
 				6E0A98622D23029600B6EB14 /* DemoApp.entitlements */,
 				6E00E5D82D22229800944B6C /* DemoAppRelease.entitlements */,
 				7F313A34292BC91F0048C74C /* Initializers */,
@@ -140,6 +152,7 @@
 				7F313A0F292BC7EA0048C74C /* Assets.xcassets */,
 				7F313A11292BC7EA0048C74C /* LaunchScreen.storyboard */,
 				7F313A14292BC7EA0048C74C /* Info.plist */,
+				6EB9871C2D2574C6000394DF /* EnvironmentConfig.plist */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -188,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				5536DDE02D1FEC1B0003C161 /* Components */,
+				4101806E2D24449A003F8160 /* HomeEntity.swift */,
+				410180702D2444A0003F8160 /* HomeInteractor.swift */,
 				7F313A48292BCD860048C74C /* HomeInterfaces.swift */,
 				7F313A49292BCD860048C74C /* HomePresenter.swift */,
 				7F313A4A292BCD860048C74C /* HomeView.swift */,
@@ -237,6 +252,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				5536DDE02D1FEC1B0003C161 /* Components */,
+				6EB987152D2572EB000394DF /* Helpers */,
 				6EFA4C602D1FE2BB00C140BB /* Components */,
 			);
 			name = DemoApp;
@@ -247,6 +263,8 @@
 				6E00E5EE2D22245400944B6C /* OneSignalFramework */,
 				6E00E5F02D22245400944B6C /* OneSignalInAppMessages */,
 				6E0A98602D2301DD00B6EB14 /* OneSignalLocation */,
+				6EB987172D2573A8000394DF /* SwiftyBeaver */,
+				6E64678D2D25AE460098A371 /* SQLite */,
 			);
 			productName = DemoApp;
 			productReference = 7F313A03292BC7E90048C74C /* Swift Camp.app */;
@@ -282,6 +300,8 @@
 			packageReferences = (
 				7F313A2D292BC8C70048C74C /* XCRemoteSwiftPackageReference "RxSwift" */,
 				6E00E5EB2D22245400944B6C /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				6EB987162D2573A8000394DF /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+				6E64678C2D25AE460098A371 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
 			);
 			productRefGroup = 7F313A04292BC7E90048C74C /* Products */;
 			projectDirPath = "";
@@ -307,6 +327,7 @@
 			files = (
 				7F313A13292BC7EA0048C74C /* LaunchScreen.storyboard in Resources */,
 				7F313A10292BC7EA0048C74C /* Assets.xcassets in Resources */,
+				6EB9871D2D2574CE000394DF /* EnvironmentConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +350,8 @@
 				7F313A4D292BCD860048C74C /* HomePresenter.swift in Sources */,
 				7F313A2A292BC88F0048C74C /* LazyHostingViewController.swift in Sources */,
 				7F313A38292BC92C0048C74C /* InitialWireframeInitializer.swift in Sources */,
+				4101806F2D24449D003F8160 /* HomeEntity.swift in Sources */,
+				410180712D2444A4003F8160 /* HomeInteractor.swift in Sources */,
 				7F313A25292BC8670048C74C /* ViewInterface.swift in Sources */,
 				7F313A23292BC8670048C74C /* PresenterInterface.swift in Sources */,
 				7F313A07292BC7E90048C74C /* AppDelegate.swift in Sources */,
@@ -650,6 +673,22 @@
 				minimumVersion = 5.2.9;
 			};
 		};
+		6E64678C2D25AE460098A371 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+		6EB987162D2573A8000394DF /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
 		7F313A2D292BC8C70048C74C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -680,6 +719,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6E00E5EB2D22245400944B6C /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
 			productName = OneSignalLocation;
+		};
+		6E64678D2D25AE460098A371 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E64678C2D25AE460098A371 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		6EB987172D2573A8000394DF /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EB987162D2573A8000394DF /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
 		};
 		7F313A2E292BC8C70048C74C /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;

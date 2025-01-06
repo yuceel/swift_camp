@@ -3,14 +3,52 @@ import Foundation
 
 final class HomePresenter: ObservableObject {
     
-    // MARK: - Private properties -
+    // Published properties
+    @Published var repoInfo: GithubRepoInfo?
+    @Published var selectedContributor: Contributor?
+    @Published var showDialog = false
+    @Published var currentTime: String = ""
     
+    // MARK: - Private properties -
+    private let interactor: HomeInteractorInterface
     private let wireframe: HomeWireframeInterface
+    private var timerSubscription: AnyCancellable?
+    private func updateTime() {
+        currentTime = TimeHelper.shared.getCurrentTime(format: "HH:mm:ss")
+    }
     
     // MARK: - Lifecycle -
     
-    init(wireframe: HomeWireframeInterface) {
+    init(interactor:HomeInteractorInterface,wireframe: HomeWireframeInterface) {
         self.wireframe = wireframe
+        self.interactor = interactor
+    }
+    
+    func fetchRepoInfo() {
+        interactor.fetchRepoInfo { [weak self] info in
+            DispatchQueue.main.async {
+                self?.repoInfo = info
+            }
+        }
+    }
+    
+    // MARK: Time
+    /// Starts the timer to update the current time every second
+    func startUpdatingTime() {
+        updateTime() // Initial update
+        timerSubscription = Timer.publish(every: 1, on: .main, in: .common)
+            .autoconnect()
+            .sink { [weak self] _ in
+                // Ensure that the update happens on the main thread
+                DispatchQueue.main.async {
+                    self?.updateTime()
+                }
+            }
+    }
+    
+    /// Stops the timer for updating the current time
+    func stopUpdatingTime() {
+        timerSubscription?.cancel()
     }
     
     /// Navigates to VStackView
@@ -73,60 +111,59 @@ final class HomePresenter: ObservableObject {
     }
     
     /// Navigates to TransactionView
-    func showTransaction(){
+    func showTransaction() {
         wireframe.showTransaction()
     }
     
     /// Navigates to TabView
-    func showTabView(){
+    func showTabView() {
         wireframe.showTabView()
     }
     
     /// Navigates to AttributedText
-    func showAttributedText(){
+    func showAttributedText() {
         wireframe.showAttributedText()
     }
     
     /// Navigates to Button
-    func showButton(){
+    func showButton() {
         wireframe.showButton()
     }
     
     /// Navigates to DatePicker
-    func showDatePicker(){
+    func showDatePicker() {
         wireframe.showDatePicker()
     }
     
     /// Navigates to SegmentedControl
-    func showSegmentedControl(){
+    func showSegmentedControl() {
         wireframe.showSegmentedControl()
     }
     
     /// Navigates to RoundedRectangle
-    func showRaundedRectangle(){
+    func showRaundedRectangle() {
         wireframe.showRoundedRectangle()
     }
     
     /// Navigates to Shadow
-    func showShadow(){
+    func showShadow() {
         wireframe.showShadow()
     }
-
+    
     /// Navigates to ScaleEffect
-    func showScaleEffect(){
+    func showScaleEffect() {
         wireframe.showScaleEffect()
     }
     
     /// Navigates to Animation
-    func showAnimation(){
+    func showAnimation() {
         wireframe.showAnimation()
     }
-
+    
     /// Navigates to LazyHGridView
-    func showLazyHGrid(){
+    func showLazyHGrid() {
         wireframe.showLazyHGrid()
     }
-    
     
     /// Navigates to LazyVStack
     func showLazyVStackView() {
@@ -134,7 +171,7 @@ final class HomePresenter: ObservableObject {
     }
     
     /// Navigates to MatchedGeometryEffectView
-    func showMatchedGeometryEffect(){
+    func showMatchedGeometryEffect() {
         wireframe.showMatchedGeometryEffect()
         
     }
@@ -169,31 +206,27 @@ final class HomePresenter: ObservableObject {
     func showBinding() {
         wireframe.showBinding()
     }
-        
-        /// Navigates to Stepper
-    func showStepper(){
+    
+    /// Navigates to Stepper
+    func showStepper() {
         wireframe.showStepper()
     }
-        
+    
     func showLazyVGridView() {
         wireframe.showLazyVGridView()
-            
-    }
-
-    
-    
-
         
+    }
+    
     /// Navigates to Ellipse
-    func showEllipse(){
+    func showEllipse() {
         wireframe.showEllipse()
     }
-        
+    
     /// Navigates to Padding
     func showPadding() {
         wireframe.showPadding()
     }
-        
+    
     func showCanvas() {
         wireframe.showCanvas()
     }
@@ -207,42 +240,34 @@ final class HomePresenter: ObservableObject {
     func showRaundedRectagle() {
         wireframe.showRoundedRectangle()
     }
-
-  
-  /// Navigates to Alert
-func showAlert() {
-    wireframe.showAlert()
-}
-
-func showRotationEffect() {
-    wireframe.showRotationEffect()
-}
-
-/// Navigates to WithAnimation
-func showWithAnimation() {
-    wireframe.showWithAnimation()
-}
-
-
-  
+    
+    /// Navigates to Alert
+    func showAlert() {
+        wireframe.showAlert()
+    }
+    
+    func showRotationEffect() {
+        wireframe.showRotationEffect()
+    }
+    
+    /// Navigates to WithAnimation
+    func showWithAnimation() {
+        wireframe.showWithAnimation()
+    }
+    
     // Navigate to TextFieldView
     func showTextField() {
-          wireframe.showTextField()
-      }
+        wireframe.showTextField()
+    }
     
-
     // Navigate to Progress View
     func showProgressView() {
         wireframe.showProgressView()
     }
-
+    
     func showGrid() {
         wireframe.showGrid()
     }
-    
-    
-    
-    
     
     // Navigate to Slider View
     
@@ -250,55 +275,163 @@ func showWithAnimation() {
         wireframe.showSlider()
     }
     
-
-
-    
     func showLabel() {
         wireframe.showLabel()
     }
-
-
+    
+    // Navigate to LongPressGesture
+    func showLongPressGesture() {
+        wireframe.showLongPressGesture()
+    }
+    
     func showCapsuleView() {
         wireframe.showCapsuleView()
         
     }
-
     
-
-
     /// Navigates to Divider
-      func showDivider() {
-          wireframe.showDivider()
-      }
-    
-
-    
+    func showDivider() {
+        wireframe.showDivider()
+    }
     
     /// Navigates to DragGesture
-     func showDragGesture() {
+    func showDragGesture() {
         wireframe.showDragGesture()
     }
-
-
+    
     func showBackground() {
         wireframe.showBackground()
     }
-
+    
     /// Navigates to Picker
     func showPicker() {
         wireframe.showPicker()
     }
-
-
-
+    
+    func showCornerRadius() {
+        wireframe.showCornerRadius()
+    }
+    
+    
+    
+    
     
     /// Navigates to Offset
     func showOffset() {
         wireframe.showOffset()
     }
-    
+
+  
     /// Navigates to Offset
     func showGroupBox() {
         wireframe.showGroupBox()
+    }
+
+    /// Navigates to List
+    func showList() {
+        wireframe.showList()
+    }
+    
+    
+    
+    
+    /// Navigates to ActionSheet
+    func showActionSheet() {
+        wireframe.showActionSheet()
+        
+    }
+    
+    
+    func showTransition() {
+        wireframe.showTransition()
+        
+    }
+    
+    
+    func timeLineView() {
+        wireframe.showTimeLineView()
+        
+    }
+    
+    /// Navigates to Map
+    func showMap() {
+        wireframe.showMap()
+    }
+    
+    /// Clean up the timer to avoid memory leaks
+    deinit {
+        stopUpdatingTime()
+    }
+    
+    /// Navigates to Link
+    func showLink() {
+        wireframe.showLink()
+        
+    }
+    
+    /// Navigates to Path
+    func showPath() {
+        wireframe.showPath()
+    }
+    
+    /// Navigates to TapGesture
+    func showTapGesture() {
+        wireframe.showTapGesture()
+    }
+
+    /// Navigates to Group
+    func showGroup() {
+        wireframe.showGroup()
+    }
+
+    
+    func showRotationGesture() {
+        wireframe.showRotationGesture()
+    }
+
+
+    func showMagnificationGesture() {
+        wireframe.showMagnificationGesture()
+    }
+ 
+    /// Navigates to ForegroundColor
+    func showForegroundColor() {
+        wireframe.showForegroundColor()
+
+    }
+    
+        func showCustomShape() {
+            wireframe.showCustomShape()
+        }
+        
+        func showGeometryReader() {
+            wireframe.showGeometryReader()
+        }
+    
+    func showEnvironmentObject() {
+        wireframe.showEnvironmentObject()
+    }
+
+    func showPopover() {
+        wireframe.showPopover()
+    }
+    
+    func showStateView() {
+        wireframe.showStateView()
+    }
+    
+    func showProgressIndicator() {
+        wireframe.showProgressIndicator()
+    }
+  
+  
+    func showObservedObject() {
+        wireframe.showObservedObject()
+
+    }
+    
+    
+    func showVideoPlayer() {
+            wireframe.showVideoPlayer()
     }
 }

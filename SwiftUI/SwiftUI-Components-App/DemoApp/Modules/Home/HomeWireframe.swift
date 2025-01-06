@@ -7,8 +7,9 @@ final class HomeWireframe: BaseWireframe<LazyHostingViewController<HomeView>> {
     init() {
         let moduleViewController = LazyHostingViewController<HomeView>(isNavigationBarHidden: true)
         super.init(viewController: moduleViewController)
-
-        let presenter = HomePresenter(wireframe: self)
+        
+        let interactor = HomeInteractor()
+        let presenter = HomePresenter(interactor: interactor, wireframe: self)
         moduleViewController.rootView = HomeView(presenter: presenter)
     }
 }
@@ -16,6 +17,8 @@ final class HomeWireframe: BaseWireframe<LazyHostingViewController<HomeView>> {
 // MARK: - Extensions -
 
 extension HomeWireframe: HomeWireframeInterface {
+    
+    
     func showGrid() {
         let gridWireframe = GridWireframe()
         navigationController?.pushWireframe(gridWireframe)
@@ -236,54 +239,61 @@ extension HomeWireframe: HomeWireframeInterface {
     }
     
     
+    func showLongPressGesture() {
+        let longPressGestureWireframe = LongPressGestureWireframe()
+        navigationController?.pushWireframe(longPressGestureWireframe)
+    }
+    
+    
     func showProgressView() {
         let progressWireframe = ProgressWireframe()
         navigationController?.pushWireframe(progressWireframe)
     }
-        
+    
     
     func showSlider() {
         let sliderWireframe = SliderWireframe()
         navigationController?.pushWireframe(sliderWireframe)
     }
     
-
-
+    
+    
     func showLabel() {
         let labelWireframe = LabelWireframe()
         navigationController?.pushWireframe(labelWireframe)
     }
-  
-
+    
+    
     func showCapsuleView() {
         let capsuleViewWireframe = CapsuleWireframe()
         navigationController?.pushWireframe(capsuleViewWireframe)
     }
-
+    
     func showDivider() {
         let dividerWireframe = DividerWireframe()
         navigationController?.pushWireframe(dividerWireframe)
-
-    }
         
-    
-    
+    }
     
     func showDragGesture() {
         let dragGestureWireframe = DragGestureWireframe()
         navigationController?.pushWireframe(dragGestureWireframe)
     }
-
+    
     func showBackground() {
         let showBackgroundWireframe = BackgroundWireframe()
         navigationController?.pushWireframe(showBackgroundWireframe)
     }
-
+    
     func showPicker() {
         let pickerWireframe = PickerWireframe()
         navigationController?.pushWireframe(pickerWireframe)
-    }    
+    }
     
+    func showCornerRadius() {
+        let cornerRadiusWireframe = CornerRadiusWireframe()
+        navigationController?.pushWireframe(cornerRadiusWireframe)
+    }
     
     
     func showOffset() {
@@ -291,9 +301,128 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(offsetWireframe)
     }
     
+
     func showGroupBox() {
         let groupBoxWireframe = GroupBoxWireframe()
         navigationController?.pushWireframe(groupBoxWireframe)
     }
     
+
+    
+    func showList() {
+        let listWireframe = ListWireframe()
+        navigationController?.pushWireframe(listWireframe)
+    }
+    
+    
+    func showActionSheet() {
+        let actionSheetWireframe = ActionSheetWireframe()
+        navigationController?.pushWireframe(actionSheetWireframe)
+    }
+    
+    
+    func showTransition() {
+        let transitionWireframe = TransitionWireframe()
+        navigationController?.pushWireframe(transitionWireframe)
+    }
+    
+    
+    
+    func showTimeLineView() {
+        let timelineViewWireframe = TimeLineViewWireframe()
+        navigationController?.pushWireframe(timelineViewWireframe)
+        
+    }
+    
+    func showMap() {
+        let mapWireframe = MapWireframe()
+        navigationController?.pushWireframe(mapWireframe)
+    }
+    
+    func showLink() {
+        let linkWireframe = LinkWireframe()
+        navigationController?.pushWireframe(linkWireframe)
+    }
+    
+    func showPath() {
+        let pathWireframe = PathWireframe()
+        navigationController?.pushWireframe(pathWireframe)
+    }
+    
+    func showTapGesture() {
+        let tapGestureWireframe = TapGestureWireframe()
+        navigationController?.pushWireframe(tapGestureWireframe)
+    }
+
+    func showGroup() {
+        let groupWireframe = GroupWireframe()
+        navigationController?.pushWireframe(groupWireframe)
+    }
+    
+    
+    func showRotationGesture() {
+        let rotationGestureWireframe = RotationGestureWireframe()
+        navigationController?.pushWireframe(rotationGestureWireframe)
+        
+    }
+    
+    func showMagnificationGesture() {
+        let magnificationGestureWireframe = MagnificationGestureWireframe()
+        navigationController?.pushWireframe(magnificationGestureWireframe)
+        
+    }
+    
+    
+    func showCustomShape() {
+        let customShapeWireframe = CustomShapeWireframe()
+        navigationController?.pushWireframe(customShapeWireframe)
+    }
+    
+    
+    func showForegroundColor() {
+        let foregroundColorWireframe = ForegroundColorWireframe()
+        navigationController?.pushWireframe(foregroundColorWireframe)
+    }
+    
+    func showGeometryReader() {
+        let geometryReaderWireframe = GeometryReaderWireframe()
+        navigationController?.pushWireframe(geometryReaderWireframe)
+    }
+    
+    func showPopover() {
+        let popoverWireframe = PopoverWireframe()
+        navigationController?.pushWireframe(popoverWireframe)
+    }
+    func showEnvironmentObject() {
+        let sharedData = EnvironmentObjectEntity()
+        let environmentObjectWireframe = EnvironmentObjectWireframe(sharedData: sharedData)
+        navigationController?.pushWireframe(environmentObjectWireframe)
+    }
+    
+    func showStateView() {
+        let sharedData = EnvironmentObjectEntity() // Get shared EnvironmentObject
+        let stateWireframe = StateWireframe(sharedData: sharedData)
+        navigationController?.pushWireframe(stateWireframe)
+    }
+    
+    
+
+    
+    func showProgressIndicator() {
+        let progressIndicatorWireframe = ProgressIndicatorWireframe()
+        navigationController?.pushWireframe(progressIndicatorWireframe)
+    }
+      
+    func showObservedObject() {
+        let observedObjectWireframe = ObservedObjectWireframe()
+        navigationController?.pushWireframe(observedObjectWireframe)
+    }
+    
+    
+    func showVideoPlayer() {
+            let videoPlayerWireframe = VideoPlayerWireframe()
+            navigationController?.pushWireframe(videoPlayerWireframe)
+    }
+
+
 }

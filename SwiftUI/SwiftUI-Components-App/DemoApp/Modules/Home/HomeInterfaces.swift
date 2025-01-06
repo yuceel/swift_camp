@@ -1,5 +1,9 @@
 import UIKit
 
+protocol HomeInteractorInterface: AnyObject {
+    func fetchRepoInfo(completion: @escaping (GithubRepoInfo) -> Void)
+}
+
 protocol HomeWireframeInterface: WireframeInterface {
     func showVStack()
     func showZStack()
@@ -45,6 +49,7 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showTextField()
+    func showLongPressGesture()
 
     func showProgressView()
 
@@ -73,9 +78,68 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showPicker()
+    
+    func showCornerRadius()
 
 
 
     func showOffset()
+
     func showGroupBox()
+
+    func showList()
+
+
+    
+    
+    func showActionSheet()
+
+    func showTransition()
+    
+    func showTimeLineView()
+    
+    func showMap()
+    
+    
+    func showLink()
+    
+    func showPath()
+    func showTapGesture()
+
+
+
+    func showGroup()
+
+    
+    func showRotationGesture()
+
+
+
+    func showMagnificationGesture()
+    
+    func showForegroundColor()
+
+
+
+
+    
+    func showCustomShape()
+    
+    func showGeometryReader()
+    func showPopover()
+    
+    func showEnvironmentObject()
+    
+    func showStateView()
+
+
+    
+    func showProgressIndicator()
+
+    func showObservedObject()
+    
+    func showVideoPlayer()
+
+
+
 }

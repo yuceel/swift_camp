@@ -4,114 +4,114 @@
 
   - [x] VStack @mehmetalbyrak
   - [x] HStack @elifdodanli
-  - [ ] ZStack @AylinManav
-  - [ ] LazyVStack @busragedikoglu
-  - [ ] LazyHStack @mehmetalbyrak
-  - [ ] LazyVGrid @yuceel
-  - [ ] LazyHGrid @melihalkbk
-  - [ ] ScrollView @busragedikoglu
-  - [ ] List @elifdodanli
-  - [ ] Section @AylinManav
-  - [ ] Group @elifdodanli
+  - [x] ZStack @AylinManav
+  - [x] LazyVStack @busragedikoglu
+  - [x] LazyHStack @mehmetalbyrak
+  - [x] LazyVGrid @yuceel
+  - [x] LazyHGrid @melihalkbk
+  - [x] ScrollView @busragedikoglu
+  - [x] List @elifdodanli
+  - [x] Section @AylinManav
+  - [x] Group @elifdodanli
   - [ ] GroupBox @OnurArslan0
-  - [ ] NavigationView @beyzanuravsar
+  - [x] NavigationView @beyzanuravsar
   - [x] NavigationStack @alakkaya
-  - [ ] TabView @beyzanuravsar
+  - [x] TabView @beyzanuravsar
   - [ ] Form @elifdodanli
   - [x] ContentView @turhanGoksu
 
 - [ ] **Text and Images**
 
-  - [ ] Text @AylinManav
-  - [ ] TextField @yuceel
-  - [ ] SecureField @busragedikoglu
-  - [ ] Image @melihalkbk
-  - [ ] Label @mehmetalbyrak
-  - [ ] AttributedText @beyzanuravsar
+  - [x] Text @AylinManav
+  - [x] TextField @yuceel
+  - [x] SecureField @busragedikoglu
+  - [x] Image @melihalkbk
+  - [x] Label @mehmetalbyrak
+  - [x] AttributedText @beyzanuravsar
 
 - [ ] **Buttons**
 
-  - [ ] Button @beyzanuravsar
-  - [ ] Link @AylinManav
+  - [x] Button @beyzanuravsar
+  - [x] Link @AylinManav
   - [ ] Toggle @OnurArslan0
-  - [ ] Menu @melihalkbk
-  - [ ] ContextMenu @busragedikoglu
+  - [x] Menu @melihalkbk
+  - [x] ContextMenu @busragedikoglu
 
 - [ ] **Pickers and Controls**
 
   - [x] Picker @alakkaya
-  - [ ] DatePicker @beyzanuravsar
-  - [ ] Slider @mehmetalbyrak
-  - [ ] Stepper @busragedikoglu
-  - [ ] ProgressView @yuceel
-  - [ ] SegmentedControl @beyzanuravsar
+  - [x] DatePicker @beyzanuravsar
+  - [x] Slider @mehmetalbyrak
+  - [x] Stepper @busragedikoglu
+  - [x] ProgressView @yuceel
+  - [x] SegmentedControl @beyzanuravsar
   - [x] ColorPicker @turhanGoksu
 
 - [ ] **Shapes**
 
   - [x] Rectangle @turhanGoksu
-  - [ ] RoundedRectangle @beyzanuravsar
-  - [ ] Circle @melihalkbk
-  - [ ] Ellipse @busragedikoglu
-  - [ ] Capsule @yuceel
-  - [ ] Path @mehmetalbyrak
-  - [ ] CustomShape @AylinManav
+  - [x] RoundedRectangle @beyzanuravsar
+  - [x] Circle @melihalkbk
+  - [x] Ellipse @busragedikoglu
+  - [x] Capsule @yuceel
+  - [x] Path @mehmetalbyrak
+  - [x] CustomShape @AylinManav
 
 - [ ] **Modifiers**
 
-  - [ ] Padding @busragedikoglu
-  - [ ] Background @yuceel
-  - [ ] ForegroundColor @elifdodanli
-  - [ ] Shadow @beyzanuravsar
-  - [ ] CornerRadius @yuceel
-  - [ ] Frame @turhanGoksu
-  - [ ] Offset @mehmetalbyrak
-  - [ ] ScaleEffect @beyzanuravsar
+  - [x] Padding @busragedikoglu
+  - [x] Background @yuceel
+  - [x] ForegroundColor @elifdodanli
+  - [x] Shadow @beyzanuravsar
+  - [x] CornerRadius @yuceel
+  - [x] Frame @turhanGoksu
+  - [x] Offset @mehmetalbyrak
+  - [x] ScaleEffect @beyzanuravsar
   - [x] RotationEffect @alakkaya
-  - [ ] Opacity @melihalkbk
+  - [x] Opacity @melihalkbk
 
 - [ ] **Animations**
 
-  - [ ] Animation @beyzanuravsar
-  - [ ] withAnimation @busragedikoglu
+  - [x] Animation @beyzanuravsar
+  - [x] withAnimation @busragedikoglu
   - [x] Transaction @turhanGoksu
   - [x] MatchedGeometryEffect @turhanGoksu
-  - [ ] Transition @alakkaya
+  - [x] Transition @alakkaya
 
 - [ ] **Gestures**
 
-  - [ ] TapGesture @busragedikoglu
-  - [ ] LongPressGesture @beyzanuravsar
-  - [ ] DragGesture @mehmetalbyrak
-  - [ ] MagnificationGesture @alakkaya
-  - [ ] RotationGesture @yuceel
+  - [x] TapGesture @busragedikoglu
+  - [x] LongPressGesture @beyzanuravsar
+  - [x] DragGesture @mehmetalbyrak
+  - [x] MagnificationGesture @alakkaya
+  - [x] RotationGesture @yuceel
 
 - [ ] **Alerts and Sheets**
 
-  - [ ] Alert @mehmetalbyrak
-  - [ ] ActionSheet @beyzanuravsar
+  - [x] Alert @mehmetalbyrak
+  - [x] ActionSheet @beyzanuravsar
   - [ ] ConfirmationDialog @OnurArslan0
   - [ ] Sheet @AylinManav
   - [ ] Popover @alakkaya
 
 - [ ] **Grid**
 
-  - [ ] Grid @turhanGoksu
+  - [x] Grid @turhanGoksu
   - [ ] GridRow @OnurArslan0
 
 - [ ] **Other Components**
   - [ ] Spacer @alakkaya
-  - [ ] Divider @busragedikoglu
+  - [x] Divider @busragedikoglu
   - [ ] GeometryReader @yuceel
   - [x] Canvas @turhanGoksu
-  - [ ] TimelineView @beyzanuravsar
-  - [ ] Map @beyzanuravsar
+  - [x] TimelineView @beyzanuravsar
+  - [x] Map @beyzanuravsar
   - [ ] VideoPlayer @ayberkgorgun
   - [ ] ProgressIndicator @ayberkgorgun
   - [ ] AnyView @ayberkgorgun
   - [ ] Environment @ayberkgorgun
-  - [ ] EnvironmentObject @ayberkgorgun
-  - [ ] State @ayberkgorgun
-  - [ ] Binding @melihalkbk
+  - [x] EnvironmentObject @turhanGoksu
+  - [x] State @turhanGoksu
+  - [x] Binding @melihalkbk
   - [ ] ObservedObject @yuceel
   - [ ] FocusState @alakkaya
