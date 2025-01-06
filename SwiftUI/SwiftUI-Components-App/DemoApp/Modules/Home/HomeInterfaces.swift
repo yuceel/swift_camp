@@ -135,6 +135,8 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showProgressIndicator()
 
     func showObservedObject()
+    
+    func showVideoPlayer()
 
 
 }

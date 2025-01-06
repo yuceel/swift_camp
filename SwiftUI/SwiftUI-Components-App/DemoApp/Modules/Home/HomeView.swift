@@ -388,7 +388,9 @@ struct HomeView: View {
 
                             ButtonModel(title: "Go to ProgressIndicator", action: { presenter.showProgressIndicator()}),
 
-                            ButtonModel(title: "Go to Observed Object", action: {presenter.showObservedObject()})
+                            ButtonModel(title: "Go to Observed Object", action: {presenter.showObservedObject()}),
+                            
+                            ButtonModel(title: "Go to VideoPlayer", action: { presenter.showVideoPlayer()})
 
 
 
