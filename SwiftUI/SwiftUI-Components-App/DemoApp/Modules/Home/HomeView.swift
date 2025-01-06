@@ -382,7 +382,20 @@ struct HomeView: View {
                             
                             ButtonModel(title: "Go to Geometry Reader", action: {presenter.showGeometryReader()}),
                             ButtonModel(title:"Go to Popover", action: {presenter.showPopover()}),
+
                             ButtonModel(title:"Go to GridRow", action: {presenter.showGridRow()}),
+
+                            ButtonModel(title: "Go to EnvironmentObject", action: { presenter.showEnvironmentObject()}),
+                            ButtonModel(title: "Go to State", action:{ presenter.showStateView()}),
+                            
+
+                            ButtonModel(title: "Go to ProgressIndicator", action: { presenter.showProgressIndicator()}),
+
+                            ButtonModel(title: "Go to Observed Object", action: {presenter.showObservedObject()}),
+                            
+                            ButtonModel(title: "Go to VideoPlayer", action: { presenter.showVideoPlayer()})
+
+
 
 
                         ]
