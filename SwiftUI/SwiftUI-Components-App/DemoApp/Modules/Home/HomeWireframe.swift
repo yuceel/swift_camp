@@ -386,9 +386,41 @@ extension HomeWireframe: HomeWireframeInterface {
         let popoverWireframe = PopoverWireframe()
         navigationController?.pushWireframe(popoverWireframe)
     }
+
     func showForm() {
         let formWireframe = FormWireframe()
         navigationController?.pushWireframe(formWireframe)
+    }
+    func showEnvironmentObject() {
+        let sharedData = EnvironmentObjectEntity()
+        let environmentObjectWireframe = EnvironmentObjectWireframe(sharedData: sharedData)
+        navigationController?.pushWireframe(environmentObjectWireframe)
+    }
+    
+    func showStateView() {
+        let sharedData = EnvironmentObjectEntity() // Get shared EnvironmentObject
+        let stateWireframe = StateWireframe(sharedData: sharedData)
+        navigationController?.pushWireframe(stateWireframe)
+    }
+    
+    
+
+    
+    func showProgressIndicator() {
+        let progressIndicatorWireframe = ProgressIndicatorWireframe()
+        navigationController?.pushWireframe(progressIndicatorWireframe)
+    }
+      
+    func showObservedObject() {
+        let observedObjectWireframe = ObservedObjectWireframe()
+        navigationController?.pushWireframe(observedObjectWireframe)
+    }
+    
+    
+    func showVideoPlayer() {
+            let videoPlayerWireframe = VideoPlayerWireframe()
+            navigationController?.pushWireframe(videoPlayerWireframe)
+
     }
 
 }

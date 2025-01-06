@@ -126,6 +126,21 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showGeometryReader()
     func showPopover()
     
+
     func showForm()
+
+    func showEnvironmentObject()
+    
+    func showStateView()
+
+
+    
+    func showProgressIndicator()
+
+    func showObservedObject()
+    
+    func showVideoPlayer()
+
+
 
 }
