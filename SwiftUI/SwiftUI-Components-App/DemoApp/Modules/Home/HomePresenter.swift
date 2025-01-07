@@ -433,4 +433,9 @@ final class HomePresenter: ObservableObject {
     func showAnyView() {
         wireframe.showAnyView()
     }
+    
+    /// Navigates to ConfirmationDialog
+    func showConfirmationDialog() {
+        wireframe.showConfirmationDialog()
+    }
 }

@@ -421,5 +421,9 @@ extension HomeWireframe: HomeWireframeInterface {
         let anyViewWireframe = AnyViewWireframe()
         navigationController?.pushWireframe(anyViewWireframe)
     }
-
+    
+    func showConfirmationDialog() {
+        let confirmationDialogWireframe = ConfirmationDialogWireframe()
+        navigationController?.pushWireframe(confirmationDialogWireframe)
+    }
 }

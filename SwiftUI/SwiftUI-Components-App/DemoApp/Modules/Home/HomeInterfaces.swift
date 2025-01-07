@@ -138,4 +138,5 @@ protocol HomeWireframeInterface: WireframeInterface {
     
     func showVideoPlayer()
     func showAnyView()
+    func showConfirmationDialog()
 }
