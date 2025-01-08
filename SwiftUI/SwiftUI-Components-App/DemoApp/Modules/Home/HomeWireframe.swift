@@ -416,5 +416,11 @@ extension HomeWireframe: HomeWireframeInterface {
             let videoPlayerWireframe = VideoPlayerWireframe()
             navigationController?.pushWireframe(videoPlayerWireframe)
     }
+    
+    
+    func showEnvironment() {
+        let environmentWireframe = EnvironmentWireframe()
+        navigationController?.pushWireframe(environmentWireframe)
+    }
 
 }
