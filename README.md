@@ -46,8 +46,13 @@ With VIPER, this app achieves a structured and scalable architecture that ensure
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=masterfabric-mobile/swift_camp&type=Date)](https://star-history.com/#masterfabric-mobile/swift_camp&Date)
-
+<a href="https://star-history.com/#masterfabric-mobile/swift_camp&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=masterfabric-mobile/swift_camp&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=masterfabric-mobile/swift_camp&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=masterfabric-mobile/swift_camp&type=Date" />
+ </picture>
+</a>
 
 ## 🛠 Attributes
 
