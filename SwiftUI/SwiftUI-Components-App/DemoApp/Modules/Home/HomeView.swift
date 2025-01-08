@@ -3,7 +3,7 @@ import SwiftUI
 struct HomeView: View {
     // MARK: - HomeView State & ObservedObject
     @ObservedObject var presenter: HomePresenter
-
+    
     var body: some View {
         let repoInfo = presenter.repoInfo ?? GithubRepoInfo(
             commitCount: 0,
@@ -11,13 +11,31 @@ struct HomeView: View {
             branchCount: 0,
             contributors: []
         )
-
+        
         NavigationView {
+            
             VStack(spacing: 0) {
                 // AppBar with dynamic information
+                
+                // Battery information section
+                HStack(spacing: 5) {
+                    // Battery icon with dynamic color (vertical layout)
+                    VStack(spacing: 5) {
+                        Image(systemName: "battery.100")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 15, height: 30)
+                            .foregroundColor(presenter.batteryColor)
+                    }
+                    
+                    // Battery level and state description in a single line
+                    Text("Battery Level: \(presenter.batteryLevel)% | State: \(presenter.batteryStateDescription)")
+                        .font(.footnote)
+                }
+                
                 HStack {
-
-                    VStack(alignment: .leading) {
+                    // Left-side information
+                    VStack(alignment: .leading, spacing: 8) {
                         Text("Version: 1.0.0 | Firmware: \(deviceInfo)")
                             .font(.footnote)
                         Text("Screen: \(screenResolution)")
@@ -29,28 +47,28 @@ struct HomeView: View {
                     
                     Spacer()
                     
-                    HStack(spacing: 10) {
-                        VStack(alignment: .leading, spacing: 5) {                        // Date Icon and Label
-                            HStack(spacing: 5) {
-                                Image(systemName: "calendar")
-                                    .foregroundColor(.blue)
-                                Text(TimeHelper.shared.getCurrentDate(format: "yyyy-MM-dd"))
-                                    .font(.subheadline)
-                                    .foregroundColor(.black)
-                            }
-
-                            // Time Icon and Label
-                            HStack(spacing: 5) {
-                                Image(systemName: "clock")
-                                    .foregroundColor(.blue)
-                                Text(presenter.currentTime)
-                                    .font(.subheadline)
-                                    .foregroundColor(.black)
-                            }
+                    // Right-side date and time information
+                    VStack(alignment: .leading, spacing: 10) {
+                        HStack(spacing: 5) {
+                            Image(systemName: "calendar")
+                                .foregroundColor(.blue)
+                            Text(TimeHelper.shared.getCurrentDate(format: "yyyy-MM-dd"))
+                                .font(.subheadline)
+                                .foregroundColor(.black)
+                        }
+                        HStack(spacing: 5) {
+                            Image(systemName: "clock")
+                                .foregroundColor(.blue)
+                            Text(presenter.currentTime)
+                                .font(.subheadline)
+                                .foregroundColor(.black)
                         }
                     }
                 }
-                .padding()
+                .padding(.horizontal)
+                .padding(.top,20)
+                
+                Spacer()
                 
                 ScrollView {
                     VStack(alignment: .center, spacing: 20) {
@@ -60,8 +78,8 @@ struct HomeView: View {
                             .bold()
                             .multilineTextAlignment(.center)
                             .padding(.bottom, 5)
-
-
+                        
+                        
                         
                         // Description
                         Text(
@@ -215,21 +233,21 @@ struct HomeView: View {
                                     Text(EnvironmentHelper.shared.environment.rawValue)
                                         .font(.body)
                                         .foregroundColor(.gray)
-
+                                    
                                     Text("API Base URL:")
                                         .font(.headline)
                                         .bold()
                                     Text(EnvironmentHelper.shared.apiBaseUrl)
                                         .font(.body)
                                         .foregroundColor(.gray)
-
+                                    
                                     Text("API Key:")
                                         .font(.headline)
                                         .bold()
                                     Text(EnvironmentHelper.shared.apiKey)
                                         .font(.body)
                                         .foregroundColor(.gray)
-
+                                    
                                     if EnvironmentHelper.shared.environment == .dev {
                                         Text("OneSignal App ID:")
                                             .font(.headline)
@@ -352,7 +370,7 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Corner Radius", action: {presenter.showCornerRadius()}),
                             ButtonModel(title: "Go to Offset", action: { presenter.showOffset()}),
                             ButtonModel(title: "Go to List", action: { presenter.showList()}),
-
+                            
                             ButtonModel(title: "Go to ActionSheet", action: { presenter.showActionSheet()}),
                             ButtonModel(title: "Go to Transition", action: { presenter.showTransition() }),
                             ButtonModel(title: "Go to TimeLineView", action: { presenter.timeLineView() }),
@@ -360,42 +378,20 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Link", action: { presenter.showLink()}),
                             ButtonModel(title: "Go to Path", action: { presenter.showPath()}),
                             ButtonModel(title: "Go to TapGesture", action: {presenter.showTapGesture()}),
-
-
-
                             ButtonModel(title: "Go to Group", action: {presenter.showGroup()}),
-
                             ButtonModel(title: "Go to MagnificationGesture", action: {presenter.showMagnificationGesture()}),
-
-
-
-
                             ButtonModel(title: "Go to RotationGesture", action: {presenter.showRotationGesture()}),
-
                             ButtonModel(title: "Go to MagnificationGesture", action: {presenter.showMagnificationGesture()}),
-
-
-
-                            
                             ButtonModel(title: "Go to CustomShape", action: { presenter.showCustomShape()}),
                             ButtonModel(title: "Go to ForegroundColor", action: {presenter.showForegroundColor()}),
-                            
                             ButtonModel(title: "Go to Geometry Reader", action: {presenter.showGeometryReader()}),
                             ButtonModel(title:"Go to Popover", action: {presenter.showPopover()}),
                             ButtonModel(title: "Go to EnvironmentObject", action: { presenter.showEnvironmentObject()}),
                             ButtonModel(title: "Go to State", action:{ presenter.showStateView()}),
-                            
-
                             ButtonModel(title: "Go to ProgressIndicator", action: { presenter.showProgressIndicator()}),
-
                             ButtonModel(title: "Go to Observed Object", action: {presenter.showObservedObject()}),
-                            
                             ButtonModel(title: "Go to VideoPlayer", action: { presenter.showVideoPlayer()})
-
-
-
                         ]
-                        
                         
                         ForEach(buttons) { button in
                             Button(button.title) {
@@ -414,9 +410,12 @@ struct HomeView: View {
             }
             .background(Color(UIColor.systemBackground))  // Adapts to light/dark mode
             .onAppear {
-                            presenter.fetchRepoInfo()
-                            presenter.startUpdatingTime()
+                presenter.fetchRepoInfo()
+                presenter.startUpdatingTime()
+                presenter.startBatteryMonitoring()
+                
             }.onDisappear {
+               
             }
         }.alert(isPresented: $presenter.showDialog) {
             if let contributor = presenter.selectedContributor {
@@ -458,4 +457,13 @@ struct HomeView: View {
 #endif
     }
     
+    func showBatteryInfo(level: Int, stateDescription: String, color: Color) {
+        DispatchQueue.main.async {
+            presenter.batteryLevel = level
+            presenter.batteryStateDescription = stateDescription
+            presenter.batteryColor = color
+        }
+    }
 }
+    
+

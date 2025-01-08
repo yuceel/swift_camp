@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 
 final class HomeWireframe: BaseWireframe<LazyHostingViewController<HomeView>> {
 
@@ -17,7 +18,14 @@ final class HomeWireframe: BaseWireframe<LazyHostingViewController<HomeView>> {
 // MARK: - Extensions -
 
 extension HomeWireframe: HomeWireframeInterface {
-    
+    func showBatteryInfo(level: Int, stateDescription: String, color: Color) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            if let currentView = self.navigationController?.topViewController as? HomeViewInterface {
+                currentView.showBatteryInfo(level: level, stateDescription: stateDescription, color: color)
+            }
+        }
+    }
     
     func showGrid() {
         let gridWireframe = GridWireframe()
