@@ -44,6 +44,10 @@ With VIPER, this app achieves a structured and scalable architecture that ensure
   <li>🌍 <strong>Real-World Application</strong>: Apply acquired knowledge in practical projects to gain proficiency in the iOS development ecosystem.</li>
 </ul>
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=masterfabric-mobile/swift_camp&type=Date)](https://star-history.com/#masterfabric-mobile/swift_camp&Date)
+
 
 ## 🛠 Attributes
 
