@@ -11,7 +11,7 @@ final class BatteryHelper: ObservableObject {
     @Published var batteryColor: Color = .gray
 
     // MARK: - Private Properties
-    private var simulatedBatteryLevel: Int = Int.random(in: 20...100)
+    private var simulatedBatteryLevel: Int = Int.random(in: 0...100)  // Random initial value
     private var simulatedBatteryState: UIDevice.BatteryState = .unplugged
     private var timer: Timer?
     private var isSimulating: Bool {
@@ -82,7 +82,7 @@ final class BatteryHelper: ObservableObject {
         let previousState = simulatedBatteryState
 
         // Randomly increase or decrease battery level
-        let change = Int.random(in: -10...10)
+        let change = Int.random(in: -20...10)
         simulatedBatteryLevel = max(0, min(100, simulatedBatteryLevel + change))
 
         // Update the simulated battery state based on the new level
@@ -110,6 +110,12 @@ final class BatteryHelper: ObservableObject {
 
     /// Gets the color for the current battery state
     private func getBatteryStateColor() -> Color {
+        if batteryLevel < 10 {
+            return .red // Change color to red when battery level is less than 10
+        } else if batteryLevel <= 20 {
+            return .blue // Change color to blue when battery level is between 10 and 20
+        }
+
         switch UIDevice.current.batteryState {
         case .unplugged:
             return .yellow
@@ -126,6 +132,11 @@ final class BatteryHelper: ObservableObject {
 
     /// Gets the color for the simulated battery state
     private func simulatedBatteryStateColor() -> Color {
+        if simulatedBatteryLevel < 10 {
+            return .red
+        } else if simulatedBatteryLevel <= 20 {
+            return .blue
+        }
         switch simulatedBatteryState {
         case .unplugged:
             return .yellow
