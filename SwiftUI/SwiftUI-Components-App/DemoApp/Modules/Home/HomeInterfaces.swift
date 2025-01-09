@@ -74,12 +74,20 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showCustomShape()
     func showGeometryReader()
     func showPopover()
+
     func showGridRow()
+
+    
+
+    func showForm()
+
+
     func showEnvironmentObject()
     func showStateView()
     func showProgressIndicator()
     func showObservedObject()    
     func showVideoPlayer()
+    func showAnyView()
     
 
     func showEnvironment()

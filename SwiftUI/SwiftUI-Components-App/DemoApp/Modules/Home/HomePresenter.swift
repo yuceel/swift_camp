@@ -410,8 +410,14 @@ final class HomePresenter: ObservableObject {
         wireframe.showPopover()
     }
 
+
     func showGridRow() {
         wireframe.showGridRow()
+
+
+    func showForm() {
+        wireframe.showForm()
+    }
 
     
     func showStateView() {
@@ -434,6 +440,10 @@ final class HomePresenter: ObservableObject {
 
     }
     
+    /// Navigates to AnyView
+    func showAnyView() {
+        wireframe.showAnyView()
+    }
 
     
     

@@ -387,9 +387,16 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(popoverWireframe)
     }
 
+
     func showGridRow() {
         let gridrowWireframe = GridRowWireframe()
         navigationController?.pushWireframe(gridrowWireframe)
+    }
+
+
+    func showForm() {
+        let formWireframe = FormWireframe()
+        navigationController?.pushWireframe(formWireframe)
     }
 
     func showEnvironmentObject() {
@@ -421,8 +428,13 @@ extension HomeWireframe: HomeWireframeInterface {
     func showVideoPlayer() {
             let videoPlayerWireframe = VideoPlayerWireframe()
             navigationController?.pushWireframe(videoPlayerWireframe)
+
     }
     
+    func showAnyView() {
+        let anyViewWireframe = AnyViewWireframe()
+        navigationController?.pushWireframe(anyViewWireframe)
+    }
 
     
     func showEnvironment() {
