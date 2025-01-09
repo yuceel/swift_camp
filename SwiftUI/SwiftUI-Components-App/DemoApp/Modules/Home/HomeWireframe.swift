@@ -394,10 +394,18 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(popoverWireframe)
     }
 
+
+    func showGridRow() {
+        let gridrowWireframe = GridRowWireframe()
+        navigationController?.pushWireframe(gridrowWireframe)
+    }
+
+
     func showForm() {
         let formWireframe = FormWireframe()
         navigationController?.pushWireframe(formWireframe)
     }
+
     func showEnvironmentObject() {
         let sharedData = EnvironmentObjectEntity()
         let environmentObjectWireframe = EnvironmentObjectWireframe(sharedData: sharedData)
@@ -452,5 +460,6 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(sheetWireframe)
 
     }
+
 
 }

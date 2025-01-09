@@ -416,9 +416,15 @@ final class HomePresenter: ObservableObject {
         wireframe.showPopover()
     }
 
+
+    func showGridRow() {
+        wireframe.showGridRow()
+
+
     func showForm() {
         wireframe.showForm()
     }
+
     
     func showStateView() {
         wireframe.showStateView()
