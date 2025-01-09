@@ -320,7 +320,13 @@ final class HomePresenter: ObservableObject {
     func showOffset() {
         wireframe.showOffset()
     }
-    
+
+  
+    /// Navigates to Offset
+    func showGroupBox() {
+        wireframe.showGroupBox()
+    }
+
     /// Navigates to List
     func showList() {
         wireframe.showList()
@@ -409,6 +415,16 @@ final class HomePresenter: ObservableObject {
     func showPopover() {
         wireframe.showPopover()
     }
+
+
+    func showGridRow() {
+        wireframe.showGridRow()
+
+
+    func showForm() {
+        wireframe.showForm()
+    }
+
     
     func showStateView() {
         wireframe.showStateView()
@@ -427,6 +443,7 @@ final class HomePresenter: ObservableObject {
     
     func showVideoPlayer() {
             wireframe.showVideoPlayer()
+
     }
     
     /// Navigates to AnyView
@@ -437,5 +454,19 @@ final class HomePresenter: ObservableObject {
     /// Navigates to ConfirmationDialog
     func showConfirmationDialog() {
         wireframe.showConfirmationDialog()
+    }
+
+    func showToggle() {
+        wireframe.showToggle()
+    }
+
+    
+    
+    func showEnvironment(){
+        wireframe.showEnvironment()
+    }
+
+    func showSheet() {
+        wireframe.showSheet()
     }
 }

@@ -380,11 +380,19 @@ struct HomeView: View {
                             ButtonModel(title: "Go to CustomShape", action: { presenter.showCustomShape()}),
                             ButtonModel(title: "Go to ForegroundColor", action: {presenter.showForegroundColor()}),
                             
+
+                            ButtonModel(title: "Go to Offset", action: { presenter.showOffset()}),
+                            ButtonModel(title: "Go to Group Box", action: { presenter.showGroupBox()}),
+
                             ButtonModel(title: "Go to Geometry Reader", action: {presenter.showGeometryReader()}),
                             ButtonModel(title:"Go to Popover", action: {presenter.showPopover()}),
+
+                            ButtonModel(title:"Go to GridRow", action: {presenter.showGridRow()}),
+
                             ButtonModel(title: "Go to EnvironmentObject", action: { presenter.showEnvironmentObject()}),
                             ButtonModel(title: "Go to State", action:{ presenter.showStateView()}),
-                            
+
+                          
 
                             ButtonModel(title: "Go to ProgressIndicator", action: { presenter.showProgressIndicator()}),
 
@@ -392,7 +400,27 @@ struct HomeView: View {
                             
                             ButtonModel(title: "Go to VideoPlayer", action: { presenter.showVideoPlayer()}),
                             ButtonModel(title: "Go to AnyView", action: { presenter.showAnyView() }),
-                            ButtonModel(title: "Go to ConfirmationDialog", action: { presenter.showConfirmationDialog() })
+                            ButtonModel(title: "Go to ConfirmationDialog", action: { presenter.showConfirmationDialog() }),
+
+                            ButtonModel(title: "Go to Toggle", action: { presenter.showToggle()}),
+
+
+                            
+                            ButtonModel(title: "Go to Environment", action: {presenter.showEnvironment()}),
+
+
+                            ButtonModel(title: "Go to Sheet", action: { presenter.showSheet()}),
+
+
+
+
+
+
+
+
+
+
+                            ButtonModel(title:"Go to Form", action: {presenter.showForm()})
                         ]
                         
                         

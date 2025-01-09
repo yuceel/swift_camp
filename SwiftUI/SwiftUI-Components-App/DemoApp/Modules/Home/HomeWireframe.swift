@@ -301,6 +301,13 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(offsetWireframe)
     }
     
+
+    func showGroupBox() {
+        let groupBoxWireframe = GroupBoxWireframe()
+        navigationController?.pushWireframe(groupBoxWireframe)
+    }
+    
+
     
     func showList() {
         let listWireframe = ListWireframe()
@@ -386,6 +393,19 @@ extension HomeWireframe: HomeWireframeInterface {
         let popoverWireframe = PopoverWireframe()
         navigationController?.pushWireframe(popoverWireframe)
     }
+
+
+    func showGridRow() {
+        let gridrowWireframe = GridRowWireframe()
+        navigationController?.pushWireframe(gridrowWireframe)
+    }
+
+
+    func showForm() {
+        let formWireframe = FormWireframe()
+        navigationController?.pushWireframe(formWireframe)
+    }
+
     func showEnvironmentObject() {
         let sharedData = EnvironmentObjectEntity()
         let environmentObjectWireframe = EnvironmentObjectWireframe(sharedData: sharedData)
@@ -415,6 +435,7 @@ extension HomeWireframe: HomeWireframeInterface {
     func showVideoPlayer() {
             let videoPlayerWireframe = VideoPlayerWireframe()
             navigationController?.pushWireframe(videoPlayerWireframe)
+
     }
     
     func showAnyView() {
@@ -426,4 +447,23 @@ extension HomeWireframe: HomeWireframeInterface {
         let confirmationDialogWireframe = ConfirmationDialogWireframe()
         navigationController?.pushWireframe(confirmationDialogWireframe)
     }
+
+    func showToggle() {
+        let toggleWireframe = ToggleWireframe()
+        navigationController?.pushWireframe(toggleWireframe)
+    }
+
+    
+    func showEnvironment() {
+        let environmentWireframe = EnvironmentWireframe()
+        navigationController?.pushWireframe(environmentWireframe)
+
+    }
+
+    func showSheet() {
+        let sheetWireframe = SheetWireframe()
+        navigationController?.pushWireframe(sheetWireframe)
+
+    }
+
 }
