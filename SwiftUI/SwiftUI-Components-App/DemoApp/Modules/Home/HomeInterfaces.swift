@@ -59,6 +59,12 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showPicker()
     func showCornerRadius()
     func showOffset()
+
+
+
+    func showGroupBox()
+
+
     func showList()
     func showActionSheet()
     func showTransition()
@@ -87,7 +93,13 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showProgressIndicator()
     func showObservedObject()    
     func showVideoPlayer()
+
+
+    func showToggle()
+
+
     func showAnyView()
+
     
 
     func showEnvironment()
@@ -96,7 +108,11 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
 
+
+
+
     func showSheet()
 
 
+}
 }

@@ -320,7 +320,13 @@ final class HomePresenter: ObservableObject {
     func showOffset() {
         wireframe.showOffset()
     }
-    
+
+  
+    /// Navigates to Offset
+    func showGroupBox() {
+        wireframe.showGroupBox()
+    }
+
     /// Navigates to List
     func showList() {
         wireframe.showList()
@@ -445,6 +451,10 @@ final class HomePresenter: ObservableObject {
         wireframe.showAnyView()
     }
 
+    func showToggle() {
+        wireframe.showToggle()
+
+
     
     
     func showEnvironment(){
@@ -453,5 +463,6 @@ final class HomePresenter: ObservableObject {
 
     func showSheet() {
         wireframe.showSheet()
+
     }
 }
