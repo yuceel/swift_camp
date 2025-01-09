@@ -370,7 +370,6 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Corner Radius", action: {presenter.showCornerRadius()}),
                             ButtonModel(title: "Go to Offset", action: { presenter.showOffset()}),
                             ButtonModel(title: "Go to List", action: { presenter.showList()}),
-                            
                             ButtonModel(title: "Go to ActionSheet", action: { presenter.showActionSheet()}),
                             ButtonModel(title: "Go to Transition", action: { presenter.showTransition() }),
                             ButtonModel(title: "Go to TimeLineView", action: { presenter.timeLineView() }),
@@ -384,13 +383,24 @@ struct HomeView: View {
                             ButtonModel(title: "Go to MagnificationGesture", action: {presenter.showMagnificationGesture()}),
                             ButtonModel(title: "Go to CustomShape", action: { presenter.showCustomShape()}),
                             ButtonModel(title: "Go to ForegroundColor", action: {presenter.showForegroundColor()}),
+                            ButtonModel(title: "Go to Offset", action: { presenter.showOffset()}),
+                            ButtonModel(title: "Go to Group Box", action: { presenter.showGroupBox()}),
                             ButtonModel(title: "Go to Geometry Reader", action: {presenter.showGeometryReader()}),
                             ButtonModel(title:"Go to Popover", action: {presenter.showPopover()}),
+                            ButtonModel(title:"Go to GridRow", action: {presenter.showGridRow()}),
                             ButtonModel(title: "Go to EnvironmentObject", action: { presenter.showEnvironmentObject()}),
                             ButtonModel(title: "Go to State", action:{ presenter.showStateView()}),
                             ButtonModel(title: "Go to ProgressIndicator", action: { presenter.showProgressIndicator()}),
                             ButtonModel(title: "Go to Observed Object", action: {presenter.showObservedObject()}),
-                            ButtonModel(title: "Go to VideoPlayer", action: { presenter.showVideoPlayer()})
+                            ButtonModel(title: "Go to VideoPlayer", action: { presenter.showVideoPlayer()}),
+                            ButtonModel(title: "Go to VideoPlayer", action: { presenter.showVideoPlayer()}),
+                            ButtonModel(title: "Go to AnyView", action: { presenter.showAnyView() }),
+                            ButtonModel(title: "Go to ConfirmationDialog", action: { presenter.showConfirmationDialog() }),
+                            ButtonModel(title: "Go to Toggle", action: { presenter.showToggle()}),
+                            ButtonModel(title: "Go to Environment", action: {presenter.showEnvironment()}),
+                            ButtonModel(title: "Go to Sheet", action: { presenter.showSheet()}),
+                            ButtonModel(title:"Go to Form", action: {presenter.showForm()})
+
                         ]
                         
                         ForEach(buttons) { button in

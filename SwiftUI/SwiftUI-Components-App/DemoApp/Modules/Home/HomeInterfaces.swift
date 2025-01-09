@@ -64,97 +64,77 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showAlert()
     func showRotationEffect()
     func showWithAnimation()
-
-
     func showTextField()
     func showLongPressGesture()
-
     func showProgressView()
-
     func showGrid()
-    
-    
     func showSlider()
-
-
-    
     func showLabel()
-
     func showCapsuleView()
-    
-
-
     func showDivider()
-
-    
-    
     func showDragGesture()
-
     func showBackground()
-
-
-
-
     func showPicker()
-    
     func showCornerRadius()
-
-
-
     func showOffset()
 
+
+
+    func showGroupBox()
+
+
     func showList()
-
-
-    
-    
     func showActionSheet()
-
     func showTransition()
-    
     func showTimeLineView()
-    
     func showMap()
-    
-    
     func showLink()
-    
     func showPath()
     func showTapGesture()
-
-
-
     func showGroup()
-
-    
     func showRotationGesture()
-
-
-
     func showMagnificationGesture()
-    
     func showForegroundColor()
-
-
-
-
-    
     func showCustomShape()
-    
     func showGeometryReader()
     func showPopover()
+
+    func showGridRow()
+
     
+
+    func showForm()
+
+
     func showEnvironmentObject()
-    
     func showStateView()
+    func showProgressIndicator()
+    func showObservedObject()    
+    func showVideoPlayer()
 
+
+    func showToggle()
+
+
+    func showAnyView()
 
     
-    func showProgressIndicator()
+
+    func showEnvironment()
+
+
+
+
+
 
     func showObservedObject()
     
     func showVideoPlayer()
+    func showAnyView()
+    func showConfirmationDialog()
+
+
+    func showSheet()
 
 
 }

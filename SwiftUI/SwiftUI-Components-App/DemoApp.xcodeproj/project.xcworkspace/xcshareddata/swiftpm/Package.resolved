@@ -1,5 +1,6 @@
 {
   "originHash" : "7f935b5fd59b388509fab179303c2d588e113dcb68514cb987e60e594e791ff7",
+
   "pins" : [
     {
       "identity" : "onesignal-xcframework",
