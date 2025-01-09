@@ -393,6 +393,11 @@ extension HomeWireframe: HomeWireframeInterface {
         let popoverWireframe = PopoverWireframe()
         navigationController?.pushWireframe(popoverWireframe)
     }
+
+    func showForm() {
+        let formWireframe = FormWireframe()
+        navigationController?.pushWireframe(formWireframe)
+    }
     func showEnvironmentObject() {
         let sharedData = EnvironmentObjectEntity()
         let environmentObjectWireframe = EnvironmentObjectWireframe(sharedData: sharedData)
@@ -422,8 +427,13 @@ extension HomeWireframe: HomeWireframeInterface {
     func showVideoPlayer() {
             let videoPlayerWireframe = VideoPlayerWireframe()
             navigationController?.pushWireframe(videoPlayerWireframe)
+
     }
     
+    func showAnyView() {
+        let anyViewWireframe = AnyViewWireframe()
+        navigationController?.pushWireframe(anyViewWireframe)
+    }
 
     func showToggle() {
         let toggleWireframe = ToggleWireframe()

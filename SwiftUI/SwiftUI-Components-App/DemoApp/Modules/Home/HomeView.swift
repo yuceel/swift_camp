@@ -396,6 +396,7 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Observed Object", action: {presenter.showObservedObject()}),
                             
                             ButtonModel(title: "Go to VideoPlayer", action: { presenter.showVideoPlayer()}),
+                            ButtonModel(title: "Go to AnyView", action: { presenter.showAnyView() }),
 
                             ButtonModel(title: "Go to Toggle", action: { presenter.showToggle()}),
 
@@ -404,10 +405,14 @@ struct HomeView: View {
                             ButtonModel(title: "Go to Environment", action: {presenter.showEnvironment()}),
 
 
-                            ButtonModel(title: "Go to Sheet", action: { presenter.showSheet()})
+                            ButtonModel(title: "Go to Sheet", action: { presenter.showSheet()}),
 
 
 
+
+
+
+                            ButtonModel(title:"Go to Form", action: {presenter.showForm()})
 
                         ]
                         
