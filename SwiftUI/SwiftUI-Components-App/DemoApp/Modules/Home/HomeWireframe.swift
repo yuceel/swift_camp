@@ -423,6 +423,10 @@ extension HomeWireframe: HomeWireframeInterface {
 
     }
     
+    func showAnyView() {
+        let anyViewWireframe = AnyViewWireframe()
+        navigationController?.pushWireframe(anyViewWireframe)
+    }
 
     
     func showEnvironment() {

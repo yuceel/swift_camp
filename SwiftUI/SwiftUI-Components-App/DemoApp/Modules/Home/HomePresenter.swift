@@ -434,6 +434,10 @@ final class HomePresenter: ObservableObject {
 
     }
     
+    /// Navigates to AnyView
+    func showAnyView() {
+        wireframe.showAnyView()
+    }
 
     
     
