@@ -450,10 +450,15 @@ final class HomePresenter: ObservableObject {
     func showAnyView() {
         wireframe.showAnyView()
     }
+    
+    /// Navigates to ConfirmationDialog
+    func showConfirmationDialog() {
+        wireframe.showConfirmationDialog()
+    }
 
     func showToggle() {
         wireframe.showToggle()
-
+    }
 
     
     
@@ -463,6 +468,5 @@ final class HomePresenter: ObservableObject {
 
     func showSheet() {
         wireframe.showSheet()
-
     }
 }

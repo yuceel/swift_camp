@@ -442,11 +442,16 @@ extension HomeWireframe: HomeWireframeInterface {
         let anyViewWireframe = AnyViewWireframe()
         navigationController?.pushWireframe(anyViewWireframe)
     }
+    
+    func showConfirmationDialog() {
+        let confirmationDialogWireframe = ConfirmationDialogWireframe()
+        navigationController?.pushWireframe(confirmationDialogWireframe)
+    }
 
     func showToggle() {
         let toggleWireframe = ToggleWireframe()
         navigationController?.pushWireframe(toggleWireframe)
-
+    }
 
     
     func showEnvironment() {
@@ -460,6 +465,5 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(sheetWireframe)
 
     }
-
 
 }
