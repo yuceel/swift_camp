@@ -409,6 +409,10 @@ final class HomePresenter: ObservableObject {
     func showPopover() {
         wireframe.showPopover()
     }
+
+    func showForm() {
+        wireframe.showForm()
+    }
     
     func showStateView() {
         wireframe.showStateView()
@@ -427,6 +431,7 @@ final class HomePresenter: ObservableObject {
     
     func showVideoPlayer() {
             wireframe.showVideoPlayer()
+
     }
     
 

@@ -126,6 +126,9 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showGeometryReader()
     func showPopover()
     
+
+    func showForm()
+
     func showEnvironmentObject()
     
     func showStateView()
@@ -144,5 +147,6 @@ protocol HomeWireframeInterface: WireframeInterface {
 
 
     func showSheet()
+
 
 }
