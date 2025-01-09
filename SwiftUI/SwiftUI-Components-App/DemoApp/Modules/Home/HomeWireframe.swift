@@ -424,9 +424,23 @@ extension HomeWireframe: HomeWireframeInterface {
             navigationController?.pushWireframe(videoPlayerWireframe)
     }
     
+
     func showToggle() {
         let toggleWireframe = ToggleWireframe()
         navigationController?.pushWireframe(toggleWireframe)
+
+
+    
+    func showEnvironment() {
+        let environmentWireframe = EnvironmentWireframe()
+        navigationController?.pushWireframe(environmentWireframe)
+
+    }
+
+    func showSheet() {
+        let sheetWireframe = SheetWireframe()
+        navigationController?.pushWireframe(sheetWireframe)
+
     }
 
 }
