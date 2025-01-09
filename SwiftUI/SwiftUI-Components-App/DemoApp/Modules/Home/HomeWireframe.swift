@@ -301,6 +301,13 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(offsetWireframe)
     }
     
+
+    func showGroupBox() {
+        let groupBoxWireframe = GroupBoxWireframe()
+        navigationController?.pushWireframe(groupBoxWireframe)
+    }
+    
+
     
     func showList() {
         let listWireframe = ListWireframe()
@@ -428,6 +435,11 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(anyViewWireframe)
     }
 
+    func showToggle() {
+        let toggleWireframe = ToggleWireframe()
+        navigationController?.pushWireframe(toggleWireframe)
+
+
     
     func showEnvironment() {
         let environmentWireframe = EnvironmentWireframe()
@@ -438,6 +450,7 @@ extension HomeWireframe: HomeWireframeInterface {
     func showSheet() {
         let sheetWireframe = SheetWireframe()
         navigationController?.pushWireframe(sheetWireframe)
+
     }
 
 }

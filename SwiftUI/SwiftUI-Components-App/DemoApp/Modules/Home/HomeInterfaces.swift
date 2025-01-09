@@ -85,6 +85,8 @@ protocol HomeWireframeInterface: WireframeInterface {
 
     func showOffset()
 
+    func showGroupBox()
+
     func showList()
 
 
@@ -140,10 +142,17 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showObservedObject()
     
     func showVideoPlayer()
+
+
+    func showToggle()
+
+
     func showAnyView()
+
     
 
     func showEnvironment()
+
 
 
 
