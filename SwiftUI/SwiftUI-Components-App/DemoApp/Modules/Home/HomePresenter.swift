@@ -429,9 +429,14 @@ final class HomePresenter: ObservableObject {
             wireframe.showVideoPlayer()
     }
     
+
     
     
     func showEnvironment(){
         wireframe.showEnvironment()
+    }
+
+    func showSheet() {
+        wireframe.showSheet()
     }
 }
