@@ -1,10 +1,28 @@
 import UIKit
+import SwiftUI
 
+
+// MARK: - Interactor Interface
 protocol HomeInteractorInterface: AnyObject {
     func fetchRepoInfo(completion: @escaping (GithubRepoInfo) -> Void)
+    func fetchBatteryInfo()
+    func startBatteryMonitoring()
+    func stopBatteryMonitoring() 
 }
 
+// MARK: - Presenter Interface
+protocol HomePresenterInterface: AnyObject {
+    func didFetchBatteryInfo(level: Int, stateDescription: String, color: Color)
+}
+
+// MARK: - View Interface
+protocol HomeViewInterface: AnyObject {
+    func showBatteryInfo(level: Int, stateDescription: String, color: Color)
+}
+
+// MARK: - Wireframe Interface
 protocol HomeWireframeInterface: WireframeInterface {
+    func showBatteryInfo(level: Int, stateDescription: String, color: Color)
     func showVStack()
     func showZStack()
     func showContentView()
