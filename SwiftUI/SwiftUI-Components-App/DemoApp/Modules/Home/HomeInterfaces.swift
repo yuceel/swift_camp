@@ -80,5 +80,15 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showProgressIndicator()
     func showObservedObject()    
     func showVideoPlayer()
+    
+
+    func showEnvironment()
+
+
+
+
+
+    func showSheet()
+
 
 }
