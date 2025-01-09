@@ -433,4 +433,14 @@ final class HomePresenter: ObservableObject {
     func showAnyView() {
         wireframe.showAnyView()
     }
+
+    
+    
+    func showEnvironment(){
+        wireframe.showEnvironment()
+    }
+
+    func showSheet() {
+        wireframe.showSheet()
+    }
 }
