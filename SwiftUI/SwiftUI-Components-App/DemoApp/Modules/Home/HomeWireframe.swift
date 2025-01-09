@@ -416,5 +416,10 @@ extension HomeWireframe: HomeWireframeInterface {
             let videoPlayerWireframe = VideoPlayerWireframe()
             navigationController?.pushWireframe(videoPlayerWireframe)
     }
+    
+    func showSheet() {
+        let sheetWireframe = SheetWireframe()
+        navigationController?.pushWireframe(sheetWireframe)
+    }
 
 }

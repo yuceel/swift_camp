@@ -137,6 +137,6 @@ protocol HomeWireframeInterface: WireframeInterface {
     func showObservedObject()
     
     func showVideoPlayer()
-
-
+    
+    func showSheet()
 }
