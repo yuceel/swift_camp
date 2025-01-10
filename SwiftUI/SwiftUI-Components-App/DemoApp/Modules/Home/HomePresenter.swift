@@ -50,23 +50,23 @@ final class HomePresenter: ObservableObject {
                 self?.batteryLevel = level
             }
             .store(in: &cancellables)
-
+        
         BatteryHelper.shared.$batteryStateDescription
             .sink { [weak self] description in
                 self?.batteryStateDescription = description
             }
             .store(in: &cancellables)
-
+        
         BatteryHelper.shared.$batteryColor
             .sink { [weak self] color in
                 self?.batteryColor = color
             }
             .store(in: &cancellables)
-
+        
         // Also make sure the BatteryHelper updates the battery info immediately
         BatteryHelper.shared.updateBatteryInfo()
     }
-
+    
     // Stop battery monitoring
     func stopBatteryMonitoring() {
         cancellables.forEach { $0.cancel() }
@@ -97,9 +97,9 @@ final class HomePresenter: ObservableObject {
     
     
     func viewDidLoad() {
-        interactor.startBatteryMonitoring() 
+        interactor.startBatteryMonitoring()
     }
-
+    
     
     /// Stops the timer for updating the current time
     func stopUpdatingTime() {
@@ -375,13 +375,13 @@ final class HomePresenter: ObservableObject {
     func showOffset() {
         wireframe.showOffset()
     }
-
-  
+    
+    
     /// Navigates to Offset
     func showGroupBox() {
         wireframe.showGroupBox()
     }
-
+    
     /// Navigates to List
     func showList() {
         wireframe.showList()
@@ -433,95 +433,95 @@ final class HomePresenter: ObservableObject {
     func showTapGesture() {
         wireframe.showTapGesture()
     }
-
+    
     /// Navigates to Group
     func showGroup() {
         wireframe.showGroup()
     }
-
+    
     
     func showRotationGesture() {
         wireframe.showRotationGesture()
     }
-
-
+    
+    
     func showMagnificationGesture() {
         wireframe.showMagnificationGesture()
     }
- 
+    
     /// Navigates to ForegroundColor
     func showForegroundColor() {
         wireframe.showForegroundColor()
-
+        
     }
     
-        func showCustomShape() {
-            wireframe.showCustomShape()
-        }
-        
-        func showGeometryReader() {
-            wireframe.showGeometryReader()
-        }
+    func showCustomShape() {
+        wireframe.showCustomShape()
+    }
+    
+    func showGeometryReader() {
+        wireframe.showGeometryReader()
+    }
     
     func showEnvironmentObject() {
         wireframe.showEnvironmentObject()
     }
-
+    
     func showPopover() {
         wireframe.showPopover()
     }
-
-
+    
+    
     func showGridRow() {
         wireframe.showGridRow()
-
-
-    func showForm() {
-        wireframe.showForm()
     }
-
-    
-    func showStateView() {
-        wireframe.showStateView()
-    }
-    
-    func showProgressIndicator() {
-        wireframe.showProgressIndicator()
-    }
-  
-  
-    func showObservedObject() {
-        wireframe.showObservedObject()
-
-    }
-    
-    
-    func showVideoPlayer() {
+        
+        func showForm() {
+            wireframe.showForm()
+        }
+        
+        
+        func showStateView() {
+            wireframe.showStateView()
+        }
+        
+        func showProgressIndicator() {
+            wireframe.showProgressIndicator()
+        }
+        
+        
+        func showObservedObject() {
+            wireframe.showObservedObject()
+            
+        }
+        
+        
+        func showVideoPlayer() {
             wireframe.showVideoPlayer()
-
+            
+        }
+        
+        /// Navigates to AnyView
+        func showAnyView() {
+            wireframe.showAnyView()
+        }
+        
+        /// Navigates to ConfirmationDialog
+        func showConfirmationDialog() {
+            wireframe.showConfirmationDialog()
+        }
+        
+        func showToggle() {
+            wireframe.showToggle()
+        }
+        
+        
+        
+        func showEnvironment(){
+            wireframe.showEnvironment()
+        }
+        
+        func showSheet() {
+            wireframe.showSheet()
+        }
     }
-    
-    /// Navigates to AnyView
-    func showAnyView() {
-        wireframe.showAnyView()
-    }
-    
-    /// Navigates to ConfirmationDialog
-    func showConfirmationDialog() {
-        wireframe.showConfirmationDialog()
-    }
-
-    func showToggle() {
-        wireframe.showToggle()
-    }
-
-    
-    
-    func showEnvironment(){
-        wireframe.showEnvironment()
-    }
-
-    func showSheet() {
-        wireframe.showSheet()
-    }
-}
