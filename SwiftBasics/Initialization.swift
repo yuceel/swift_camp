@@ -106,3 +106,19 @@ class Vehicle {
 
 let defaultVehicle = Vehicle()
 print(defaultVehicle) // Vehicle(type: "Car", wheels: 4)
+
+
+// Memory Management (ARC)
+class Book{
+    let title: String
+    init(title: String) {
+        self.title = title
+        print("\(title) is initialized")
+    }
+    deinit {
+        print("\(title) is deinitialized")
+    }
+}
+
+var newBook: Book? = Book(title: "Swift-Camp") // Output: Swift-Camp is initialized
+newBook = nil   // Output: Swift-Camp is deinitialized

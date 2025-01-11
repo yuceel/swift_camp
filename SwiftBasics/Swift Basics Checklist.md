@@ -84,14 +84,14 @@
   - [ ] Try, Try?, Try!
 
 - [ ] **Other Concepts**
-  - [ ] Optional Binding
+  - [x] Optional Binding
   - [X] Optional Chaining
   - [X] Lazy Properties
-  - [ ] Computed Properties
+  - [x] Computed Properties
   - [X] Property Observers
-  - [ ] KeyPaths
+  - [x] KeyPaths
   - [X] Subscripts
-  - [ ] Memory Management (ARC)
-  - [ ] Weak and Unowned References
-  - [ ] Generics
+  - [x] Memory Management (ARC)
+  - [x] Weak and Unowned References
+  - [x] Generics
   - [X] Type Casting (as, as?, as!)
