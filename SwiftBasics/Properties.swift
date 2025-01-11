@@ -126,3 +126,46 @@ let bankAccount = BankAccount(balance: 1000)
 bankAccount.deposit(amount: 500)
 bankAccount.withdraw(amount: 200)
 print("Current Balance: \(bankAccount.currentBalance)")
+
+
+// 8. KeyPaths
+let nameKeyPath = \User.name
+let theUser = User(name: "Alice", age: 30)
+print(theUser[keyPath: nameKeyPath]) // Output: Alice
+
+
+// 9. Weak and Unowned References
+class Customer{
+    var name: String
+    var card: CreditCard?
+
+    init(name: String) {
+        self.name = name
+        print("Customer \(name) is being initialized")
+    }
+
+    deinit {
+        print("Customer \(name) is being denitialized")
+    }
+}
+
+class CreditCard {
+    let number: String
+    unowned let customer: Customer
+
+    init(number: String, customer: Customer) {
+        self.number = number
+        self.customer = customer
+        print("Credit card \(number) is being initialized")
+    }
+
+    deinit {
+        print("Credit card \(number) is being deinitialized")
+    }
+}
+
+var theCustomer: Customer? = Customer(name: "John")
+print("hh")
+theCustomer!.card = CreditCard(number: "1234-5678-9012-3456", customer: theCustomer!)
+print("Customes is being deinitialized")
+theCustomer = nil

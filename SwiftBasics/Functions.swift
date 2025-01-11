@@ -82,3 +82,18 @@ func introduce(name: String = "Stranger") {
 }
 introduce() // Output: Hi, Stranger!
 introduce(name: "Beyza") // Output: Hi, Beyza!
+
+
+// Generics
+func swapValues<T>(a: inout T, b: inout T) { // Generic Swap Function
+    let temp = a
+    a = b
+    b = temp
+}
+
+var x = 5, y = 10
+
+print("x: \(x), y: \(y)") // x: 5, y: 10
+swapValues(a: &x, b: &y)
+print("Values are swapped")
+print("x: \(x), y: \(y)") // x: 10, y: 5
