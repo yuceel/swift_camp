@@ -5,6 +5,7 @@ import OneSignalFramework
 class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
     
     private let oneSignalAppID = EnvironmentHelper.shared.oneSignalAppID
+    
 
     // MARK: - Public properties -
 
@@ -42,6 +43,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         
         logDatabaseRecords()
         
+        // BatteryHelper Integration
+        logBatteryInfo()
+        setupBatteryMonitoring()
+        
         // Configure initializers
         LoggerHelper.shared.debug("Setting up app initializers.")
         initializers = StartupInitializationBuilder()
@@ -49,6 +54,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
             .build(with: launchOptions)
         
         LoggerHelper.shared.info("Application did finish launching.")
+        
+        setupBatteryMonitoring()
+        
         return true
     }
     
@@ -155,3 +163,22 @@ private func logDatabaseRecords() {
         }
     }
 }
+
+
+// MARK: - Battery Monitoring Setup
+private func setupBatteryMonitoring() {
+    UIDevice.current.isBatteryMonitoringEnabled = true
+    logBatteryInfo()
+}
+
+private func logBatteryInfo() {
+    let batteryHelper = BatteryHelper.shared
+    let batteryLevel = batteryHelper.batteryLevel
+    let stateDescription = batteryHelper.batteryStateDescription
+
+    LoggerHelper.shared.info("🔋 Battery Level: \(batteryLevel)%")
+    LoggerHelper.shared.info("⚡ Battery State: \(stateDescription)")
+}
+
+
+

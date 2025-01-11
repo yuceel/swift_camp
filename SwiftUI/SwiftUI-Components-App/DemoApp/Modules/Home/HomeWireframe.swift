@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 
 final class HomeWireframe: BaseWireframe<LazyHostingViewController<HomeView>> {
 
@@ -17,7 +18,14 @@ final class HomeWireframe: BaseWireframe<LazyHostingViewController<HomeView>> {
 // MARK: - Extensions -
 
 extension HomeWireframe: HomeWireframeInterface {
-    
+    func showBatteryInfo(level: Int, stateDescription: String, color: Color) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            if let currentView = self.navigationController?.topViewController as? HomeViewInterface {
+                currentView.showBatteryInfo(level: level, stateDescription: stateDescription, color: color)
+            }
+        }
+    }
     
     func showGrid() {
         let gridWireframe = GridWireframe()
@@ -301,6 +309,13 @@ extension HomeWireframe: HomeWireframeInterface {
         navigationController?.pushWireframe(offsetWireframe)
     }
     
+
+    func showGroupBox() {
+        let groupBoxWireframe = GroupBoxWireframe()
+        navigationController?.pushWireframe(groupBoxWireframe)
+    }
+    
+
     
     func showList() {
         let listWireframe = ListWireframe()
@@ -386,6 +401,19 @@ extension HomeWireframe: HomeWireframeInterface {
         let popoverWireframe = PopoverWireframe()
         navigationController?.pushWireframe(popoverWireframe)
     }
+
+
+    func showGridRow() {
+        let gridrowWireframe = GridRowWireframe()
+        navigationController?.pushWireframe(gridrowWireframe)
+    }
+
+
+    func showForm() {
+        let formWireframe = FormWireframe()
+        navigationController?.pushWireframe(formWireframe)
+    }
+
     func showEnvironmentObject() {
         let sharedData = EnvironmentObjectEntity()
         let environmentObjectWireframe = EnvironmentObjectWireframe(sharedData: sharedData)
@@ -415,6 +443,35 @@ extension HomeWireframe: HomeWireframeInterface {
     func showVideoPlayer() {
             let videoPlayerWireframe = VideoPlayerWireframe()
             navigationController?.pushWireframe(videoPlayerWireframe)
+
+    }
+    
+    func showAnyView() {
+        let anyViewWireframe = AnyViewWireframe()
+        navigationController?.pushWireframe(anyViewWireframe)
+    }
+    
+    func showConfirmationDialog() {
+        let confirmationDialogWireframe = ConfirmationDialogWireframe()
+        navigationController?.pushWireframe(confirmationDialogWireframe)
+    }
+
+    func showToggle() {
+        let toggleWireframe = ToggleWireframe()
+        navigationController?.pushWireframe(toggleWireframe)
+    }
+
+    
+    func showEnvironment() {
+        let environmentWireframe = EnvironmentWireframe()
+        navigationController?.pushWireframe(environmentWireframe)
+
+    }
+
+    func showSheet() {
+        let sheetWireframe = SheetWireframe()
+        navigationController?.pushWireframe(sheetWireframe)
+
     }
 
 }

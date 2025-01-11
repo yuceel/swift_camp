@@ -1,5 +1,6 @@
 import Combine
 import Foundation
+import SwiftUI
 
 final class HomePresenter: ObservableObject {
     
@@ -8,11 +9,18 @@ final class HomePresenter: ObservableObject {
     @Published var selectedContributor: Contributor?
     @Published var showDialog = false
     @Published var currentTime: String = ""
+    @Published var batteryLevel: Int = 0
+    @Published var batteryStateDescription: String = "Unknown"
+    @Published var batteryColor: Color = .gray
+    
     
     // MARK: - Private properties -
     private let interactor: HomeInteractorInterface
     private let wireframe: HomeWireframeInterface
+    weak var view: HomeViewInterface?
     private var timerSubscription: AnyCancellable?
+    private var subscriptions = Set<AnyCancellable>()
+    private var cancellables = Set<AnyCancellable>()
     private func updateTime() {
         currentTime = TimeHelper.shared.getCurrentTime(format: "HH:mm:ss")
     }
@@ -22,6 +30,47 @@ final class HomePresenter: ObservableObject {
     init(interactor:HomeInteractorInterface,wireframe: HomeWireframeInterface) {
         self.wireframe = wireframe
         self.interactor = interactor
+        
+        // Battery monitoring subscription
+        BatteryHelper.shared.objectWillChange
+            .sink { [weak self] _ in
+                DispatchQueue.main.async {
+                    self?.batteryLevel = BatteryHelper.shared.batteryLevel
+                    self?.batteryStateDescription = BatteryHelper.shared.batteryStateDescription
+                    self?.batteryColor = BatteryHelper.shared.batteryColor
+                }
+            }
+            .store(in: &subscriptions)
+        
+    }
+    
+    func startBatteryMonitoring() {
+        BatteryHelper.shared.$batteryLevel
+            .sink { [weak self] level in
+                self?.batteryLevel = level
+            }
+            .store(in: &cancellables)
+        
+        BatteryHelper.shared.$batteryStateDescription
+            .sink { [weak self] description in
+                self?.batteryStateDescription = description
+            }
+            .store(in: &cancellables)
+        
+        BatteryHelper.shared.$batteryColor
+            .sink { [weak self] color in
+                self?.batteryColor = color
+            }
+            .store(in: &cancellables)
+        
+        // Also make sure the BatteryHelper updates the battery info immediately
+        BatteryHelper.shared.updateBatteryInfo()
+    }
+    
+    // Stop battery monitoring
+    func stopBatteryMonitoring() {
+        cancellables.forEach { $0.cancel() }
+        cancellables.removeAll()
     }
     
     func fetchRepoInfo() {
@@ -45,6 +94,12 @@ final class HomePresenter: ObservableObject {
                 }
             }
     }
+    
+    
+    func viewDidLoad() {
+        interactor.startBatteryMonitoring()
+    }
+    
     
     /// Stops the timer for updating the current time
     func stopUpdatingTime() {
@@ -321,6 +376,12 @@ final class HomePresenter: ObservableObject {
         wireframe.showOffset()
     }
     
+    
+    /// Navigates to Offset
+    func showGroupBox() {
+        wireframe.showGroupBox()
+    }
+    
     /// Navigates to List
     func showList() {
         wireframe.showList()
@@ -372,60 +433,95 @@ final class HomePresenter: ObservableObject {
     func showTapGesture() {
         wireframe.showTapGesture()
     }
-
+    
     /// Navigates to Group
     func showGroup() {
         wireframe.showGroup()
     }
-
+    
     
     func showRotationGesture() {
         wireframe.showRotationGesture()
     }
-
-
+    
+    
     func showMagnificationGesture() {
         wireframe.showMagnificationGesture()
     }
- 
+    
     /// Navigates to ForegroundColor
     func showForegroundColor() {
         wireframe.showForegroundColor()
-
+        
     }
     
-        func showCustomShape() {
-            wireframe.showCustomShape()
-        }
-        
-        func showGeometryReader() {
-            wireframe.showGeometryReader()
-        }
+    func showCustomShape() {
+        wireframe.showCustomShape()
+    }
+    
+    func showGeometryReader() {
+        wireframe.showGeometryReader()
+    }
     
     func showEnvironmentObject() {
         wireframe.showEnvironmentObject()
     }
-
+    
     func showPopover() {
         wireframe.showPopover()
     }
     
-    func showStateView() {
-        wireframe.showStateView()
-    }
     
-    func showProgressIndicator() {
-        wireframe.showProgressIndicator()
+    func showGridRow() {
+        wireframe.showGridRow()
     }
-  
-  
-    func showObservedObject() {
-        wireframe.showObservedObject()
-
-    }
-    
-    
-    func showVideoPlayer() {
+        
+        func showForm() {
+            wireframe.showForm()
+        }
+        
+        
+        func showStateView() {
+            wireframe.showStateView()
+        }
+        
+        func showProgressIndicator() {
+            wireframe.showProgressIndicator()
+        }
+        
+        
+        func showObservedObject() {
+            wireframe.showObservedObject()
+            
+        }
+        
+        
+        func showVideoPlayer() {
             wireframe.showVideoPlayer()
+            
+        }
+        
+        /// Navigates to AnyView
+        func showAnyView() {
+            wireframe.showAnyView()
+        }
+        
+        /// Navigates to ConfirmationDialog
+        func showConfirmationDialog() {
+            wireframe.showConfirmationDialog()
+        }
+        
+        func showToggle() {
+            wireframe.showToggle()
+        }
+        
+        
+        
+        func showEnvironment(){
+            wireframe.showEnvironment()
+        }
+        
+        func showSheet() {
+            wireframe.showSheet()
+        }
     }
-}

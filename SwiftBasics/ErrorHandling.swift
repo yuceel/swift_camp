@@ -88,3 +88,19 @@ func retrieveData(transactionId: Int) {
 
 retrieveData(transactionId: 123)  // Output: Fetched data: Transaction data for transaction 123
 retrieveData(transactionId: 0)  // Output: Failed to fetch data due to an error: networkError
+
+
+// 7. Optional Binding
+let firstPossibleInput : String? = "Hello, World!"
+if let unwrappedInput = firstPossibleInput {    // if given input is not nil, unwrap it
+    print(unwrappedInput)
+} else {
+    print("firstPossibleInput is nil")
+}
+
+let secondPossibleInput : String? = nil
+if let unwrappedInput = secondPossibleInput {   // if given input is nil, print the message
+    print(unwrappedInput)
+} else {
+    print("secondPossibleInput is nil")
+}
