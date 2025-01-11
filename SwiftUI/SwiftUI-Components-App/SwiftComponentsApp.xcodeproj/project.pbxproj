@@ -122,7 +122,7 @@
 		7F3139FA292BC7E90048C74C = {
 			isa = PBXGroup;
 			children = (
-				7F313A05292BC7E90048C74C /* DemoApp */,
+				7F313A05292BC7E90048C74C /* SwiftComponentsApp */,
 				6E00E5DE2D2222D400944B6C /* OneSignalNotificationServiceExtension */,
 				6E0A985F2D2301DD00B6EB14 /* Frameworks */,
 				7F313A04292BC7E90048C74C /* Products */,
@@ -138,7 +138,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7F313A05292BC7E90048C74C /* DemoApp */ = {
+		7F313A05292BC7E90048C74C /* SwiftComponentsApp */ = {
 			isa = PBXGroup;
 			children = (
 				6EB987152D2572EB000394DF /* Helpers */,
@@ -154,7 +154,7 @@
 				7F313A14292BC7EA0048C74C /* Info.plist */,
 				6EB9871C2D2574C6000394DF /* EnvironmentConfig.plist */,
 			);
-			path = DemoApp;
+			path = SwiftComponentsApp;
 			sourceTree = "<group>";
 		};
 		7F313A1B292BC85A0048C74C /* VIPER */ = {
@@ -238,9 +238,9 @@
 			productReference = 6E00E5DD2D2222D400944B6C /* OneSignalNotificationServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		7F313A02292BC7E90048C74C /* DemoApp */ = {
+		7F313A02292BC7E90048C74C /* SwiftComponentsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F313A17292BC7EA0048C74C /* Build configuration list for PBXNativeTarget "DemoApp" */;
+			buildConfigurationList = 7F313A17292BC7EA0048C74C /* Build configuration list for PBXNativeTarget "SwiftComponentsApp" */;
 			buildPhases = (
 				7F3139FF292BC7E90048C74C /* Sources */,
 				7F313A00292BC7E90048C74C /* Frameworks */,
@@ -255,7 +255,7 @@
 				6EB987152D2572EB000394DF /* Helpers */,
 				6EFA4C602D1FE2BB00C140BB /* Components */,
 			);
-			name = DemoApp;
+			name = SwiftComponentsApp;
 			packageProductDependencies = (
 				7F313A2E292BC8C70048C74C /* RxCocoa */,
 				7F313A30292BC8C70048C74C /* RxRelay */,
@@ -288,7 +288,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7F3139FE292BC7E90048C74C /* Build configuration list for PBXProject "DemoApp" */;
+			buildConfigurationList = 7F3139FE292BC7E90048C74C /* Build configuration list for PBXProject "SwiftComponentsApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -307,7 +307,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F313A02292BC7E90048C74C /* DemoApp */,
+				7F313A02292BC7E90048C74C /* SwiftComponentsApp */,
 				6E00E5DC2D2222D400944B6C /* OneSignalNotificationServiceExtension */,
 			);
 		};
@@ -569,12 +569,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SwiftComponentsApp/DemoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4GW994398K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DemoApp/Info.plist;
+				INFOPLIST_FILE = SwiftComponentsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -603,12 +603,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoAppRelease.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SwiftComponentsApp/DemoAppRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4GW994398K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DemoApp/Info.plist;
+				INFOPLIST_FILE = SwiftComponentsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -644,7 +644,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F3139FE292BC7E90048C74C /* Build configuration list for PBXProject "DemoApp" */ = {
+		7F3139FE292BC7E90048C74C /* Build configuration list for PBXProject "SwiftComponentsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F313A15292BC7EA0048C74C /* Debug */,
@@ -653,7 +653,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F313A17292BC7EA0048C74C /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
+		7F313A17292BC7EA0048C74C /* Build configuration list for PBXNativeTarget "SwiftComponentsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F313A18292BC7EA0048C74C /* Debug */,
