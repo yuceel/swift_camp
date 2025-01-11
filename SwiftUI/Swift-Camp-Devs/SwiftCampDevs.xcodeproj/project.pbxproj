@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -53,6 +53,13 @@
 		7F313A4B292BCD860048C74C /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		41AA93EA2D3257B30007EFFD /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
+		41AA93FB2D3257CC0007EFFD /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
+		41AA94052D3257F10007EFFD /* Utils */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utils; sourceTree = "<group>"; };
+		41AA940A2D3258000007EFFD /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		7F313A00292BC7E90048C74C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -86,6 +93,10 @@
 		7F313A05292BC7E90048C74C /* SwiftCampDevs */ = {
 			isa = PBXGroup;
 			children = (
+				41AA940A2D3258000007EFFD /* Views */,
+				41AA94052D3257F10007EFFD /* Utils */,
+				41AA93FB2D3257CC0007EFFD /* Helpers */,
+				41AA93EA2D3257B30007EFFD /* Components */,
 				7F313A34292BC91F0048C74C /* Initializers */,
 				7F313A1B292BC85A0048C74C /* VIPER */,
 				7F313A28292BC8830048C74C /* SwiftUI Setup */,
@@ -163,6 +174,12 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				41AA93EA2D3257B30007EFFD /* Components */,
+				41AA93FB2D3257CC0007EFFD /* Helpers */,
+				41AA94052D3257F10007EFFD /* Utils */,
+				41AA940A2D3258000007EFFD /* Views */,
 			);
 			name = SwiftCampDevs;
 			packageProductDependencies = (
