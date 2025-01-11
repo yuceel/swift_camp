@@ -62,7 +62,7 @@ struct AppButton: View {
         Text("Normal Button | Enabled")
         AppButton(type: .normal, size: .small, text: "Next", action: {}, isEnabled: true)
         Text("Text Button | Disabled")
-        AppButton(type: .text, size: .medium, text: "Add", action: {}, isEnabled: false)
+        AppButton(type: .text, size: .medium, text: "Add", action: {}, isEnabled: true)
         Text("Icon Button | Disabled")
         AppButton(type: .icon, size: .medium, text: "star.fill", action: {}, isEnabled: false)
         Text("Icon Button | Enabled")

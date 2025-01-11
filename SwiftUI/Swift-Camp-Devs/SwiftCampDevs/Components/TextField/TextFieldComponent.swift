@@ -8,7 +8,7 @@ enum TextFieldType {
     case custom(placeholder: String, keyboardType: UIKeyboardType)
 }
 
-struct CustomTextField: View {
+struct SCTextField: View {
     @Binding var text: String
     var type: TextFieldType
     var maxLength: Int? = nil
@@ -82,12 +82,12 @@ struct CustomTextField: View {
 
 #Preview {
     VStack(spacing: 16) {
-        CustomTextField(text: .constant(""), type: .username)
-        CustomTextField(text: .constant(""), type: .password, borderColor: .red, showPasswordToggle: true, isEnabled: false)
-        CustomTextField(text: .constant(""), type: .email, borderColor: .green)
-        CustomTextField(text: .constant(""), type: .search, borderColor: .gray, isEnabled: false)
-        CustomTextField(text: .constant(""), type: .numeric, borderColor: .purple)
-        CustomTextField(text: .constant(""), type: .custom(placeholder: "Enter custom input", keyboardType: .asciiCapable), borderColor: .orange)
+        SCTextField(text: .constant(""), type: .username)
+        SCTextField(text: .constant(""), type: .password, borderColor: .red, showPasswordToggle: true, isEnabled: false)
+        SCTextField(text: .constant(""), type: .email, borderColor: .green)
+        SCTextField(text: .constant(""), type: .search, borderColor: .gray, isEnabled: false)
+        SCTextField(text: .constant(""), type: .numeric, borderColor: .purple)
+        SCTextField(text: .constant(""), type: .custom(placeholder: "Enter custom input", keyboardType: .asciiCapable), borderColor: .orange)
     }
     .padding()
 }
