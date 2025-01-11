@@ -1,117 +1,107 @@
-# SwiftUI Components Checklist
+### SwiftUI Components Checklist
 
-- [ ] **View Containers**
+#### **View Containers**
+- [x] VStack **@mehmetalbyrak**
+- [x] HStack **@elifdodanli**
+- [x] ZStack **@AylinManav**
+- [x] LazyVStack **@busragedikoglu**
+- [x] LazyHStack **@mehmetalbyrak**
+- [x] LazyVGrid **@yuceel**
+- [x] LazyHGrid **@melihalkbk**
+- [x] ScrollView **@busragedikoglu**
+- [x] List **@elifdodanli**
+- [x] Section **@AylinManav**
+- [x] Group **@elifdodanli**
+- [x] GroupBox **@OnurArslan0**
+- [x] NavigationView **@beyzanuravsar**
+- [x] NavigationStack **@alakkaya**
+- [x] TabView **@beyzanuravsar**
+- [x] Form **@elifdodanli**
+- [x] ContentView **@turhanGoksu**
 
-  - [x] VStack @mehmetalbyrak
-  - [x] HStack @elifdodanli
-  - [x] ZStack @AylinManav
-  - [x] LazyVStack @busragedikoglu
-  - [x] LazyHStack @mehmetalbyrak
-  - [x] LazyVGrid @yuceel
-  - [x] LazyHGrid @melihalkbk
-  - [x] ScrollView @busragedikoglu
-  - [x] List @elifdodanli
-  - [x] Section @AylinManav
-  - [x] Group @elifdodanli
-  - [ ] GroupBox @OnurArslan0
-  - [x] NavigationView @beyzanuravsar
-  - [x] NavigationStack @alakkaya
-  - [x] TabView @beyzanuravsar
-  - [ ] Form @elifdodanli
-  - [x] ContentView @turhanGoksu
+#### **Text and Images**
+- [x] Text **@AylinManav**
+- [x] TextField **@yuceel**
+- [x] SecureField **@busragedikoglu**
+- [x] Image **@melihalkbk**
+- [x] Label **@mehmetalbyrak**
+- [x] AttributedText **@beyzanuravsar**
 
-- [ ] **Text and Images**
+#### **Buttons**
+- [x] Button **@beyzanuravsar**
+- [x] Link **@AylinManav**
+- [x] Toggle **@OnurArslan0**
+- [x] Menu **@melihalkbk**
+- [x] ContextMenu **@busragedikoglu**
 
-  - [x] Text @AylinManav
-  - [x] TextField @yuceel
-  - [x] SecureField @busragedikoglu
-  - [x] Image @melihalkbk
-  - [x] Label @mehmetalbyrak
-  - [x] AttributedText @beyzanuravsar
+#### **Pickers and Controls**
+- [x] Picker **@alakkaya**
+- [x] DatePicker **@beyzanuravsar**
+- [x] Slider **@mehmetalbyrak**
+- [x] Stepper **@busragedikoglu**
+- [x] ProgressView **@yuceel**
+- [x] SegmentedControl **@beyzanuravsar**
+- [x] ColorPicker **@turhanGoksu**
 
-- [ ] **Buttons**
+#### **Shapes**
+- [x] Rectangle **@turhanGoksu**
+- [x] RoundedRectangle **@beyzanuravsar**
+- [x] Circle **@melihalkbk**
+- [x] Ellipse **@busragedikoglu**
+- [x] Capsule **@yuceel**
+- [x] Path **@mehmetalbyrak**
+- [x] CustomShape **@AylinManav**
 
-  - [x] Button @beyzanuravsar
-  - [x] Link @AylinManav
-  - [ ] Toggle @OnurArslan0
-  - [x] Menu @melihalkbk
-  - [x] ContextMenu @busragedikoglu
+#### **Modifiers**
+- [x] Padding **@busragedikoglu**
+- [x] Background **@yuceel**
+- [x] ForegroundColor **@mehmetalbyrak**
+- [x] Shadow **@beyzanuravsar**
+- [x] CornerRadius **@yuceel**
+- [x] Frame **@turhanGoksu**
+- [x] Offset **@mehmetalbyrak**
+- [x] ScaleEffect **@beyzanuravsar**
+- [x] RotationEffect **@alakkaya**
+- [x] Opacity **@melihalkbk**
 
-- [ ] **Pickers and Controls**
+#### **Animations**
+- [x] Animation **@beyzanuravsar**
+- [x] withAnimation **@busragedikoglu**
+- [x] Transaction **@turhanGoksu**
+- [x] MatchedGeometryEffect **@turhanGoksu**
+- [x] Transition **@alakkaya**
 
-  - [x] Picker @alakkaya
-  - [x] DatePicker @beyzanuravsar
-  - [x] Slider @mehmetalbyrak
-  - [x] Stepper @busragedikoglu
-  - [x] ProgressView @yuceel
-  - [x] SegmentedControl @beyzanuravsar
-  - [x] ColorPicker @turhanGoksu
+#### **Gestures**
+- [x] TapGesture **@busragedikoglu**
+- [x] LongPressGesture **@beyzanuravsar**
+- [x] DragGesture **@mehmetalbyrak**
+- [x] MagnificationGesture **@alakkaya**
+- [x] RotationGesture **@yuceel**
 
-- [ ] **Shapes**
+#### **Alerts and Sheets**
+- [x] Alert **@mehmetalbyrak**
+- [x] ActionSheet **@mehmetalbyrak**
+- [x] ConfirmationDialog **@busragedikoglu**
+- [x] Sheet **@AylinManav**
+- [x] Popover **@alakkaya**
 
-  - [x] Rectangle @turhanGoksu
-  - [x] RoundedRectangle @beyzanuravsar
-  - [x] Circle @melihalkbk
-  - [x] Ellipse @busragedikoglu
-  - [x] Capsule @yuceel
-  - [x] Path @mehmetalbyrak
-  - [x] CustomShape @AylinManav
+#### **Grid**
+- [x] Grid **@turhanGoksu**
+- [x] GridRow **@melihalkbk**
 
-- [ ] **Modifiers**
-
-  - [x] Padding @busragedikoglu
-  - [x] Background @yuceel
-  - [x] ForegroundColor @elifdodanli
-  - [x] Shadow @beyzanuravsar
-  - [x] CornerRadius @yuceel
-  - [x] Frame @turhanGoksu
-  - [x] Offset @mehmetalbyrak
-  - [x] ScaleEffect @beyzanuravsar
-  - [x] RotationEffect @alakkaya
-  - [x] Opacity @melihalkbk
-
-- [ ] **Animations**
-
-  - [x] Animation @beyzanuravsar
-  - [x] withAnimation @busragedikoglu
-  - [x] Transaction @turhanGoksu
-  - [x] MatchedGeometryEffect @turhanGoksu
-  - [x] Transition @alakkaya
-
-- [ ] **Gestures**
-
-  - [x] TapGesture @busragedikoglu
-  - [x] LongPressGesture @beyzanuravsar
-  - [x] DragGesture @mehmetalbyrak
-  - [x] MagnificationGesture @alakkaya
-  - [x] RotationGesture @yuceel
-
-- [ ] **Alerts and Sheets**
-
-  - [x] Alert @mehmetalbyrak
-  - [x] ActionSheet @beyzanuravsar
-  - [ ] ConfirmationDialog @OnurArslan0
-  - [ ] Sheet @AylinManav
-  - [ ] Popover @alakkaya
-
-- [ ] **Grid**
-
-  - [x] Grid @turhanGoksu
-  - [ ] GridRow @OnurArslan0
-
-- [ ] **Other Components**
-  - [ ] Spacer @alakkaya
-  - [x] Divider @busragedikoglu
-  - [ ] GeometryReader @yuceel
-  - [x] Canvas @turhanGoksu
-  - [x] TimelineView @beyzanuravsar
-  - [x] Map @beyzanuravsar
-  - [ ] VideoPlayer @ayberkgorgun
-  - [ ] ProgressIndicator @ayberkgorgun
-  - [ ] AnyView @ayberkgorgun
-  - [ ] Environment @ayberkgorgun
-  - [x] EnvironmentObject @turhanGoksu
-  - [x] State @turhanGoksu
-  - [x] Binding @melihalkbk
-  - [ ] ObservedObject @yuceel
-  - [ ] FocusState @alakkaya
+#### **Other Components**
+- [x] Spacer **@alakkaya**
+- [x] GeometryReader **@yuceel**
+- [x] Divider **@busragedikoglu**
+- [x] Canvas **@turhanGoksu**
+- [x] TimelineView **@mehmetalbyrak**
+- [x] Map **@beyzanuravsar**
+- [x] Binding **@melihalkbk**
+- [x] VideoPlayer **@mehmetalbyrak**
+- [x] ProgressIndicator **@mehmetalbyrak**
+- [x] AnyView **@busragedikoglu**
+- [x] Environment **@mehmetalbyrak**
+- [x] EnvironmentObject **@turhanGoksu**
+- [x] State **@turhanGoksu**
+- [x] ObservedObject **@yuceel**
+- [x] FocusState **@alakkaya**
