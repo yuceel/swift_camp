@@ -105,4 +105,15 @@ final class StringHelper {
         let allowedCharacters = CharacterSet.alphanumerics
         return string.filter { String($0).rangeOfCharacter(from: allowedCharacters) != nil }
     }
+    // MARK: - Turkish Character Conversion
+    /// Converts Turkish characters to their English equivalents.
+    /// - Parameter string: The string to convert.
+    /// - Returns: A string with Turkish characters replaced by English equivalents.
+    func convertTurkishCharacters(_ string: String) -> String {
+        let turkishMap: [Character: Character] = [
+            "ç": "c", "ğ": "g", "ı": "i", "ö": "o", "ş": "s", "ü": "u",
+            "Ç": "C", "Ğ": "G", "İ": "I", "Ö": "O", "Ş": "S", "Ü": "U"
+        ]
+        return string.map { String(turkishMap[$0] ?? $0) }.joined()
+    }
 }
