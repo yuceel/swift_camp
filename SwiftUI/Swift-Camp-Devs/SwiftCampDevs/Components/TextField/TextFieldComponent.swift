@@ -22,11 +22,13 @@ struct SCTextField: View {
                     SecureField(placeholder, text: $text)
                         .textFieldStyle(PlainTextFieldStyle())
                         .keyboardType(keyboardType)
+                        .autocapitalization(.none)
                         .disabled(!isEnabled)
                 } else {
                     TextField(placeholder, text: $text)
                         .textFieldStyle(PlainTextFieldStyle())
                         .keyboardType(keyboardType)
+                        .autocapitalization(.none)
                         .disabled(!isEnabled)
                 }
             }
