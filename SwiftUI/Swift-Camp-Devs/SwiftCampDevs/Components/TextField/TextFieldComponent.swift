@@ -1,12 +1,4 @@
 import SwiftUI
-enum TextFieldType {
-    case username
-    case password
-    case email
-    case search
-    case numeric
-    case custom(placeholder: String, keyboardType: UIKeyboardType)
-}
 
 struct SCTextField: View {
     @Binding var text: String
@@ -65,7 +57,6 @@ struct SCTextField: View {
         case .password: return "Enter your password"
         case .email: return "Enter your email"
         case .search: return "Search"
-        case .numeric: return "Enter a number"
         case .custom(let placeholder, _): return placeholder
         }
     }
@@ -74,7 +65,6 @@ struct SCTextField: View {
         switch type {
         case .username, .password, .email: return .default
         case .search: return .default
-        case .numeric: return .numberPad
         case .custom(_, let keyboardType): return keyboardType
         }
     }
@@ -86,7 +76,6 @@ struct SCTextField: View {
         SCTextField(text: .constant(""), type: .password, borderColor: .red, showPasswordToggle: true, isEnabled: false)
         SCTextField(text: .constant(""), type: .email, borderColor: .green)
         SCTextField(text: .constant(""), type: .search, borderColor: .gray, isEnabled: false)
-        SCTextField(text: .constant(""), type: .numeric, borderColor: .purple)
         SCTextField(text: .constant(""), type: .custom(placeholder: "Enter custom input", keyboardType: .asciiCapable), borderColor: .orange)
     }
     .padding()
