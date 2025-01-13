@@ -37,6 +37,20 @@ struct SCTextField: View {
                             .keyboardType(type.keyboardType)
                     }
                 }
+
+                if case .password = type, !isPasswordVisible {
+                    SecureField(placeholder, text: $text)
+                        .textFieldStyle(PlainTextFieldStyle())
+                        .keyboardType(keyboardType)
+                        .autocapitalization(.none)
+                        .disabled(!isEnabled)
+                } else {
+                    TextField(placeholder, text: $text)
+                        .textFieldStyle(PlainTextFieldStyle())
+                        .keyboardType(keyboardType)
+                        .autocapitalization(.none)
+                        .disabled(!isEnabled)
+
                 .padding(8)
                 .background(isEnabled ? backgroundColor : AppColors.lightGray)
                 .cornerRadius(cornerRadius)
@@ -51,6 +65,7 @@ struct SCTextField: View {
                             .foregroundColor(.gray)
                             .padding(.trailing, 8)
                     }
+
                 }
             }
 
