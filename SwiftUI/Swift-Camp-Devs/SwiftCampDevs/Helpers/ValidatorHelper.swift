@@ -73,28 +73,26 @@ struct ValidatorHelper {
     }
     
     private func validatePassword(_ value: String) -> String? {
+        
+        // MARK: - Space checking control should be revised !!!
+        if value.trimmingCharacters(in: .whitespacesAndNewlines).count != value.count {
+            return "Password must not contain spaces."
+        }
+
+        
         if value.isEmpty {
             return "Password cannot be empty."
         }
-        // Şifre kriterleri ve mesajları
-        let passwordCriteria: [(NSPredicate, String)] = [
-            (NSPredicate(format: "SELF MATCHES %@", ".{8,}"), "Password must be at least 8 characters long."),
-            (NSPredicate(format: "SELF MATCHES %@", ".{0,64}"), "Password cannot exceed 64 characters."),
-            (NSPredicate(format: "SELF MATCHES %@", ".*[A-Z]+.*"), "Password must contain at least one uppercase letter (A-Z)."),
-            (NSPredicate(format: "SELF MATCHES %@", ".*[a-z]+.*"), "Password must contain at least one lowercase letter (a-z)."),
-            (NSPredicate(format: "SELF MATCHES %@", ".*[0-9]+.*"), "Password must contain at least one number (0-9)."),
-            (NSPredicate(format: "SELF MATCHES %@", ".*[!@#$%^&*(),.?\":{}|<>]+.*"), "Password must contain at least one special character (!@#$%^&*).")
-        ]
-        // Her kriteri kontrol et
-        for (predicate, errorMessage) in passwordCriteria {
-            if !predicate.evaluate(with: value) {
-                return errorMessage
-            }
+
+        // Password regualar expression
+        let passwordRegex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*(),.?\":{}|<>])[A-Za-z0-9!@#$%^&*(),.?\":{}|<>]{8,64}$"
+
+        // Validating the password
+        if !NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: value) {
+            return "Password must be 8-64 characters with uppercase, lowercase, a digit, and a special character."
         }
-        // Boşluk kontrolü ayrı yapılır
-        if value.contains(" ") {
-            return "Password cannot contain spaces."
-        }
+        
+        
         return nil
     }
     
