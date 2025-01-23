@@ -1,20 +1,39 @@
 import SwiftUI
-// Icon Size Enum
+
 enum IconSize {
+    case verySmall
+    case slightlySmall
     case small
-    case medium
+    case slightlyNormal
+    case normal
+    case slightlyLarge
     case large
+    case veryLarge
     case extraLarge
+    case high
+
     var size: CGFloat {
         switch self {
+        case .verySmall:
+            return UISizerHelper.IconSize.verySmall
+        case .slightlySmall:
+            return UISizerHelper.IconSize.slightlySmall
         case .small:
-            return 16
-        case .medium:
-            return 24
+            return UISizerHelper.IconSize.small
+        case .slightlyNormal:
+            return UISizerHelper.IconSize.slightlyNormal
+        case .normal:
+            return UISizerHelper.IconSize.normal
+        case .slightlyLarge:
+            return UISizerHelper.IconSize.slightlyLarge
         case .large:
-            return 32
+            return UISizerHelper.IconSize.large
+        case .veryLarge:
+            return UISizerHelper.IconSize.veryLarge
         case .extraLarge:
-            return 48
+            return UISizerHelper.IconSize.extraLarge
+        case .high:
+            return UISizerHelper.IconSize.high
         }
     }
 }
