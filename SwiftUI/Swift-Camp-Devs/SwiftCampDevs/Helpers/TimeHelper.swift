@@ -23,7 +23,7 @@ final class TimeHelper {
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: Date())
     }
-
+    
     /// Returns the current date as a formatted string.
     func getCurrentDate(format: String = "yyyy-MM-dd", timeZone: TimeZone = .current) -> String {
         dateFormatter.timeZone = timeZone
@@ -88,5 +88,12 @@ final class TimeHelper {
         let minutes = (Int(elapsed) % 3600) / 60
         let seconds = Int(elapsed) % 60
         return "\(hours)h \(minutes)m \(seconds)s"
+    }
+
+    /// Returns the remaining time for OTP in seconds.
+    func getOTPCounter(interval: TimeInterval = 30) -> Int {
+        let currentTime = Date().timeIntervalSince1970
+        let remainingTime = interval - (currentTime.truncatingRemainder(dividingBy: interval))
+        return Int(remainingTime)
     }
 }
