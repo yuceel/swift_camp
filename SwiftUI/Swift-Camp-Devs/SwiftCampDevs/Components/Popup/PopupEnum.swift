@@ -10,11 +10,11 @@ enum PopupType {
     var titleColor: Color {
         switch self {
         case .info:
-            return .blue
+            return AppColors.blue
         case .error:
-            return .red
+            return AppColors.warningColor
         case .confirmation:
-            return .green
+            return AppColors.successColor
         case .custom(_, let color):
             return color
         }
@@ -85,5 +85,3 @@ struct PopupAction: Identifiable {
         isDestructive ? .red : .primary
     }
 }
-
-
