@@ -24,23 +24,20 @@ struct NavbarView: View {
                 .cornerRadius(5)
                 .shadow(radius: 10)
 
-                // Central "+" Button
-                Circle()
-                    .foregroundColor(Color.black)
-                    .frame(width: 64, height: 64)
-                    .offset(y: -22.5)
-                    .shadow(radius: 5)
-
+                // Central "+" Button with Border
                 Circle()
                     .foregroundColor(Color.white)
                     .frame(width: 60, height: 60)
+                    .overlay(
+                        Circle()
+                            .stroke(Color.black, lineWidth: 1) // Black border
+                    )
                     .overlay(
                         Image(systemName: "plus")
                             .foregroundColor(Color.black)
                             .font(.largeTitle)
                     )
                     .offset(y: -20)
-                    .shadow(radius: 5)
             }
         }
         .edgesIgnoringSafeArea(.bottom)
@@ -93,5 +90,4 @@ struct NavbarView_Previews: PreviewProvider {
         NavbarView()
     }
 }
-
 
