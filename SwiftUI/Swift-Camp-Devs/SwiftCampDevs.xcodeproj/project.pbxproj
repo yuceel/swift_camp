@@ -57,6 +57,7 @@
 		41AA93EA2D3257B30007EFFD /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
 		41AA93FB2D3257CC0007EFFD /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
 		41AA94052D3257F10007EFFD /* Utils */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utils; sourceTree = "<group>"; };
+		D482C5962D42CC2500810A86 /* Login */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Login; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +143,7 @@
 		7F313A3B292BCB590048C74C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D482C5962D42CC2500810A86 /* Login */,
 				7F313A47292BCD750048C74C /* Home */,
 			);
 			path = Modules;
@@ -177,6 +179,7 @@
 				41AA93EA2D3257B30007EFFD /* Components */,
 				41AA93FB2D3257CC0007EFFD /* Helpers */,
 				41AA94052D3257F10007EFFD /* Utils */,
+				D482C5962D42CC2500810A86 /* Login */,
 			);
 			name = SwiftCampDevs;
 			packageProductDependencies = (
