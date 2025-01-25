@@ -1,71 +1,85 @@
 import SwiftUI
 
 struct OTPInputFieldView: View {
-    @State private var otp: [String] = Array(repeating: "", count: 4)
+    private let correctOTP = "123456"
+    private let length: Int = 6
+    @State private var otpText = ""
     @State private var isError: Bool = false
-    @FocusState private var focusedField: Int?
     @State private var errorMessage: String = ""
-    var correctOTP: String = "1234"
+    @FocusState private var isKeyboardShowing: Bool
     
     var body: some View {
         VStack {
-            HStack(spacing: 10) {
-                ForEach(0..<4, id: \.self) { index in
-                    TextField("", text: $otp[index])
-                        .frame(width: 50, height: 50)
-                        .multilineTextAlignment(.center)
-                        .keyboardType(.numberPad)
-                        .background(
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(isError ? Color.red : Color.gray, lineWidth: 1)
-                        )
-                        .focused($focusedField, equals: index)
-                        .disabled(!canEditField(at: index))
-                        .onChange(of: otp[index]) { newValue in
-                            handleInputChange(newValue, at: index)
-                        }
+            HStack(spacing: 0) {
+                ForEach(0..<length, id: \.self) { index in
+                    OTPTextBox(index)
                 }
             }
-            .padding()
+            .background(content: {
+                TextField("", text: $otpText.limit(length))
+                    .keyboardType(.numberPad)
+                    .textContentType(.oneTimeCode)
+                    .frame(width: 1, height: 1)
+                    .opacity(0.001)
+                    .blendMode(.screen)
+                    .focused($isKeyboardShowing)
+                    .onChange(of: otpText) { newValue in
+                        if newValue.count == length {
+                            checkOTP(newValue)
+                        }
+                    }
+                    .onAppear {
+                        DispatchQueue.main.async {
+                            isKeyboardShowing = true
+                        }
+                    }
+            })
+            .contentShape(Rectangle())
+            .onTapGesture {
+                isKeyboardShowing = true
+            }
+            
             if isError {
                 Text(errorMessage)
                     .foregroundColor(.red)
                     .padding(.top, 5)
             }
-        }
-        .onAppear {
-            focusedField = 0
+            
+            Button(action: {
+                checkOTP(otpText)
+            }) {
+                Text("Verify OTP")
+                    .font(.headline)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+            }
+            .padding(.top)
         }
     }
     
-    private func handleInputChange(_ newValue: String, at index: Int) {
-        otp[index] = String(newValue.prefix(1))
-        if newValue.isEmpty {
-            // Silme işlemi
-            if index > 0 {
-                focusedField = index - 1
-                otp[index - 1] = ""
-            }
-        } else if newValue.count == 1 {
-            if index < otp.count - 1 {
-                focusedField = index + 1
-            } else if index == otp.count - 1 {
-                validateOTP()
+    func OTPTextBox(_ index: Int) -> some View {
+        ZStack {
+            if otpText.count > index {
+                let startIndex = otpText.startIndex
+                let charIndex = otpText.index(startIndex, offsetBy: index)
+                let charToString = String(otpText[charIndex])
+                Text(charToString)
+            } else {
+                Text(" ")
             }
         }
-    }
-    
-    private func canEditField(at index: Int) -> Bool {
-        for i in 0..<index {
-            if otp[i].isEmpty {
-                return false
-            }
+        .frame(width: 45, height: 45)
+        .background {
+            let backgroundColor = isError ? Color.red : Color.gray
+            RoundedRectangle(cornerRadius: 6, style: .continuous)
+                .stroke(backgroundColor)
         }
-        return true
+        .padding(.horizontal, 8)
     }
-    
-    private func validateOTP() {
-        let enteredOTP = otp.joined()
+
+    private func checkOTP(_ enteredOTP: String) {
         if enteredOTP == correctOTP {
             isError = false
             errorMessage = ""
@@ -73,15 +87,22 @@ struct OTPInputFieldView: View {
         } else {
             isError = true
             errorMessage = "Incorrect OTP. Please try again."
-            resetFields()
+            otpText = ""
         }
     }
-    
-    private func resetFields() {
-        otp = Array(repeating: "", count: 4)
-        focusedField = 0
+}
+
+extension Binding where Value == String {
+    func limit(_ length: Int) -> Self {
+        if self.wrappedValue.count > length {
+            DispatchQueue.main.async {
+                self.wrappedValue = String(self.wrappedValue.prefix(length))
+            }
+        }
+        return self
     }
 }
+
 #Preview {
     OTPInputFieldView()
 }

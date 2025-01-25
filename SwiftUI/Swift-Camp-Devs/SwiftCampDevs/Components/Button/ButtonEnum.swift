@@ -21,7 +21,7 @@ enum ButtonType {
 
     var iconSize: CGFloat {
         switch self {
-        case .icon: return 60
+        case .icon: return UISizerHelper.IconSize.normal
         default: return 0
         }
     }
@@ -32,19 +32,39 @@ enum ButtonSize {
 
     var fontSize: CGFloat {
         switch self {
-        case .extraSmall: return 10
-        case .small: return 12
-        case .medium: return 14
-        case .large: return 16
+        case .extraSmall: return UISizerHelper.ButtonSize.extraSmall
+        case .small: return UISizerHelper.ButtonSize.small
+        case .medium: return UISizerHelper.ButtonSize.medium
+        case .large: return UISizerHelper.ButtonSize.large
         }
     }
 
     var padding: EdgeInsets {
         switch self {
-        case .extraSmall: return EdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8)
-        case .small: return EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16)
-        case .medium: return EdgeInsets(top: 12, leading: 20, bottom: 12, trailing: 20)
-        case .large: return EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24)
+        case .extraSmall: return EdgeInsets(
+            top: UISizerHelper.Dimensions.low,
+            leading: UISizerHelper.Dimensions.small,
+            bottom: UISizerHelper.Dimensions.low,
+            trailing: UISizerHelper.Dimensions.small
+        )
+        case .small: return EdgeInsets(
+            top: UISizerHelper.Dimensions.small,
+            leading: UISizerHelper.Dimensions.normal,
+            bottom: UISizerHelper.Dimensions.small,
+            trailing: UISizerHelper.Dimensions.normal
+        )
+        case .medium: return EdgeInsets(
+            top:UISizerHelper.Dimensions.normal,
+            leading: UISizerHelper.Dimensions.medium,
+            bottom: UISizerHelper.Dimensions.normal,
+            trailing: UISizerHelper.Dimensions.medium
+        )
+        case .large: return EdgeInsets(
+            top: UISizerHelper.Dimensions.normal,
+            leading: UISizerHelper.Dimensions.high,
+            bottom: UISizerHelper.Dimensions.normal,
+            trailing: UISizerHelper.Dimensions.high
+        )
         }
     }
 }

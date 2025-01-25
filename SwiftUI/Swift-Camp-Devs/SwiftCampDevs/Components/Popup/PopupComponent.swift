@@ -8,7 +8,7 @@ struct SCPopupComponent: View {
 
     var body: some View {
         ZStack {
-            Color.black.opacity(0.4)
+            AppColors.black.opacity(0.5)
                 .edgesIgnoringSafeArea(.all)
 
             VStack(spacing: 16) {
@@ -32,10 +32,25 @@ struct SCPopupComponent: View {
                 }
             }
             .padding()
-            .background(Color.white)
-            .cornerRadius(12)
-            .shadow(radius: 10)
+            .background(AppColors.white)
+            .cornerRadius(UISizerHelper.Radius.normal)
+            .shadow(radius: UISizerHelper.Radius.low)
             .padding(40)
         }
+    }
+}
+#Preview {
+    @State var showPopup = true
+
+    var actions = [
+        PopupAction(title: "Cancel", handler: { print("Cancel clicked") }),
+        PopupAction(title: "Confirm", isDestructive: true, handler: { print("Confirm clicked") })
+    ]
+    
+    if showPopup {
+        SCPopupComponent(title: "Popup Title", message: "This is a message for the popup", actions: actions)
+            .onTapGesture {
+                showPopup.toggle()
+            }
     }
 }

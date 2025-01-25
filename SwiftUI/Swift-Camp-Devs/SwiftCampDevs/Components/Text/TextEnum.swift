@@ -83,15 +83,15 @@ enum LineSpacing {
     var value: CGFloat {
         switch self {
         case .none:
-            return 0
+            return UISizerHelper.LineSpacing.none
         case .small:
-            return 2
+            return UISizerHelper.LineSpacing.small
         case .normal:
-            return 4
+            return UISizerHelper.LineSpacing.normal
         case .large:
-            return 8
+            return UISizerHelper.LineSpacing.large
         case .custom(let spacing):
-            return spacing
+            return UISizerHelper.LineSpacing.custom(spacing)
         }
     }
 }
@@ -109,11 +109,26 @@ enum TextPadding {
         case .none:
             return EdgeInsets()
         case .small:
-            return EdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4)
+            return EdgeInsets(
+                top: UISizerHelper.Dimensions.low,
+                leading: UISizerHelper.Dimensions.low,
+                bottom: UISizerHelper.Dimensions.low,
+                trailing: UISizerHelper.Dimensions.low
+            )
         case .medium:
-            return EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+            return EdgeInsets(
+                top: UISizerHelper.Dimensions.normal,
+                leading: UISizerHelper.Dimensions.normal,
+                bottom: UISizerHelper.Dimensions.normal,
+                trailing: UISizerHelper.Dimensions.normal
+            )
         case .large:
-            return EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
+            return EdgeInsets(
+                top: UISizerHelper.Dimensions.medium,
+                leading: UISizerHelper.Dimensions.medium,
+                bottom: UISizerHelper.Dimensions.medium,
+                trailing: UISizerHelper.Dimensions.medium
+            )
         case .custom(let insets):
             return insets
         }
@@ -170,15 +185,15 @@ enum ShadowStyle {
     var radius: CGFloat {
         switch self {
         case .none:
-            return 0
+            return UISizerHelper.TextRadius.none
         case .light:
-            return 2
+            return UISizerHelper.TextRadius.light
         case .medium:
-            return 4
+            return UISizerHelper.TextRadius.medium
         case .dark:
-            return 6
+            return UISizerHelper.TextRadius.dark
         case .custom(_, let radius):
-            return radius
+            return UISizerHelper.TextRadius.custom(radius)
         }
     }
 }
