@@ -17,7 +17,7 @@ struct SCToggle: View {
         .toggleStyle(SwitchToggleStyle(tint: toggleColor))
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .cornerRadius(12)
+        .cornerRadius(UISizerHelper.Radius.normal)
         .onChange(of: state) { _ in
         }
     }

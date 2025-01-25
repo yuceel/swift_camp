@@ -26,7 +26,7 @@ struct AppButton: View {
                     .foregroundColor(isEnabled ? type.textColor : AppColors.darkGray)
                     .padding(size.padding)
                     .background(isEnabled ? AppColors.powderBlue : AppColors.lightGray)
-                    .cornerRadius(8)
+                    .cornerRadius(UISizerHelper.Radius.low)
 
             case .normal:
 
@@ -35,7 +35,7 @@ struct AppButton: View {
                     .foregroundColor(isEnabled ? type.textColor : AppColors.darkGray)
                     .padding(size.padding)
                     .background(isEnabled ? type.backgroundColor : AppColors.lightGray)
-                    .cornerRadius(8)
+                    .cornerRadius(UISizerHelper.Radius.low)
 
             case .text:
 
@@ -44,7 +44,7 @@ struct AppButton: View {
                     .foregroundColor(isEnabled ? type.textColor : AppColors.lightGray)
                     .padding(size.padding)
                     .background(isEnabled ? type.backgroundColor : Color.clear)
-                    .cornerRadius(8)
+                    .cornerRadius(UISizerHelper.Radius.low)
             }
 
         }
@@ -59,8 +59,10 @@ struct AppButton: View {
 
     VStack(spacing: 20) {
         
-        Text("Normal Button | Enabled")
-        AppButton(type: .normal, size: .small, text: "Next", action: {}, isEnabled: true)
+        Text("Extrasmall Button | Enabled")
+        AppButton(type: .normal, size: .medium, text: "Next", action: {}, isEnabled: true)
+        Text("Small Button | Enabled")
+        AppButton(type: .normal, size: .large, text: "Next", action: {}, isEnabled: true)
         Text("Text Button | Disabled")
         AppButton(type: .text, size: .medium, text: "Add", action: {}, isEnabled: true)
         Text("Icon Button | Disabled")

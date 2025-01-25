@@ -5,8 +5,8 @@ struct SCTextField: View {
     var type: TextFieldType
     var maxLength: Int? = nil
     var borderColor: Color = AppColors.darkGray
-    var borderWidth: CGFloat = 1
-    var cornerRadius: CGFloat = 7
+    var borderWidth: CGFloat = UISizerHelper.Border.thin
+    var cornerRadius: CGFloat = UISizerHelper.Radius.low
     var backgroundColor: Color = AppColors.white
     var showPasswordToggle: Bool = true
     var isEnabled: Bool = true
@@ -24,7 +24,7 @@ struct SCTextField: View {
                         .textFieldStyle(PlainTextFieldStyle())
                         .autocapitalization(.none)
                         .keyboardType(type.keyboardType)
-                        .padding(8)
+                        .padding(UISizerHelper.Padding.low)
                         .background(isEnabled ? backgroundColor : AppColors.lightGray)
                         .cornerRadius(cornerRadius)
                         .overlay(
@@ -37,7 +37,7 @@ struct SCTextField: View {
                         .textFieldStyle(PlainTextFieldStyle())
                         .autocapitalization(.none)
                         .keyboardType(type.keyboardType)
-                        .padding(8)
+                        .padding(UISizerHelper.Padding.low)
                         .background(isEnabled ? backgroundColor : AppColors.lightGray)
                         .cornerRadius(cornerRadius)
                         .overlay(
@@ -52,17 +52,17 @@ struct SCTextField: View {
                     }) {
                         Image(systemName: isPasswordVisible ? "eye" : "eye.slash")
                             .foregroundColor(.gray)
-                            .padding(.trailing, 8)
+                            .padding(.trailing, UISizerHelper.Dimensions.normal)
                     }
                 }
             }
-            .frame(height: 44)
+            .frame(height: UISizerHelper.Screen.height * 0.05)
             
             if let errorMessage = errorMessage {
                 Text(errorMessage)
                     .foregroundColor(.red)
                     .font(.caption)
-                    .padding(.top, 4)
+                    .padding(.top, UISizerHelper.Dimensions.low)
                     .fixedSize(horizontal: false, vertical: true)
             }
         }
