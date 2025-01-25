@@ -12,10 +12,11 @@ struct SCBottomSheet: View {
                 VStack {
                     contentBody
                         .padding()
-                        .frame(height: UIScreen.main.bounds.height * content.heightPercentage)
+                        .frame(width:UIScreen.main.bounds.width,
+                               height: UIScreen.main.bounds.height * content.heightPercentage)
                         .background(Color.white)
-                        .cornerRadius(20, corners: [.topLeft, .topRight])
-                        .shadow(radius: 10)
+                        .cornerRadius(UISizerHelper.Radius.normal, corners: [.topLeft, .topRight])
+                        .shadow(radius: UISizerHelper.Radius.low)
                 }
                 .transition(.move(edge: .bottom))
                 .animation(.easeInOut, value: isVisible)
@@ -26,7 +27,7 @@ struct SCBottomSheet: View {
             Group {
                 if isVisible {
                     ZStack {
-                        Color.black.opacity(0.5)
+                        AppColors.black.opacity(0.5)
                             .onTapGesture {
                                 withAnimation { isVisible = false }
                             }
@@ -49,7 +50,7 @@ struct SCBottomSheet: View {
             image
                 .resizable()
                 .scaledToFit()
-                .frame(maxWidth: UIScreen.main.bounds.width * 0.8)
+                .frame(maxWidth: UISizerHelper.IconSize.high)
         case .customView(let customView, _):
             customView
         }
@@ -72,4 +73,10 @@ struct RoundedCorner: Shape {
                                 cornerRadii: CGSize(width: radius, height: radius))
         return Path(path.cgPath)
     }
+}
+#Preview {
+    @State var isVisible: Bool = true
+    var content: BottomSheet = .text("Demo", heightPercentage: 0.3)
+    SCBottomSheet(content: content, isVisible: $isVisible)
+        .frame(width: UIScreen.main.bounds.width * 0.8)
 }
