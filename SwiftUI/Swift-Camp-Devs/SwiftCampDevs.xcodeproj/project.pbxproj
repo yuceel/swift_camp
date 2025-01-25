@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41A22C0D2D42C6B600A5F84D /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 41A22C0C2D42C6B600A5F84D /* SwiftyBeaver */; };
+		41A22C112D42C8DC00A5F84D /* EnvironmentConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41A22C102D42C8CE00A5F84D /* EnvironmentConfig.plist */; };
 		7F313A07292BC7E90048C74C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F313A06292BC7E90048C74C /* AppDelegate.swift */; };
 		7F313A10292BC7EA0048C74C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F313A0F292BC7EA0048C74C /* Assets.xcassets */; };
 		7F313A13292BC7EA0048C74C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F313A11292BC7EA0048C74C /* LaunchScreen.storyboard */; };
@@ -31,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41A22C102D42C8CE00A5F84D /* EnvironmentConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = EnvironmentConfig.plist; sourceTree = "<group>"; };
 		7F313A03292BC7E90048C74C /* SwiftCampDevs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCampDevs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F313A06292BC7E90048C74C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F313A0F292BC7EA0048C74C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 				7F313A33292BC8C70048C74C /* RxSwift in Frameworks */,
 				7F313A31292BC8C70048C74C /* RxRelay in Frameworks */,
 				7F313A2F292BC8C70048C74C /* RxCocoa in Frameworks */,
+				41A22C0D2D42C6B600A5F84D /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +107,7 @@
 				7F313A06292BC7E90048C74C /* AppDelegate.swift */,
 				7F313A0F292BC7EA0048C74C /* Assets.xcassets */,
 				7F313A11292BC7EA0048C74C /* LaunchScreen.storyboard */,
+				41A22C102D42C8CE00A5F84D /* EnvironmentConfig.plist */,
 				7F313A14292BC7EA0048C74C /* Info.plist */,
 			);
 			path = SwiftCampDevs;
@@ -186,6 +191,7 @@
 				7F313A2E292BC8C70048C74C /* RxCocoa */,
 				7F313A30292BC8C70048C74C /* RxRelay */,
 				7F313A32292BC8C70048C74C /* RxSwift */,
+				41A22C0C2D42C6B600A5F84D /* SwiftyBeaver */,
 			);
 			productName = DemoApp;
 			productReference = 7F313A03292BC7E90048C74C /* SwiftCampDevs.app */;
@@ -217,6 +223,7 @@
 			mainGroup = 7F3139FA292BC7E90048C74C;
 			packageReferences = (
 				7F313A2D292BC8C70048C74C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				41A22C0B2D42C6B500A5F84D /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
 			);
 			productRefGroup = 7F313A04292BC7E90048C74C /* Products */;
 			projectDirPath = "";
@@ -232,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A22C112D42C8DC00A5F84D /* EnvironmentConfig.plist in Resources */,
 				7F313A13292BC7EA0048C74C /* LaunchScreen.storyboard in Resources */,
 				7F313A10292BC7EA0048C74C /* Assets.xcassets in Resources */,
 			);
@@ -479,6 +487,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		41A22C0B2D42C6B500A5F84D /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
 		7F313A2D292BC8C70048C74C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -490,6 +506,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		41A22C0C2D42C6B600A5F84D /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41A22C0B2D42C6B500A5F84D /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
 		7F313A2E292BC8C70048C74C /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7F313A2D292BC8C70048C74C /* XCRemoteSwiftPackageReference "RxSwift" */;

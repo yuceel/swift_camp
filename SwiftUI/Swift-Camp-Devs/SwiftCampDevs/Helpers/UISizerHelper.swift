@@ -19,17 +19,28 @@ struct UISizerHelper {
     // MARK: - Dimensions
     struct Dimensions {
         static let low: CGFloat = Screen.height * 0.01
+        static let small: CGFloat = Screen.height * 0.015
         static let normal: CGFloat = Screen.height * 0.02
         static let medium: CGFloat = Screen.height * 0.04
-        static let high: CGFloat = Screen.height * 0.1
+        static let high: CGFloat = Screen.height * 0.18
     }
     // MARK: - Radius
     struct Radius {
         static let none: CGFloat = 0
-        static let low: CGFloat = 2
+        static let low: CGFloat = 7
         static let normal: CGFloat = 13
         static let medium: CGFloat = 30
         static let high: CGFloat = 100
+    }
+    // MARK: - Text Radius
+    struct TextRadius {
+        static let none: CGFloat = 0
+        static let light: CGFloat = 2
+        static let medium: CGFloat = 4
+        static let dark: CGFloat = 6
+        static func custom(_ radius: CGFloat) -> CGFloat {
+            return radius
+        }
     }
     // MARK: - Font Sizes
     struct FontSize {
@@ -39,12 +50,21 @@ struct UISizerHelper {
         static let large: CGFloat = 24
         static let extraLarge: CGFloat = 32
     }
+    // MARK: - Border
+    struct Border {
+        static let none: CGFloat = 0
+        static let thin: CGFloat = 1
+        static let normal: CGFloat = 2
+        static let thick: CGFloat = 4
+        static let veryThick: CGFloat = 6
+    }
     
     // MARK: - Button Font Sizes
     struct ButtonSize {
+        static let extraSmall: CGFloat = 10
         static let small: CGFloat = 12
         static let medium: CGFloat = 14
-        static let normal: CGFloat = 16
+        static let large: CGFloat = 16
     }
     // MARK: - Padding
     struct Padding {
@@ -85,17 +105,30 @@ struct UISizerHelper {
     }
     // MARK: - Icon Sizes
     struct IconSize {
-        static let extraSmall: CGFloat = 14
-        static let small: CGFloat = 20
-        static let normal: CGFloat = 25
-        static let medium: CGFloat = 30
-        static let large: CGFloat = 40
-        static let high: CGFloat = 50
-        static let extraHigh: CGFloat = 60
+            static let verySmall: CGFloat = 10
+            static let slightlySmall: CGFloat = 12
+            static let small: CGFloat = 14
+            static let slightlyNormal: CGFloat = 16
+            static let normal: CGFloat = 18
+            static let slightlyLarge: CGFloat = 20
+            static let large: CGFloat = 22
+            static let veryLarge: CGFloat = 24
+            static let extraLarge: CGFloat = 44
+            static let high: CGFloat = 50
     }
     // MARK: - Text Line
     struct TextLine {
         static let enterLine = "\n"
+    }
+    // MARK: - Line Spacing
+    struct LineSpacing {
+        static let none: CGFloat = 0
+        static let small: CGFloat = 2
+        static let normal: CGFloat = 4
+        static let large: CGFloat = 8
+        static func custom(_ spacing: CGFloat) -> CGFloat {
+            return spacing
+        }
     }
     // MARK: - Image Asset
     struct ImageLoader {
@@ -121,6 +154,6 @@ struct UISizerHelper {
     }
     
    
-    }
+}
      
 
