@@ -1,5 +1,5 @@
 import Foundation
-import AVFoundation         // Microphone ve Camera Permission
+import AVFoundation         // Microphone add Camera Permission
 import Contacts             // Contacts Permission
 import Photos               // Photo Library Permission
 import UserNotifications    // Notification Permission
