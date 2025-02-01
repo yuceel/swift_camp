@@ -116,6 +116,38 @@ struct UISizerHelper {
             static let extraLarge: CGFloat = 44
             static let high: CGFloat = 50
     }
+    // MARK: - Image Sizes
+    struct ImageSize {
+        static var small: CGSize {
+                CGSize(
+                    width: UISizerHelper.Screen.dynamicWidth(0.3), 
+                    height: UISizerHelper.Screen.dynamicHeight(0.2)
+                )
+            }
+            static var medium: CGSize {
+                CGSize(
+                    width: UISizerHelper.Screen.dynamicWidth(0.5),
+                    height: UISizerHelper.Screen.dynamicHeight(0.3)
+                )
+            }
+            static var large: CGSize {
+                CGSize(
+                    width: UISizerHelper.Screen.dynamicWidth(0.8),
+                    height: UISizerHelper.Screen.dynamicHeight(0.5)
+                )
+            }
+
+            // Dynamic width and height functions
+            static func customWidth(_ widthRatio: CGFloat) -> CGFloat {
+                UISizerHelper.Screen.dynamicWidth(widthRatio)
+            }
+
+            static func customHeight(_ heightRatio: CGFloat) -> CGFloat {
+                UISizerHelper.Screen.dynamicHeight(heightRatio)
+            }
+    }
+
+    
     // MARK: - Text Line
     struct TextLine {
         static let enterLine = "\n"
