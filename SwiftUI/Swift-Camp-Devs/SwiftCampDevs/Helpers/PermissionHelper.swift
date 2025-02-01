@@ -2,7 +2,7 @@ import Foundation
 import AVFoundation         // Microphone ve Camera Permission
 import Contacts             // Contacts Permission
 import Photos               // Photo Library Permission
-import UserNotifications    // Bildirim Permission
+import UserNotifications    // Notification Permission
 import Intents              // Siri Permission
 import EventKit             // Reminders
 import CoreLocation         // Location Permission
