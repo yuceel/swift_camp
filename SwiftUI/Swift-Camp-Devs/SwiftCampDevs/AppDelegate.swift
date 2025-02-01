@@ -1,4 +1,5 @@
 import UIKit
+import FirebaseCore
 import OneSignalFramework
 
 @UIApplicationMain
@@ -22,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-
-        
+        //Firebase configure
+        FirebaseApp.configure()
         // OneSignal initialization
         LoggerHelper.shared.info("Initializing OneSignal with App ID.")
         OneSignal.initialize(oneSignalAppID, withLaunchOptions: launchOptions)
