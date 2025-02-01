@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		41A22C0D2D42C6B600A5F84D /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 41A22C0C2D42C6B600A5F84D /* SwiftyBeaver */; };
 		41A22C112D42C8DC00A5F84D /* EnvironmentConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41A22C102D42C8CE00A5F84D /* EnvironmentConfig.plist */; };
+		5557D6D22D44E50100034CEA /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5557D6CF2D44E50100034CEA /* NavbarView.swift */; };
+		55BC0E722D450E8000A74949 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 55BC0E712D450E8000A74949 /* SQLite */; };
 		7F313A07292BC7E90048C74C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F313A06292BC7E90048C74C /* AppDelegate.swift */; };
 		7F313A10292BC7EA0048C74C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F313A0F292BC7EA0048C74C /* Assets.xcassets */; };
 		7F313A13292BC7EA0048C74C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F313A11292BC7EA0048C74C /* LaunchScreen.storyboard */; };
@@ -34,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		41A22C102D42C8CE00A5F84D /* EnvironmentConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = EnvironmentConfig.plist; sourceTree = "<group>"; };
+		5557D6CF2D44E50100034CEA /* NavbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
 		7F313A03292BC7E90048C74C /* SwiftCampDevs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCampDevs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F313A06292BC7E90048C74C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F313A0F292BC7EA0048C74C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BC0E722D450E8000A74949 /* SQLite in Frameworks */,
 				7F313A33292BC8C70048C74C /* RxSwift in Frameworks */,
 				7F313A31292BC8C70048C74C /* RxRelay in Frameworks */,
 				7F313A2F292BC8C70048C74C /* RxCocoa in Frameworks */,
@@ -78,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5557D6D02D44E50100034CEA /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				5557D6CF2D44E50100034CEA /* NavbarView.swift */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		5557D6D12D44E50100034CEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5557D6D02D44E50100034CEA /* BaseViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7F3139FA292BC7E90048C74C = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +117,7 @@
 		7F313A05292BC7E90048C74C /* SwiftCampDevs */ = {
 			isa = PBXGroup;
 			children = (
+				5557D6D12D44E50100034CEA /* Views */,
 				41AA94052D3257F10007EFFD /* Utils */,
 				41AA93FB2D3257CC0007EFFD /* Helpers */,
 				41AA93EA2D3257B30007EFFD /* Components */,
@@ -192,6 +213,7 @@
 				7F313A30292BC8C70048C74C /* RxRelay */,
 				7F313A32292BC8C70048C74C /* RxSwift */,
 				41A22C0C2D42C6B600A5F84D /* SwiftyBeaver */,
+				55BC0E712D450E8000A74949 /* SQLite */,
 			);
 			productName = DemoApp;
 			productReference = 7F313A03292BC7E90048C74C /* SwiftCampDevs.app */;
@@ -224,6 +246,7 @@
 			packageReferences = (
 				7F313A2D292BC8C70048C74C /* XCRemoteSwiftPackageReference "RxSwift" */,
 				41A22C0B2D42C6B500A5F84D /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+				55BC0E702D450E8000A74949 /* XCRemoteSwiftPackageReference "SQLite" */,
 			);
 			productRefGroup = 7F313A04292BC7E90048C74C /* Products */;
 			projectDirPath = "";
@@ -263,6 +286,7 @@
 				7F313A24292BC8670048C74C /* BaseWireframe.swift in Sources */,
 				7F313A22292BC8670048C74C /* FormatterInterface.swift in Sources */,
 				7F313A4E292BCD860048C74C /* HomeView.swift in Sources */,
+				5557D6D22D44E50100034CEA /* NavbarView.swift in Sources */,
 				7F313A39292BC92C0048C74C /* StartupInitializationBuilder.swift in Sources */,
 				7F313A2C292BC8A80048C74C /* HostingNavigationController.swift in Sources */,
 				7F313A4C292BCD860048C74C /* HomeInterfaces.swift in Sources */,
@@ -406,7 +430,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 426TL8YMQ8;
+				DEVELOPMENT_TEAM = 4GW994398K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftCampDevs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -419,7 +443,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.masterfabric.swiftdevs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.masterfabric.campdev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -438,7 +462,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 426TL8YMQ8;
+				DEVELOPMENT_TEAM = 4GW994398K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftCampDevs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -451,7 +475,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.masterfabric.swiftdevs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.masterfabric.campdev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -495,6 +519,14 @@
 				minimumVersion = 2.1.1;
 			};
 		};
+		55BC0E702D450E8000A74949 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
 		7F313A2D292BC8C70048C74C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -510,6 +542,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 41A22C0B2D42C6B500A5F84D /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
 			productName = SwiftyBeaver;
+		};
+		55BC0E712D450E8000A74949 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55BC0E702D450E8000A74949 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
 		};
 		7F313A2E292BC8C70048C74C /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
