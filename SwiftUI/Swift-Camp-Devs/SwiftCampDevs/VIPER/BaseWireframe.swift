@@ -1,6 +1,9 @@
 import UIKit
 
 protocol WireframeInterface: Progressable {
+    func showSnackbar(type: SnackbarHelper.SnackbarType, title: String, description: String?)
+    func showToast(title: String, type: ToastType)
+
 }
 
 class BaseWireframe<ViewController> where ViewController: UIViewController {
@@ -9,6 +12,7 @@ class BaseWireframe<ViewController> where ViewController: UIViewController {
 
     // We need it in order to retain view controller reference upon first access
     private var temporaryStoredViewController: ViewController?
+    
 
     init(viewController: ViewController) {
         temporaryStoredViewController = viewController
@@ -66,7 +70,32 @@ extension UINavigationController {
 }
 
 extension BaseWireframe: WireframeInterface {
+    func showToast(title: String, type: ToastType) {
+        guard let topViewController = navigationController?.topViewController else {
+            return
+        }
 
+        ToastHelper.shared.showToast(
+            in: topViewController.view,
+            title: title,
+            type: type,
+            duration: 3.0
+        )
+    }
+    
+    func showSnackbar(type: SnackbarHelper.SnackbarType, title: String, description: String?) {
+        guard let topViewController = navigationController?.topViewController else {
+            return
+        }
+        
+        SnackbarHelper.shared.showSnackbar(
+            in: topViewController,
+            type: type,
+            title: title,
+            description: description
+        )
+    }
+    
     func showLoading(status: String? = nil) {
     }
 
