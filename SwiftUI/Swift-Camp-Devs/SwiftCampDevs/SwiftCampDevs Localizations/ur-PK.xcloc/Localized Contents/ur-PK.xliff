@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="OneSignalNotificationServiceExtension/InfoPlist.xcstrings" source-language="en" target-language="ur-PK" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>OneSignalNotificationServiceExtension</source>
+        <target>ون سگنل نوٹیفکیشن سروس ایکسٹینشن</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>OneSignalNotificationServiceExtension</source>
+        <target>ون سگنل نوٹیفکیشن سروس ایکسٹینشن</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source/>
+        <target/>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SwiftCampDevs/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="ur-PK">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>SwiftCampDevs</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SwiftCampDevs/Localizable.xcstrings" source-language="en" target-language="ur-PK" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
+    </header>
+    <body>
+      <trans-unit id="" xml:space="preserve">
+        <source/>
+        <note/>
+      </trans-unit>
+      <trans-unit id=" " xml:space="preserve">
+        <source> </source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="About Me" xml:space="preserve">
+  <source>About Me</source>
+  <target>میرے بارے میں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Account" xml:space="preserve">
+  <source>Account</source>
+  <target>اکاؤنٹ</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Accounts" xml:space="preserve">
+  <source>Accounts</source>
+  <target>اکاؤنٹس</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Add new project" xml:space="preserve">
+  <source>Add new project</source>
+  <target>نیا پروجیکٹ شامل کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Already have an account? Log in" xml:space="preserve">
+  <source>Already have an account? Log in</source>
+  <target>پہلے سے ہی اکاؤنٹ ہے؟ لاگ ان کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Apple" xml:space="preserve">
+  <source>Apple</source>
+  <target>ایپل</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Authentication App" xml:space="preserve">
+  <source>Authentication App</source>
+  <target>تصدیقی ایپ</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Back to login" xml:space="preserve">
+  <source>Back to login</source>
+  <target>لاگ ان پر واپس جائیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="By creating an account or signing you agree to our Terms and Conditions" xml:space="preserve">
+  <source>By creating an account or signing you agree to our Terms and Conditions</source>
+  <target>اکاؤنٹ بنانے یا سائن ان کرنے سے آپ ہماری شرائط و ضوابط سے اتفاق کرتے ہیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Cancel" xml:space="preserve">
+  <source>Cancel</source>
+  <target>منسوخ کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Change  Password" xml:space="preserve">
+  <source>Change  Password</source>
+  <target>پاس ورڈ تبدیل کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Change Password" xml:space="preserve">
+  <source>Change Password</source>
+  <target>پاس ورڈ تبدیل کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Change Your Life" xml:space="preserve">
+  <source>Change Your Life</source>
+  <target>اپنی زندگی بدلیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Chats" xml:space="preserve">
+  <source>Chats</source>
+  <target>چیٹس</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Choose Your Language" xml:space="preserve">
+  <source>Choose Your Language</source>
+  <target>اپنی زبان منتخب کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Choose the Your Country" xml:space="preserve">
+  <source>Choose the Your Country</source>
+  <target>اپنا ملک منتخب کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Confirm Password" xml:space="preserve">
+  <source>Confirm Password</source>
+  <target>پاس ورڈ کی تصدیق کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Confirm new password" xml:space="preserve">
+  <source>Confirm new password</source>
+  <target>نئے پاس ورڈ کی تصدیق کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Contact Us" xml:space="preserve">
+  <source>Contact Us</source>
+  <target>ہم سے رابطہ کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Contact us" xml:space="preserve">
+  <source>Contact us</source>
+  <target>ہم سے رابطہ کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Continue" xml:space="preserve">
+  <source>Continue</source>
+  <target>جاری رکھیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Continue with Apple" xml:space="preserve">
+  <source>Continue with Apple</source>
+  <target>ایپل کے ساتھ جاری رکھیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Continue with Email" xml:space="preserve">
+  <source>Continue with Email</source>
+  <target>ای میل کے ساتھ جاری رکھیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Continue with Google" xml:space="preserve">
+  <source>Continue with Google</source>
+  <target>گوگل کے ساتھ جاری رکھیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Copy link" xml:space="preserve">
+  <source>Copy link</source>
+  <target>لنک کاپی کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Country" xml:space="preserve">
+  <source>Country</source>
+  <target>ملک</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Create account" xml:space="preserve">
+  <source>Create account</source>
+  <target>اکاؤنٹ بنائیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Don’t have an account?" xml:space="preserve">
+  <source>Don’t have an account?</source>
+  <target>اکاؤنٹ نہیں ہے؟</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Don’t have an account? Sign up" xml:space="preserve">
+  <source>Don’t have an account? Sign up</source>
+  <target>اکاؤنٹ نہیں ہے؟ سائن اپ کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Don’t worry! It happens. Please enter the email associated with your account." xml:space="preserve">
+  <source>Don’t worry! It happens. Please enter the email associated with your account.</source>
+  <target>فکر نہ کریں! ایسا ہوتا ہے۔ براہ کرم اپنے اکاؤنٹ سے منسلک ای میل درج کریں۔</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Edit" xml:space="preserve">
+  <source>Edit</source>
+  <target>ترمیم کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Edit Profile Information" xml:space="preserve">
+  <source>Edit Profile Information</source>
+  <target>پروفائل کی معلومات میں ترمیم کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Edit profile information" xml:space="preserve">
+  <source>Edit profile information</source>
+  <target>پروفائل کی معلومات میں ترمیم کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Education" xml:space="preserve">
+  <source>Education</source>
+  <target>تعلیم</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Effective Date: 04.01.2024&#10;&#10;At CL - Change Your Life, your privacy is our priority. This Privacy Policy explains how we collect, use, and protect your personal information when you use our application.&#10;&#10;Information We Collect&#10;&#10;We may collect the following types of information:&#10;&#9;•&#9;Personal Information: Name, email address, profile details, or other data you provide directly.&#10;&#9;•&#9;Usage Data: Device details, app interactions, and other non-personal information automatically collected.&#10;&#10;How We Use Your Information&#10;&#10;Your information helps us:&#10;&#9;•&#9;Improve and personalize your experience.&#10;&#9;•&#9;Analyze usage to enhance our services.&#10;&#9;•&#9;Send important updates or notifications.&#10;&#10;Sharing Your Information&#10;&#10;We never sell your data. We may share it with:&#10;&#9;•&#9;Service Providers: To help operate the app efficiently.&#10;&#9;•&#9;Legal Authorities: When required to comply with legal obligations.&#10;&#10;Your Rights&#10;&#10;You can:&#10;&#9;•&#9;Access or update your information.&#10;&#9;•&#9;Request data deletion.&#10;&#9;•&#9;Opt-out of marketing communications.&#10;&#10;For assistance, contact us at [Insert Email Address].&#10;&#10;Security&#10;&#10;We take reasonable measures to protect your data, but no system is entirely secure. Please use the app responsibly.&#10;&#10;Policy Updates&#10;&#10;We may update this policy periodically. Changes will be communicated within the app.&#10;&#10;Contact Us&#10;&#10;If you have any questions, reach out at [Insert Email Address].&#10;&#10;Your trust is important to us. Thank you for choosing CL - Change Your Life!" xml:space="preserve">
+  <source>Effective Date: 04.01.2024
+
+At CL - Change Your Life, your privacy is our priority. This Privacy Policy explains how we collect, use, and protect your personal information when you use our application.
+
+Information We Collect
+
+We may collect the following types of information:
+    •	Personal Information: Name, email address, profile details, or other data you provide directly.
+    •	Usage Data: Device details, app interactions, and other non-personal information automatically collected.
+
+How We Use Your Information
+
+Your information helps us:
+    •	Improve and personalize your experience.
+    •	Analyze usage to enhance our services.
+    •	Send important updates or notifications.
+
+Sharing Your Information
+
+We never sell your data. We may share it with:
+    •	Service Providers: To help operate the app efficiently.
+    •	Legal Authorities: When required to comply with legal obligations.
+
+Your Rights
+
+You can:
+    •	Access or update your information.
+    •	Request data deletion.
+    •	Opt-out of marketing communications.
+
+For assistance, contact us at [Insert Email Address].
+
+Security
+
+We take reasonable measures to protect your data, but no system is entirely secure. Please use the app responsibly.
+
+Policy Updates
+
+We may update this policy periodically. Changes will be communicated within the app.
+
+Contact Us
+
+If you have any questions, reach out at [Insert Email Address].
+
+Your trust is important to us. Thank you for choosing CL - Change Your Life!</source>
+  <target>موثر تاریخ: 04.01.2024
+
+CL - Change Your Life میں، آپ کی پرائیویسی ہماری ترجیح ہے۔ یہ پرائیویسی پالیسی وضاحت کرتی ہے کہ ہم آپ کی ذاتی معلومات کو کیسے جمع کرتے ہیں، استعمال کرتے ہیں، اور محفوظ رکھتے ہیں جب آپ ہماری ایپلیکیشن استعمال کرتے ہیں۔
+
+ہم جو معلومات جمع کرتے ہیں
+
+ہم درج ذیل اقسام کی معلومات جمع کر سکتے ہیں:
+    •	ذاتی معلومات: نام، ای میل ایڈریس، پروفائل کی تفصیلات، یا دیگر ڈیٹا جو آپ براہ راست فراہم کرتے ہیں۔
+    •	استعمال کا ڈیٹا: ڈیوائس کی تفصیلات، ایپ کے تعاملات، اور دیگر غیر ذاتی معلومات جو خود بخود جمع کی جاتی ہیں۔
+
+ہم آپ کی معلومات کو کیسے استعمال کرتے ہیں
+
+آپ کی معلومات ہماری مدد کرتی ہیں:
+    •	آپ کے تجربے کو بہتر بنائیں اور ذاتی بنائیں۔
+    •	استعمال کا تجزیہ کریں تاکہ ہماری خدمات کو بہتر بنایا جا سکے۔
+    •	اہم اپ ڈیٹس یا اطلاعات بھیجیں۔
+
+آپ کی معلومات کا اشتراک
+
+ہم کبھی بھی آپ کا ڈیٹا فروخت نہیں کرتے۔ ہم اسے درج ذیل کے ساتھ شیئر کر سکتے ہیں:
+    •	سروس فراہم کرنے والے: ایپ کو مؤثر طریقے سے چلانے میں مدد کے لیے۔
+    •	قانونی حکام: جب قانونی ذمہ داریوں کی تعمیل کے لیے ضروری ہو۔
+
+آپ کے حقوق
+
+آپ کر سکتے ہیں:
+    •	اپنی معلومات تک رسائی یا اپ ڈیٹ کریں۔
+    •	ڈیٹا کی حذف کرنے کی درخواست کریں۔
+    •	مارکیٹنگ مواصلات سے آپٹ آؤٹ کریں۔
+
+مدد کے لیے، ہم سے [ای میل ایڈریس داخل کریں] پر رابطہ کریں۔
+
+سیکیورٹی
+
+ہم آپ کے ڈیٹا کی حفاظت کے لیے معقول اقدامات کرتے ہیں، لیکن کوئی بھی نظام مکمل طور پر محفوظ نہیں ہے۔ براہ کرم ایپ کو ذمہ داری سے استعمال کریں۔
+
+پالیسی اپ ڈیٹس
+
+ہم وقتاً فوقتاً اس پالیسی کو اپ ڈیٹ کر سکتے ہیں۔ تبدیلیاں ایپ کے اندر بات چیت کی جائیں گی۔
+
+ہم سے رابطہ کریں
+
+اگر آپ کے کوئی سوالات ہیں، تو [ای میل ایڈریس داخل کریں] پر رابطہ کریں۔
+
+آپ کا اعتماد ہمارے لیے اہم ہے۔ CL - Change Your Life کا انتخاب کرنے کے لیے آپ کا شکریہ!</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Email" xml:space="preserve">
+  <source>Email</source>
+  <target>ای میل</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Email address or phone number" xml:space="preserve">
+  <source>Email address or phone number</source>
+  <target>ای میل ایڈریس یا فون نمبر</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Enable high-quality image uploads when connected to Wi-Fi to save mobile data." xml:space="preserve">
+  <source>Enable high-quality image uploads when connected to Wi-Fi to save mobile data.</source>
+  <target>موبائل ڈیٹا بچانے کے لیے Wi-Fi سے جڑنے پر اعلیٰ معیار کی تصویر اپ لوڈز کو فعال کریں۔</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Enhance your account security by enabling two-factor authentication (2FA). 2FA adds an extra layer of protection by requiring a verification code in addition to your password during login, safeguarding your account from unauthorized access." xml:space="preserve">
+  <source>Enhance your account security by enabling two-factor authentication (2FA). 2FA adds an extra layer of protection by requiring a verification code in addition to your password during login, safeguarding your account from unauthorized access.</source>
+  <target>دو عنصر کی تصدیق (2FA) کو فعال کرکے اپنے اکاؤنٹ کی سیکیورٹی کو بڑھائیں۔ 2FA لاگ ان کے دوران آپ کے پاس ورڈ کے علاوہ ایک تصدیقی کوڈ کی ضرورت ہوتی ہے، جو آپ کے اکاؤنٹ کو غیر مجاز رسائی سے محفوظ رکھتا ہے۔</target>
+  <note/>
+</trans-unit>
+      <trans-unit id="Enter Contact" xml:space="preserve">
+  <source>Enter Contact</source>
+  <target>رابطہ درج کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Enter Mail" xml:space="preserve">
+  <source>Enter Mail</source>
+  <target>میل درج کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Enter code" xml:space="preserve">
+  <source>Enter code</source>
+  <target>کوڈ درج کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Enter your email address" xml:space="preserve">
+  <source>Enter your email address</source>
+  <target>اپنا ای میل ایڈریس درج کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Error 404: Motivation Not Found? &#10;CL is here to help" xml:space="preserve">
+  <source>Error 404: Motivation Not Found? 
+CL is here to help</source>
+  <target>غلطی 404: حوصلہ افزائی نہیں ملی؟ 
+CL مدد کے لیے یہاں ہے</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Error 404: Motivation Not Found? &#10;CL is here to help. Create your account." xml:space="preserve">
+  <source>Error 404: Motivation Not Found? 
+CL is here to help. Create your account.</source>
+  <target>غلطی 404: حوصلہ افزائی نہیں ملی؟ 
+CL مدد کے لیے یہاں ہے۔ اپنا اکاؤنٹ بنائیں۔</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Experience" xml:space="preserve">
+  <source>Experience</source>
+  <target>تجربہ</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Explore" xml:space="preserve">
+  <source>Explore</source>
+  <target>دریافت کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Explore the app" xml:space="preserve">
+  <source>Explore the app</source>
+  <target>ایپ کو دریافت کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Female" xml:space="preserve">
+  <source>Female</source>
+  <target>خاتون</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Forgot password?" xml:space="preserve">
+  <source>Forgot password?</source>
+  <target>پاس ورڈ بھول گئے؟</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Full Name" xml:space="preserve">
+  <source>Full Name</source>
+  <target>پورا نام</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Fullname" xml:space="preserve">
+  <source>Fullname</source>
+  <target>پورا نام</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Gender" xml:space="preserve">
+  <source>Gender</source>
+  <target>صنف</target>
+  <note/>
+</trans-unit>
+<trans-unit id="GitHub" xml:space="preserve">
+  <source>GitHub</source>
+  <target>گٹ ہب</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Google" xml:space="preserve">
+  <source>Google</source>
+  <target>گوگل</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Have questions or need assistance? Contact us!" xml:space="preserve">
+  <source>Have questions or need assistance? Contact us!</source>
+  <target>کیا سوالات ہیں یا مدد کی ضرورت ہے؟ ہم سے رابطہ کریں!</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Help" xml:space="preserve">
+  <source>Help</source>
+  <target>مدد</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Help cenre, contact us, privacy policy" xml:space="preserve">
+  <source>Help cenre, contact us, privacy policy</source>
+  <target>مدد مرکز، ہم سے رابطہ کریں، پرائیویسی پالیسی</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Hi, Welcome! 👋" xml:space="preserve">
+  <source>Hi, Welcome! 👋</source>
+  <target>ہیلو، خوش آمدید! 👋</target>
+  <note/>
+</trans-unit>
+<trans-unit id="High-Quality Uploads (Always)" xml:space="preserve">
+  <source>High-Quality Uploads (Always)</source>
+  <target>اعلی معیار کی اپ لوڈز (ہمیشہ)</target>
+  <note/>
+</trans-unit>
+<trans-unit id="High-Quality Uploads (Wi-Fi Only)" xml:space="preserve">
+  <source>High-Quality Uploads (Wi-Fi Only)</source>
+  <target>اعلی معیار کی اپ لوڈز (صرف وائی فائی)</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Home" xml:space="preserve">
+  <source>Home</source>
+  <target>ہوم</target>
+  <note/>
+</trans-unit>
+<trans-unit id="I accept the terms and privacy policy" xml:space="preserve">
+  <source>I accept the terms and privacy policy</source>
+  <target>میں شرائط اور پرائیویسی پالیسی کو قبول کرتا ہوں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Language" xml:space="preserve">
+  <source>Language</source>
+  <target>زبان</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Log in" xml:space="preserve">
+  <source>Log in</source>
+  <target>لاگ ان کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Log out from other devices. Select this if someone else used your account." xml:space="preserve">
+  <source>Log out from other devices. Select this if someone else used your account.</source>
+  <target>دیگر آلات سے لاگ آؤٹ کریں۔ اگر کسی اور نے آپ کا اکاؤنٹ استعمال کیا ہے تو اسے منتخب کریں۔</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Mail" xml:space="preserve">
+  <source>Mail</source>
+  <target>میل</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Male" xml:space="preserve">
+  <source>Male</source>
+  <target>مرد</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Message, group &amp; call tones" xml:space="preserve">
+  <source>Message, group &amp; call tones</source>
+  <target>پیغام، گروپ اور کال ٹونز</target>
+  <note/>
+</trans-unit>
+<trans-unit id="My Portfolio" xml:space="preserve">
+  <source>My Portfolio</source>
+  <target>میرا پورٹ فولیو</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Network usage, auto-download" xml:space="preserve">
+  <source>Network usage, auto-download</source>
+  <target>نیٹ ورک کا استعمال، خودکار ڈاؤن لوڈ</target>
+  <note/>
+</trans-unit>
+<trans-unit id="New password" xml:space="preserve">
+  <source>New password</source>
+  <target>نیا پاس ورڈ</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Notifications" xml:space="preserve">
+  <source>Notifications</source>
+  <target>اطلاعات</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Or with" xml:space="preserve">
+  <source>Or with</source>
+  <target>یا اس کے ساتھ</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Password" xml:space="preserve">
+  <source>Password</source>
+  <target>پاس ورڈ</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Password changed" xml:space="preserve">
+  <source>Password changed</source>
+  <target>پاس ورڈ تبدیل ہو گیا</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Please confirm your country code and enter your phone number." xml:space="preserve">
+  <source>Please confirm your country code and enter your phone number.</source>
+  <target>براہ کرم اپنے ملک کا کوڈ تصدیق کریں اور اپنا فون نمبر درج کریں۔</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Please type something you’ll remember" xml:space="preserve">
+  <source>Please type something you’ll remember</source>
+  <target>براہ کرم کچھ ایسا ٹائپ کریں جو آپ کو یاد رہے</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Portfolio" xml:space="preserve">
+  <source>Portfolio</source>
+  <target>پورٹ فولیو</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Privacy Policies" xml:space="preserve">
+  <source>Privacy Policies</source>
+  <target>پرائیویسی پالیسیاں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Privacy policy" xml:space="preserve">
+  <source>Privacy policy</source>
+  <target>پرائیویسی پالیسی</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Privacy, security, change email or number" xml:space="preserve">
+  <source>Privacy, security, change email or number</source>
+  <target>پرائیویسی، سیکیورٹی، ای میل یا نمبر تبدیل کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Profile" xml:space="preserve">
+  <source>Profile</source>
+  <target>پروفائل</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Profile Links" xml:space="preserve">
+  <source>Profile Links</source>
+  <target>پروفائل لنکس</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Project Description" xml:space="preserve">
+  <source>Project Description</source>
+  <target>پروجیکٹ کی تفصیل</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Project Name" xml:space="preserve">
+  <source>Project Name</source>
+  <target>پروجیکٹ کا نام</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Projects" xml:space="preserve">
+  <source>Projects</source>
+  <target>پروجیکٹس</target>
+  <note/>
+</trans-unit>
+      <trans-unit id="Recent Activities" xml:space="preserve">
+  <source>Recent Activities</source>
+  <target>حالیہ سرگرمیاں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Remember me" xml:space="preserve">
+  <source>Remember me</source>
+  <target>مجھے یاد رکھیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Reset password" xml:space="preserve">
+  <source>Reset password</source>
+  <target>پاس ورڈ ری سیٹ کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Retype New Password" xml:space="preserve">
+  <source>Retype New Password</source>
+  <target>نیا پاس ورڈ دوبارہ ٹائپ کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="SMS" xml:space="preserve">
+  <source>SMS</source>
+  <target>ایس ایم ایس</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Search" xml:space="preserve">
+  <source>Search</source>
+  <target>تلاش کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Security" xml:space="preserve">
+  <source>Security</source>
+  <target>سیکیورٹی</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Send Feedback" xml:space="preserve">
+  <source>Send Feedback</source>
+  <target>رائے بھیجیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Send code" xml:space="preserve">
+  <source>Send code</source>
+  <target>کوڈ بھیجیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Send code again" xml:space="preserve">
+  <source>Send code again</source>
+  <target>کوڈ دوبارہ بھیجیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Share" xml:space="preserve">
+  <source>Share</source>
+  <target>شیئر کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Sign up" xml:space="preserve">
+  <source>Sign up</source>
+  <target>سائن اپ کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Skip" xml:space="preserve">
+  <source>Skip</source>
+  <target>چھوڑ دیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Storage and data" xml:space="preserve">
+  <source>Storage and data</source>
+  <target>اسٹوریج اور ڈیٹا</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Swift Camp Repo" xml:space="preserve">
+  <source>Swift Camp Repo</source>
+  <target>سویفٹ کیمپ ریپو</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Swift Documentaion" xml:space="preserve">
+  <source>Swift Documentaion</source>
+  <target>سویفٹ دستاویزات</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Swift Guidances" xml:space="preserve">
+  <source>Swift Guidances</source>
+  <target>سویفٹ رہنمائی</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Swift UI" xml:space="preserve">
+  <source>Swift UI</source>
+  <target>سویفٹ یو آئی</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Swift UI Components" xml:space="preserve">
+  <source>Swift UI Components</source>
+  <target>سویفٹ یو آئی اجزاء</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Tech Stack" xml:space="preserve">
+  <source>Tech Stack</source>
+  <target>ٹیک اسٹیک</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Theme, wallpapers, chat history" xml:space="preserve">
+  <source>Theme, wallpapers, chat history</source>
+  <target>تھیم، وال پیپرز، چیٹ ہسٹری</target>
+  <note/>
+</trans-unit>
+<trans-unit id="This meaningful project is made possible thanks to the generous support of MasterFabric Technology Information Inc. and EduTech. Aiming to promote knowledge and innovation for the benefit of society, We thank them for empowering us to create this non-profit project." xml:space="preserve">
+  <source>This meaningful project is made possible thanks to the generous support of MasterFabric Technology Information Inc. and EduTech. Aiming to promote knowledge and innovation for the benefit of society, We thank them for empowering us to create this non-profit project.</source>
+  <target>یہ بامعنی پروجیکٹ ماسٹر فیبرک ٹیکنالوجی انفارمیشن انک اور ایجوٹیک کی فراخدلانہ حمایت کی بدولت ممکن ہوا ہے۔ معاشرے کے فائدے کے لیے علم اور جدت کو فروغ دینے کے مقصد سے، ہم ان کا شکریہ ادا کرتے ہیں کہ انہوں نے ہمیں یہ غیر منافع بخش پروجیکٹ بنانے کے قابل بنایا۔</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Title" xml:space="preserve">
+  <source>Title</source>
+  <target>عنوان</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Two - Factor Authentication" xml:space="preserve">
+  <source>Two - Factor Authentication</source>
+  <target>دو عنصر کی تصدیق</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Two-Factor Authentication" xml:space="preserve">
+  <source>Two-Factor Authentication</source>
+  <target>دو عنصر کی تصدیق</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Type your message here." xml:space="preserve">
+  <source>Type your message here.</source>
+  <target>اپنا پیغام یہاں ٹائپ کریں۔</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Upload images in high quality regardless of your connection type. May use more data." xml:space="preserve">
+  <source>Upload images in high quality regardless of your connection type. May use more data.</source>
+  <target>اپنی کنکشن کی قسم سے قطع نظر اعلی معیار میں تصاویر اپ لوڈ کریں۔ زیادہ ڈیٹا استعمال ہو سکتا ہے۔</target>
+  <note/>
+</trans-unit>
+<trans-unit id="User Activity History" xml:space="preserve">
+  <source>User Activity History</source>
+  <target>صارف کی سرگرمی کی تاریخ</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Username" xml:space="preserve">
+  <source>Username</source>
+  <target>صارف کا نام</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Verify" xml:space="preserve">
+  <source>Verify</source>
+  <target>تصدیق کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Verify OTP" xml:space="preserve">
+  <source>Verify OTP</source>
+  <target>او ٹی پی کی تصدیق کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Verify your phone number" xml:space="preserve">
+  <source>Verify your phone number</source>
+  <target>اپنے فون نمبر کی تصدیق کریں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="We detected unrecognized logins" xml:space="preserve">
+  <source>We detected unrecognized logins</source>
+  <target>ہم نے غیر شناخت شدہ لاگ ان کا پتہ لگایا ہے</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Welcome to your new app." xml:space="preserve">
+  <source>Welcome to your new app.</source>
+  <target>آپ کی نئی ایپ میں خوش آمدید۔</target>
+  <note/>
+</trans-unit>
+<trans-unit id="We’ve sent a code to helloworld@gmail.com" xml:space="preserve">
+  <source>We’ve sent a code to helloworld@gmail.com</source>
+  <target>ہم نے helloworld@gmail.com پر ایک کوڈ بھیجا ہے</target>
+  <note/>
+</trans-unit>
+<trans-unit id="We’ve sent an SMS with an activation code to your phone +33 2 94 27 84 11" xml:space="preserve">
+  <source>We’ve sent an SMS with an activation code to your phone +33 2 94 27 84 11</source>
+  <target>ہم نے آپ کے فون +33 2 94 27 84 11 پر ایکٹیویشن کوڈ کے ساتھ ایک ایس ایم ایس بھیجا ہے</target>
+  <note/>
+</trans-unit>
+<trans-unit id="You are typing now @All" xml:space="preserve">
+  <source>You are typing now @All</source>
+  <target>آپ ابھی @All ٹائپ کر رہے ہیں</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Your email" xml:space="preserve">
+  <source>Your email</source>
+  <target>آپ کا ای میل</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Your full name" xml:space="preserve">
+  <source>Your full name</source>
+  <target>آپ کا پورا نام</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Your password has been changed succesfully" xml:space="preserve">
+  <source>Your password has been changed succesfully</source>
+  <target>آپ کا پاس ورڈ کامیابی کے ساتھ تبدیل ہو گیا ہے</target>
+  <note/>
+</trans-unit>
+<trans-unit id="Your username" xml:space="preserve">
+  <source>Your username</source>
+  <target>آپ کا صارف نام</target>
+  <note/>
+</trans-unit>
+    </body>
+  </file>
+</xliff>
