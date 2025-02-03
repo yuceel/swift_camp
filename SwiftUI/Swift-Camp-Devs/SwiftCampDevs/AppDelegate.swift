@@ -1,4 +1,5 @@
 import UIKit
+import Combine
 import FirebaseCore
 import OneSignalFramework
 
@@ -45,6 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         storeAppInformation()
         
         logDatabaseRecords()
+        
+        startObservingAppStateChanges()
  
         
         // Configure initializers
@@ -58,6 +61,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         
         return true
     }
+    
+    // MARK: - Observe App State Changes Using WorkManagerHelper
+    private func startObservingAppStateChanges() {
+        WorkManagerHelper.shared.$currentState
+            .receive(on: DispatchQueue.main)
+            .sink { state in
+                switch state {
+                case .firstLaunch:
+                    LoggerHelper.shared.info("🚀 First launch detected.")
+                case .foreground:
+                    LoggerHelper.shared.info("🌞 App entered foreground.")
+                case .background:
+                    LoggerHelper.shared.info("🌙 App entered background.")
+                }
+            }
+            .store(in: &AppStateManager.cancellables)  // Keep subscriptions
+    }
+
     
     // MARK: - App Database Setup
     
@@ -163,6 +184,10 @@ private func logDatabaseRecords() {
     }
 }
 
+// MARK: - Global Cancellables Management
+private enum AppStateManager {
+    static var cancellables: Set<AnyCancellable> = []
+}
 
 
 
