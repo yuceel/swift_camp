@@ -200,20 +200,60 @@ enum ShadowStyle {
 
 // Enum for regex patterns
 enum RegexPattern: String {
-    //case email = "[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}"
-    case phone = "\\b\\d{3}[-.]?\\d{3}[-.]?\\d{4}\\b"
-    case url = "https?://[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+
+    // Matches valid URLs
+    case url = #"^[a-zA-Z][a-zA-Z0-9+.-]*:\/\/(?:[a-zA-Z0-9-]+\.)?[a-zA-Z0-9-]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?(?:\?[^\s]*)?(?:#.*)?$"#
+
+    // Matches specific keywords "SwiftUI" or "easy" as whole words
     case keyword = "\\b(SwiftUI|easy)\\b"
     
+    // Matches usernames with only letters, numbers, and underscores
     case username = "^[a-zA-Z0-9_]+$"
-    case password = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*(),.?\":{}|<>])[A-Za-z0-9!@#$%^&*(),.?\":{}|<>]{8,64}$"
-    case email = "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
-    case name = "^[a-zA-Z ]+$"
-    //case phone = "^\\+?[1-9]\\d{1,14}$" // E.164 format
-    case numeric = "^\\d+(\\.\\d+)?$"
     
+    // Matches passwords requiring at least one uppercase, one lowercase, one number, and one special character
+    case password = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*(),.?\":{}|<>])[A-Za-z0-9!@#$%^&*(),.?\":{}|<>]+$"
+
+    // Matches emails (case-insensitive)
+    case email = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9]+(?:[.-][A-Za-z0-9]+)*\\.[A-Za-z]{2,}$"
+
+	    // Matches names containing only letters and spaces
+    case fullName = "^[a-zA-Z]+( [a-zA-Z]+)*$"
+
+    // Matches E.164 phone numbers with an optional '+' prefix
+    case phone = "^\\+?[1-9]\\d{1,14}$"
+
+    // Matches numeric values, including decimals
+    case numeric = "^\\d+(\\.\\d+)?$"
+        
     var pattern: String {
         self.rawValue
+    }
+    
+    // Description Strings for Regex Patterns
+    var description: String {
+        switch self {
+        case .url:
+            return "Matches valid URLs (e.g., https://www.example.com or http://example.com/path)."
+        case .keyword:
+            return "Matches specific keywords, such as 'SwiftUI' or 'easy', as whole words."
+        case .username:
+            return "Username can only contain letters, numbers, and underscores."
+        case .password:
+            return "Password must include uppercase, lowercase, a digit, and a special character."
+        case .email:
+            return "Invalid email format. Example: user@example.com"
+        case .fullName:
+            return "Full Name can only contain letters and spaces."
+        case .phone:
+            return "Invalid phone number format. Use international format (e.g., +123456789)."
+        case .numeric:
+            return "Value must be numeric. Example: 123 or 123.45"
+        }
+    }
+    
+    // 
+    func matches(_ value: String) -> Bool {
+        return NSPredicate(format: "SELF MATCHES %@", self.rawValue).evaluate(with: value)
     }
 }
 

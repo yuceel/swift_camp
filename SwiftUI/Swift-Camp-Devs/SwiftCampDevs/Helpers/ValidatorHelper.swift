@@ -10,8 +10,7 @@ enum ValidatorType {
     case url
     case numeric
     case nonEmpty
-    case name
-    case surname
+    case fullName
     case custom((String) -> String?)
 }
 
@@ -27,49 +26,82 @@ struct ValidatorHelper {
         let trimmedValue = StringHelper.shared.convertTurkishCharacters(
             StringHelper.shared.trim(value)
         )
+        
+        var errorMessages: [String] = []
+        
+        // Perform validation checks
         switch validatorType {
         case .username:
-            return validateUsername(trimmedValue)
+            errorMessages += validateTextField(value: trimmedValue, type: .username)
         case .password:
-            return validatePassword(trimmedValue)
+            errorMessages += validateTextField(value: trimmedValue, type: .password)
         case .email:
-            return validateEmail(trimmedValue)
+            errorMessages += validateTextField(value: trimmedValue, type: .email)
         case .search:
-            return validateSearch(trimmedValue)
+            errorMessages += validateTextField(value: trimmedValue, type: .search)
         case .phoneNumber:
-            return validatePhoneNumber(trimmedValue)
+            errorMessages += validateTextField(value: trimmedValue, type: .phoneNumber)
         case .url:
-            return validateURL(trimmedValue)
+            errorMessages += validateTextField(value: trimmedValue, type: .url)
         case .numeric:
-            return validateNumeric(trimmedValue)
+            errorMessages += validateTextField(value: trimmedValue, type: .numeric)
         case .nonEmpty:
-            return validateNonEmpty(trimmedValue)
-        case .name:
-            return validateName(trimmedValue)
-        case .surname:
-            return validateSurname(trimmedValue)
-        case .custom(let customValidator):
-            return customValidator(trimmedValue)
+            errorMessages += validateTextField(value: trimmedValue, type: .nonEmpty)
+        case .fullName:
+            errorMessages += validateTextField(value: trimmedValue, type: .fullName)
+        case .custom:
+            errorMessages += validateTextField(value: trimmedValue, type: .custom(placeholder: "Enter custom input", keyboardType: .asciiCapable))
         }
+        
+        return errorMessages.isEmpty ? nil : errorMessages.joined(separator: "\n")
     }
     
-    // MARK: - Validation Methods
+    private func validateTextField(value: String, type: TextFieldType) -> [String] {
+        var errors: [String] = []
+        // Checking Minimum Length
+        if let min = type.minLength, value.count < min {
+            errors.append("\(type.displayName) must be at least \(min) characters long.")
+        }
+        
+        // Checking Maximum Length
+        if let max = type.maxLength, value.count > max {
+            errors.append("\(type.displayName) cannot exceed \(max) characters.")
+        }
+        
+        // Regex Validation
+        switch type {
+        case .username:
+            if let error = validateUsername(value) { errors.append(error) }
+        case .password:
+            if let error = validatePassword(value) { errors.append(error) }
+        case .email:
+            if let error = validateEmail(value) { errors.append(error) }
+        case .search:
+            if let error = validateSearch(value) { errors.append(error) }
+        case .phoneNumber:
+            if let error = validatePhoneNumber(value) { errors.append(error) }
+        case .url:
+            if let error = validateURL(value) { errors.append(error) }
+        case .numeric:
+            if let error = validateNumeric(value) { errors.append(error) }
+        case .nonEmpty:
+            if let error = validateNonEmpty(value) { errors.append(error) }
+        case .fullName:
+            if let error = validateFullName(value) { errors.append(error) }
+        case .custom(_, _):
+            if let error = validateCustom(value) { errors.append(error) }
+        }
+        
+        return errors
+    }
     
+    // MARK: - Validation Methods    
     private func validateUsername(_ value: String) -> String? {
-        if value.isEmpty {
-            return "Username cannot be empty."
-        }
-        if value.count < 3 {
-            return "Username must be at least 3 characters long."
-        }
-        if value.count > 20 {
-            return "Username cannot exceed 20 characters."
-        }
-        let predicate = NSPredicate(format: "SELF MATCHES %@", RegexPattern.username.pattern)
-        if !predicate.evaluate(with: value) {
-            return "Username can only contain letters, numbers, and underscores. Spaces are not allowed."
-        }
-        return nil
+
+        if !RegexPattern.username.matches(value) {
+                return RegexPattern.username.description
+            }
+            return nil
     }
     
     private func validatePassword(_ value: String) -> String? {
@@ -78,77 +110,33 @@ struct ValidatorHelper {
             return "Password must not contain spaces "
         }
         
-        
-        if value.isEmpty {
-            return "Password cannot be empty."
+        if !RegexPattern.password.matches(value) {
+            return RegexPattern.password.description
         }
-        
-        // Validating the password
-        if !NSPredicate(format: "SELF MATCHES %@", RegexPattern.password.pattern).evaluate(with: value) {
-            return "Password must be 8-64 characters with uppercase, lowercase, a digit, and a special character."
-        }
-        
         return nil
     }
     
     private func validateEmail(_ value: String) -> String? {
-        if value.isEmpty {
-            return "Email cannot be empty."
-        }
         
-        let predicate = NSPredicate(format: "SELF MATCHES %@", RegexPattern.email.pattern)
-        if !predicate.evaluate(with: value) {
-            return "Invalid email format. Example: user@example.com"
+        if !RegexPattern.email.matches(value) {
+            return RegexPattern.email.description
         }
         return nil
     }
     
-    private func validateName(_ value: String) -> String? {
-        if value.isEmpty {
-            return "Name cannot be empty."
-        }
-        if value.count < 2 {
-            return "Name must be at least 2 characters long."
-        }
-        if value.count > 50 {
-            return "Name cannot exceed 50 characters."
-        }
+    private func validateFullName(_ value: String) -> String? {
         
-        let predicate = NSPredicate(format: "SELF MATCHES %@", RegexPattern.name.pattern)
-        if !predicate.evaluate(with: value) {
-            return "Name can only contain letters and spaces."
+        if(value.contains("  ")){
+            return "Full name must not contain consecutive spaces."
         }
-        return nil
-    }
-    
-    private func validateSurname(_ value: String) -> String? {
-        if value.isEmpty {
-            return "Surname cannot be empty."
-        }
-        if value.count < 2 {
-            return "Surname must be at least 2 characters long."
-        }
-        if value.count > 50 {
-            return "Surname cannot exceed 50 characters."
-        }
-        
-        let predicate = NSPredicate(format: "SELF MATCHES %@", RegexPattern.name.pattern)
-        if !predicate.evaluate(with: value) {
-            return "Surname can only contain letters and spaces."
+        if !RegexPattern.fullName.matches(value) {
+            return RegexPattern.fullName.description
         }
         return nil
     }
     
     private func validateSearch(_ value: String) -> String? {
-        if value.isEmpty {
-            return "Search input cannot be empty."
-        }
-        if value.count < 2 {
-            return "Search input must be at least 2 characters."
-        }
-        if value.count > 50 {
-            return "Search input cannot exceed 50 characters."
-        }
+
         if value.contains(where: { !$0.isLetter && !$0.isNumber && !$0.isWhitespace }) {
             return "Search input can only contain letters, numbers, and spaces."
         }
@@ -156,46 +144,37 @@ struct ValidatorHelper {
     }
     
     private func validatePhoneNumber(_ value: String) -> String? {
-        if value.isEmpty {
-            return "Phone number cannot be empty."
-        }
         
-        let predicate = NSPredicate(format: "SELF MATCHES %@", RegexPattern.phone.pattern)
-        if !predicate.evaluate(with: value) {
-            return "Invalid phone number format. Use international format (e.g., +123456789)."
-        }
-        if value.count < 8 {
-            return "Phone number is too short. It must have at least 8 digits."
-        }
-        if value.count > 15 {
-            return "Phone number is too long. It cannot exceed 15 digits."
+        if !RegexPattern.phone.matches(value) {
+            return RegexPattern.phone.description
         }
         return nil
     }
     
     private func validateURL(_ value: String) -> String? {
-        if value.isEmpty {
-            return "URL cannot be empty."
-        }
-        guard let url = URL(string: value), UIApplication.shared.canOpenURL(url) else {
-            return "Invalid URL format. Example: https://www.example.com"
+        
+        if !RegexPattern.url.matches(value) {
+            return RegexPattern.url.description
         }
         return nil
     }
     
     private func validateNumeric(_ value: String) -> String? {
-        if value.isEmpty {
-            return "Value cannot be empty."
-        }
         
-        let predicate = NSPredicate(format: "SELF MATCHES %@", RegexPattern.numeric.pattern)
-        if !predicate.evaluate(with: value) {
-            return "Value must be numeric. Example: 123 or 123.45"
+        if !RegexPattern.numeric.matches(value) {
+            return RegexPattern.numeric.description
         }
         return nil
     }
     
     private func validateNonEmpty(_ value: String) -> String? {
+        if value.isEmpty {
+            return "This field cannot be empty."
+        }
+        return nil
+    }
+    
+    private func validateCustom(_ value: String) -> String? {
         if value.isEmpty {
             return "This field cannot be empty."
         }

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="OneSignalNotificationServiceExtension/InfoPlist.xcstrings" source-language="en" target-language="ar-AE" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>OneSignalNotificationServiceExtension</source>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>OneSignalNotificationServiceExtension</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source/>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SwiftCampDevs/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="ar-AE">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>SwiftCampDevs</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SwiftCampDevs/Localizable.xcstrings" source-language="en" target-language="ar-AE" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
+    </header>
+    <body>
+      <trans-unit id="" xml:space="preserve">
+        <source/>
+        <note/>
+      </trans-unit>
+      <trans-unit id=" " xml:space="preserve">
+        <source> </source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="About Me" xml:space="preserve">
+    <source>من أنا</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Account" xml:space="preserve">
+    <source>الحساب</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Accounts" xml:space="preserve">
+    <source>الحسابات</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Add new project" xml:space="preserve">
+    <source>إضافة مشروع جديد</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Already have an account? Log in" xml:space="preserve">
+    <source>هل لديك حساب بالفعل؟ تسجيل الدخول</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Apple" xml:space="preserve">
+    <source>آبل</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Authentication App" xml:space="preserve">
+    <source>تطبيق المصادقة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Back to login" xml:space="preserve">
+    <source>العودة إلى تسجيل الدخول</source>
+    <note/>
+</trans-unit>
+<trans-unit id="By creating an account or signing you agree to our Terms and Conditions" xml:space="preserve">
+    <source>من خلال إنشاء حساب أو تسجيل الدخول، فإنك توافق على الشروط والأحكام</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Cancel" xml:space="preserve">
+    <source>إلغاء</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Change Password" xml:space="preserve">
+    <source>تغيير كلمة المرور</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Change Your Life" xml:space="preserve">
+    <source>غير حياتك</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Chats" xml:space="preserve">
+    <source>المحادثات</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Choose Your Language" xml:space="preserve">
+    <source>اختر لغتك</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Choose Your Country" xml:space="preserve">
+    <source>اختر دولتك</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Confirm Password" xml:space="preserve">
+    <source>تأكيد كلمة المرور</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Confirm new password" xml:space="preserve">
+    <source>تأكيد كلمة المرور الجديدة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Contact Us" xml:space="preserve">
+    <source>اتصل بنا</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Continue" xml:space="preserve">
+    <source>متابعة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Continue with Apple" xml:space="preserve">
+    <source>المتابعة باستخدام آبل</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Continue with Email" xml:space="preserve">
+    <source>المتابعة باستخدام البريد الإلكتروني</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Continue with Google" xml:space="preserve">
+    <source>المتابعة باستخدام جوجل</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Copy link" xml:space="preserve">
+    <source>نسخ الرابط</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Country" xml:space="preserve">
+    <source>الدولة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Create account" xml:space="preserve">
+    <source>إنشاء حساب</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Don’t have an account?" xml:space="preserve">
+    <source>ليس لديك حساب؟</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Don’t have an account? Sign up" xml:space="preserve">
+    <source>ليس لديك حساب؟ سجل الآن</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Don’t worry! It happens. Please enter the email associated with your account." xml:space="preserve">
+    <source>لا تقلق! يحدث ذلك. يرجى إدخال البريد الإلكتروني المرتبط بحسابك.</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Edit" xml:space="preserve">
+    <source>تحرير</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Edit Profile Information" xml:space="preserve">
+    <source>تعديل معلومات الملف الشخصي</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Education" xml:space="preserve">
+    <source>التعليم</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Privacy Policy" xml:space="preserve">
+    <source>سياسة الخصوصية</source>
+    <note/>
+</trans-unit>
+
+<trans-unit id="Email" xml:space="preserve">
+    <source>البريد الإلكتروني</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Email address or phone number" xml:space="preserve">
+    <source>عنوان البريد الإلكتروني أو رقم الهاتف</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Enable high-quality image uploads when connected to Wi-Fi to save mobile data." xml:space="preserve">
+    <source>تمكين تحميل الصور عالية الجودة عند الاتصال بشبكة Wi-Fi لتوفير بيانات الجوال.</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Enhance your account security by enabling two-factor authentication (2FA). 2FA adds an extra layer of protection by requiring a verification code in addition to your password during login, safeguarding your account from unauthorized access." xml:space="preserve">
+    <source>عزّز أمان حسابك من خلال تمكين المصادقة الثنائية (2FA). تضيف المصادقة الثنائية طبقة إضافية من الحماية عن طريق طلب رمز تحقق بالإضافة إلى كلمة المرور أثناء تسجيل الدخول، مما يحمي حسابك من الوصول غير المصرح به.</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Enter Contact" xml:space="preserve">
+    <source>أدخل جهة الاتصال</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Enter Mail" xml:space="preserve">
+    <source>أدخل البريد الإلكتروني</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Enter code" xml:space="preserve">
+    <source>أدخل الرمز</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Enter your email address" xml:space="preserve">
+    <source>أدخل عنوان بريدك الإلكتروني</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Error 404: Motivation Not Found? &#10;CL is here to help" xml:space="preserve">
+    <source>خطأ 404: لم يتم العثور على التحفيز؟  
+CL هنا للمساعدة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Error 404: Motivation Not Found? &#10;CL is here to help. Create your account." xml:space="preserve">
+    <source>خطأ 404: لم يتم العثور على التحفيز؟  
+CL هنا للمساعدة. أنشئ حسابك الآن.</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Experience" xml:space="preserve">
+    <source>الخبرة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Explore" xml:space="preserve">
+    <source>استكشاف</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Explore the app" xml:space="preserve">
+    <source>استكشف التطبيق</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Female" xml:space="preserve">
+    <source>أنثى</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Forgot password?" xml:space="preserve">
+    <source>هل نسيت كلمة المرور؟</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Full Name" xml:space="preserve">
+    <source>الاسم الكامل</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Fullname" xml:space="preserve">
+    <source>الاسم الكامل</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Gender" xml:space="preserve">
+    <source>الجنس</source>
+    <note/>
+</trans-unit>
+<trans-unit id="GitHub" xml:space="preserve">
+    <source>جيت هاب</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Google" xml:space="preserve">
+    <source>جوجل</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Have questions or need assistance? Contact us!" xml:space="preserve">
+    <source>لديك أسئلة أو تحتاج إلى مساعدة؟ اتصل بنا!</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Help" xml:space="preserve">
+    <source>مساعدة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Help cenre, contact us, privacy policy" xml:space="preserve">
+    <source>مركز المساعدة، اتصل بنا، سياسة الخصوصية</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Hi, Welcome! 👋" xml:space="preserve">
+    <source>مرحبًا، أهلاً وسهلاً! 👋</source>
+    <note/>
+</trans-unit>
+<trans-unit id="High-Quality Uploads (Always)" xml:space="preserve">
+    <source>تحميلات عالية الجودة (دائمًا)</source>
+    <note/>
+</trans-unit>
+ <trans-unit id="High-Quality Uploads (Wi-Fi Only)" xml:space="preserve">
+    <source>تحميلات عالية الجودة (واي فاي فقط)</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Home" xml:space="preserve">
+    <source>الرئيسية</source>
+    <note/>
+</trans-unit>
+<trans-unit id="I accept the terms and privacy policy" xml:space="preserve">
+    <source>أوافق على الشروط وسياسة الخصوصية</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Language" xml:space="preserve">
+    <source>اللغة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Log in" xml:space="preserve">
+    <source>تسجيل الدخول</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Log out from other devices. Select this if someone else used your account." xml:space="preserve">
+    <source>تسجيل الخروج من الأجهزة الأخرى. اختر هذا إذا كان شخص آخر قد استخدم حسابك.</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Mail" xml:space="preserve">
+    <source>البريد</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Male" xml:space="preserve">
+    <source>ذكر</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Message, group &amp; call tones" xml:space="preserve">
+    <source>نغمات الرسائل والمجموعات والمكالمات</source>
+    <note/>
+</trans-unit>
+<trans-unit id="My Portfolio" xml:space="preserve">
+    <source>ملفي الشخصي</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Network usage, auto-download" xml:space="preserve">
+    <source>استخدام الشبكة، التنزيل التلقائي</source>
+    <note/>
+</trans-unit>
+<trans-unit id="New password" xml:space="preserve">
+    <source>كلمة المرور الجديدة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Notifications" xml:space="preserve">
+    <source>الإشعارات</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Or with" xml:space="preserve">
+    <source>أو باستخدام</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Password" xml:space="preserve">
+    <source>كلمة المرور</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Password changed" xml:space="preserve">
+    <source>تم تغيير كلمة المرور</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Please confirm your country code and enter your phone number." xml:space="preserve">
+    <source>يرجى تأكيد رمز دولتك وإدخال رقم هاتفك.</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Please type something you’ll remember" xml:space="preserve">
+    <source>يرجى كتابة شيء ستتذكره</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Portfolio" xml:space="preserve">
+    <source>المحفظة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Privacy Policies" xml:space="preserve">
+    <source>سياسات الخصوصية</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Privacy policy" xml:space="preserve">
+    <source>سياسة الخصوصية</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Privacy, security, change email or number" xml:space="preserve">
+    <source>الخصوصية، الأمان، تغيير البريد الإلكتروني أو الرقم</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Profile" xml:space="preserve">
+    <source>الملف الشخصي</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Profile Links" xml:space="preserve">
+    <source>روابط الملف الشخصي</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Project Description" xml:space="preserve">
+    <source>وصف المشروع</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Project Name" xml:space="preserve">
+    <source>اسم المشروع</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Projects" xml:space="preserve">
+    <source>المشاريع</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Recent Activities" xml:space="preserve">
+    <source>الأنشطة الأخيرة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Remember me" xml:space="preserve">
+    <source>تذكرني</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Reset password" xml:space="preserve">
+    <source>إعادة تعيين كلمة المرور</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Retype New Password" xml:space="preserve">
+    <source>أعد إدخال كلمة المرور الجديدة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="SMS" xml:space="preserve">
+    <source>رسالة نصية</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Search" xml:space="preserve">
+    <source>بحث</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Security" xml:space="preserve">
+    <source>الأمان</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Send Feedback" xml:space="preserve">
+    <source>إرسال ملاحظات</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Send code" xml:space="preserve">
+    <source>إرسال الرمز</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Send code again" xml:space="preserve">
+    <source>إعادة إرسال الرمز</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Share" xml:space="preserve">
+    <source>مشاركة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Sign up" xml:space="preserve">
+    <source>إنشاء حساب</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Skip" xml:space="preserve">
+    <source>تخطي</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Storage and data" xml:space="preserve">
+    <source>التخزين والبيانات</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Swift Camp Repo" xml:space="preserve">
+    <source>مستودع Swift Camp</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Swift Documentation" xml:space="preserve">
+    <source>وثائق Swift</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Swift Guidances" xml:space="preserve">
+    <source>إرشادات Swift</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Swift UI" xml:space="preserve">
+    <source>واجهة مستخدم Swift</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Swift UI Components" xml:space="preserve">
+    <source>مكونات واجهة Swift</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Tech Stack" xml:space="preserve">
+    <source>التقنيات المستخدمة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Theme, wallpapers, chat history" xml:space="preserve">
+    <source>الثيم، الخلفيات، سجل الدردشة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Title" xml:space="preserve">
+    <source>العنوان</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Two - Factor Authentication" xml:space="preserve">
+    <source>المصادقة الثنائية</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Two-Factor Authentication" xml:space="preserve">
+    <source>المصادقة الثنائية</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Type your message here." xml:space="preserve">
+    <source>اكتب رسالتك هنا.</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Upload images in high quality regardless of your connection type. May use more data." xml:space="preserve">
+    <source>تحميل الصور بجودة عالية بغض النظر عن نوع الاتصال. قد يستهلك المزيد من البيانات.</source>
+    <note/>
+</trans-unit>
+<trans-unit id="User Activity History" xml:space="preserve">
+    <source>سجل نشاط المستخدم</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Username" xml:space="preserve">
+    <source>اسم المستخدم</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Verify" xml:space="preserve">
+    <source>تحقق</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Verify OTP" xml:space="preserve">
+    <source>تحقق من OTP</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Verify your phone number" xml:space="preserve">
+    <source>تحقق من رقم هاتفك</source>
+    <note/>
+</trans-unit>
+<trans-unit id="We detected unrecognized logins" xml:space="preserve">
+    <source>اكتشفنا عمليات تسجيل دخول غير معروفة</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Welcome to your new app." xml:space="preserve">
+    <source>مرحبًا بك في تطبيقك الجديد.</source>
+    <note/>
+</trans-unit>
+<trans-unit id="We’ve sent a code to helloworld@gmail.com" xml:space="preserve">
+    <source>لقد أرسلنا رمزًا إلى helloworld@gmail.com</source>
+    <note/>
+</trans-unit>
+<trans-unit id="We’ve sent an SMS with an activation code to your phone +33 2 94 27 84 11" xml:space="preserve">
+    <source>لقد أرسلنا رسالة نصية تحتوي على رمز التفعيل إلى هاتفك +33 2 94 27 84 11</source>
+    <note/>
+</trans-unit>
+<trans-unit id="You are typing now @All" xml:space="preserve">
+    <source>أنت تكتب الآن @الجميع</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Your email" xml:space="preserve">
+    <source>بريدك الإلكتروني</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Your full name" xml:space="preserve">
+    <source>اسمك الكامل</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Your password has been changed succesfully" xml:space="preserve">
+    <source>تم تغيير كلمة المرور بنجاح</source>
+    <note/>
+</trans-unit>
+<trans-unit id="Your username" xml:space="preserve">
+    <source>اسم المستخدم الخاص بك</source>
+    <note/>
+</trans-unit>
+    </body>
+  </file>
+</xliff>
