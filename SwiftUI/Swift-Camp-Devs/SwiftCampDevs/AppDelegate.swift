@@ -1,4 +1,5 @@
 import UIKit
+import Combine
 import FirebaseCore
 import FirebaseAuth
 import GoogleSignIn
@@ -40,6 +41,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         storeAppInformation()
         logDatabaseRecords()
 
+
+
+        
+        startObservingAppStateChanges()
+ 
+        
+
         // Configure initializers
         initializers = StartupInitializationBuilder()
             .setAppDelegate(self)
@@ -59,6 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         LoggerHelper.shared.info("Google Sign-In configured successfully.")
     }
 
+
     // MARK: - Google Sign-In URL Handling
     func application(
         _ app: UIApplication,
@@ -67,6 +76,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
     ) -> Bool {
         return GIDSignIn.sharedInstance.handle(url)
     }
+
+
+    
+    // MARK: - Observe App State Changes Using WorkManagerHelper
+    private func startObservingAppStateChanges() {
+        WorkManagerHelper.shared.$currentState
+            .receive(on: DispatchQueue.main)
+            .sink { state in
+                switch state {
+                case .firstLaunch:
+                    LoggerHelper.shared.info("🚀 First launch detected.")
+                case .foreground:
+                    LoggerHelper.shared.info("🌞 App entered foreground.")
+                case .background:
+                    LoggerHelper.shared.info("🌙 App entered background.")
+                }
+            }
+            .store(in: &AppStateManager.cancellables)  // Keep subscriptions
+    }
+
+    
 
     // MARK: - App Database Setup
     private func setupAppDatabase() {
@@ -153,3 +183,18 @@ private func logDatabaseRecords() {
         }
     }
 }
+
+
+
+// MARK: - Global Cancellables Management
+private enum AppStateManager {
+    static var cancellables: Set<AnyCancellable> = []
+}
+
+
+
+
+
+
+
+
