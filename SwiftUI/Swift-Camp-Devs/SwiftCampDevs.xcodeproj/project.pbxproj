@@ -129,7 +129,7 @@
 				D44591032D50C425004B54C8 /* GoogleSignInSwift in Frameworks */,
 				01EA61C52D4E9ED0004E3FC8 /* FirebasePerformance in Frameworks */,
 
- a3f802b24f0ae27b0648ad65f9609b97f90869d3
+
 				3CCB621F2D4E2777006EBB09 /* SQLite in Frameworks */,
 				89C9FF222D44F4D000CDF043 /* OneSignalInAppMessages in Frameworks */,
 				7F313A33292BC8C70048C74C /* RxSwift in Frameworks */,
