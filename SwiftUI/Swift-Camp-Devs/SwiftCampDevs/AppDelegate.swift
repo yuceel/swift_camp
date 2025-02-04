@@ -92,6 +92,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
             .build(with: launchOptions)
         
         LoggerHelper.shared.info("Application did finish launching.")
+        
+        // NetworkHelper initializers
+        let _ = NetworkHelper.shared
+        
         return true
     }
     
