@@ -1,0 +1,396 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    " " : {
+
+    },
+    "About Me" : {
+      "extractionState" : "manual"
+    },
+    "Account" : {
+      "extractionState" : "manual"
+    },
+    "Accounts" : {
+      "extractionState" : "manual"
+    },
+    "Add new project" : {
+      "extractionState" : "manual"
+    },
+    "Already have an account? Log in" : {
+      "extractionState" : "manual"
+    },
+    "Apple" : {
+
+    },
+    "Authentication App" : {
+      "extractionState" : "manual"
+    },
+    "Back to login" : {
+      "extractionState" : "manual"
+    },
+    "By creating an account or signing you agree to our Terms and Conditions" : {
+      "extractionState" : "manual"
+    },
+    "Cancel" : {
+      "extractionState" : "manual"
+    },
+    "Change  Password" : {
+      "extractionState" : "manual"
+    },
+    "Change Password" : {
+      "extractionState" : "manual"
+    },
+    "Change Your Life" : {
+      "extractionState" : "manual"
+    },
+    "Chats" : {
+      "extractionState" : "manual"
+    },
+    "Choose the Your Country" : {
+      "extractionState" : "manual"
+    },
+    "Choose Your Language" : {
+      "extractionState" : "manual"
+    },
+    "Confirm new password" : {
+      "extractionState" : "manual"
+    },
+    "Confirm Password" : {
+      "extractionState" : "manual"
+    },
+    "Contact us" : {
+      "extractionState" : "manual"
+    },
+    "Contact Us" : {
+      "extractionState" : "manual"
+    },
+    "Continue" : {
+      "extractionState" : "manual"
+    },
+    "Continue with Apple" : {
+      "extractionState" : "manual"
+    },
+    "Continue with Email" : {
+      "extractionState" : "manual"
+    },
+    "Continue with Google" : {
+      "extractionState" : "manual"
+    },
+    "Copy link" : {
+      "extractionState" : "manual"
+    },
+    "Country" : {
+      "extractionState" : "manual"
+    },
+    "Create account" : {
+      "extractionState" : "manual"
+    },
+    "Don’t have an account?" : {
+
+    },
+    "Don’t have an account? Sign up" : {
+      "extractionState" : "manual"
+    },
+    "Don’t worry! It happens. Please enter the email associated with your account." : {
+      "extractionState" : "manual"
+    },
+    "Edit" : {
+      "extractionState" : "manual"
+    },
+    "Edit profile information" : {
+      "extractionState" : "manual"
+    },
+    "Edit Profile Information" : {
+      "extractionState" : "manual"
+    },
+    "Education" : {
+      "extractionState" : "manual"
+    },
+    "Effective Date: 04.01.2024\n\nAt CL - Change Your Life, your privacy is our priority. This Privacy Policy explains how we collect, use, and protect your personal information when you use our application.\n\nInformation We Collect\n\nWe may collect the following types of information:\n\t•\tPersonal Information: Name, email address, profile details, or other data you provide directly.\n\t•\tUsage Data: Device details, app interactions, and other non-personal information automatically collected.\n\nHow We Use Your Information\n\nYour information helps us:\n\t•\tImprove and personalize your experience.\n\t•\tAnalyze usage to enhance our services.\n\t•\tSend important updates or notifications.\n\nSharing Your Information\n\nWe never sell your data. We may share it with:\n\t•\tService Providers: To help operate the app efficiently.\n\t•\tLegal Authorities: When required to comply with legal obligations.\n\nYour Rights\n\nYou can:\n\t•\tAccess or update your information.\n\t•\tRequest data deletion.\n\t•\tOpt-out of marketing communications.\n\nFor assistance, contact us at [Insert Email Address].\n\nSecurity\n\nWe take reasonable measures to protect your data, but no system is entirely secure. Please use the app responsibly.\n\nPolicy Updates\n\nWe may update this policy periodically. Changes will be communicated within the app.\n\nContact Us\n\nIf you have any questions, reach out at [Insert Email Address].\n\nYour trust is important to us. Thank you for choosing CL - Change Your Life!" : {
+      "extractionState" : "manual"
+    },
+    "Email" : {
+      "extractionState" : "manual"
+    },
+    "Email address or phone number" : {
+
+    },
+    "Enable high-quality image uploads when connected to Wi-Fi to save mobile data." : {
+      "extractionState" : "manual"
+    },
+    "Enhance your account security by enabling two-factor authentication (2FA). 2FA adds an extra layer of protection by requiring a verification code in addition to your password during login, safeguarding your account from unauthorized access." : {
+      "extractionState" : "manual"
+    },
+    "Enter code" : {
+      "extractionState" : "manual"
+    },
+    "Enter Contact" : {
+      "extractionState" : "manual"
+    },
+    "Enter Mail" : {
+      "extractionState" : "manual"
+    },
+    "Enter your email address" : {
+      "extractionState" : "manual"
+    },
+    "Error 404: Motivation Not Found? \nCL is here to help" : {
+      "extractionState" : "manual"
+    },
+    "Error 404: Motivation Not Found? \nCL is here to help. Create your account." : {
+      "extractionState" : "manual"
+    },
+    "Experience" : {
+      "extractionState" : "manual"
+    },
+    "Explore" : {
+      "extractionState" : "manual"
+    },
+    "Explore the app" : {
+      "extractionState" : "manual"
+    },
+    "Female" : {
+      "extractionState" : "manual"
+    },
+    "Forgot password?" : {
+
+    },
+    "Full Name" : {
+      "extractionState" : "manual"
+    },
+    "Fullname" : {
+      "extractionState" : "manual"
+    },
+    "Gender" : {
+      "extractionState" : "manual"
+    },
+    "GitHub" : {
+
+    },
+    "Google" : {
+
+    },
+    "Have questions or need assistance? Contact us!" : {
+      "extractionState" : "manual"
+    },
+    "Help" : {
+      "extractionState" : "manual"
+    },
+    "Help cenre, contact us, privacy policy" : {
+      "extractionState" : "manual"
+    },
+    "Hi, Welcome! 👋" : {
+
+    },
+    "High-Quality Uploads (Always)" : {
+      "extractionState" : "manual"
+    },
+    "High-Quality Uploads (Wi-Fi Only)" : {
+      "extractionState" : "manual"
+    },
+    "Home" : {
+      "extractionState" : "manual"
+    },
+    "I accept the terms and privacy policy" : {
+      "extractionState" : "manual"
+    },
+    "Language" : {
+      "extractionState" : "manual"
+    },
+    "Log in" : {
+
+    },
+    "Log out from other devices. Select this if someone else used your account." : {
+      "extractionState" : "manual"
+    },
+    "Mail" : {
+      "extractionState" : "manual"
+    },
+    "Male" : {
+      "extractionState" : "manual"
+    },
+    "Message, group & call tones" : {
+      "extractionState" : "manual"
+    },
+    "My Portfolio" : {
+      "extractionState" : "manual"
+    },
+    "Network usage, auto-download" : {
+      "extractionState" : "manual"
+    },
+    "New password" : {
+      "extractionState" : "manual"
+    },
+    "Notifications" : {
+      "extractionState" : "manual"
+    },
+    "Or with" : {
+
+    },
+    "Password" : {
+
+    },
+    "Password changed" : {
+      "extractionState" : "manual"
+    },
+    "Please confirm your country code and enter your phone number." : {
+      "extractionState" : "manual"
+    },
+    "Please type something you’ll remember" : {
+      "extractionState" : "manual"
+    },
+    "Portfolio" : {
+      "extractionState" : "manual"
+    },
+    "Privacy Policies" : {
+      "extractionState" : "manual"
+    },
+    "Privacy policy" : {
+      "extractionState" : "manual"
+    },
+    "Privacy, security, change email or number" : {
+      "extractionState" : "manual"
+    },
+    "Profile" : {
+      "extractionState" : "manual"
+    },
+    "Profile Links" : {
+      "extractionState" : "manual"
+    },
+    "Project Description" : {
+      "extractionState" : "manual"
+    },
+    "Project Name" : {
+      "extractionState" : "manual"
+    },
+    "Projects" : {
+      "extractionState" : "manual"
+    },
+    "Recent Activities" : {
+      "extractionState" : "manual"
+    },
+    "Remember me" : {
+
+    },
+    "Reset password" : {
+      "extractionState" : "manual"
+    },
+    "Retype New Password" : {
+      "extractionState" : "manual"
+    },
+    "Search" : {
+      "extractionState" : "manual"
+    },
+    "Security" : {
+      "extractionState" : "manual"
+    },
+    "Send code" : {
+      "extractionState" : "manual"
+    },
+    "Send code again" : {
+      "extractionState" : "manual"
+    },
+    "Send Feedback" : {
+      "extractionState" : "manual"
+    },
+    "Share" : {
+      "extractionState" : "manual"
+    },
+    "Sign up" : {
+
+    },
+    "Skip" : {
+      "extractionState" : "manual"
+    },
+    "SMS" : {
+      "extractionState" : "manual"
+    },
+    "Storage and data" : {
+      "extractionState" : "manual"
+    },
+    "Swift Camp Repo" : {
+      "extractionState" : "manual"
+    },
+    "Swift Documentaion" : {
+      "extractionState" : "manual"
+    },
+    "Swift Guidances" : {
+      "extractionState" : "manual"
+    },
+    "Swift UI" : {
+      "extractionState" : "manual"
+    },
+    "Swift UI Components" : {
+      "extractionState" : "manual"
+    },
+    "Tech Stack" : {
+      "extractionState" : "manual"
+    },
+    "Theme, wallpapers, chat history" : {
+      "extractionState" : "manual"
+    },
+    "This meaningful project is made possible thanks to the generous support of MasterFabric Technology Information Inc. and EduTech. Aiming to promote knowledge and innovation for the benefit of society, We thank them for empowering us to create this non-profit project." : {
+      "extractionState" : "manual"
+    },
+    "Title" : {
+      "extractionState" : "manual"
+    },
+    "Two - Factor Authentication" : {
+      "extractionState" : "manual"
+    },
+    "Two-Factor Authentication" : {
+      "extractionState" : "manual"
+    },
+    "Type your message here." : {
+      "extractionState" : "manual"
+    },
+    "Upload images in high quality regardless of your connection type. May use more data." : {
+      "extractionState" : "manual"
+    },
+    "User Activity History" : {
+      "extractionState" : "manual"
+    },
+    "Username" : {
+      "extractionState" : "manual"
+    },
+    "Verify" : {
+      "extractionState" : "manual"
+    },
+    "Verify OTP" : {
+
+    },
+    "Verify your phone number" : {
+      "extractionState" : "manual"
+    },
+    "We detected unrecognized logins" : {
+      "extractionState" : "manual"
+    },
+    "We’ve sent a code to helloworld@gmail.com" : {
+      "extractionState" : "manual"
+    },
+    "We’ve sent an SMS with an activation code to your phone +33 2 94 27 84 11" : {
+      "extractionState" : "manual"
+    },
+    "Welcome to your new app." : {
+
+    },
+    "You are typing now @All" : {
+      "extractionState" : "manual"
+    },
+    "Your email" : {
+
+    },
+    "Your full name" : {
+      "extractionState" : "manual"
+    },
+    "Your password has been changed succesfully" : {
+      "extractionState" : "manual"
+    },
+    "Your username" : {
+      "extractionState" : "manual"
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,5792 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
+    },
+    " " : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "About Me" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عني"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre Mí"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עליי"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hakkımda"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میرے بارے میں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میرے بارے میں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于我"
+          }
+        }
+      }
+    },
+    "Account" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حساب"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuenta"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חשבון"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesap"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹ"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "账户"
+          }
+        }
+      }
+    },
+    "Accounts" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحسابات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuentas"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חשבונות"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesaplar"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹس"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹس"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "账户"
+          }
+        }
+      }
+    },
+    "Add new project" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة مشروع جديد"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añadir nuevo proyecto"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הוסף פרויקט חדש"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni proje ekle"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نیا پروجیکٹ شامل کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نیا پروجیکٹ شامل کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加新项目"
+          }
+        }
+      }
+    },
+    "Already have an account? Log in" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لديك حساب بالفعل؟ تسجيل الدخول"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Ya tienes una cuenta? Inicia sesión"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כבר יש לך חשבון? התחבר"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaten bir hesabınız var mı? Giriş yap"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پہلے سے ہی اکاؤنٹ ہے؟ لاگ ان کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پہلے سے ہی اکاؤنٹ ہے؟ لاگ ان کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已有账户？登录"
+          }
+        }
+      }
+    },
+    "Apple" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آبل"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אפל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ایپل"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ایپل"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "苹果"
+          }
+        }
+      }
+    },
+    "Authentication App" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تطبيق المصادقة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aplicación de Autenticación"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אפליקציית אימות"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kimlik Doğrulama Uygulaması"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصدیقی ایپ"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصدیقی ایپ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "认证应用"
+          }
+        }
+      }
+    },
+    "Back to login" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العودة لتسجيل الدخول"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volver al inicio de sesión"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חזור להתחברות"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Girişe geri dön"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "واپس لاگ ان پر"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لاگ ان پر واپس جائیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返回登录"
+          }
+        }
+      }
+    },
+    "By creating an account or signing you agree to our Terms and Conditions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بإنشاء حساب أو التسجيل، فإنك توافق على شروطنا وأحكامنا"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al crear una cuenta o iniciar sesión, aceptas nuestros Términos y Condiciones"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "על ידי יצירת חשבון או כניסה, אתה מסכים לתנאים וההגבלות שלנו"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir hesap oluşturarak veya giriş yaparak Şartlar ve Koşullarımızı kabul etmiş olursunuz"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹ بنانے یا سائن ان کرنے سے آپ ہماری شرائط و ضوابط سے اتفاق کرتے ہیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹ بنانے یا سائن ان کرنے سے آپ ہماری شرائط و ضوابط سے اتفاق کرتے ہیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "创建账户或登录即表示您同意我们的条款和条件"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בטל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İptal"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "منسوخ کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "منسوخ کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
+      }
+    },
+    "Change Password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تغيير كلمة المرور"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar Contraseña"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שנה סיסמה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreyi Değiştir"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ تبدیل کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ تبدیل کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更改密码"
+          }
+        }
+      }
+    },
+    "Change Your Life" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غيّر حياتك"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambia Tu Vida"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שנה את חייך"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hayatını Değiştir"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنی زندگی بدلیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنی زندگی بدلیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "改变你的生活"
+          }
+        }
+      }
+    },
+    "Chats" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المحادثات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chats"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "צ'אטים"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sohbetler"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "چیٹس"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "چیٹس"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聊天"
+          }
+        }
+      }
+    },
+    "Choose the Your Country" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر بلدك"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elige Tu País"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בחר את המדינה שלך"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ülkenizi Seçin"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنا ملک منتخب کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنا ملک منتخب کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择您的国家"
+          }
+        }
+      }
+    },
+    "Choose Your Language" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر لغتك"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elige Tu Idioma"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בחר את השפה שלך"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dilinizi Seçin"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنی زبان منتخب کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنی زبان منتخب کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择您的语言"
+          }
+        }
+      }
+    },
+    "Confirm new password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تأكيد كلمة المرور الجديدة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmar nueva contraseña"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אשר סיסמה חדשה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Şifreyi Onayla"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نئے پاس ورڈ کی تصدیق کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نئے پاس ورڈ کی تصدیق کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确认新密码"
+          }
+        }
+      }
+    },
+    "Confirm Password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تأكيد كلمة المرور"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmar Contraseña"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אשר סיסמה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreyi Onayla"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ کی تصدیق کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ کی تصدیق کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确认密码"
+          }
+        }
+      }
+    },
+    "Contact Us" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اتصل بنا"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contáctanos"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "צור קשר"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bize Ulaşın"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہم سے رابطہ کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہم سے رابطہ کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "联系我们"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "המשך"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Devam Et"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جاری رکھیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جاری رکھیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "继续"
+          }
+        }
+      }
+    },
+    "Continue with Apple" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المتابعة باستخدام آبل"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar con Apple"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "המשך עם אפל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple ile Devam Et"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ایپل کے ساتھ جاری رکھیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ایپل کے ساتھ جاری رکھیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用苹果继续"
+          }
+        }
+      }
+    },
+    "Continue with Email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المتابعة بالبريد الإلكتروني"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar con Correo Electrónico"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "המשך עם דוא\"ל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email ile Devam Et"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ای میل کے ساتھ جاری رکھیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ای میل کے ساتھ جاری رکھیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用电子邮件继续"
+          }
+        }
+      }
+    },
+    "Continue with Google" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المتابعة باستخدام جوجل"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar con Google"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "המשך עם גוגל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Google ile Devam Et"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "گوگل کے ساتھ جاری رکھیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "گوگل کے ساتھ جاری رکھیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用谷歌继续"
+          }
+        }
+      }
+    },
+    "Copy link" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نسخ الرابط"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiar enlace"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "העתק קישור"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlantıyı Kopyala"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لنک کاپی کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لنک کاپی کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复制链接"
+          }
+        }
+      }
+    },
+    "Country" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البلد"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "País"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מדינה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ülke"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ملک"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ملک"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "国家"
+          }
+        }
+      }
+    },
+    "Create account" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إنشاء حساب"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crear cuenta"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "צור חשבון"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesap Oluştur"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹ بنائیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹ بنائیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "创建账户"
+          }
+        }
+      }
+    },
+    "Don’t have an account?" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ليس لديك حساب؟"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿No tienes una cuenta?"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אין לך חשבון?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesabın yok mu?"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹ نہیں ہے؟"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹ نہیں ہے؟"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有账户？"
+          }
+        }
+      }
+    },
+    "Don’t have an account? Sign up" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ليس لديك حساب؟ سجل الآن"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿No tienes una cuenta? Regístrate"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אין לך חשבון? הירשם"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesabınız yok mu? Kaydolun"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹ نہیں ہے؟ سائن اپ کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اکاؤنٹ نہیں ہے؟ سائن اپ کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有账户？注册"
+          }
+        }
+      }
+    },
+    "Don’t worry! It happens. Please enter the email associated with your account." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا تقلق! يحدث ذلك. يرجى إدخال البريد الإلكتروني المرتبط بحسابك."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡No te preocupes! Sucede. Por favor, introduce el correo electrónico asociado a tu cuenta."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אל תדאג! זה קורה. אנא הזן את הדוא\"ל המשויך לחשבון שלך."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endişelenmeyin! Bu olur. Lütfen hesabınızla ilişkili e-postayı girin."
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پریشان نہ ہوں! ایسا ہوتا ہے۔ براہ کرم اپنے اکاؤنٹ سے منسلک ای میل درج کریں۔"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فکر نہ کریں! ایسا ہوتا ہے۔ براہ کرم اپنے اکاؤنٹ سے منسلک ای میل درج کریں۔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "别担心！这是常有的事。请输入与您账户关联的电子邮件。"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ערוך"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düzenle"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ترمیم کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ترمیم کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑"
+          }
+        }
+      }
+    },
+    "Edit Profile Information" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل معلومات الملف الشخصي"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar Información del Perfil"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ערוך פרטי פרופיל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil Bilgilerini Düzenle"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروفائل کی معلومات میں ترمیم کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروفائل کی معلومات میں ترمیم کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑个人资料信息"
+          }
+        }
+      }
+    },
+    "Education" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التعليم"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Educación"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חינוך"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eğitim"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعلیم"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعلیم"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "教育"
+          }
+        }
+      }
+    },
+    "Effective Date: 04.01.2024\n\nAt CL - Change Your Life, your privacy is our priority. This Privacy Policy explains how we collect, use, and protect your personal information when you use our application.\n\nInformation We Collect\n\nWe may collect the following types of information:\n\t•\tPersonal Information: Name, email address, profile details, or other data you provide directly.\n\t•\tUsage Data: Device details, app interactions, and other non-personal information automatically collected.\n\nHow We Use Your Information\n\nYour information helps us:\n\t•\tImprove and personalize your experience.\n\t•\tAnalyze usage to enhance our services.\n\t•\tSend important updates or notifications.\n\nSharing Your Information\n\nWe never sell your data. We may share it with:\n\t•\tService Providers: To help operate the app efficiently.\n\t•\tLegal Authorities: When required to comply with legal obligations.\n\nYour Rights\n\nYou can:\n\t•\tAccess or update your information.\n\t•\tRequest data deletion.\n\t•\tOpt-out of marketing communications.\n\nFor assistance, contact us at [Insert Email Address].\n\nSecurity\n\nWe take reasonable measures to protect your data, but no system is entirely secure. Please use the app responsibly.\n\nPolicy Updates\n\nWe may update this policy periodically. Changes will be communicated within the app.\n\nContact Us\n\nIf you have any questions, reach out at [Insert Email Address].\n\nYour trust is important to us. Thank you for choosing CL - Change Your Life!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تاريخ السريان: 04.01.2024\n\nفي CL - غير حياتك، خصوصيتك هي أولويتنا. توضح سياسة الخصوصية هذه كيفية جمع معلوماتك الشخصية واستخدامها وحمايتها عند استخدام تطبيقنا.\n\nالمعلومات التي نجمعها\nقد نقوم بجمع الأنواع التالية من المعلومات:\n\nالمعلومات الشخصية: الاسم، عنوان البريد الإلكتروني، تفاصيل الملف الشخصي، أو أي بيانات أخرى تقدمها مباشرة.\nبيانات الاستخدام: تفاصيل الجهاز، تفاعلات التطبيق، ومعلومات غير شخصية يتم جمعها تلقائيًا.\nكيف نستخدم معلوماتك\nتساعدنا معلوماتك على:\n\nتحسين تجربتك الشخصية.\nتحليل الاستخدام لتحسين خدماتنا.\nإرسال التحديثات أو الإشعارات المهمة.\nمشاركة معلوماتك\nنحن لا نبيع بياناتك أبدًا. قد نشاركها مع:\n\nمزودي الخدمات: للمساعدة في تشغيل التطبيق بكفاءة.\nالسلطات القانونية: عند الطلب للامتثال للالتزامات القانونية.\nحقوقك\nيمكنك:\n\nالوصول إلى معلوماتك أو تحديثها.\nطلب حذف بياناتك.\nإلغاء الاشتراك في الاتصالات التسويقية.\nللمساعدة، تواصل معنا عبر [إدراج عنوان البريد الإلكتروني].\n\nالأمان\nنتخذ تدابير معقولة لحماية بياناتك، لكن لا يوجد نظام آمن تمامًا. يرجى استخدام التطبيق بمسؤولية.\n\nتحديثات السياسة\nقد نقوم بتحديث هذه السياسة بشكل دوري. سيتم إعلامك بالتغييرات داخل التطبيق.\n\nاتصل بنا\nإذا كان لديك أي استفسارات، لا تتردد في التواصل معنا عبر [إدراج عنوان البريد الإلكتروني].\n\nثقتك بنا تهمنا. شكرًا لاختيارك CL - غير حياتك!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fecha de vigencia: 04.01.2024\n\nEn CL - Change Your Life, su privacidad es nuestra prioridad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos su información personal cuando utiliza nuestra aplicación.\n\nInformación que Recopilamos\n\nPodemos recopilar los siguientes tipos de información: • Información personal: Nombre, dirección de correo electrónico, detalles del perfil u otros datos que usted proporcione directamente. • Datos de uso: Detalles del dispositivo, interacciones con la aplicación y otra información no personal recopilada automáticamente.\n\nCómo Usamos Su Información\n\nSu información nos ayuda a: • Mejorar y personalizar su experiencia. • Analizar el uso para mejorar nuestros servicios. • Enviar actualizaciones o notificaciones importantes.\n\nCompartir Su Información\n\nNunca vendemos sus datos. Podemos compartirlos con: • Proveedores de servicios: Para ayudar a operar la aplicación de manera eficiente. • Autoridades legales: Cuando sea necesario cumplir con obligaciones legales.\n\nSus Derechos\n\nUsted puede: • Acceder o actualizar su información. • Solicitar la eliminación de datos. • Optar por no recibir comunicaciones de marketing.\n\nPara asistencia, contáctenos en [Insertar dirección de correo electrónico].\n\nSeguridad\n\nTomamos medidas razonables para proteger sus datos, pero ningún sistema es completamente seguro. Utilice la aplicación de manera responsable.\n\nActualizaciones de la Política\n\nPodemos actualizar esta política periódicamente. Los cambios serán comunicados dentro de la aplicación.\n\nContáctenos\n\nSi tiene alguna pregunta, comuníquese con nosotros en [Insertar dirección de correo electrónico].\n\n¡Su confianza es importante para nosotros! ¡Gracias por elegir CL - Change Your Life!\n\n\n\n\n\n\n\n"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תאריך תוקף: 04.01.2024\n\nב-CL - Change Your Life, הפרטיות שלך היא בראש סדר העדיפויות שלנו. מדיניות פרטיות זו מסבירה כיצד אנו אוספים, משתמשים ומגנים על המידע האישי שלך בעת השימוש באפליקציה שלנו.\n\nמידע שאנו אוספים\n\nאנו עשויים לאסוף את סוגי המידע הבאים:\n\t•\tמידע אישי: שם, כתובת דוא\"ל, פרטי פרופיל או מידע אחר שתספק ישירות.\n\t•\tנתוני שימוש: פרטי מכשיר, אינטראקציות עם האפליקציה ומידע שאינו אישי שנאסף באופן אוטומטי.\n\nכיצד אנו משתמשים במידע שלך\n\nהמידע שלך מסייע לנו:\n\t•\tלשפר ולהתאים אישית את החוויה שלך.\n\t•\tלנתח שימוש כדי לשפר את השירותים שלנו.\n\t•\tלשלוח עדכונים חשובים או התראות.\n\nשיתוף המידע שלך\n\nאיננו מוכרים את הנתונים שלך. אנו עשויים לשתף אותם עם:\n\t•\tספקי שירות: כדי לסייע בפעולה היעילה של האפליקציה.\n\t•\tרשויות חוק: כאשר נדרש לעמוד בדרישות חוקיות.\n\nהזכויות שלך\n\nאתה יכול:\n\t•\tלגשת או לעדכן את המידע שלך.\n\t•\tלבקש מחיקת נתונים.\n\t•\tלבטל את ההרשמה לתקשורת שיווקית.\n\nלעזרה, צור איתנו קשר ב-[Insert Email Address].\n\nאבטחה\n\nאנו נוקטים באמצעים סבירים כדי להגן על הנתונים שלך, אך שום מערכת אינה מאובטחת לחלוטין. אנא השתמש באפליקציה באחריות.\n\nעדכוני מדיניות\n\nאנו עשויים לעדכן מדיניות זו מעת לעת. שינויים יועברו בתוך האפליקציה.\n\nצור קשר\n\nאם יש לך שאלות, צור קשר ב-[Insert Email Address].\n\nהאמון שלך חשוב לנו. תודה שבחרת CL - Change Your Life!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yürürlülük Tarihi: 04.01.2024\n\nCL - Change Your Life'de, gizliliğiniz önceliğimizdir.\nBu Gizlilik Politikası, uygulamamızı kullanırken kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklamaktadır.\n\nTopladığımız Bilgiler\nAşağıdaki türde bilgileri toplayabiliriz:\n\nKişisel Bilgiler: Ad, e-posta adresi, profil detayları veya doğrudan sağladığınız diğer veriler.\nKullanım Verileri: Cihaz bilgileri, uygulama etkileşimleri ve otomatik olarak toplanan diğer kişisel olmayan bilgiler.\nBilgilerinizi Nasıl Kullanıyoruz\nBilgileriniz bize şu konularda yardımcı olur:\n\nDeneyiminizi geliştirmek ve kişiselleştirmek.\nHizmetlerimizi iyileştirmek amacıyla kullanım analizleri yapmak.\nÖnemli güncellemeleri veya bildirimleri göndermek.\nBilgilerinizi Paylaşma\nVerilerinizi asla satmıyoruz. Ancak şu durumlarda paylaşabiliriz:\n\nHizmet Sağlayıcılar: Uygulamayı verimli bir şekilde işletmemize yardımcı olmak için.\nYasal Yetkililer: Yasal zorunluluklara uymak gerektiğinde.\nHaklarınız\nAşağıdaki işlemleri gerçekleştirebilirsiniz:\n\nBilgilerinize erişmek veya güncellemek.\nVeri silme talebinde bulunmak.\nPazarlama iletişimlerinden vazgeçmek.\nYardım için, lütfen [Insert Email Address] adresinden bizimle iletişime geçin.\n\nGüvenlik\nVerilerinizi korumak için makul önlemler alıyoruz, ancak hiçbir sistem tamamen güvenli değildir. Lütfen uygulamayı sorumlu bir şekilde kullanın.\n\nPolitika Güncellemeleri\nBu politikayı periyodik olarak güncelleyebiliriz. Yapılan değişiklikler uygulama içinde bildirilecektir.\n\nİletişim\nHerhangi bir sorunuz varsa, lütfen [Insert Email Address] adresinden bize ulaşın.\n\nGüveniniz bizim için önemlidir. CL - Change Your Life'i seçtiğiniz için teşekkür ederiz!"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "موثر تاریخ: 04.01.2024\n\nCL - Change Your Life میں، آپ کی پرائیویسی ہماری ترجیح ہے۔ یہ پرائیویسی پالیسی وضاحت کرتی ہے کہ ہم آپ کی ذاتی معلومات کو کیسے جمع کرتے ہیں، استعمال کرتے ہیں، اور محفوظ رکھتے ہیں جب آپ ہماری ایپلیکیشن استعمال کرتے ہیں۔\n\nہم کون سی معلومات جمع کرتے ہیں\n\nہم درج ذیل اقسام کی معلومات جمع کر سکتے ہیں:\n    • ذاتی معلومات: نام، ای میل ایڈریس، پروفائل کی تفصیلات، یا دیگر ڈیٹا جو آپ براہ راست فراہم کرتے ہیں۔\n    • استعمال کا ڈیٹا: ڈیوائس کی تفصیلات، ایپ کے تعاملات، اور دیگر غیر ذاتی معلومات جو خود بخود جمع کی جاتی ہیں۔\n\nہم آپ کی معلومات کو کیسے استعمال کرتے ہیں\n\nآپ کی معلومات ہماری مدد کرتی ہیں:\n    • آپ کے تجربے کو بہتر بنائیں اور ذاتی بنائیں۔\n    • ہمارے خدمات کو بہتر بنانے کے لئے استعمال کا تجزیہ کریں۔\n    • اہم اپ ڈیٹس یا اطلاعات بھیجیں۔\n\nآپ کی معلومات کا اشتراک\n\nہم کبھی بھی آپ کا ڈیٹا فروخت نہیں کرتے۔ ہم اسے درج ذیل کے ساتھ شیئر کر سکتے ہیں:\n    • سروس فراہم کرنے والے: ایپ کو مؤثر طریقے سے چلانے میں مدد کے لئے۔\n    • قانونی حکام: جب قانونی ذمہ داریوں کی تعمیل کے لئے ضروری ہو۔\n\nآپ کے حقوق\n\nآپ کر سکتے ہیں:\n    • اپنی معلومات تک رسائی یا اپ ڈیٹ کریں۔\n    • ڈیٹا کی حذف کی درخواست کریں۔\n    • مارکیٹنگ مواصلات سے باہر نکلیں۔\n\nمدد کے لئے، ہم سے [ای میل ایڈریس داخل کریں] پر رابطہ کریں۔\n\nسیکیورٹی\n\nہم آپ کے ڈیٹا کی حفاظت کے لئے معقول اقدامات کرتے ہیں، لیکن کوئی بھی نظام مکمل طور پر محفوظ نہیں ہے۔ براہ کرم ایپ کو ذمہ داری سے استعمال کریں۔\n\nپالیسی اپ ڈیٹس\n\nہم وقتاً فوقتاً اس پالیسی کو اپ ڈیٹ کر سکتے ہیں۔ تبدیلیاں ایپ کے اندر بتائی جائیں گی۔\n\nہم سے رابطہ کریں\n\nاگر آپ کے کوئی سوالات ہیں، تو [ای میل ایڈریس داخل کریں] پر ہم سے رابطہ کریں۔\n\nآپ کا اعتماد ہمارے لئے اہم ہے۔ CL - Change Your Life کا انتخاب کرنے کے لئے آپ کا شکریہ!"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "موثر تاریخ: 04.01.2024\n\nCL - Change Your Life میں، آپ کی پرائیویسی ہماری ترجیح ہے۔ یہ پرائیویسی پالیسی وضاحت کرتی ہے کہ ہم آپ کی ذاتی معلومات کو کیسے جمع کرتے ہیں، استعمال کرتے ہیں، اور محفوظ رکھتے ہیں جب آپ ہماری ایپلیکیشن استعمال کرتے ہیں۔\n\nہم جو معلومات جمع کرتے ہیں\n\nہم درج ذیل اقسام کی معلومات جمع کر سکتے ہیں:\n    •\tذاتی معلومات: نام، ای میل ایڈریس، پروفائل کی تفصیلات، یا دیگر ڈیٹا جو آپ براہ راست فراہم کرتے ہیں۔\n    •\tاستعمال کا ڈیٹا: ڈیوائس کی تفصیلات، ایپ کے تعاملات، اور دیگر غیر ذاتی معلومات جو خود بخود جمع کی جاتی ہیں۔\n\nہم آپ کی معلومات کو کیسے استعمال کرتے ہیں\n\nآپ کی معلومات ہماری مدد کرتی ہیں:\n    •\tآپ کے تجربے کو بہتر بنائیں اور ذاتی بنائیں۔\n    •\tاستعمال کا تجزیہ کریں تاکہ ہماری خدمات کو بہتر بنایا جا سکے۔\n    •\tاہم اپ ڈیٹس یا اطلاعات بھیجیں۔\n\nآپ کی معلومات کا اشتراک\n\nہم کبھی بھی آپ کا ڈیٹا فروخت نہیں کرتے۔ ہم اسے درج ذیل کے ساتھ شیئر کر سکتے ہیں:\n    •\tسروس فراہم کرنے والے: ایپ کو مؤثر طریقے سے چلانے میں مدد کے لیے۔\n    •\tقانونی حکام: جب قانونی ذمہ داریوں کی تعمیل کے لیے ضروری ہو۔\n\nآپ کے حقوق\n\nآپ کر سکتے ہیں:\n    •\tاپنی معلومات تک رسائی یا اپ ڈیٹ کریں۔\n    •\tڈیٹا کی حذف کرنے کی درخواست کریں۔\n    •\tمارکیٹنگ مواصلات سے آپٹ آؤٹ کریں۔\n\nمدد کے لیے، ہم سے [ای میل ایڈریس داخل کریں] پر رابطہ کریں۔\n\nسیکیورٹی\n\nہم آپ کے ڈیٹا کی حفاظت کے لیے معقول اقدامات کرتے ہیں، لیکن کوئی بھی نظام مکمل طور پر محفوظ نہیں ہے۔ براہ کرم ایپ کو ذمہ داری سے استعمال کریں۔\n\nپالیسی اپ ڈیٹس\n\nہم وقتاً فوقتاً اس پالیسی کو اپ ڈیٹ کر سکتے ہیں۔ تبدیلیاں ایپ کے اندر بات چیت کی جائیں گی۔\n\nہم سے رابطہ کریں\n\nاگر آپ کے کوئی سوالات ہیں، تو [ای میل ایڈریس داخل کریں] پر رابطہ کریں۔\n\nآپ کا اعتماد ہمارے لیے اہم ہے۔ CL - Change Your Life کا انتخاب کرنے کے لیے آپ کا شکریہ!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生效日期：2024年1月4日\n\n在CL - 改变你的生活中，您的隐私是我们的首要任务。本隐私政策解释了我们在您使用我们的应用程序时如何收集、使用和保护您的个人信息。\n\n我们收集的信息\n\n我们可能会收集以下类型的信息： • 个人信息：姓名、电子邮件地址、个人资料详情或您直接提供的其他数据。 • 使用数据：设备详情、应用程序交互以及其他自动收集的非个人信息。\n\n我们如何使用您的信息\n\n您的信息帮助我们： • 改善和个性化您的体验。 • 分析使用情况以增强我们的服务。 • 发送重要更新或通知。\n\n共享您的信息\n\n我们绝不会出售您的数据。我们可能会与以下对象共享： • 服务提供商：以帮助高效运营应用程序。 • 法律机构：在需要遵守法律义务时。\n\n您的权利\n\n您可以： • 访问或更新您的信息。 • 请求删除数据。 • 选择退出营销通讯。\n\n如需帮助，请联系我们：[插入电子邮件地址]。\n\n安全\n\n我们采取合理措施保护您的数据，但没有系统是完全安全的。请负责任地使用应用程序。\n\n政策更新\n\n我们可能会定期更新此政策。更改将在应用程序内通知。\n\n联系我们\n\n如果您有任何问题，请联系我们：[插入电子邮件地址]。\n\n您的信任对我们很重要。感谢您选择CL - 改变你的生活！"
+          }
+        }
+      }
+    },
+    "Email" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البريد الإلكتروني"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correo Electrónico"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אימייל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-posta"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ای میل"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ای میل"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电子邮件"
+          }
+        }
+      }
+    },
+    "Email address or phone number" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البريد الإلكتروني أو رقم الهاتف"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dirección de correo electrónico o número de teléfono"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כתובת אימייל או מספר טלפון"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-mail adresi ya da telefon numarası"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ای میل ایڈریس یا فون نمبر"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ای میل ایڈریس یا فون نمبر"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "电子邮件地址或电话号码"
+          }
+        }
+      }
+    },
+    "Enable high-quality image uploads when connected to Wi-Fi to save mobile data." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمكين تحميل الصور عالية الجودة عند الاتصال بشبكة Wi-Fi لتوفير بيانات الجوال."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Habilita la subida de imágenes en alta calidad cuando estés conectado a Wi-Fi para ahorrar datos móviles."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הפעל העלאה של תמונות איכות באיכות גבוהה כשאתה מחובר ל-Wi-Fi לחסוכן בנתונים סלוליים."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mobil veriyi korumak için Wi-Fi'ye bağlıyken yüksek kaliteli görüntü yüklemelerini etkinleştirin."
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "موبائل ڈیٹا بچانے کے لئے وائی فائی سے منسلک ہونے پر اعلی معیار کی تصویر اپ لوڈز کو فعال کریں۔"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "موبائل ڈیٹا بچانے کے لیے Wi-Fi سے جڑنے پر اعلیٰ معیار کی تصویر اپ لوڈز کو فعال کریں۔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在连接Wi-Fi时启用高质量图片上传以节省移动数据。"
+          }
+        }
+      }
+    },
+    "Enhance your account security by enabling two-factor authentication (2FA). 2FA adds an extra layer of protection by requiring a verification code in addition to your password during login, safeguarding your account from unauthorized access." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عزّز أمان حسابك من خلال تمكين المصادقة الثنائية (2FA). تضيف المصادقة الثنائية طبقة إضافية من الحماية عن طريق طلب رمز تحقق بالإضافة إلى كلمة المرور أثناء تسجيل الدخول، مما يساعد في حماية حسابك من الوصول غير المصرح به.\n\n"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mejora la seguridad de tu cuenta habilitando la autenticación de dos factores (2FA). 2FA añade una capa adicional de protección al requerir un código de verificación además de tu contraseña durante el inicio de sesión, protegiendo tu cuenta de accesos no autorizados."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שפר את אבטחת החשבון שלך על ידי הפעלת אימות דו-שלבי (2FA). אימות דו-שלבי מוסיף שכבת הגנה נוספת בכך שהוא דורש קוד אימות נוסף לסיסמה שלך בעת ההתחברות, ובכך מגן על חשבונך מגישה לא מורשית."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İki faktörlü kimlik doğrulamayı (2FA) etkinleştirerek hesap güvenliğinizi artırın. 2FA, giriş sırasında şifrenize ek olarak bir doğrulama kodu gerektirerek hesabınızı yetkisiz erişimden koruyan ekstra bir koruma katmanı ekler."
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دو فیکٹر تصدیق (2FA) کو فعال کرکے اپنے اکاؤنٹ کی سیکیورٹی کو بہتر بنائیں۔ 2FA لاگ ان کے دوران آپ کے پاس ورڈ کے علاوہ ایک تصدیقی کوڈ کی ضرورت ہوتی ہے، جو آپ کے اکاؤنٹ کو غیر مجاز رسائی سے محفوظ رکھتا ہے۔"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دو عنصر کی تصدیق (2FA) کو فعال کرکے اپنے اکاؤنٹ کی سیکیورٹی کو بڑھائیں۔ 2FA لاگ ان کے دوران آپ کے پاس ورڈ کے علاوہ ایک تصدیقی کوڈ کی ضرورت ہوتی ہے، جو آپ کے اکاؤنٹ کو غیر مجاز رسائی سے محفوظ رکھتا ہے۔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通过启用双因素认证（2FA）增强您的账户安全性。2FA通过在登录时要求验证码和密码，增加了一层额外的保护，防止未经授权的访问。"
+          }
+        }
+      }
+    },
+    "Enter code" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل الرمز"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresar código"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הכנס קוד"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kodu Girin"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کوڈ درج کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کوڈ درج کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入验证码"
+          }
+        }
+      }
+    },
+    "Enter Contact" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل جهة الاتصال"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Introduzca el contacto"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הכנס פרטי קשר"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İletişim Bilgilerini Girin"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رابطہ درج کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رابطہ درج کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入联系人"
+          }
+        }
+      }
+    },
+    "Enter Mail" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل البريد الإلكتروني"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresar Correo"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הכנס אימייל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-posta Girin"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میل درج کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میل درج کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入邮件"
+          }
+        }
+      }
+    },
+    "Enter your email address" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل عنوان بريدك الإلكتروني"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa tu dirección de correo electrónico"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הכנס כתובת האימייל שלך"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-posta adresinizi girin"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنا ای میل ایڈریس درج کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنا ای میل ایڈریس درج کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入您的电子邮件地址"
+          }
+        }
+      }
+    },
+    "Error 404: Motivation Not Found? \nCL is here to help" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطأ 404: لم يتم العثور على الحافز؟\nCL هنا للمساعدة."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error 404: Motivación no encontrada.\n¡CL está aquí para ayudar!"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שגיאת 404: המוטיבציה לא נמצאה?\nCL כאן לעזור"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata 404: Motivasyon Bulunamadı? \nCL burada yardım etmek için"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غلطی 404: حوصلہ افزائی نہیں ملی؟ \nCL مدد کے لئے یہاں ہے"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غلطی 404: حوصلہ افزائی نہیں ملی؟ \nCL مدد کے لیے یہاں ہے"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误404：找不到动力？\nCL在这里帮助您"
+          }
+        }
+      }
+    },
+    "Error 404: Motivation Not Found? \nCL is here to help. Create your account." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطأ 404: لم يتم العثور على الحافز؟\nCL هنا للمساعدة. أنشئ حسابك."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error 404: Motivación no encontrada.\nCL está aquí para ayudar. Crea tu cuenta."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שגיאה 404: מוטיבציה לא נמצאה? CL כאן כדי לעזור. צור את החשבון שלך."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata 404: Motivasyon Bulunamadı? \nCL burada yardım etmek için. Hesabınızı oluşturun."
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غلطی 404: حوصلہ افزائی نہیں ملی؟ \nCL مدد کے لئے یہاں ہے۔ اپنا اکاؤنٹ بنائیں۔"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غلطی 404: حوصلہ افزائی نہیں ملی؟ \nCL مدد کے لیے یہاں ہے۔ اپنا اکاؤنٹ بنائیں۔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误404：找不到动力？\nCL在这里帮助您。创建您的账户。"
+          }
+        }
+      }
+    },
+    "Experience" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخبرة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Experiencia"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "נסיון"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deneyim"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تجربہ"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تجربہ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "经验"
+          }
+        }
+      }
+    },
+    "Explore" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استكشف"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explorar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חקור"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keşfet"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دریافت کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دریافت کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "探索"
+          }
+        }
+      }
+    },
+    "Explore the app" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استكشف التطبيق"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explora la aplicación"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חקור את האפליקציה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı keşfedin"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ایپ کو دریافت کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ایپ کو دریافت کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "探索应用程序"
+          }
+        }
+      }
+    },
+    "Female" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنثى"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Femenino"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "נקבה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kadın"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خاتون"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خاتون"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "女性"
+          }
+        }
+      }
+    },
+    "Forgot password?" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نسيت كلمة المرور؟"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Olvidaste tu contraseña?"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שכחת סיסמה?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreni mi unuttun?"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ بھول گئے؟"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ بھول گئے؟"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "忘记密码？"
+          }
+        }
+      }
+    },
+    "Full Name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاسم الكامل"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre Completo"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שם מלא"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam Adı"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پورا نام"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پورا نام"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全名"
+          }
+        }
+      }
+    },
+    "Fullname" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاسم الكامل"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre Completo"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שם מלא"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam Adı"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پورا نام"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پورا نام"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全名"
+          }
+        }
+      }
+    },
+    "Gender" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجنس"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Género"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מגדר"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinsiyet"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صنف"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صنف"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "性别"
+          }
+        }
+      }
+    },
+    "GitHub" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جيت هب"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "גיטהאף"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "گٹ ہب"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "گٹ ہب"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub"
+          }
+        }
+      }
+    },
+    "Google" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جوجل"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Google"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "גוגל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Google"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "گوگل"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "گوگل"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "谷歌"
+          }
+        }
+      }
+    },
+    "Have questions or need assistance? Contact us!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لديك أسئلة أو تحتاج إلى مساعدة؟ اتصل بنا!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Tienes preguntas o necesitas ayuda? ¡Contáctanos!"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יש לך שאלות או שאתה צריך עזרה? צור קשר איתנו!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorularınız mı var veya yardıma mı ihtiyacınız var? Bize ulaşın!"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سوالات ہیں یا مدد کی ضرورت ہے؟ ہم سے رابطہ کریں!"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کیا سوالات ہیں یا مدد کی ضرورت ہے؟ ہم سے رابطہ کریں!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "有问题或需要帮助？联系我们！"
+          }
+        }
+      }
+    },
+    "Help" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المساعدة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayuda"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "עזרה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yardım"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مدد"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مدد"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "帮助"
+          }
+        }
+      }
+    },
+    "Help cenre, contact us, privacy policy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مركز المساعدة، اتصل بنا، سياسة الخصوصية"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Centro de ayuda, contáctanos, política de privacidad"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מרכז עזרה, צור קשר, מדיניות פרטיות"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yardım merkezi, bize ulaşın, gizlilik politikası"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مدد مرکز، ہم سے رابطہ کریں، پرائیویسی پالیسی"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مدد مرکز، ہم سے رابطہ کریں، پرائیویسی پالیسی"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "帮助中心，联系我们，隐私政策"
+          }
+        }
+      }
+    },
+    "Hi, Welcome! 👋" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرحباً، أهلاً بك! 👋"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Hola, Bienvenido! 👋"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שלום, ברוך הבא! 👋"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merhaba, Hoş geldin!👋"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہیلو، خوش آمدید! 👋"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہیلو، خوش آمدید! 👋"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "嗨，欢迎！👋"
+          }
+        }
+      }
+    },
+    "High-Quality Uploads (Always)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحميلات عالية الجودة (دائماً)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subidas de alta calidad (Siempre)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "העלאות באיכות גבוהה (תמיד)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yüksek Kaliteli Yüklemeler (Her Zaman)"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اعلی معیار کی اپ لوڈز (ہمیشہ)"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اعلی معیار کی اپ لوڈز (ہمیشہ)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高质量上传（始终）"
+          }
+        }
+      }
+    },
+    "High-Quality Uploads (Wi-Fi Only)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحميلات عالية الجودة (واي فاي فقط)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subidas de alta calidad (Solo Wi-Fi)"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "העלאות באיכות גבוהה (Wi-Fi בלבד)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yüksek Kaliteli Yüklemeler (Sadece Wi-Fi)"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اعلی معیار کی اپ لوڈز (صرف وائی فائی)"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اعلی معیار کی اپ لوڈز (صرف وائی فائی)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高质量上传（仅Wi-Fi）"
+          }
+        }
+      }
+    },
+    "Home" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الرئيسية"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inicio"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בית"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ana Sayfa"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہوم"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہوم"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首页"
+          }
+        }
+      }
+    },
+    "I accept the terms and privacy policy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أوافق على الشروط وسياسة الخصوصية"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acepto los términos y la política de privacidad"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אני מקבל את התנאים ומדיניות הפרטיות"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şartları ve gizlilik politikasını kabul ediyorum"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میں شرائط اور پرائیویسی پالیسی کو قبول کرتا ہوں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میں شرائط اور پرائیویسی پالیسی کو قبول کرتا ہوں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我接受条款和隐私政策"
+          }
+        }
+      }
+    },
+    "Language" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اللغة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idioma"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שפה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dil"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زبان"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زبان"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "语言"
+          }
+        }
+      }
+    },
+    "Log in" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسجيل الدخول"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iniciar sesión"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "התחבר"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş Yap"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لاگ ان کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لاگ ان کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "登录"
+          }
+        }
+      }
+    },
+    "Log out from other devices. Select this if someone else used your account." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسجيل الخروج من الأجهزة الأخرى. اختر هذا إذا استخدم شخص آخر حسابك."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar sesión en otros dispositivos. Selecciona esto si alguien más usó tu cuenta."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "התנתק ממכשירים אחרים. בחר באפשרות זו אם מישהו אחר השתמש בחשבונך."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diğer cihazlardan çıkış yapın. Bunu, başka birinin hesabınızı kullandığını düşünüyorsanız seçin."
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دیگر ڈیوائسز سے لاگ آؤٹ کریں۔ اگر کسی اور نے آپ کا اکاؤنٹ استعمال کیا ہے تو اسے منتخب کریں۔"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دیگر آلات سے لاگ آؤٹ کریں۔ اگر کسی اور نے آپ کا اکاؤنٹ استعمال کیا ہے تو اسے منتخب کریں۔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从其他设备注销。如果其他人使用了您的账户，请选择此选项。"
+          }
+        }
+      }
+    },
+    "Mail" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البريد"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correo"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "דואר"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-Mail"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میل"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میل"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "邮件"
+          }
+        }
+      }
+    },
+    "Male" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ذكر"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masculino"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "זכר"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erkek"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرد"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرد"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "男性"
+          }
+        }
+      }
+    },
+    "Message, group & call tones" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نغمات الرسائل والمجموعات والمكالمات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tonos de mensajes, grupos y llamadas"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "צלילי הודעות, קבוצות ושיחות"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesaj, grup ve arama tonları"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پیغام، گروپ اور کال ٹونز"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پیغام، گروپ اور کال ٹونز"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "消息、群组和呼叫铃声"
+          }
+        }
+      }
+    },
+    "My Portfolio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ملفي الشخصي"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mi Portafolio"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "התיק שלי"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Portföyüm"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میرا پورٹ فولیو"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "میرا پورٹ فولیو"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我的作品集"
+          }
+        }
+      }
+    },
+    "Network usage, auto-download" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدام الشبكة والتحميل التلقائي"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uso de red, descarga automática"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שימוש ברשת, הורדה אוטומטית"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ağ kullanımı, otomatik indirme"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نیٹ ورک کا استعمال، خودکار ڈاؤن لوڈ"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نیٹ ورک کا استعمال، خودکار ڈاؤن لوڈ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "网络使用情况，自动下载"
+          }
+        }
+      }
+    },
+    "New password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلمة المرور الجديدة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nueva contraseña"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "סיסמה חדשה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni şifre"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نیا پاس ورڈ"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نیا پاس ورڈ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新密码"
+          }
+        }
+      }
+    },
+    "Notifications" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإشعارات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificaciones"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "התראות"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirimler"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اطلاعات"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اطلاعات"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
+          }
+        }
+      }
+    },
+    "Or with" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أو باستخدام"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O con"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "או עם"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veya ile"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "یا اس کے ساتھ"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "یا اس کے ساتھ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "或使用"
+          }
+        }
+      }
+    },
+    "Password" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلمة المرور"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "סיסמה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifre"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密码"
+          }
+        }
+      }
+    },
+    "Password changed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم تغيير كلمة المرور"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña cambiada"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הסיסמה שונתה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifre değiştirildi"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ تبدیل ہو گیا"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ تبدیل ہو گیا"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密码已更改"
+          }
+        }
+      }
+    },
+    "Please confirm your country code and enter your phone number." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يرجى تأكيد رمز بلدك وإدخال رقم هاتفك."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por favor, confirma tu código de país e ingresa tu número de teléfono."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אנא אמת את קוד המדינה שלך והזן את מספר הטלפון שלך."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfen ülke kodunuzu onaylayın ve telefon numaranızı girin."
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "براہ کرم اپنے ملک کا کوڈ تصدیق کریں اور اپنا فون نمبر درج کریں۔"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "براہ کرم اپنے ملک کا کوڈ تصدیق کریں اور اپنا فون نمبر درج کریں۔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请确认您的国家代码并输入您的电话号码。"
+          }
+        }
+      }
+    },
+    "Please type something you’ll remember" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "من فضلك اكتب شيئًا سأذكره"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por favor, escribe algo que recuerdes"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אנא הקלד משהו שתוכל לזכור"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfen hatırlayacağınız bir şey yazın"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "براہ کرم کچھ ایسا ٹائپ کریں جو آپ کو یاد رہے"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "براہ کرم کچھ ایسا ٹائپ کریں جو آپ کو یاد رہے"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请输入您会记住的内容"
+          }
+        }
+      }
+    },
+    "Portfolio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المحفظة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Portafolio"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פורטפוליו"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Portföy"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پورٹ فولیو"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پورٹ فولیو"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "作品集"
+          }
+        }
+      }
+    },
+    "Privacy Policies" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سياسات الخصوصية"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Políticas de Privacidad"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מדיניות פרטיות"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gizlilik Politikaları"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پرائیویسی پالیسیاں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پرائیویسی پالیسیاں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐私政策"
+          }
+        }
+      }
+    },
+    "Privacy, security, change email or number" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخصوصية، الأمان، تغيير البريد الإلكتروني أو الرقم"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacidad, seguridad, cambiar correo o número"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פרטיות, אבטחה, שינוי דוא\"ל או מספר"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gizlilik, güvenlik, e-posta veya numara değişikliği"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پرائیویسی، سیکیورٹی، ای میل یا نمبر تبدیل کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پرائیویسی، سیکیورٹی، ای میل یا نمبر تبدیل کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐私、安全、更改电子邮件或号码"
+          }
+        }
+      }
+    },
+    "Profile" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الملف الشخصي"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perfil"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פרופיל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروفائل"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروفائل"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "个人资料"
+          }
+        }
+      }
+    },
+    "Profile Links" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "روابط الملف الشخصي"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enlaces del Perfil"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "קישורים לפרופיל"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil Bağlantıları"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروفائل لنکس"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروفائل لنکس"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "个人资料链接"
+          }
+        }
+      }
+    },
+    "Project Description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وصف المشروع"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descripción del Proyecto"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תיאור פרויקט"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proje Açıklaması"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروجیکٹ کی تفصیل"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروجیکٹ کی تفصیل"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "项目描述"
+          }
+        }
+      }
+    },
+    "Project Name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم المشروع"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre del Proyecto"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שם פרויקט"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proje Adı"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروجیکٹ کا نام"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروجیکٹ کا نام"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "项目名称"
+          }
+        }
+      }
+    },
+    "Projects" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المشاريع"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyectos"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פרויקטים"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Projeler"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروجیکٹس"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پروجیکٹس"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "项目"
+          }
+        }
+      }
+    },
+    "Recent Activities" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النشاطات الأخيرة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actividades Recientes"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פעילויות אחרונות"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son Etkinlikler"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حالیہ سرگرمیاں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حالیہ سرگرمیاں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最近活动"
+          }
+        }
+      }
+    },
+    "Remember me" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تذكرني"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recuérdame"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "זכור אותי"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beni hatırla"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مجھے یاد رکھیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مجھے یاد رکھیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "记住我"
+          }
+        }
+      }
+    },
+    "Reset password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة تعيين كلمة المرور"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restablecer contraseña"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אפס סיסמה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreyi sıfırla"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ ری سیٹ کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پاس ورڈ ری سیٹ کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置密码"
+          }
+        }
+      }
+    },
+    "Retype New Password" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أعد كتابة كلمة المرور الجديدة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vuelve a escribir la nueva contraseña"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הקלד מחדש את הסיסמה החדשה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Şifreyi Yeniden Yazın"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نیا پاس ورڈ دوبارہ ٹائپ کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نیا پاس ورڈ دوبارہ ٹائپ کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新输入新密码"
+          }
+        }
+      }
+    },
+    "Search" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بحث"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buscar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חיפוש"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ara"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تلاش کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تلاش کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索"
+          }
+        }
+      }
+    },
+    "Security" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأمان"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seguridad"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אבטחה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güvenlik"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سیکیورٹی"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سیکیورٹی"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全"
+          }
+        }
+      }
+    },
+    "Send code" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إرسال الرمز"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enviar código"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שלח קוד"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kodu gönder"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کوڈ بھیجیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کوڈ بھیجیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发送验证码"
+          }
+        }
+      }
+    },
+    "Send code again" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إرسال الرمز مرة أخرى"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enviar código de nuevo"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שלח קוד שוב"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kodu tekrar gönder"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کوڈ دوبارہ بھیجیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کوڈ دوبارہ بھیجیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新发送验证码"
+          }
+        }
+      }
+    },
+    "Send Feedback" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إرسال تعليق"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enviar Comentarios"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שלח משוב"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geri Bildirim Gönder"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فیڈ بیک بھیجیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رائے بھیجیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发送反馈"
+          }
+        }
+      }
+    },
+    "Share" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشاركة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compartir"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שתף"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paylaş"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شیئر کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شیئر کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享"
+          }
+        }
+      }
+    },
+    "Sign up" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسجيل حساب جديد"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regístrate"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הרשם"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kayıt ol"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سائن اپ کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سائن اپ کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "注册"
+          }
+        }
+      }
+    },
+    "Skip" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تخطي"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saltar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "דלג"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atla"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "چھوڑ دیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "چھوڑ دیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跳过"
+          }
+        }
+      }
+    },
+    "SMS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رسالة نصية"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SMS"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SMS"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SMS"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ایس ایم ایس"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ایس ایم ایس"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "短信"
+          }
+        }
+      }
+    },
+    "Storage and data" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التخزين والبيانات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Almacenamiento y datos"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אחסון ונתונים"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depolama ve veri"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسٹوریج اور ڈیٹا"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسٹوریج اور ڈیٹا"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "存储和数据"
+          }
+        }
+      }
+    },
+    "Swift Camp Repo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مستودع سويفت كامب"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repositorio de Swift Camp"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מאגר סוויף קמפ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift Camp Deposu"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سوئفٹ کیمپ ریپو"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سویفٹ کیمپ ریپو"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift 训练营仓库"
+          }
+        }
+      }
+    },
+    "Swift Documentation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "توثيق Swift"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documentación de Swift"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תיעוד סוויף"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift Belgeleri"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سوئفٹ دستاویزات"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سویفٹ دستاویزات"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift 文档"
+          }
+        }
+      }
+    },
+    "Swift Guidances" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إرشادات سويفت"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guías de Swift"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הנחיות של סוויף"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift Rehberleri"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سوئفٹ رہنمائیاں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سویفٹ رہنمائی"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift 指南"
+          }
+        }
+      }
+    },
+    "Swift UI" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "واجهة سويفت"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift UI"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ממשק משתמש של סוויף"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift UI"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سوئفٹ یو آئی"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سویفٹ یو آئی"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift UI"
+          }
+        }
+      }
+    },
+    "Swift UI Components" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مكونات واجهة سويفت"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Componentes de Swift UI"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "רכיבי ממשק משתמש של סוויף"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift UI Bileşenleri"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سوئفٹ یو آئی اجزاء"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سویفٹ یو آئی اجزاء"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift UI 组件"
+          }
+        }
+      }
+    },
+    "Tech Stack" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المجموعة التقنية"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tecnologías"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ערימה טכנולוגית"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teknoloji Yığını"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ٹیک اسٹیک"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ٹیک اسٹیک"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "技术栈"
+          }
+        }
+      }
+    },
+    "Theme, wallpapers, chat history" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "السمة، الخلفيات، سجل المحادثات"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tema, fondos de pantalla, historial de chat"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ערכה, טקסטות רקע, הסטוריי צ'אט"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tema, duvar kağıtları, sohbet geçmişi"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تھیم، وال پیپرز، چیٹ ہسٹری"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تھیم، وال پیپرز، چیٹ ہسٹری"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主题、壁纸、聊天记录"
+          }
+        }
+      }
+    },
+    "This meaningful project is made possible thanks to the generous support of MasterFabric Technology Information Inc. and EduTech. Aiming to promote knowledge and innovation for the benefit of society, We thank them for empowering us to create this non-profit project." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هذا المشروع الهادف أصبح ممكناً بفضل الدعم السخي من شركة ماستر فابريك لتكنولوجيا المعلومات وإيدوتك. نهدف إلى تعزيز المعرفة والابتكار لصالح المجتمع، ونشكرهم على تمكيننا من إنشاء هذا المشروع غير الربحي."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este proyecto significativo es posible gracias al generoso apoyo de MasterFabric Technology Information Inc. y EduTech. Con el objetivo de promover el conocimiento y la innovación en beneficio de la sociedad, les agradecemos por permitirnos crear este proyecto sin fines de lucro."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הפרויקט המשמעותי הזה מתאפשר בזכות התמיכה הנדיבה של MasterFabric Technology Information Inc. ו-EduTech. השואפים לקדם ידע וחדשנות לטובת החברה. אנו מודים להם על כך שנתנו לנו את הכוח ליצור את הפרויקט הלא-רווחי הזה."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu anlamlı proje, MasterFabric Technology Information Inc. ve EduTech'in cömert desteği sayesinde mümkün olmuştur. Toplum yararına bilgi ve yeniliği teşvik etmeyi amaçlayan bu kar amacı gütmeyen projeyi yaratmamıza olanak sağladıkları için onlara teşekkür ederiz."
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "یہ بامعنی پروجیکٹ ماسٹر فیبرک ٹیکنالوجی انفارمیشن انکارپوریشن اور ایجوٹیک کی فراخدلانہ حمایت کی بدولت ممکن ہوا ہے۔ معاشرے کے فائدے کے لئے علم اور جدت کو فروغ دینے کا مقصد رکھتے ہوئے، ہم ان کا شکریہ ادا کرتے ہیں کہ انہوں نے ہمیں یہ غیر منافع بخش پروجیکٹ بنانے کے قابل بنایا۔"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "یہ بامعنی پروجیکٹ ماسٹر فیبرک ٹیکنالوجی انفارمیشن انک اور ایجوٹیک کی فراخدلانہ حمایت کی بدولت ممکن ہوا ہے۔ معاشرے کے فائدے کے لیے علم اور جدت کو فروغ دینے کے مقصد سے، ہم ان کا شکریہ ادا کرتے ہیں کہ انہوں نے ہمیں یہ غیر منافع بخش پروجیکٹ بنانے کے قابل بنایا۔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这个有意义的项目得益于 MasterFabric 技术信息公司和 EduTech 的慷慨支持。为了促进知识和创新以造福社会，我们感谢他们赋予我们创建这个非营利项目的能力。"
+          }
+        }
+      }
+    },
+    "Title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العنوان"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Título"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כותרת"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlık"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عنوان"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عنوان"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "标题"
+          }
+        }
+      }
+    },
+    "Two-Factor Authentication" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المصادقة الثنائية"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autenticación de Dos Factores"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אימות דו-שלבי"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İki Faktörlü Kimlik Doğrulama"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دو فیکٹر تصدیق"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دو عنصر کی تصدیق"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "双因素认证"
+          }
+        }
+      }
+    },
+    "Type your message here." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اكتب رسالتك هنا."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe tu mensaje aquí."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הקלד את ההודעה שלך כאן."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesajınızı buraya yazın."
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنا پیغام یہاں ٹائپ کریں۔"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنا پیغام یہاں ٹائپ کریں۔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在此输入您的消息。"
+          }
+        }
+      }
+    },
+    "Upload images in high quality regardless of your connection type. May use more data." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحميل الصور بجودة عالية بغض النظر عن نوع اتصالك. قد يستخدم المزيد من البيانات."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sube imágenes en alta calidad independientemente de tu tipo de conexión. Puede usar más datos."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "העלא תמונות באיכות גבוהה ללא קשר לסוג החיבור שלך. עשוי להשתמש ביותר נתונים."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bağlantı türünüz ne olursa olsun yüksek kalitede görüntü yükleyin. Daha fazla veri kullanabilir."
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنی کنکشن کی قسم سے قطع نظر اعلی معیار میں تصاویر اپ لوڈ کریں۔ زیادہ ڈیٹا استعمال ہو سکتا ہے۔"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنی کنکشن کی قسم سے قطع نظر اعلی معیار میں تصاویر اپ لوڈ کریں۔ زیادہ ڈیٹا استعمال ہو سکتا ہے۔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无论您的连接类型如何，都可以上传高质量图片。可能会消耗更多数据。"
+          }
+        }
+      }
+    },
+    "User Activity History" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجل نشاط المستخدم"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historial de Actividad del Usuario"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "היסטוריית פעילות משתמש"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanıcı Etkinlik Geçmişi"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صارف کی سرگرمی کی تاریخ"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صارف کی سرگرمی کی تاریخ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用户活动历史"
+          }
+        }
+      }
+    },
+    "Username" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم المستخدم"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre de usuario"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שם משתמש"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanıcı Adı"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صارف کا نام"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صارف کا نام"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用户名"
+          }
+        }
+      }
+    },
+    "Verify" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحقق"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verificar"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אמת"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doğrula"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصدیق کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصدیق کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "验证"
+          }
+        }
+      }
+    },
+    "Verify OTP" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحقق من رمز OTP"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verificar OTP"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אמת קוד OTP"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OTP'yi Doğrula"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "او ٹی پی کی تصدیق کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "او ٹی پی کی تصدیق کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "验证 OTP"
+          }
+        }
+      }
+    },
+    "Verify your phone number" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحقق من رقم هاتفك"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verifica tu número de teléfono"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אמת את מספר הטלפון שלך"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Telefon numaranızı doğrulayın"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنے فون نمبر کی تصدیق کریں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اپنے فون نمبر کی تصدیق کریں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "验证您的电话号码"
+          }
+        }
+      }
+    },
+    "We detected unrecognized logins" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اكتشفنا عمليات تسجيل دخول غير معروفة"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hemos detectado inicios de sesión no reconocidos"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "זיהינו כניסות לא מזוהות"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanınmayan girişler tespit ettik"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہم نے غیر شناخت شدہ لاگ ان کا پتہ لگایا ہے"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہم نے غیر شناخت شدہ لاگ ان کا پتہ لگایا ہے"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我们检测到未识别的登录"
+          }
+        }
+      }
+    },
+    "We’ve sent a code to helloworld@gmail.com" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لقد أرسلنا رمزًا إلى helloworld@gmail.com"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hemos enviado un código a helloworld@gmail.com"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שלחנו קוד ל-helloworld@gmail.com"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "helloworld@gmail.com adresine bir kod gönderdik"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہم نے helloworld@gmail.com پر ایک کوڈ بھیجا ہے"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہم نے helloworld@gmail.com پر ایک کوڈ بھیجا ہے"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我们已向 helloworld@gmail.com 发送了验证码"
+          }
+        }
+      }
+    },
+    "We’ve sent an SMS with an activation code to your phone +33 2 94 27 84 11" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لقد أرسلنا رسالة نصية تحتوي على رمز التفعيل إلى هاتفك +33 2 94 27 84 11"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hemos enviado un SMS con un código de activación a tu teléfono +33 2 94 27 84 11"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שלחנו הודעת SMS עם קוד הפעלה לטלפון שלך +33 2 94 27 84 11"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Telefonunuza +33 2 94 27 84 11 numarasına bir aktivasyon kodu içeren SMS gönderdik"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہم نے آپ کے فون +33 2 94 27 84 11 پر ایکٹیویشن کوڈ کے ساتھ ایک ایس ایم ایس بھیجا ہے"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہم نے آپ کے فون +33 2 94 27 84 11 پر ایکٹیویشن کوڈ کے ساتھ ایک ایس ایم ایس بھیجا ہے"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我们已向您的手机 +33 2 94 27 84 11 发送了包含激活码的短信"
+          }
+        }
+      }
+    },
+    "Welcome to your new app." : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرحباً بك في تطبيقك الجديد."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido a tu nueva aplicación."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ברוך הבא לאפליקציה החדשה שלך."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni uygulamanıza hoş geldiniz."
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کی نئی ایپ میں خوش آمدید۔"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کی نئی ایپ میں خوش آمدید۔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "欢迎使用您的新应用。"
+          }
+        }
+      }
+    },
+    "You are typing now @All" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنت تكتب الآن @الكل"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estás escribiendo ahora @Todos"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "אתה מקליד עכשיו @All"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şu anda yazıyorsunuz @All"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ ابھی @All ٹائپ کر رہے ہیں"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ ابھی @All ٹائپ کر رہے ہیں"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您正在输入 @所有人"
+          }
+        }
+      }
+    },
+    "Your email" : {
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بريدك الإلكتروني"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu correo electrónico"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "האימייל שלך"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-postanız"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کا ای میل"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کا ای میل"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的电子邮件"
+          }
+        }
+      }
+    },
+    "Your full name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسمك الكامل"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu nombre completo"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שמך המלא"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam adınız"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کا پورا نام"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کا پورا نام"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的全名"
+          }
+        }
+      }
+    },
+    "Your password has been changed succesfully" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم تغيير كلمة المرور الخاصة بك بنجاح"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu contraseña ha sido cambiada exitosamente"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הסיסמה שלך שונתה בהצלחה"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreniz başarıyla değiştirildi"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کا پاس ورڈ کامیابی سے تبدیل ہو گیا ہے"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کا پاس ورڈ کامیابی کے ساتھ تبدیل ہو گیا ہے"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的密码已成功更改"
+          }
+        }
+      }
+    },
+    "Your username" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar-AE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم المستخدم الخاص بك"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu nombre de usuario"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שם המשתמש שלך"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanıcı adınız"
+          }
+        },
+        "ur-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کا صارف نام"
+          }
+        },
+        "ur-PK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آپ کا صارف نام"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的用户名"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
