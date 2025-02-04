@@ -139,8 +139,8 @@
 				556B28552D5039F900D20F1B /* FirebaseCore in Frameworks */,
 				89C9FF242D45060300CDF043 /* OneSignalLocation in Frameworks */,
 				89C9FF202D44F4C200CDF043 /* OneSignalFramework in Frameworks */,
-
 				D44590F12D50AA4F004B54C8 /* FirebaseAuth in Frameworks */,
+
 				01EA61C72D4EA181004E3FC8 /* FirebaseCore in Frameworks */,
 				01EA61C12D4E9ED0004E3FC8 /* FirebaseAnalytics in Frameworks */,
 
@@ -151,6 +151,8 @@
 				556B285B2D503B0000D20F1B /* FirebasePerformance in Frameworks */,
 				556B28572D5039F900D20F1B /* FirebaseFirestore in Frameworks */,
 				556B28532D5039F900D20F1B /* FirebaseAnalytics in Frameworks */,
+
+
 
 
 			);
@@ -317,15 +319,12 @@
 				89C9FF212D44F4D000CDF043 /* OneSignalInAppMessages */,
 				89C9FF232D45060300CDF043 /* OneSignalLocation */,
 				3CCB621E2D4E2777006EBB09 /* SQLite */,
-
-				01EA61C02D4E9ED0004E3FC8 /* FirebaseAnalytics */,
-				01EA61C22D4E9ED0004E3FC8 /* FirebaseCrashlytics */,
-				01EA61C42D4E9ED0004E3FC8 /* FirebasePerformance */,
-				01EA61C62D4EA181004E3FC8 /* FirebaseCore */,
 				D44590F02D50AA4F004B54C8 /* FirebaseAuth */,
+
 
 				D44591002D50C425004B54C8 /* GoogleSignIn */,
 				D44591022D50C425004B54C8 /* GoogleSignInSwift */,
+
 
 
 				556B28522D5039F900D20F1B /* FirebaseAnalytics */,
@@ -333,7 +332,6 @@
 				556B28562D5039F900D20F1B /* FirebaseFirestore */,
 				556B28582D503AC000D20F1B /* FirebaseCrashlytics */,
 				556B285A2D503B0000D20F1B /* FirebasePerformance */,
-
 
 			);
 			productName = DemoApp;
@@ -887,7 +885,6 @@
 		};
 		D44590F02D50AA4F004B54C8 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 01EA61BF2D4E9ED0004E3FC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
 		D44591002D50C425004B54C8 /* GoogleSignIn */ = {
