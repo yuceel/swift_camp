@@ -1,46 +1,47 @@
-import Foundation
-import Combine
 import FirebaseAuth
+import GoogleSignIn
+import UIKit
 
 final class LoginPresenter: ObservableObject {
     private let wireframe: LoginWireframeInterface
-
-    @Published var loginState: String? = nil
-    private var cancellables = Set<AnyCancellable>()
 
     init(wireframe: LoginWireframeInterface) {
         self.wireframe = wireframe
     }
 
-    func handleLogin(email: String, password: String) {
-        print("Logging in with email: \(email)")
-
+    func handleGoogleLogin() {
         
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let rootViewController = windowScene.windows.first?.rootViewController else {
+            return
+        }
+
+        GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) { result, error in
             if let error = error {
-                self?.loginState = "Login failed: \(error.localizedDescription)"
-            } else {
-                self?.loginState = "Login successful!"
-                self?.handleSuccessfulLogin()
+                print("Google Sign-In failed: \(error.localizedDescription)")
+                return
+            }
+
+            guard let authentication = result?.user.idToken else {
+                print("Failed to get Google ID Token")
+                return
+            }
+
+            let credential = GoogleAuthProvider.credential(withIDToken: authentication.tokenString, accessToken: result!.user.accessToken.tokenString)
+
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    print("Firebase Sign-In with Google failed: \(error.localizedDescription)")
+                } else {
+                    print("User signed in with Google: \(authResult?.user.email ?? "No email")")
+                    self.handleSuccessfulLogin()
+                }
             }
         }
     }
 
     func handleSuccessfulLogin() {
-        print("Login was successful! Navigating to next screen.")
-        
+        print("Login was successful!")
         wireframe.navigateToHome()
-    }
-
-    func handleGitHubLogin() {
-        print("GitHub Login (Henüz implemente edilmedi)")
-    }
-
-    func handleGoogleLogin() {
-        print("Google Login (Henüz implemente edilmedi)")
-    }
-
-    func handleAppleLogin() {
-        print("Apple Login (Henüz implemente edilmedi)")
     }
 }
