@@ -1,6 +1,8 @@
 import UIKit
 import Combine
 import FirebaseCore
+import FirebaseAuth
+import GoogleSignIn
 import OneSignalFramework
 
 @UIApplicationMain
@@ -8,7 +10,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
 
     private let oneSignalAppID = EnvironmentHelper.shared.oneSignalAppID
 
+
     // MARK: - Public properties -
+
     var window: UIWindow?
     var initializers: [Initializable] = [] {
         didSet { initializers.forEach { $0.initialize() } }
@@ -19,7 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+
+        // Firebase setup
+
         // Firebase configure
+
         FirebaseApp.configure()
 
         // OneSignal initialization
@@ -30,6 +38,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
             LoggerHelper.shared.info("User accepted notifications: \(accepted)")
             self.updateAppPermissions(notificationAllowed: accepted)
         }, fallbackToSettings: true)
+
+
+        // Google Sign-In Configuration
+        setupGoogleSignIn()
+
+        // Local database setup
+        setupAppDatabase()
+        storeAppInformation()
+        logDatabaseRecords()
+
+
+
+        
 
         // LocalStorageHelper initialization
         LoggerHelper.shared.debug("Initializing local storage database.")
@@ -43,8 +64,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
 
         logDatabaseRecords()
 
+
         startObservingAppStateChanges()
         
+
         
         // MARK: - MetaFacebookEventHelper Log
         LoggerHelper.shared.info("Initializing MetaFacebookEventHelper logging.")
@@ -62,16 +85,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         LoggerHelper.shared.info("Application did finish launching.")
             
 
+
         // Configure initializers
-        LoggerHelper.shared.debug("Setting up app initializers.")
         initializers = StartupInitializationBuilder()
             .setAppDelegate(self)
             .build(with: launchOptions)
 
         LoggerHelper.shared.info("Application did finish launching.")
+        return true
+    }
+
+
+    // MARK: - Google Sign-In Configuration
+    private func setupGoogleSignIn() {
+        
+        guard let clientID = FirebaseApp.app()?.options.clientID else {
+            fatalError("CLIENT_ID not found in GoogleService-Info.plist")
+        }
+        GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: clientID)
+        LoggerHelper.shared.info("Google Sign-In configured successfully.")
+    }
+
+
+    // MARK: - Google Sign-In URL Handling
+    func application(
+        _ app: UIApplication,
+        open url: URL,
+        options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+    ) -> Bool {
+        return GIDSignIn.sharedInstance.handle(url)
+    }
+
+
+    
 
         return true
     }
+
 
     // MARK: - Observe App State Changes Using WorkManagerHelper
     private func startObservingAppStateChanges() {
@@ -91,6 +141,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
             }
             .store(in: &AppStateManager.cancellables)
     }
+
 
 
     // MARK: - App Database Setup
@@ -114,6 +165,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
 
         let deviceModel = UIDevice.current.model
         let osVersion = UIDevice.current.systemVersion
+        let installDate = DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .short)
+
+        let subID = "unknown"
+
+
+        let deviceModel = UIDevice.current.model
+        let osVersion = UIDevice.current.systemVersion
         let installDate = DateFormatter.localizedString(
             from: Date(),
             dateStyle: .medium,
@@ -123,17 +181,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         // Fetch OneSignal Subscriber ID
         let subID = "unknown" // TODO: Replace with actual fetching logic
 
-        // Fetch existing records
+
         let records = LocalStorageHelper.shared.fetchData(tableName: "AppInfo")
 
         if records.count > 1 {
-            // Delete all existing records if there are more than 1
             LoggerHelper.shared.warning("Multiple records found in AppInfo table. Deleting all records.")
             LocalStorageHelper.shared.deleteData(tableName: "AppInfo")
         }
 
         if records.isEmpty || records.count > 1 {
-            // Insert a new record if the table is empty or all records were deleted
             LoggerHelper.shared.debug("No valid record found. Inserting a new AppInfo record.")
             LocalStorageHelper.shared.insertEncryptedData(
                 tableName: "AppInfo",
@@ -142,11 +198,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
                     "deviceModel": deviceModel,
                     "osVersion": osVersion,
                     "installDate": installDate,
-                    "notificationAllowed": false // Default to false initially
+                    "notificationAllowed": false
                 ]
             )
         } else {
-            // Update the existing record
             LoggerHelper.shared.debug("Single record found. Updating the AppInfo record.")
             LocalStorageHelper.shared.updateData(
                 tableName: "AppInfo",
@@ -157,21 +212,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
                     "installDate": installDate,
                     "notificationAllowed": false
                 ],
-                condition: "id = 1" // Assuming the first record has id = 1
+                condition: "id = 1"
             )
         }
 
         LoggerHelper.shared.info("App information stored or updated successfully.")
     }
 
+
+    private func updateAppPermissions(notificationAllowed: Bool) {
+        LoggerHelper.shared.debug("Updating app permissions in local database.")
+
     // MARK: - App Permissions
     private func updateAppPermissions(notificationAllowed: Bool) {
         LoggerHelper.shared.debug("Updating app permissions in local database.")
 
+
         LocalStorageHelper.shared.updateData(
             tableName: "AppInfo",
             data: ["notificationAllowed": notificationAllowed],
-            condition: "id = 1" // Assuming single entry for simplicity
+            condition: "id = 1"
         )
 
         LoggerHelper.shared.info("App permissions updated successfully.")
@@ -194,10 +254,13 @@ private func logDatabaseRecords() {
     }
 }
 
+
+
 // MARK: - Global Cancellables Management
 private enum AppStateManager {
     static var cancellables: Set<AnyCancellable> = []
 }
+
 
 
 
