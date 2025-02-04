@@ -7,71 +7,71 @@ import OneSignalFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
-
+    
     private let oneSignalAppID = EnvironmentHelper.shared.oneSignalAppID
-
-
+    
+    
     // MARK: - Public properties -
-
+    
     var window: UIWindow?
     var initializers: [Initializable] = [] {
         didSet { initializers.forEach { $0.initialize() } }
     }
-
+    
     // MARK: - Lifecycle -
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-
+        
         // Firebase setup
-
+        
         // Firebase configure
-
+        
         FirebaseApp.configure()
-
+        
         // OneSignal initialization
         LoggerHelper.shared.info("Initializing OneSignal with App ID.")
         OneSignal.initialize(oneSignalAppID, withLaunchOptions: launchOptions)
-
+        
         OneSignal.Notifications.requestPermission({ accepted in
             LoggerHelper.shared.info("User accepted notifications: \(accepted)")
             self.updateAppPermissions(notificationAllowed: accepted)
         }, fallbackToSettings: true)
-
-
+        
+        
         // Google Sign-In Configuration
         setupGoogleSignIn()
-
+        
         // Local database setup
         setupAppDatabase()
         storeAppInformation()
         logDatabaseRecords()
-
-
-
         
-
+        
+        
+        
+        
         // LocalStorageHelper initialization
         LoggerHelper.shared.debug("Initializing local storage database.")
         LocalStorageHelper.shared.initializeDatabase()
-
+        
         // Configure app database
         setupAppDatabase()
-
+        
         // Store app information
         storeAppInformation()
-
+        
         logDatabaseRecords()
-
-
+        
+        
         startObservingAppStateChanges()
         
-
+        
         
         // MARK: - MetaFacebookEventHelper Log
         LoggerHelper.shared.info("Initializing MetaFacebookEventHelper logging.")
-
+        
         // App Launch event
         MetaFacebookEventHelper.shared.logCustomEvent(
             eventName: "AppLaunch",
@@ -81,21 +81,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
                 "user": "USER_ID"
             ]
         )
-
+        
         LoggerHelper.shared.info("Application did finish launching.")
-            
-
-
+        
+        
+        
         // Configure initializers
         initializers = StartupInitializationBuilder()
             .setAppDelegate(self)
             .build(with: launchOptions)
-
+        
         LoggerHelper.shared.info("Application did finish launching.")
         return true
     }
-
-
+    
+    
     // MARK: - Google Sign-In Configuration
     private func setupGoogleSignIn() {
         
@@ -105,8 +105,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: clientID)
         LoggerHelper.shared.info("Google Sign-In configured successfully.")
     }
-
-
+    
+    
     // MARK: - Google Sign-In URL Handling
     func application(
         _ app: UIApplication,
@@ -115,12 +115,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
     ) -> Bool {
         return GIDSignIn.sharedInstance.handle(url)
     }
-
-
     
 
-        return true
-    }
+        
+    
 
 
     // MARK: - Observe App State Changes Using WorkManagerHelper
@@ -162,13 +160,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
 
     private func storeAppInformation() {
         LoggerHelper.shared.debug("Storing app information in local database.")
-
-        let deviceModel = UIDevice.current.model
-        let osVersion = UIDevice.current.systemVersion
-        let installDate = DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .short)
-
-        let subID = "unknown"
-
 
         let deviceModel = UIDevice.current.model
         let osVersion = UIDevice.current.systemVersion
@@ -219,10 +210,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         LoggerHelper.shared.info("App information stored or updated successfully.")
     }
 
-
-    private func updateAppPermissions(notificationAllowed: Bool) {
-        LoggerHelper.shared.debug("Updating app permissions in local database.")
-
     // MARK: - App Permissions
     private func updateAppPermissions(notificationAllowed: Bool) {
         LoggerHelper.shared.debug("Updating app permissions in local database.")
@@ -236,7 +223,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
 
         LoggerHelper.shared.info("App permissions updated successfully.")
     }
-}
+
 
 // MARK: - Log Database Records
 private func logDatabaseRecords() {
@@ -264,3 +251,4 @@ private enum AppStateManager {
 
 
 
+}
