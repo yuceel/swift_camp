@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="OneSignalNotificationServiceExtension/InfoPlist.xcstrings" source-language="en" target-language="he" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>OneSignalNotificationServiceExtension</source>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>OneSignalNotificationServiceExtension</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source/>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SwiftCampDevs/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="he">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>SwiftCampDevs</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SwiftCampDevs/Localizable.xcstrings" source-language="en" target-language="he" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
+    </header>
+    <body>
+      <trans-unit id="" xml:space="preserve">
+        <source/>
+        <note/>
+      </trans-unit>
+      <trans-unit id=" " xml:space="preserve">
+        <source> </source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="About Me" xml:space="preserve">
+        <source>About Me</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Account" xml:space="preserve">
+        <source>Account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Accounts" xml:space="preserve">
+        <source>Accounts</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add new project" xml:space="preserve">
+        <source>Add new project</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Already have an account? Log in" xml:space="preserve">
+        <source>Already have an account? Log in</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Apple" xml:space="preserve">
+        <source>Apple</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Authentication App" xml:space="preserve">
+        <source>Authentication App</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Back to login" xml:space="preserve">
+        <source>Back to login</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="By creating an account or signing you agree to our Terms and Conditions" xml:space="preserve">
+        <source>By creating an account or signing you agree to our Terms and Conditions</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change  Password" xml:space="preserve">
+        <source>Change  Password</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change Password" xml:space="preserve">
+        <source>Change Password</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change Your Life" xml:space="preserve">
+        <source>Change Your Life</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Chats" xml:space="preserve">
+        <source>Chats</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Choose Your Language" xml:space="preserve">
+        <source>Choose Your Language</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Choose the Your Country" xml:space="preserve">
+        <source>Choose the Your Country</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Confirm Password" xml:space="preserve">
+        <source>Confirm Password</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Confirm new password" xml:space="preserve">
+        <source>Confirm new password</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Contact Us" xml:space="preserve">
+        <source>Contact Us</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Contact us" xml:space="preserve">
+        <source>Contact us</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Continue" xml:space="preserve">
+        <source>Continue</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Continue with Apple" xml:space="preserve">
+        <source>Continue with Apple</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Continue with Email" xml:space="preserve">
+        <source>Continue with Email</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Continue with Google" xml:space="preserve">
+        <source>Continue with Google</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Copy link" xml:space="preserve">
+        <source>Copy link</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Country" xml:space="preserve">
+        <source>Country</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create account" xml:space="preserve">
+        <source>Create account</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Don’t have an account?" xml:space="preserve">
+        <source>Don’t have an account?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Don’t have an account? Sign up" xml:space="preserve">
+        <source>Don’t have an account? Sign up</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Don’t worry! It happens. Please enter the email associated with your account." xml:space="preserve">
+        <source>Don’t worry! It happens. Please enter the email associated with your account.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit" xml:space="preserve">
+        <source>Edit</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit Profile Information" xml:space="preserve">
+        <source>Edit Profile Information</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit profile information" xml:space="preserve">
+        <source>Edit profile information</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Education" xml:space="preserve">
+        <source>Education</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Effective Date: 04.01.2024&#10;&#10;At CL - Change Your Life, your privacy is our priority. This Privacy Policy explains how we collect, use, and protect your personal information when you use our application.&#10;&#10;Information We Collect&#10;&#10;We may collect the following types of information:&#10;&#9;•&#9;Personal Information: Name, email address, profile details, or other data you provide directly.&#10;&#9;•&#9;Usage Data: Device details, app interactions, and other non-personal information automatically collected.&#10;&#10;How We Use Your Information&#10;&#10;Your information helps us:&#10;&#9;•&#9;Improve and personalize your experience.&#10;&#9;•&#9;Analyze usage to enhance our services.&#10;&#9;•&#9;Send important updates or notifications.&#10;&#10;Sharing Your Information&#10;&#10;We never sell your data. We may share it with:&#10;&#9;•&#9;Service Providers: To help operate the app efficiently.&#10;&#9;•&#9;Legal Authorities: When required to comply with legal obligations.&#10;&#10;Your Rights&#10;&#10;You can:&#10;&#9;•&#9;Access or update your information.&#10;&#9;•&#9;Request data deletion.&#10;&#9;•&#9;Opt-out of marketing communications.&#10;&#10;For assistance, contact us at [Insert Email Address].&#10;&#10;Security&#10;&#10;We take reasonable measures to protect your data, but no system is entirely secure. Please use the app responsibly.&#10;&#10;Policy Updates&#10;&#10;We may update this policy periodically. Changes will be communicated within the app.&#10;&#10;Contact Us&#10;&#10;If you have any questions, reach out at [Insert Email Address].&#10;&#10;Your trust is important to us. Thank you for choosing CL - Change Your Life!" xml:space="preserve">
+        <source>Effective Date: 04.01.2024
+
+At CL - Change Your Life, your privacy is our priority. This Privacy Policy explains how we collect, use, and protect your personal information when you use our application.
+
+Information We Collect
+
+We may collect the following types of information:
+	•	Personal Information: Name, email address, profile details, or other data you provide directly.
+	•	Usage Data: Device details, app interactions, and other non-personal information automatically collected.
+
+How We Use Your Information
+
+Your information helps us:
+	•	Improve and personalize your experience.
+	•	Analyze usage to enhance our services.
+	•	Send important updates or notifications.
+
+Sharing Your Information
+
+We never sell your data. We may share it with:
+	•	Service Providers: To help operate the app efficiently.
+	•	Legal Authorities: When required to comply with legal obligations.
+
+Your Rights
+
+You can:
+	•	Access or update your information.
+	•	Request data deletion.
+	•	Opt-out of marketing communications.
+
+For assistance, contact us at [Insert Email Address].
+
+Security
+
+We take reasonable measures to protect your data, but no system is entirely secure. Please use the app responsibly.
+
+Policy Updates
+
+We may update this policy periodically. Changes will be communicated within the app.
+
+Contact Us
+
+If you have any questions, reach out at [Insert Email Address].
+
+Your trust is important to us. Thank you for choosing CL - Change Your Life!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Email" xml:space="preserve">
+        <source>Email</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Email address or phone number" xml:space="preserve">
+        <source>Email address or phone number</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable high-quality image uploads when connected to Wi-Fi to save mobile data." xml:space="preserve">
+        <source>Enable high-quality image uploads when connected to Wi-Fi to save mobile data.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enhance your account security by enabling two-factor authentication (2FA). 2FA adds an extra layer of protection by requiring a verification code in addition to your password during login, safeguarding your account from unauthorized access." xml:space="preserve">
+        <source>Enhance your account security by enabling two-factor authentication (2FA). 2FA adds an extra layer of protection by requiring a verification code in addition to your password during login, safeguarding your account from unauthorized access.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enter Contact" xml:space="preserve">
+        <source>Enter Contact</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enter Mail" xml:space="preserve">
+        <source>Enter Mail</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enter code" xml:space="preserve">
+        <source>Enter code</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enter your email address" xml:space="preserve">
+        <source>Enter your email address</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Error 404: Motivation Not Found? &#10;CL is here to help" xml:space="preserve">
+        <source>Error 404: Motivation Not Found? 
+CL is here to help</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Error 404: Motivation Not Found? &#10;CL is here to help. Create your account." xml:space="preserve">
+        <source>Error 404: Motivation Not Found? 
+CL is here to help. Create your account.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Experience" xml:space="preserve">
+        <source>Experience</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Explore" xml:space="preserve">
+        <source>Explore</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Explore the app" xml:space="preserve">
+        <source>Explore the app</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Female" xml:space="preserve">
+        <source>Female</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Forgot password?" xml:space="preserve">
+        <source>Forgot password?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Full Name" xml:space="preserve">
+        <source>Full Name</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Fullname" xml:space="preserve">
+        <source>Fullname</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Gender" xml:space="preserve">
+        <source>Gender</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="GitHub" xml:space="preserve">
+        <source>GitHub</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Google" xml:space="preserve">
+        <source>Google</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Have questions or need assistance? Contact us!" xml:space="preserve">
+        <source>Have questions or need assistance? Contact us!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Help" xml:space="preserve">
+        <source>Help</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Help cenre, contact us, privacy policy" xml:space="preserve">
+        <source>Help cenre, contact us, privacy policy</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hi, Welcome! 👋" xml:space="preserve">
+        <source>Hi, Welcome! 👋</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="High-Quality Uploads (Always)" xml:space="preserve">
+        <source>High-Quality Uploads (Always)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="High-Quality Uploads (Wi-Fi Only)" xml:space="preserve">
+        <source>High-Quality Uploads (Wi-Fi Only)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Home" xml:space="preserve">
+        <source>Home</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="I accept the terms and privacy policy" xml:space="preserve">
+        <source>I accept the terms and privacy policy</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Language" xml:space="preserve">
+        <source>Language</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log in" xml:space="preserve">
+        <source>Log in</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Log out from other devices. Select this if someone else used your account." xml:space="preserve">
+        <source>Log out from other devices. Select this if someone else used your account.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Mail" xml:space="preserve">
+        <source>Mail</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Male" xml:space="preserve">
+        <source>Male</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Message, group &amp; call tones" xml:space="preserve">
+        <source>Message, group &amp; call tones</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="My Portfolio" xml:space="preserve">
+        <source>My Portfolio</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Network usage, auto-download" xml:space="preserve">
+        <source>Network usage, auto-download</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New password" xml:space="preserve">
+        <source>New password</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Notifications" xml:space="preserve">
+        <source>Notifications</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Or with" xml:space="preserve">
+        <source>Or with</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Password" xml:space="preserve">
+        <source>Password</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Password changed" xml:space="preserve">
+        <source>Password changed</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Please confirm your country code and enter your phone number." xml:space="preserve">
+        <source>Please confirm your country code and enter your phone number.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Please type something you’ll remember" xml:space="preserve">
+        <source>Please type something you’ll remember</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Portfolio" xml:space="preserve">
+        <source>Portfolio</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Privacy Policies" xml:space="preserve">
+        <source>Privacy Policies</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Privacy policy" xml:space="preserve">
+        <source>Privacy policy</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Privacy, security, change email or number" xml:space="preserve">
+        <source>Privacy, security, change email or number</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Profile" xml:space="preserve">
+        <source>Profile</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Profile Links" xml:space="preserve">
+        <source>Profile Links</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Project Description" xml:space="preserve">
+        <source>Project Description</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Project Name" xml:space="preserve">
+        <source>Project Name</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Projects" xml:space="preserve">
+        <source>Projects</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Recent Activities" xml:space="preserve">
+        <source>Recent Activities</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remember me" xml:space="preserve">
+        <source>Remember me</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset password" xml:space="preserve">
+        <source>Reset password</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Retype New Password" xml:space="preserve">
+        <source>Retype New Password</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="SMS" xml:space="preserve">
+        <source>SMS</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Search" xml:space="preserve">
+        <source>Search</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Security" xml:space="preserve">
+        <source>Security</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Send Feedback" xml:space="preserve">
+        <source>Send Feedback</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Send code" xml:space="preserve">
+        <source>Send code</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Send code again" xml:space="preserve">
+        <source>Send code again</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Share" xml:space="preserve">
+        <source>Share</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sign up" xml:space="preserve">
+        <source>Sign up</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Skip" xml:space="preserve">
+        <source>Skip</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Storage and data" xml:space="preserve">
+        <source>Storage and data</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Swift Camp Repo" xml:space="preserve">
+        <source>Swift Camp Repo</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Swift Documentaion" xml:space="preserve">
+        <source>Swift Documentaion</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Swift Guidances" xml:space="preserve">
+        <source>Swift Guidances</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Swift UI" xml:space="preserve">
+        <source>Swift UI</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Swift UI Components" xml:space="preserve">
+        <source>Swift UI Components</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tech Stack" xml:space="preserve">
+        <source>Tech Stack</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Theme, wallpapers, chat history" xml:space="preserve">
+        <source>Theme, wallpapers, chat history</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This meaningful project is made possible thanks to the generous support of MasterFabric Technology Information Inc. and EduTech. Aiming to promote knowledge and innovation for the benefit of society, We thank them for empowering us to create this non-profit project." xml:space="preserve">
+        <source>This meaningful project is made possible thanks to the generous support of MasterFabric Technology Information Inc. and EduTech. Aiming to promote knowledge and innovation for the benefit of society, We thank them for empowering us to create this non-profit project.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Title" xml:space="preserve">
+        <source>Title</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Two - Factor Authentication" xml:space="preserve">
+        <source>Two - Factor Authentication</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Two-Factor Authentication" xml:space="preserve">
+        <source>Two-Factor Authentication</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Type your message here." xml:space="preserve">
+        <source>Type your message here.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Upload images in high quality regardless of your connection type. May use more data." xml:space="preserve">
+        <source>Upload images in high quality regardless of your connection type. May use more data.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="User Activity History" xml:space="preserve">
+        <source>User Activity History</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Username" xml:space="preserve">
+        <source>Username</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Verify" xml:space="preserve">
+        <source>Verify</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Verify OTP" xml:space="preserve">
+        <source>Verify OTP</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Verify your phone number" xml:space="preserve">
+        <source>Verify your phone number</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="We detected unrecognized logins" xml:space="preserve">
+        <source>We detected unrecognized logins</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Welcome to your new app." xml:space="preserve">
+        <source>Welcome to your new app.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="We’ve sent a code to helloworld@gmail.com" xml:space="preserve">
+        <source>We’ve sent a code to helloworld@gmail.com</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="We’ve sent an SMS with an activation code to your phone +33 2 94 27 84 11" xml:space="preserve">
+        <source>We’ve sent an SMS with an activation code to your phone +33 2 94 27 84 11</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You are typing now @All" xml:space="preserve">
+        <source>You are typing now @All</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your email" xml:space="preserve">
+        <source>Your email</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your full name" xml:space="preserve">
+        <source>Your full name</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your password has been changed succesfully" xml:space="preserve">
+        <source>Your password has been changed succesfully</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Your username" xml:space="preserve">
+        <source>Your username</source>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

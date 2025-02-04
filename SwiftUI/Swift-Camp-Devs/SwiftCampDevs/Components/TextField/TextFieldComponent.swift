@@ -67,9 +67,24 @@ struct SCTextField: View {
             }
         }
         .onChange(of: text) { newValue in
+            if type == .numeric || type == .phoneNumber {
+                // Allow only numeric characters for numeric and phone number fields
+                text = newValue.filter { $0.isNumber }
+            }
+            else if type == .password {
+                // Allow only English letters (uppercase and lowercase), numbers, and special characters (excluding spaces) for password
+                let allowedCharacterSet = CharacterSet(charactersIn: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+={}[]|\\:;\"'<>,.?/`~-")
+                
+                // Filter out any characters that are not in the allowed set
+                text = newValue.filter { $0.unicodeScalars.allSatisfy { allowedCharacterSet.contains($0) } }
+            }
+            
+            // Optional: Apply length limit for the text field (if maxLength is set)
             if let maxLength = maxLength, newValue.count > maxLength {
                 text = String(newValue.prefix(maxLength))
             }
+
+            // Additional validation for other input types
             validateInput(newValue)
         }
     }
