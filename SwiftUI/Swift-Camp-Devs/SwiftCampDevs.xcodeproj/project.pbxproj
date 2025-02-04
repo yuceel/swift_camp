@@ -44,6 +44,7 @@
 		89C9FF202D44F4C200CDF043 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 89C9FF1F2D44F4C200CDF043 /* OneSignalFramework */; };
 		89C9FF222D44F4D000CDF043 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 89C9FF212D44F4D000CDF043 /* OneSignalInAppMessages */; };
 		89C9FF242D45060300CDF043 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 89C9FF232D45060300CDF043 /* OneSignalLocation */; };
+		89EBF4EE2D52505500D6FB92 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 89EBF4ED2D52505500D6FB92 /* Mixpanel */; };
 		D44590F12D50AA4F004B54C8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D44590F02D50AA4F004B54C8 /* FirebaseAuth */; };
 		D44591012D50C425004B54C8 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D44591002D50C425004B54C8 /* GoogleSignIn */; };
 		D44591032D50C425004B54C8 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D44591022D50C425004B54C8 /* GoogleSignInSwift */; };
@@ -125,10 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				D44591032D50C425004B54C8 /* GoogleSignInSwift in Frameworks */,
-				01EA61C52D4E9ED0004E3FC8 /* FirebasePerformance in Frameworks */,
- 				
 				3CCB621F2D4E2777006EBB09 /* SQLite in Frameworks */,
 				89C9FF222D44F4D000CDF043 /* OneSignalInAppMessages in Frameworks */,
 				7F313A33292BC8C70048C74C /* RxSwift in Frameworks */,
@@ -139,21 +137,12 @@
 				89C9FF242D45060300CDF043 /* OneSignalLocation in Frameworks */,
 				89C9FF202D44F4C200CDF043 /* OneSignalFramework in Frameworks */,
 				D44590F12D50AA4F004B54C8 /* FirebaseAuth in Frameworks */,
-
-				01EA61C72D4EA181004E3FC8 /* FirebaseCore in Frameworks */,
-				01EA61C12D4E9ED0004E3FC8 /* FirebaseAnalytics in Frameworks */,
-
+				89EBF4EE2D52505500D6FB92 /* Mixpanel in Frameworks */,
 				D44591012D50C425004B54C8 /* GoogleSignIn in Frameworks */,
-
-
 				556B28592D503AC000D20F1B /* FirebaseCrashlytics in Frameworks */,
 				556B285B2D503B0000D20F1B /* FirebasePerformance in Frameworks */,
 				556B28572D5039F900D20F1B /* FirebaseFirestore in Frameworks */,
 				556B28532D5039F900D20F1B /* FirebaseAnalytics in Frameworks */,
-
-
-
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,19 +308,14 @@
 				89C9FF232D45060300CDF043 /* OneSignalLocation */,
 				3CCB621E2D4E2777006EBB09 /* SQLite */,
 				D44590F02D50AA4F004B54C8 /* FirebaseAuth */,
-
-
 				D44591002D50C425004B54C8 /* GoogleSignIn */,
 				D44591022D50C425004B54C8 /* GoogleSignInSwift */,
-
-
-
 				556B28522D5039F900D20F1B /* FirebaseAnalytics */,
 				556B28542D5039F900D20F1B /* FirebaseCore */,
 				556B28562D5039F900D20F1B /* FirebaseFirestore */,
 				556B28582D503AC000D20F1B /* FirebaseCrashlytics */,
 				556B285A2D503B0000D20F1B /* FirebasePerformance */,
-
+				89EBF4ED2D52505500D6FB92 /* Mixpanel */,
 			);
 			productName = DemoApp;
 			productReference = 7F313A03292BC7E90048C74C /* SwiftCampDevs.app */;
@@ -392,12 +376,9 @@
 				89C9FEDD2D44EF5100CDF043 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
 				89C9FEDE2D44F00800CDF043 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
 				3CCB621D2D4E2777006EBB09 /* XCRemoteSwiftPackageReference "SQLite" */,
-
-				01EA61BF2D4E9ED0004E3FC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				D44590FF2D50C425004B54C8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-
 				556B28512D5039F900D20F1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-
+				89EBF4EC2D52505500D6FB92 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
 			);
 			productRefGroup = 7F313A04292BC7E90048C74C /* Products */;
 			projectDirPath = "";
@@ -801,6 +782,14 @@
 				minimumVersion = 2.1.1;
 			};
 		};
+		89EBF4EC2D52505500D6FB92 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		D44590FF2D50C425004B54C8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS/";
@@ -881,6 +870,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 89C9FEDD2D44EF5100CDF043 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
 			productName = OneSignalLocation;
+		};
+		89EBF4ED2D52505500D6FB92 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89EBF4EC2D52505500D6FB92 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
 		};
 		D44590F02D50AA4F004B54C8 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
