@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>MIXPANEL_TOKEN</key>
+	<string>2db5d3a1bf29adbdc1c2ac8ad0ff1c51</string>
 	<key>Environment</key>
 	<string>DEV</string>
 	<key>API_BASE_URL</key>

@@ -94,6 +94,20 @@ struct EnvironmentHelper {
         }
     }
     
+    var mixPanelToken: String {
+        do {
+            guard let appToken = infoDictionary["MIXPANEL_TOKEN"] as? String else {
+                throw EnvironmentError.missingKey(key: "MIXPANEL_TOKEN")
+            }
+            LoggerHelper.shared.debug("🔑 MixPanel App Token: \(appToken)")
+            return appToken
+        } catch {
+            LoggerHelper.shared.error("⚠️ Error fetching MixPanel App Token: \(error.localizedDescription). Defaulting to empty App Token.")
+            return ""
+        }
+    }
+    
+    
     /// Returns the GitHub repository API URL.
     var githubRepoApi: String {
         do {

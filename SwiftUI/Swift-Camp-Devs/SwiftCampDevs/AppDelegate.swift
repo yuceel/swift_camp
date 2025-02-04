@@ -4,11 +4,14 @@ import FirebaseCore
 import FirebaseAuth
 import GoogleSignIn
 import OneSignalFramework
+import Mixpanel
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
     
     private let oneSignalAppID = EnvironmentHelper.shared.oneSignalAppID
+    private let mixPanelToken = EnvironmentHelper.shared.mixPanelToken
+    
     
     
     // MARK: - Public properties -
@@ -23,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        
+        Mixpanel.initialize(token: mixPanelToken, trackAutomaticEvents: false)
         
         // Firebase setup
         
