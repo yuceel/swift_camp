@@ -6,6 +6,7 @@
     <array>
         <string>remote-notification</string>
     </array>
+
     <key>CFBundleURLTypes</key>
     <array>
         <dict>
@@ -14,12 +15,42 @@
                 <string>com.googleusercontent.apps.145185051885-bhrm2jencqlhc0r0et7jn72drvkddpsg</string>
             </array>
         </dict>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>github</string> 
+            </array>
+        </dict>
     </array>
 
     <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>google</string>
         <string>com.googleusercontent.apps</string>
+        <string>github</string> 
     </array>
+
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>firebaseapp.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+            <key>github.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
 </dict>
 </plist>

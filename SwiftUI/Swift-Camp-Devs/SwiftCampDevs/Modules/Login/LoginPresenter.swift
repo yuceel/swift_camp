@@ -10,7 +10,6 @@ final class LoginPresenter: ObservableObject {
     }
 
     func handleGoogleLogin() {
-        
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
               let rootViewController = windowScene.windows.first?.rootViewController else {
             return
@@ -27,7 +26,10 @@ final class LoginPresenter: ObservableObject {
                 return
             }
 
-            let credential = GoogleAuthProvider.credential(withIDToken: authentication.tokenString, accessToken: result!.user.accessToken.tokenString)
+            let credential = GoogleAuthProvider.credential(
+                withIDToken: authentication.tokenString,
+                accessToken: result!.user.accessToken.tokenString
+            )
 
             Auth.auth().signIn(with: credential) { authResult, error in
                 if let error = error {
@@ -40,6 +42,39 @@ final class LoginPresenter: ObservableObject {
         }
     }
 
+    
+    func handleGitHubLogin() {
+        let provider = OAuthProvider(providerID: "github.com")
+        
+        
+        provider.scopes = ["user:email"]
+        provider.customParameters = [
+            "allow_signup": "false"
+        ]
+
+        provider.getCredentialWith(nil) { [weak self] credential, error in
+            if let error = error {
+                print("GitHub login failed: \(error.localizedDescription)")
+                return
+            }
+
+            guard let credential = credential else {
+                print("Failed to get GitHub credential")
+                return
+            }
+
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    print("Firebase GitHub login failed: \(error.localizedDescription)")
+                } else {
+                    print("User signed in with GitHub: \(authResult?.user.email ?? "No email")")
+                    self?.handleSuccessfulLogin()
+                }
+            }
+        }
+    }
+
+    
     func handleSuccessfulLogin() {
         print("Login was successful!")
         wireframe.navigateToHome()

@@ -10,22 +10,40 @@ import Mixpanel
 class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
     
     private let oneSignalAppID = EnvironmentHelper.shared.oneSignalAppID
+
     private let mixPanelToken = EnvironmentHelper.shared.mixPanelToken
     
     
     
     // MARK: - Public properties -
     
+
     var window: UIWindow?
     var initializers: [Initializable] = [] {
         didSet { initializers.forEach { $0.initialize() } }
     }
+
     
     // MARK: - Lifecycle -
+
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+
+        FirebaseApp.configure()
+        LoggerHelper.shared.info("Initializing OneSignal with App ID.")
+        OneSignal.initialize(oneSignalAppID, withLaunchOptions: launchOptions)
+
+        setupGoogleSignIn()
+        LocalStorageHelper.shared.initializeDatabase()
+        setupAppDatabase()
+        storeAppInformation()
+        logDatabaseRecords()
+
+        startObservingAppStateChanges()
+
+
         
         Mixpanel.initialize(token: mixPanelToken, trackAutomaticEvents: false)
         
@@ -92,6 +110,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         
         
         // Configure initializers
+
         initializers = StartupInitializationBuilder()
             .setAppDelegate(self)
             .build(with: launchOptions)
@@ -103,34 +122,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         
         return true
     }
+
     
     
     // MARK: - Google Sign-In Configuration
+
     private func setupGoogleSignIn() {
-        
         guard let clientID = FirebaseApp.app()?.options.clientID else {
             fatalError("CLIENT_ID not found in GoogleService-Info.plist")
         }
         GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: clientID)
-        LoggerHelper.shared.info("Google Sign-In configured successfully.")
     }
+
     
     
     // MARK: - Google Sign-In URL Handling
+
     func application(
         _ app: UIApplication,
         open url: URL,
         options: [UIApplication.OpenURLOptionsKey : Any] = [:]
     ) -> Bool {
+        if Auth.auth().canHandle(url) {
+            return true
+        }
         return GIDSignIn.sharedInstance.handle(url)
     }
+
+
+    private func logDatabaseRecords() {
+        LoggerHelper.shared.debug("Fetching all records from the AppInfo table.")
+        let records = LocalStorageHelper.shared.fetchData(tableName: "AppInfo")
+
+        if records.isEmpty {
+            LoggerHelper.shared.info("The AppInfo table is empty.")
+        } else {
+            LoggerHelper.shared.info("Fetched \(records.count) records from the AppInfo table:")
+            for (index, record) in records.enumerated() {
+                LoggerHelper.shared.info("Record \(index + 1): \(record)")
+            }
+        }
+    }
+
     
 
         
-    
 
 
-    // MARK: - Observe App State Changes Using WorkManagerHelper
     private func startObservingAppStateChanges() {
         WorkManagerHelper.shared.$currentState
             .receive(on: DispatchQueue.main)
@@ -149,9 +187,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
             .store(in: &AppStateManager.cancellables)
     }
 
-
-
-    // MARK: - App Database Setup
     private func setupAppDatabase() {
         LoggerHelper.shared.debug("Setting up the app database.")
         LocalStorageHelper.shared.createTable(
@@ -172,6 +207,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
 
         let deviceModel = UIDevice.current.model
         let osVersion = UIDevice.current.systemVersion
+
+        let installDate = DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .short)
+        let subID = "unknown"
+
         let installDate = DateFormatter.localizedString(
             from: Date(),
             dateStyle: .medium,
@@ -182,15 +221,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         let subID = "unknown" // TODO: Replace with actual fetching logic
 
 
+
         let records = LocalStorageHelper.shared.fetchData(tableName: "AppInfo")
 
         if records.count > 1 {
-            LoggerHelper.shared.warning("Multiple records found in AppInfo table. Deleting all records.")
+            LoggerHelper.shared.warning("Multiple records found. Deleting all.")
             LocalStorageHelper.shared.deleteData(tableName: "AppInfo")
         }
 
         if records.isEmpty || records.count > 1 {
-            LoggerHelper.shared.debug("No valid record found. Inserting a new AppInfo record.")
             LocalStorageHelper.shared.insertEncryptedData(
                 tableName: "AppInfo",
                 data: [
@@ -202,7 +241,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
                 ]
             )
         } else {
-            LoggerHelper.shared.debug("Single record found. Updating the AppInfo record.")
             LocalStorageHelper.shared.updateData(
                 tableName: "AppInfo",
                 data: [
@@ -215,6 +253,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
                 condition: "id = 1"
             )
         }
+
 
         LoggerHelper.shared.info("App information stored or updated successfully.")
     }
@@ -247,12 +286,10 @@ private func logDatabaseRecords() {
         for (index, record) in records.enumerated() {
             LoggerHelper.shared.info("Record \(index + 1): \(record)")
         }
+
     }
 }
 
-
-
-// MARK: - Global Cancellables Management
 private enum AppStateManager {
     static var cancellables: Set<AnyCancellable> = []
 }
@@ -260,4 +297,6 @@ private enum AppStateManager {
 
 
 
+
 }
+
