@@ -17,7 +17,6 @@ struct LoginView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
 
-                
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Email address or phone number")
                     TextField("Your email", text: $email)
@@ -40,14 +39,12 @@ struct LoginView: View {
                     .foregroundColor(.blue)
                 }
 
-                
                 if let error = errorMessage {
                     Text(error)
                         .foregroundColor(.red)
                         .font(.footnote)
                 }
 
-                
                 Button(action: loginWithFirebase) {
                     if isLoading {
                         ProgressView()
@@ -82,9 +79,25 @@ struct LoginView: View {
                     .cornerRadius(8)
                 }
 
+                
+                Button(action: {
+                    presenter.handleGitHubLogin()
+                }) {
+                    HStack {
+                        Image("githubLogo")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                        Text("Continue with GitHub")
+                            .font(.headline)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(8)
+                }
+
                 Spacer()
 
-                
                 HStack {
                     Text("Don’t have an account?")
                     NavigationLink(destination: SignUpView()) {
