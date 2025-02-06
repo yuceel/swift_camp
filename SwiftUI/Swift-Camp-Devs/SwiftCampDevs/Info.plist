@@ -9,25 +9,47 @@
 
     <key>CFBundleURLTypes</key>
     <array>
+        <!-- Google Login -->
         <dict>
             <key>CFBundleURLSchemes</key>
             <array>
                 <string>com.googleusercontent.apps.145185051885-bhrm2jencqlhc0r0et7jn72drvkddpsg</string>
             </array>
         </dict>
+
+        <!-- GitHub Login -->
         <dict>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>github</string> 
+                <string>github</string>
+            </array>
+        </dict>
+
+        <!-- Facebook Login -->
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb1172766844364372</string> 
             </array>
         </dict>
     </array>
+
+    <key>FacebookAppID</key>
+    <string>1172766844364372</string>
+
+    <key>FacebookClientToken</key>
+    <string>66a64c42db8d56e22fe7dc07340e5980</string> 
+
+    <key>FacebookDisplayName</key>
+    <string>Camp Devs</string> 
 
     <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>google</string>
         <string>com.googleusercontent.apps</string>
-        <string>github</string> 
+        <string>github</string>
+        <string>fbapi</string>
+        <string>fb-messenger-share-api</string>
     </array>
 
     <key>NSAppTransportSecurity</key>

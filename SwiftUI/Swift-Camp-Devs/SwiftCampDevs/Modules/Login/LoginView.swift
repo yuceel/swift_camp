@@ -1,5 +1,6 @@
 import SwiftUI
 import FirebaseAuth
+import FacebookLogin
 
 struct LoginView: View {
     @ObservedObject var presenter: LoginPresenter
@@ -62,7 +63,7 @@ struct LoginView: View {
                     .font(.footnote)
                     .foregroundColor(.gray)
 
-                
+                // Google Login
                 Button(action: {
                     presenter.handleGoogleLogin()
                 }) {
@@ -79,7 +80,7 @@ struct LoginView: View {
                     .cornerRadius(8)
                 }
 
-                
+                // GitHub Login
                 Button(action: {
                     presenter.handleGitHubLogin()
                 }) {
@@ -88,6 +89,24 @@ struct LoginView: View {
                             .resizable()
                             .frame(width: 20, height: 20)
                         Text("Continue with GitHub")
+                            .font(.headline)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                
+                // Facebook Login
+                Button(action: {
+                    handleFacebookLogin()
+                }) {
+                    HStack {
+                        Image("facebookLogo")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(.blue)
+                        Text("Continue with Facebook")
                             .font(.headline)
                     }
                     .frame(maxWidth: .infinity)
@@ -128,6 +147,38 @@ struct LoginView: View {
             } else {
                 print("User signed in: \(result?.user.uid ?? "No UID")")
                 presenter.handleSuccessfulLogin()
+            }
+        }
+    }
+
+    private func handleFacebookLogin() {
+        let loginManager = LoginManager()
+        loginManager.logIn(permissions: ["public_profile", "email"], from: nil) { result, error in
+            if let error = error {
+                self.errorMessage = "Facebook login failed: \(error.localizedDescription)"
+                return
+            }
+
+            guard let result = result, !result.isCancelled else {
+                self.errorMessage = "Facebook login was cancelled."
+                return
+            }
+
+            
+            guard let accessToken = AccessToken.current else {
+                self.errorMessage = "Failed to get access token."
+                return
+            }
+
+            
+            let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    self.errorMessage = "Firebase login failed: \(error.localizedDescription)"
+                } else {
+                    print("Successfully logged in with Facebook: \(authResult?.user.uid ?? "No UID")")
+                    presenter.handleSuccessfulLogin()
+                }
             }
         }
     }
