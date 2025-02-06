@@ -1,6 +1,7 @@
 import FirebaseAuth
 import GoogleSignIn
 import UIKit
+import FacebookLogin
 
 final class LoginPresenter: ObservableObject {
     private let wireframe: LoginWireframeInterface
@@ -9,6 +10,7 @@ final class LoginPresenter: ObservableObject {
         self.wireframe = wireframe
     }
 
+    // MARK: - Google Login
     func handleGoogleLogin() {
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
               let rootViewController = windowScene.windows.first?.rootViewController else {
@@ -42,10 +44,9 @@ final class LoginPresenter: ObservableObject {
         }
     }
 
-    
+    // MARK: - GitHub Login
     func handleGitHubLogin() {
         let provider = OAuthProvider(providerID: "github.com")
-        
         
         provider.scopes = ["user:email"]
         provider.customParameters = [
@@ -74,7 +75,42 @@ final class LoginPresenter: ObservableObject {
         }
     }
 
-    
+    // MARK: - Facebook Login
+    func handleFacebookLogin() {
+        let loginManager = LoginManager()
+        
+        
+        loginManager.logIn(permissions: ["public_profile", "email"], from: nil) { [weak self] result, error in
+            if let error = error {
+                print("Facebook login failed: \(error.localizedDescription)")
+                return
+            }
+
+            guard let result = result, !result.isCancelled else {
+                print("Facebook login was cancelled.")
+                return
+            }
+
+            guard let accessToken = AccessToken.current else {
+                print("Failed to get Facebook access token.")
+                return
+            }
+
+            
+            let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    print("Firebase Sign-In with Facebook failed: \(error.localizedDescription)")
+                } else {
+                    print("User signed in with Facebook: \(authResult?.user.email ?? "No email")")
+                    self?.handleSuccessfulLogin()
+                }
+            }
+        }
+    }
+
+
+    // MARK: - Successful Login
     func handleSuccessfulLogin() {
         print("Login was successful!")
         wireframe.navigateToHome()
