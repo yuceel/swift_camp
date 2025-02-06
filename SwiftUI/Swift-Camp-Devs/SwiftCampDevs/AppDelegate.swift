@@ -10,53 +10,37 @@ import Mixpanel
 class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
     
     private let oneSignalAppID = EnvironmentHelper.shared.oneSignalAppID
-
     private let mixPanelToken = EnvironmentHelper.shared.mixPanelToken
-    
-    
     
     // MARK: - Public properties -
     
-
     var window: UIWindow?
     var initializers: [Initializable] = [] {
         didSet { initializers.forEach { $0.initialize() } }
     }
-
+    
     
     // MARK: - Lifecycle -
-
+    
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-
+        
         FirebaseApp.configure()
         LoggerHelper.shared.info("Initializing OneSignal with App ID.")
         OneSignal.initialize(oneSignalAppID, withLaunchOptions: launchOptions)
-
         setupGoogleSignIn()
         LocalStorageHelper.shared.initializeDatabase()
         setupAppDatabase()
         storeAppInformation()
         logDatabaseRecords()
-
         startObservingAppStateChanges()
-
-
-        
         Mixpanel.initialize(token: mixPanelToken, trackAutomaticEvents: false)
-        
-        // Firebase setup
-        
-        // Firebase configure
-        
-        FirebaseApp.configure()
         
         // OneSignal initialization
         LoggerHelper.shared.info("Initializing OneSignal with App ID.")
         OneSignal.initialize(oneSignalAppID, withLaunchOptions: launchOptions)
-        
         OneSignal.Notifications.requestPermission({ accepted in
             LoggerHelper.shared.info("User accepted notifications: \(accepted)")
             self.updateAppPermissions(notificationAllowed: accepted)
@@ -71,10 +55,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         storeAppInformation()
         logDatabaseRecords()
         
-        
-        
-        
-        
         // LocalStorageHelper initialization
         LoggerHelper.shared.debug("Initializing local storage database.")
         LocalStorageHelper.shared.initializeDatabase()
@@ -84,10 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         
         // Store app information
         storeAppInformation()
-        
         logDatabaseRecords()
-        
-        
         startObservingAppStateChanges()
         
         
@@ -107,10 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         
         LoggerHelper.shared.info("Application did finish launching.")
         
-        
-        
         // Configure initializers
-
         initializers = StartupInitializationBuilder()
             .setAppDelegate(self)
             .build(with: launchOptions)
@@ -119,25 +93,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         
         // NetworkHelper initializers
         let _ = NetworkHelper.shared
-        
         return true
     }
-
+    
     
     
     // MARK: - Google Sign-In Configuration
-
+    
     private func setupGoogleSignIn() {
         guard let clientID = FirebaseApp.app()?.options.clientID else {
             fatalError("CLIENT_ID not found in GoogleService-Info.plist")
         }
         GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: clientID)
     }
-
-    
     
     // MARK: - Google Sign-In URL Handling
-
+    
     func application(
         _ app: UIApplication,
         open url: URL,
@@ -148,27 +119,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
         }
         return GIDSignIn.sharedInstance.handle(url)
     }
-
-
-    private func logDatabaseRecords() {
-        LoggerHelper.shared.debug("Fetching all records from the AppInfo table.")
-        let records = LocalStorageHelper.shared.fetchData(tableName: "AppInfo")
-
-        if records.isEmpty {
-            LoggerHelper.shared.info("The AppInfo table is empty.")
-        } else {
-            LoggerHelper.shared.info("Fetched \(records.count) records from the AppInfo table:")
-            for (index, record) in records.enumerated() {
-                LoggerHelper.shared.info("Record \(index + 1): \(record)")
-            }
-        }
-    }
-
     
-
-        
-
-
     private func startObservingAppStateChanges() {
         WorkManagerHelper.shared.$currentState
             .receive(on: DispatchQueue.main)
@@ -186,7 +137,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
             }
             .store(in: &AppStateManager.cancellables)
     }
-
+    
     private func setupAppDatabase() {
         LoggerHelper.shared.debug("Setting up the app database.")
         LocalStorageHelper.shared.createTable(
@@ -201,34 +152,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
             ]
         )
     }
-
+    
     private func storeAppInformation() {
         LoggerHelper.shared.debug("Storing app information in local database.")
-
+        
         let deviceModel = UIDevice.current.model
         let osVersion = UIDevice.current.systemVersion
-
         let installDate = DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .short)
-        let subID = "unknown"
-
-        let installDate = DateFormatter.localizedString(
-            from: Date(),
-            dateStyle: .medium,
-            timeStyle: .short
-        )
-
+        
         // Fetch OneSignal Subscriber ID
         let subID = "unknown" // TODO: Replace with actual fetching logic
-
-
-
         let records = LocalStorageHelper.shared.fetchData(tableName: "AppInfo")
-
+        
         if records.count > 1 {
             LoggerHelper.shared.warning("Multiple records found. Deleting all.")
             LocalStorageHelper.shared.deleteData(tableName: "AppInfo")
         }
-
+        
         if records.isEmpty || records.count > 1 {
             LocalStorageHelper.shared.insertEncryptedData(
                 tableName: "AppInfo",
@@ -253,50 +193,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppWindowHandler {
                 condition: "id = 1"
             )
         }
-
-
+        
+        
         LoggerHelper.shared.info("App information stored or updated successfully.")
     }
-
+    
     // MARK: - App Permissions
     private func updateAppPermissions(notificationAllowed: Bool) {
         LoggerHelper.shared.debug("Updating app permissions in local database.")
-
-
+        
+        
         LocalStorageHelper.shared.updateData(
             tableName: "AppInfo",
             data: ["notificationAllowed": notificationAllowed],
             condition: "id = 1"
         )
-
+        
         LoggerHelper.shared.info("App permissions updated successfully.")
     }
-
-
-// MARK: - Log Database Records
-private func logDatabaseRecords() {
-    LoggerHelper.shared.debug("Fetching all records from the AppInfo table.")
-
-    let records = LocalStorageHelper.shared.fetchData(tableName: "AppInfo")
-
-    if records.isEmpty {
-        LoggerHelper.shared.info("The AppInfo table is empty.")
-    } else {
-        LoggerHelper.shared.info("Fetched \(records.count) records from the AppInfo table:")
-        for (index, record) in records.enumerated() {
-            LoggerHelper.shared.info("Record \(index + 1): \(record)")
+    
+    
+    // MARK: - Log Database Records
+    private func logDatabaseRecords() {
+        LoggerHelper.shared.debug("Fetching all records from the AppInfo table.")
+        
+        let records = LocalStorageHelper.shared.fetchData(tableName: "AppInfo")
+        
+        if records.isEmpty {
+            LoggerHelper.shared.info("The AppInfo table is empty.")
+        } else {
+            LoggerHelper.shared.info("Fetched \(records.count) records from the AppInfo table:")
+            for (index, record) in records.enumerated() {
+                LoggerHelper.shared.info("Record \(index + 1): \(record)")
+            }
+            
         }
-
     }
-}
-
-private enum AppStateManager {
-    static var cancellables: Set<AnyCancellable> = []
-}
-
-
-
-
-
+    
+    private enum AppStateManager {
+        static var cancellables: Set<AnyCancellable> = []
+    }
+    
 }
 
