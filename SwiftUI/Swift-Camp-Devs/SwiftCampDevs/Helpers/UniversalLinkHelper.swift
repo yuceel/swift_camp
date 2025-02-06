@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-struct AppLinkHelper {
+struct UniversalLinkHelper {
     static func openURL(_ urlString: String) {
         guard let url = URL(string: urlString) else {
             print("Invalid URL: \(urlString)")
